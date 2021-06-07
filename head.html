@@ -1,0 +1,33 @@
+
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script>
+        (function(doc,win){
+            const baseSize = 196
+                function change(){
+                    console.log(111)
+                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
+                    const scale =
+                        (document.documentElement.clientWidth) / 1920
+                    // 设置页面根节点字体大小
+                    const fontSize = baseSize * Math.min(scale, 2)
+                    document.documentElement.style.fontSize = fontSize + 'px'
+                }
+                change();
+                addEventListener('resize',change,false);
+            })(document,window);
+    </script>
+    <title></title>
+</head>

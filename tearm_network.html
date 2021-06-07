@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script>
+        (function(doc,win){
+            const baseSize = 196
+                function change(){
+                    console.log(111)
+                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
+                    const scale =
+                        (document.documentElement.clientWidth) / 1920
+                    // 设置页面根节点字体大小
+                    const fontSize = baseSize * Math.min(scale, 2)
+                    document.documentElement.style.fontSize = fontSize + 'px'
+                }
+                change();
+                addEventListener('resize',change,false);
+            })(document,window);
+    </script>
+    <title></title>
+</head>
+        <link rel="stylesheet" type="text/css" href="css/tearm.css" />
+</head>
+
+<body>
+    <div class="visible-lg-block">
+    <div class="header_top"></div>
+    <div class="top scrollTop-nav">
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="nav navClick">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 手机端导航 -->
+<div class="visible-xs visible-sm visible-md" style="display: block;">
+    <div class="header_top m_header_top"></div>
+    <div class="top m_top scrollTop-nav">
+        <div class="container m_container">
+            <div class="m_logo"><img src="img/logo.png" /></div>
+            <div class="m_nav m_nav_tap">
+                <img src="img/m_nav_more.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="m_nav_model">
+        <div class="nav navClick m_nav_navigation">
+        </div>
+
+        <!-- <div class="m_nav_list">
+            <div class="item">Overiew</div>
+            <div class="item">
+                Learn
+                <div class="more_nav">
+                    <div class="box">
+                       <div class="li">增强的中本聪共识协议</div>
+                       <div class="li">存储状态</div>
+                       <div class="li">治理体系</div>
+                       <div class="li">治理体系</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">News</div>
+            <div class="item">Developer</div>
+            <div class="item">About us</div>
+        </div> -->
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let urlArr = url.split('?');
+        let appU = urlArr[0].split('/');
+        let getUrl = appU[appU.length - 1]
+        let nav_data = [
+            {
+                name: 'Overiew',
+                url: 'index.html'
+            },
+            {
+                name: 'Learn',
+                url: '',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        url: 'tearm_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        url: 'tearm_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        url: 'tearm_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        url: 'tearm_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        url: 'tearm_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        url: 'tearm_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'News',
+                url: 'news.html'
+            },
+            {
+                name: 'Developer',
+                url: 'developer.html'
+            },
+            {
+                name: 'About us',
+                url: 'about_us.html'
+            },
+        ]
+        var str = ''
+        for (var i = 0; i < nav_data.length; i++) {
+            let menuDom = ''
+            let nav_childen = ''
+            let leveClass = ""
+            let navSelect = false
+            if (nav_data[i].name === 'Learn') {
+                for (var k = 0; k < nav_data[i].childen.length; k++) {
+                    let isSelect = false
+                    if (nav_data[i].childen[k].url === getUrl) {
+                        isSelect = true
+                        navSelect = true
+                    } else {
+                        isSelect = false
+                    }
+                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                }
+                leveClass = 'allSelect';
+                nav_childen = `<div class="more_nav">
+                        <div class="box">
+                            ${menuDom}
+                        </div>
+                    </div>`
+            }
+            if (nav_data[i].url) {
+                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a href="javascript:void(0)">${nav_data[i].name}</a></div>`
+            } else  {
+                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span>${nav_data[i].name}</span></div>`
+            }
+
+            $(".navClick").append(str)
+            $(".allSelect").append(nav_childen)
+        }
+        $(".navClick .item").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".more_nav .box .li").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".m_nav_navigation").find(".allSelect").click(function(){
+            if($(this).attr("class").indexOf("m_tab_select") > -1){
+                console.log($(this))
+                $(this).removeClass("m_tab_select")
+
+            }else{
+                $(this).addClass("m_tab_select")
+            }
+            
+            
+        })
+        
+        $(".m_nav_tap").click(function(){
+            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
+                $(this).find("img").attr("src","img/m_nav_close.png")
+                $(".m_nav_model").show()
+                $(".m_nav_model").animate({height:"100%"});
+                $(".scrollTop-nav").addClass("home-nav");
+            }else{
+                $(this).find("img").attr("src","img/m_nav_more.png")
+                $(".scrollTop-nav").removeClass("home-nav");
+                $(".m_nav_model").animate({height:"0%"});
+                $(".m_nav_model").hide()
+            }
+           
+            // $(".m_nav_model").show()
+        })
+    });
+</script>
+        <div class="container">
+            <div class="tearm_bzk">
+                <div class="tearm_icon"><img src="img/network_icon.png" /></div>
+                <div class="title_h3">
+                    <img src="img/whatwedo@2x.png" />
+                    <span>分层网络</span>
+                </div>
+                <div class="info_title mt10">◆ 背景</div>
+                <div class="info mt10 padding_text_index20">当前区块链面临的可扩展性问题的解决思路主要有两种，一种是一层（layer1）扩展，另外一种是二层（layer2）扩展。一层的扩展受不可能三角限制，很难平衡安全和可扩展性，所以 Starcoin 的设计中，一层主要负责安全，二层负责扩展，一二层有机结合起来，解决区块链面临的可扩展性问题。这种思路，已经是公链领域在一层扩展遇到困难后，基本达成的共识，比如以太坊的 Rollup 发展路线 [4]，Nervos 的 CKB [7]。</div>
+                <div class="info mt10 padding_text_index20">一层在分层网络中的职能：</div>
+                <div class="info mt10 padding_text_index54">
+                    1、通过增强的中本聪共识机制来尽可能的在保证安全的基础上在一层扩容，最大化一层网络的利用率（出块时间以及区块大小的动态调整机制，参看共识部分）。<br>
+                    2、提供资产的定义，发行，以及流转，以及一二层之间的流转能力。<br>
+                    3、给二层提供仲裁能力，二层可以利用一层的安全机制来保证自己的安全。</div>
+                <div class="info mt10 padding_text_index20">二层在分层网络中的职能:：</div>
+                <div class="info mt10 padding_text_index54">1、将一层的交易分流到二层，一层不再关心二层交易的细节以状态的变更。<br>
+                    2、提供一套监督机制，二层的不同角色之间可以互相监督。<br>
+                    3、提供证据保全能力，用户如果对二层的交易有争议，可以到一层仲裁。</div>
+                    <div class="wl_icon"><img src="img/wl_icon.png"/></div>
+                <div class="h3">二层方案概览 <span>#</span></div>
+                <div class="info_title mt10">◆ 状态通道</div>
+                <div class="info mt10 padding_text_index20">通用的状态通道包含支付通道，只是后者的状态只能是资产，而通用的状态通道试图把状态扩展到应用的任意状态。状态通道的根本思路是通过通道双方的互相监督，让双方之前的状态变化从链上迁移到链下，等通道关闭时再进行链上清算（也可以优化为定时清算），相当于把多次交易的状态变更合并为一次，从而降低交易成本，提升整体的交易容量。通道内的状态变化成本极其低廉，所以可以支持高频交易或者双方交互频繁的互联网应用（比如游戏）。虽然理论上状态通道的参与者可以是多方，但由于状态通道上的任何变更都需要所有参与方共同确认，所以很难扩展到两个以上的参与方，也因此限制了它的应用场景。</div>
+                <div class="info_title mt10">◆ 侧链</div>
+                <div class="info mt10 padding_text_index20">侧链或者子链，业界并没有非常准确的定义，很多人也不认为侧链是二层方案的一种。但我们这里限定一个条件，当侧链的共识机制依赖于一层的共识机制，提供了一种仲裁机制，允许侧链的用户或者节点运营方对侧链共识达成的状态在一层进行挑战，并可以通过一层的仲裁机制，推翻侧链共识状态，我们就认为这种侧链方案属于一种二层的解决方案，否则侧链是一个独立的链，本质上和多个链之间的跨链没有区别。侧链作为二层解决方案的好处是可以扩展到任意多方，并且侧链有了一层的仲裁约束，可以做到只要有一个侧链节点是诚实节点即可保证网络安全。</div>
+                <div class="info_title mt10">◆ RollupChain</div>
+                <div class="info mt10 padding_text_index20">RollupChain 是区块链社区新兴的一种二层解决方案，本质上可以理解成是对原来 Commit-Chain 方案(如 Plasma )的改进。在 Commit-Chain 方案中，二层链的运营方需要定时向一层提交二层链的状态根或者区块头证明，而用户可以通过自己状态的证明直接在一层退出二层的资产，如果运营方提供了错误的证明，用户也可以对运营方提交的证明进行挑战，从而保证二层的安全。但 Plasma 的方案中，数据可用性一直是一个难题，用户没有全量的数据，二层链的运营方可能通过隐藏数据或者拒绝服务等方式阻止用户构造出挑战自己的证明。而 RollupChain 的关键改进就是将二层的数据直接提交到一层区块中，一层的区块只是『记录』了二层的交易数据，但并不执行。但当用户需要挑战运营方时，总能在一层找到数据并构造证明，从而解决了数据可用性问题。虽然 RollupChain 也会受限于一层的容量（因为它的交易也需要占用一层区块的容量），但它简化了 Plasma 等方案的挑战机制设计的复杂度，是当前更容易落地实现的方案。</div>
+                <div class="info_title mt10">◆ 可验证的链下计算</div>
+                <div class="info mt10 padding_text_index20">可验证的链下计算入 zk-rollup 等方案，思路和 RollupChain 的机制一样。但它引入了零知识证明，避免了二层的交易如果需要挑战，依然需要在一层执行的难题，一层只需要提供校验零知识证明的能力即可。</div>
+                <div class="info_title mt10">◆ 统一的二层方案模型</div>
+                <div class="info mt10 padding_text_index20">总结当前的各种二层方案，可以发现并没有『银弹』可以一次性解决区块链的可扩展性问题，区块链的扩展性问题的解决，需要在实践中不断的演进。但同时，二层各种方案之间本质上是有共同之处的，因此我们可以抽象出一种通用的二层方案模型，以适应二层方案的不断演进。当前各种二层网络中的几个关键问题：</div>
+                <div class="info mt10 padding_text_index54">1、应用的状态（包括资产）如何在一层和二层之间安全的转移。<br>
+                    2、如何保证二层的数据可用性。<br>
+                    3、如何证明和提供仲裁机制。</div>
+                    <div class="info mt10 padding_text_index20">这几个关键问题的解决，都和二层交易和状态的存储机制有关系。任何二层的方案，都是将一层的状态锁定并在二层重建，这些状态的变更可以表达为一个状态树，只需要定时或者最终（取决于证明以及挑战机制的设置）将状态树的根提交到一层，作为一层状态树的一个外部子树节点。这样状态的迁移以及证明可以和一层使用同样一套机制。而在 Starcoin 的一层设计中，更容易实现这样的统一模型，主要体现在：</div>
+                    <div class="info mt10 padding_text_index54">
+                        1、所有合约的状态抽象为统一的资源模型，方便一层和二层之间的状态迁移。<br>
+                        2、合约的无状态设计，使得合约本身不维护状态，状态由底层的状态存储模型提供，方便合约在一层二层之间迁移。<br>
+                        3、交易的累加器以及状态存储的模型，可以更好的提供状态证明机制，一二层复用。
+
+                    </div>
+                    <div class="info padding_text_index20"  style="margin-bottom: 0px;">关于 Starcoin 的二层设计的具体方案，会在未来发布的 Starcoin 二层设计白皮书中详述，这里只阐述了一层设计中对二层的考量。</div>
+                    
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer  visible-lg">
+    <div class="container">
+        <div class="row hr">
+            <div class="col-md-4 item">
+                <a href="contact_us.html">联系我们</a>
+            </div>
+            <div class="col-md-4 item">
+                技术
+            </div>
+            <div class="col-md-4 item">
+                设计区
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                客服电话 400-4556-557
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                在线联系
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                更多服务
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+        </div>
+        <div class="foot">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
+        </div>
+    </div>
+</div>
+<!-- 手机端显示 -->
+<div class="m-footer visible-xs visible-sm visible-md">
+    <div class="container">
+        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
+        <div class="row-li">
+            <div class="item">
+                客服电话 400-4556-557
+            </div>
+            <div class="item">
+                技术
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                在线联系
+            </div>
+            <div class="item">
+                代币
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                更多服务
+            </div>
+            <div class="item">
+                线框图
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="f-logo">
+                <img src="img/logo.png"/>
+            </div>
+            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
+        </div>
+        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
+    </div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div> -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="banner-text">
+        A LAYERED SMART<br> CONTRACT
+        <p>AND DISTRBUTED FINANCIAL NETWOEK</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add Arrows -->
+  <div class="button-next visible-lg-inline"><img src="img/banner_left_arrow.png"/></div>
+  <div class="button-prev visible-lg-inline"><img src="img/banner_right_arrow.png"/></div> 
+</div>
+<script>
+
+  $(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+          navigation: {
+              nextEl: '.button-next',
+              prevEl: '.button-prev',
+          },
+      });
+  });
+
+</script>

@@ -1,0 +1,202 @@
+.contact_us {
+  width: 1300px;
+  height: 861px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 40px 0px rgba(16, 31, 88, 0.04);
+          box-shadow: 0px 3px 40px 0px rgba(16, 31, 88, 0.04);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  position: relative; }
+  .contact_us .login-beijing {
+    width: 519px;
+    height: 470px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .contact_us .sys_form {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 60px;
+    position: relative;
+    z-index: 5; }
+    .contact_us .sys_form .label_name {
+      font-size: 24px;
+      font-family: "font-PingFangMedium";
+      font-weight: 500;
+      color: #272B3E;
+      margin-bottom: 24px; }
+    .contact_us .sys_form .form_input {
+      margin-bottom: 40px; }
+      .contact_us .sys_form .form_input input {
+        width: 100%;
+        height: 70px;
+        background: #FCFCFC;
+        border-radius: 4px;
+        padding-left: 10px;
+        border: 1px solid #DAE3FF; }
+        .contact_us .sys_form .form_input input:focus {
+          border: 1px solid #1C4BDE; }
+    .contact_us .sys_form .button {
+      width: 386px;
+      height: 77px;
+      background: #1C4BDE;
+      border-radius: 4px;
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      color: #ffffff; }
+    .contact_us .sys_form .btn-8 {
+      border: none; }
+    .contact_us .sys_form .btn-8 svg {
+      width: 30px;
+      margin-left: 15px; }
+    .contact_us .sys_form .btn-8 svg path {
+      fill: #ffffff; }
+    .contact_us .sys_form .btn-8 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%; }
+    .contact_us .sys_form .btn-8:before,
+    .contact_us .sys_form .btn-8:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: #1C4BDE;
+      /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                        -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+              inset -4px -4px 6px 0 rgba(255,255,255,.5),
+              inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
+    .contact_us .sys_form .btn-8:before {
+      height: 0%;
+      width: 2px; }
+    .contact_us .sys_form .btn-8:after {
+      width: 0%;
+      height: 2px; }
+    .contact_us .sys_form .btn-8:hover:before {
+      height: 100%; }
+    .contact_us .sys_form .btn-8:hover:after {
+      width: 100%; }
+    .contact_us .sys_form .btn-8:hover {
+      background: transparent; }
+    .contact_us .sys_form .btn-8 span:hover {
+      color: #1C4BDE; }
+    .contact_us .sys_form .btn-8 span:before,
+    .contact_us .sys_form .btn-8 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #1C4BDE;
+      /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                        -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+              inset -4px -4px 6px 0 rgba(255,255,255,.5),
+              inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
+    .contact_us .sys_form .btn-8 span:before {
+      width: 2px;
+      height: 0%; }
+    .contact_us .sys_form .btn-8 span:after {
+      height: 2px;
+      width: 0%; }
+    .contact_us .sys_form .btn-8 span:hover:before {
+      height: 100%; }
+    .contact_us .sys_form .btn-8 span:hover:after {
+      width: 100%; }
+    .contact_us .sys_form .btn-8:hover svg path {
+      fill: #1C4BDE; }
+  .contact_us .title_h3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 214px;
+    padding-top: 72px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contact_us .title_h3 img {
+      width: 34px;
+      height: 34px; }
+    .contact_us .title_h3 span {
+      font-size: 50px;
+      font-family: "font-PingFangBold";
+      font-weight: 600;
+      color: #1C4BDE;
+      line-height: 70px;
+      letter-spacing: 1px;
+      margin-left: 30px; }
+
+@media (max-width: 768px) {
+  .contact_us {
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    position: relative;
+    padding-bottom: 20px;
+    overflow: hidden; }
+    .contact_us .sys_form {
+      margin-top: 20px;
+      padding: 0 15px;
+      width: auto; }
+      .contact_us .sys_form .button {
+        width: 100%;
+        height: 35px; }
+      .contact_us .sys_form .form_input {
+        margin-bottom: 20px; }
+        .contact_us .sys_form .form_input input {
+          height: 35px; }
+      .contact_us .sys_form .m-last-mb30 {
+        margin-bottom: 30px; }
+      .contact_us .sys_form .label_name {
+        font-size: 14px;
+        margin-bottom: 12px; }
+    .contact_us .login-beijing {
+      width: 160px;
+      height: 140px; }
+    .contact_us .title_h3 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 0px;
+      padding-top: 20px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .contact_us .title_h3 img {
+        width: 16px;
+        height: 16px;
+        margin-left: 12px; }
+      .contact_us .title_h3 span {
+        font-size: 18px;
+        font-family: "font-PingFangBold";
+        font-weight: 600;
+        color: #1C4BDE;
+        margin-left: 16px;
+        letter-spacing: 1px; } }

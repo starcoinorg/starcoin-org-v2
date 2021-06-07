@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script>
+        (function(doc,win){
+            const baseSize = 196
+                function change(){
+                    console.log(111)
+                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
+                    const scale =
+                        (document.documentElement.clientWidth) / 1920
+                    // 设置页面根节点字体大小
+                    const fontSize = baseSize * Math.min(scale, 2)
+                    document.documentElement.style.fontSize = fontSize + 'px'
+                }
+                change();
+                addEventListener('resize',change,false);
+            })(document,window);
+    </script>
+    <title></title>
+</head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div class="visible-lg-block">
+    <div class="header_top"></div>
+    <div class="top scrollTop-nav">
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="nav navClick">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 手机端导航 -->
+<div class="visible-xs visible-sm visible-md" style="display: block;">
+    <div class="header_top m_header_top"></div>
+    <div class="top m_top scrollTop-nav">
+        <div class="container m_container">
+            <div class="m_logo"><img src="img/logo.png" /></div>
+            <div class="m_nav m_nav_tap">
+                <img src="img/m_nav_more.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="m_nav_model">
+        <div class="nav navClick m_nav_navigation">
+        </div>
+
+        <!-- <div class="m_nav_list">
+            <div class="item">Overiew</div>
+            <div class="item">
+                Learn
+                <div class="more_nav">
+                    <div class="box">
+                       <div class="li">增强的中本聪共识协议</div>
+                       <div class="li">存储状态</div>
+                       <div class="li">治理体系</div>
+                       <div class="li">治理体系</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">News</div>
+            <div class="item">Developer</div>
+            <div class="item">About us</div>
+        </div> -->
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let urlArr = url.split('?');
+        let appU = urlArr[0].split('/');
+        let getUrl = appU[appU.length - 1]
+        let nav_data = [
+            {
+                name: 'Overiew',
+                url: 'index.html'
+            },
+            {
+                name: 'Learn',
+                url: '',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        url: 'tearm_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        url: 'tearm_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        url: 'tearm_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        url: 'tearm_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        url: 'tearm_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        url: 'tearm_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'News',
+                url: 'news.html'
+            },
+            {
+                name: 'Developer',
+                url: 'developer.html'
+            },
+            {
+                name: 'About us',
+                url: 'about_us.html'
+            },
+        ]
+        var str = ''
+        for (var i = 0; i < nav_data.length; i++) {
+            let menuDom = ''
+            let nav_childen = ''
+            let leveClass = ""
+            let navSelect = false
+            if (nav_data[i].name === 'Learn') {
+                for (var k = 0; k < nav_data[i].childen.length; k++) {
+                    let isSelect = false
+                    if (nav_data[i].childen[k].url === getUrl) {
+                        isSelect = true
+                        navSelect = true
+                    } else {
+                        isSelect = false
+                    }
+                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                }
+                leveClass = 'allSelect';
+                nav_childen = `<div class="more_nav">
+                        <div class="box">
+                            ${menuDom}
+                        </div>
+                    </div>`
+            }
+            if (nav_data[i].url) {
+                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a href="javascript:void(0)">${nav_data[i].name}</a></div>`
+            } else  {
+                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span>${nav_data[i].name}</span></div>`
+            }
+
+            $(".navClick").append(str)
+            $(".allSelect").append(nav_childen)
+        }
+        $(".navClick .item").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".more_nav .box .li").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".m_nav_navigation").find(".allSelect").click(function(){
+            if($(this).attr("class").indexOf("m_tab_select") > -1){
+                console.log($(this))
+                $(this).removeClass("m_tab_select")
+
+            }else{
+                $(this).addClass("m_tab_select")
+            }
+            
+            
+        })
+        
+        $(".m_nav_tap").click(function(){
+            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
+                $(this).find("img").attr("src","img/m_nav_close.png")
+                $(".m_nav_model").show()
+                $(".m_nav_model").animate({height:"100%"});
+                $(".scrollTop-nav").addClass("home-nav");
+            }else{
+                $(this).find("img").attr("src","img/m_nav_more.png")
+                $(".scrollTop-nav").removeClass("home-nav");
+                $(".m_nav_model").animate({height:"0%"});
+                $(".m_nav_model").hide()
+            }
+           
+            // $(".m_nav_model").show()
+        })
+    });
+</script>
+        <!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+        <div class="swiper-slide"><img src="img/home-banner.png" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div> -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="banner-text">
+        A LAYERED SMART<br> CONTRACT
+        <p>AND DISTRBUTED FINANCIAL NETWOEK</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add Arrows -->
+  <div class="button-next visible-lg-inline"><img src="img/banner_left_arrow.png"/></div>
+  <div class="button-prev visible-lg-inline"><img src="img/banner_right_arrow.png"/></div> 
+</div>
+<script>
+
+  $(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+          navigation: {
+              nextEl: '.button-next',
+              prevEl: '.button-prev',
+          },
+      });
+  });
+
+</script>
+            <div class="container">
+                <div class="About-us wrapper visible-lg">
+
+                    <div class="content">
+                        <div class="left">
+                            <div class="About_h3"><img src="img/whatwedo@2x.png" />What we do</div>
+                            <div class="title">受比特币，以太坊启发，新一代分层的智<br />能合约和分布式金融网络</div>
+                            <div class="desc">
+                                Starcoin 的灵感来自于比特币，并对其安全性和性能进行了增强。<br />
+                                我们继承了比特币卓越的安全机制，并提供了高额的交易吞吐量的 能力，通过改进PoW算法和引入多层网络<br />
+                                此外，我们创建了分层智能合约模型，可以保证安全和稳定的。 基础设施加密货币，并能满足Defi 的性能要求。</div>
+                            <div class="button btn-8"><span>White-paper Link
+                                    <svg t="1621312353017" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" p-id="4265" width="200" height="200">
+                                        <path d="M609.456 271.74l-60.944 60.943 241.36 241.36 60.943-60.944z"
+                                            fill="#444444" p-id="4266"></path>
+                                        <path d="M609.552 754.586l-60.943-60.943 241.36-241.36 60.942 60.944z"
+                                            fill="#444444" p-id="4267"></path>
+                                        <path d="M170.667 469.333H768v85.334H170.667z" fill="#444444" p-id="4268">
+                                        </path>
+                                    </svg>
+                                </span> </div>
+                        </div>
+                        <div class="right">
+                            <img src="img/VCG211311175330@2x.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-about-us wrapper visible-xs visible-sm visible-md">
+                    <div class="m-about-h3"><img src="img/whatwedo@2x.png" />What we do</div>
+                    <div class="m-title">受比特币，以太坊启发，新一代分层的智能合约和分布式金融网络</div>
+                    <div class="m-about-pic"><img src="img/VCG211311175330@2x.png" /></div>
+                    <div class="m-desc"><p>Starcoin 的灵感来自于比特币，并对其安全性和性能进行了增强。</p>
+
+                        <p>我们继承了比特币卓越的安全机制，并提供了高额的交易吞吐量的 能力，通过改进PoW算法和引入多层网络</p>
+                        
+                        <p>此外，我们创建了分层智能合约模型，可以保证安全和稳定的。 基础设施加密货币，并能满足Defi 的性能要求。</p></div>
+                    <div class="m-button"><span>White-paper Link
+                            <svg t="1621312353017" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="4265" width="200" height="200">
+                                <path d="M609.456 271.74l-60.944 60.943 241.36 241.36 60.943-60.944z" fill="#444444"
+                                    p-id="4266"></path>
+                                <path d="M609.552 754.586l-60.943-60.943 241.36-241.36 60.942 60.944z" fill="#444444"
+                                    p-id="4267"></path>
+                                <path d="M170.667 469.333H768v85.334H170.667z" fill="#444444" p-id="4268">
+                                </path>
+                            </svg>
+                        </span> </div>
+                </div>
+
+
+
+            </div>
+            <div class="Advantages">
+                <div class="container wrapper">
+                    <div class="Advantages_title">
+                        <div class="Advantages_h3"><img src="img/whatwedo@2x.png" />What we do</div>
+                        <div class="more btn-8 visible-lg"><span>MORE +</span></div>
+                    </div>
+                    <div class="row ad_top">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/anquan.png" /></div>
+                                <div class="title">安全</div>
+                                <div class="desc">Starcoin 分别在基础层，共识层，协议层，扩展层和应用层五个层次保证了其安全性。对于基础层而言，一方面Starcoin
+                                    使用Rust开发在保证内存安全的同时兼顾运行效率.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/gongshi.png" /></div>
+                                <div class="title">中本聪共识和POW</div>
+                                <div class="desc">Starcoin 共识是比特币中本聪共识的增强。Starcoin
+                                    采用的POW算法设计满足新颖性、简单性、安全性等方面的要求，并降低了硬件开发的门槛。另外，为了加快出块速度和交易确认时间，我们通过叔块率等运行期…</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/yuyan.png" /></div>
+                                <div class="title">Move语言</div>
+                                <div class="desc">Move 是专为表达数字资产而生的编程语言，它最早出现在Facebook的区块链项目Libra中，最大的特点是
+                                    Resource作为Move的一等公民。它为提供了一个安全和可编程的基础。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/cunchu.png" /></div>
+                                <div class="title">状态存储和计费</div>
+                                <div class="desc">Starcoin 分别在基础层，共识层，协议层，扩展层和应用层五个层次保证了其安全性。对于基础层而言，一方面Starcoin
+                                    使用Rust开发在保证内存安全的同时兼顾运行效率.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/zhili.png" /></div>
+                                <div class="title">链上治理</div>
+                                <div class="desc">Starcoin 共识是比特币中本聪共识的增强。Starcoin
+                                    采用的POW算法设计满足新颖性、简单性、安全性等方面的要求，并降低了硬件开发的门槛。另外，为了加快出块速度和交易确认时间，我们通过叔块率等运行期…</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item">
+                                <div class="ad_icon"><img src="img/wangluo.png" /></div>
+                                <div class="title">分层网络</div>
+                                <div class="desc">Move 是专为表达数字资产而生的编程语言，它最早出现在Facebook的区块链项目Libra中，最大的特点是
+                                    Resource作为Move的一等公民。它为提供了一个安全和可编程的基础。</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="Example">
+                <div class="container wrapper">
+                    <div class="Advantages_title">
+                        <div class="Example_h3"><img src="img/whatwedo@2x.png" />Code Example</div>
+                        <div class="more btn-8"><span>MORE +</span></div>
+                    </div>
+                    <div class="visible-lg">
+                        <div class="code_view">
+                            <div class="code_left">
+                                <div class="list index_code_view_tab">
+                                    <ul>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li class="select">
+                                            <div class="title">Your own bank</div>
+                                            <div class="desc">You can build a bank run by logic you've programmed.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+
+                                        <!-- <li>
+                                        <div class="title">Your own curreny</div>
+                                        <div class="desc">You can create tokens that you can transfer and use across
+                                            applications.</div>
+                                    </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="code_right">
+                                <div class="code_head">
+                                    <div class="code_img">
+                                        <div class="garden red"></div>
+                                        <div class="garden yellow"></div>
+                                        <div class="garden green"></div>
+                                    </div>
+                                </div>
+                                <div class="code_body">
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
+                                        <span class="grzBLt">1</span>
+                                        <span class="cVTXYw">
+                                            // SPDX-License-Identifier: MIT
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">3</span>
+                                        <span class="cVTXYw">
+                                            // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                            message:@"message"
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">4</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">5</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">6</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">7</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">8</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
+                                        <span class="grzBLt">9</span>
+                                        <span class="cVTXYw">
+                                            // SPDX-License-Identifier: MIT
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">10</span>
+                                        <span class="cVTXYw">
+                                            // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                            message:@"message"
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">11</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">12</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">13</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">14</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">15</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
+                                        <span class="grzBLt">16</span>
+                                        <span class="cVTXYw">
+                                            // SPDX-License-Identifier: MIT
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">17</span>
+                                        <span class="cVTXYw">
+                                            // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                            message:@"message"
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">18</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">19</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">20</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">21</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">22</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
+                                        <span class="grzBLt">23</span>
+                                        <span class="cVTXYw">
+                                            // SPDX-License-Identifier: MIT
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">24</span>
+                                        <span class="cVTXYw">
+                                            // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title"
+                                            message:@"message"
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">25</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">26</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">27</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">28</span>
+                                        <span class="cVTXYw">
+                                            - (IBAction)showAlert:(UIButton *)sender {
+                                        </span>
+                                    </div>
+                                    <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                                        <span class="grzBLt">29</span>
+                                        <span class="cVTXYw">
+                                            delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  手机端显示  -->
+                    <div class="visible-xs visible-sm visible-md">
+
+                        <div class="m-code_head">
+                            <div class="code_img">
+                                <div class="garden red"></div>
+                                <div class="garden yellow"></div>
+                                <div class="garden green"></div>
+                            </div>
+                        </div>
+                        <div class="m-code-view">
+
+
+                            <div class="m-code-left">
+                                <div class="list index_code_view_tab">
+                                    <ul>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li class="select">
+                                            <div class="title">Your own bank</div>
+                                            <div class="desc">You can build a bank run by logic you've programmed.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">Your own curreny</div>
+                                            <div class="desc">You can create tokens that you can transfer and use across
+                                                applications.</div>
+                                        </li>
+                                  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Team">
+                <div class="container">
+                    <div class="Team_title wrapper">
+                        <div class="Team_h3"><img src="img/whatwedo@2x.png" />Our Team</div>
+                        <div class="more btn-8  visible-lg"><span>MORE +</span></div>
+                    </div>
+                    <div class="Team_list wrapper visible-lg">
+                        <div class="item animation-dot touxiang1"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang2"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang3"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang4"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang5"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang6"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang7"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang8"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang9"><img src="img/touxiang.png" /></div>
+                        <div class="item animation-dot touxiang10"><img src="img/touxiang.png" /></div>
+                    </div>
+                    <!-- 手机端显示 -->
+                    <div class="m-team-list wrapper visible-xs visible-sm visible-md">
+                        <div class="li">
+                            <div class="label">理事会成员</div>
+                            <div class="left-pic">
+                                <img src="img/touxiang.png" />
+                            </div>
+                            <div class="right-content">
+                                <div class="info">
+                                    <div class="name">塔玛拉·哈森</div>
+                                    <p>（Tamara Haasen）</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="label">理事会成员</div>
+                            <div class="left-pic">
+                                <img src="img/touxiang.png" />
+                            </div>
+                            <div class="right-content">
+                                <div class="info">
+                                    <div class="name">塔玛拉·哈森</div>
+                                    <p>（Tamara Haasen）</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="label">理事会成员</div>
+                            <div class="left-pic">
+                                <img src="img/touxiang.png" />
+                            </div>
+                            <div class="right-content">
+                                <div class="info">
+                                    <div class="name">塔玛拉·哈森</div>
+                                    <p>（Tamara Haasen）</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li">
+                            <div class="label">理事会成员</div>
+                            <div class="left-pic">
+                                <img src="img/touxiang.png" />
+                            </div>
+                            <div class="right-content">
+                                <div class="info">
+                                    <div class="name">塔玛拉·哈森</div>
+                                    <p>（Tamara Haasen）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer  visible-lg">
+    <div class="container">
+        <div class="row hr">
+            <div class="col-md-4 item">
+                <a href="contact_us.html">联系我们</a>
+            </div>
+            <div class="col-md-4 item">
+                技术
+            </div>
+            <div class="col-md-4 item">
+                设计区
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                客服电话 400-4556-557
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                在线联系
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                更多服务
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+        </div>
+        <div class="foot">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
+        </div>
+    </div>
+</div>
+<!-- 手机端显示 -->
+<div class="m-footer visible-xs visible-sm visible-md">
+    <div class="container">
+        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
+        <div class="row-li">
+            <div class="item">
+                客服电话 400-4556-557
+            </div>
+            <div class="item">
+                技术
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                在线联系
+            </div>
+            <div class="item">
+                代币
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                更多服务
+            </div>
+            <div class="item">
+                线框图
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="f-logo">
+                <img src="img/logo.png"/>
+            </div>
+            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
+        </div>
+        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
+    </div>
+
+</div>
+            <div id="code_fixed_back" class="code_fixed_back">
+    <div class="code_model">
+        <div class="head">
+            <div id="popup_close" class="popup_close"><img src="img/close.png"/></div>
+                <div class="head_top">
+                    You own currency
+                </div>
+        </div>
+
+
+            <div class="code_view">
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">1</span>
+                    <span class="cVTXYw">
+                        // SPDX-License-Identifier: MIT
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">2</span>
+                    <span class="cVTXYw">
+                        - (IBAction)showAlert:(UIButton *)sender {
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">3</span>
+                    <span class="cVTXYw">
+                        //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"message" 
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">4</span>
+                    <span class="cVTXYw">
+                        delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">5</span>
+                    <span class="cVTXYw">
+                        - (IBAction)showAlert:(UIButton *)sender {
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">6</span>
+                    <span class="cVTXYw">
+                        delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">5</span>
+                    <span class="cVTXYw">
+                        - (IBAction)showAlert:(UIButton *)sender {
+                    </span>
+                </div>
+                <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
+                    <span class="grzBLt">6</span>
+                    <span class="cVTXYw">
+                        delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                    </span>
+                </div>
+                <!-- - (IBAction)showAlert:(UIButton *)sender {
+                    //显示提示框
+                    //过时
+                //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"message" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+                //    [alert show];
+                    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Title"
+                                                                                   message:@"This is an alert."
+                                                                            preferredStyle:UIAlertControllerStyleAlert];
+                    
+                    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                          handler:^(UIAlertAction * action) {
+                                                                              //响应事件
+                                                                              NSLog(@"action = %@", action);
+                                                                          }];
+                    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+                                                                          handler:^(UIAlertAction * action) {
+                                                                              //响应事件 -->
+
+
+            </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#popup_close").click(function(){
+            $("#code_fixed_back").hide()
+        })
+    })
+</script>
+                <!-- <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            paginationClickable: '.swiper-pagination',
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            spaceBetween: 30,
+                            effect: 'fade'
+                        });
+                    </script> -->
+                <!-- Initialize Swiper -->
+                <script>
+                    $(document).ready(function () {
+                        $(".index_code_view_tab li").click(function () {
+                            $(".index_code_view_tab li").removeClass("select")
+                            $(this).addClass("select")
+                        })
+
+
+                //         $("#tearm_tap .li").click(function () {
+                //     $("#tearm_tap .li").removeClass("active")
+                //     $(".tearm_detail").hide()
+                //     $(".tearm_detail").eq($(this).index()).show()
+                //     $(this).addClass("active")
+                // })
+                        $(".m-code-view li").click(function () {
+                            $(".m-code-view li").removeClass("select")
+                            $(this).addClass("select")
+                            $("#code_fixed_back").show()
+                        })
+                    })
+                </script>
+                <script src="js/script.js"> </script>
+</body>
+
+</html>
