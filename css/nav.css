@@ -275,7 +275,20 @@ button {
   -webkit-box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13);
           box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13); }
   .top .container {
-    opacity: 1; }
+    opacity: 1;
+    position: relative; }
+    .top .container .language {
+      font-family: 'font-PingFangMedium';
+      color: #ffffff;
+      float: right;
+      line-height: 56px;
+      font-size: 12px;
+      padding-top: 22px; }
+      .top .container .language span {
+        cursor: pointer;
+        margin-left: 10px; }
+        .top .container .language span:first-child {
+          margin-right: 10px; }
     .top .container .logo {
       width: 241px;
       height: 50px;
@@ -285,7 +298,7 @@ button {
         width: 100%; }
     .top .container .nav {
       color: #fff;
-      float: right;
+      float: left;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -295,7 +308,8 @@ button {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding-top: 22px;
-      width: 753px; }
+      width: 753px;
+      margin-left: 80px; }
       .top .container .nav .item {
         font-size: 20px;
         cursor: pointer;
@@ -303,6 +317,7 @@ button {
         line-height: 56px;
         position: relative;
         width: 150px;
+        padding-bottom: 50px;
         text-align: center; }
         .top .container .nav .item:hover {
           font-size: 26px; }
@@ -458,6 +473,33 @@ button {
   top: 0;
   display: none;
   background: #021429; }
+  .m_nav_model .m-language {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.13); }
+    .m_nav_model .m-language .item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      position: relative; }
+      .m_nav_model .m-language .item .line {
+        width: 1px;
+        height: 13px;
+        background: #D8D8D8;
+        position: absolute;
+        right: 0;
+        top: 45%;
+        margin-top: -6px; }
   .m_nav_model .nav {
     padding-top: 100px; }
     .m_nav_model .nav .item {
