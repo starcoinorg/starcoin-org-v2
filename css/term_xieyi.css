@@ -1,17 +1,17 @@
-.container .tearm_xieyi {
+.container .term_xieyi {
   padding: 0 55px;
   position: relative;
   background: #ffffff;
   padding-bottom: 40px;
   border-radius: 4px; }
-  .container .tearm_xieyi .info {
+  .container .term_xieyi .info {
     font-size: 16px;
     font-family: 'font-PingFangRegular';
     font-weight: 400;
     color: #272B3E;
     line-height: 40px;
     margin-bottom: 10px; }
-  .container .tearm_xieyi .code_info {
+  .container .term_xieyi .code_info {
     height: 60px;
     line-height: 60px;
     font-family: "font-PingFangMedium";
@@ -19,9 +19,9 @@
     border-radius: 4px;
     color: #ffffff;
     padding-left: 50px; }
-    .container .tearm_xieyi .code_info span {
+    .container .term_xieyi .code_info span {
       color: red; }
-  .container .tearm_xieyi .code_all_info {
+  .container .term_xieyi .code_all_info {
     font-size: 16px;
     font-family: "font-PingFangMedium";
     font-weight: 500;
@@ -30,18 +30,18 @@
     background: #021429;
     border-radius: 4px;
     padding-left: 50px; }
-    .container .tearm_xieyi .code_all_info span {
+    .container .term_xieyi .code_all_info span {
       color: red; }
-  .container .tearm_xieyi .table {
+  .container .term_xieyi .table {
     border: 1px solid #DDDDDD;
     border-radius: 1px; }
-    .container .tearm_xieyi .table .head {
+    .container .term_xieyi .table .head {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       border-bottom: 1px solid #DDDDDD; }
-      .container .tearm_xieyi .table .head .td {
+      .container .term_xieyi .table .head .td {
         width: 50%;
         text-align: center;
         font-size: 16px;
@@ -51,16 +51,16 @@
         line-height: 22px;
         height: 60px;
         line-height: 60px; }
-        .container .tearm_xieyi .table .head .td:first-child {
+        .container .term_xieyi .table .head .td:first-child {
           border-right: 1px solid #DDDDDD; }
-      .container .tearm_xieyi .table .head .td_first {
+      .container .term_xieyi .table .head .td_first {
         width: 30%; }
-      .container .tearm_xieyi .table .head .td_last {
+      .container .term_xieyi .table .head .td_last {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
-    .container .tearm_xieyi .table .body .tr {
+    .container .term_xieyi .table .body .tr {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -69,7 +69,7 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
       border-bottom: 1px solid #DDDDDD; }
-      .container .tearm_xieyi .table .body .tr .td {
+      .container .term_xieyi .table .body .tr .td {
         width: 50%;
         height: 60px;
         line-height: 60px;
@@ -78,36 +78,36 @@
         font-family: 'font-PingFangRegular';
         font-weight: 400;
         color: #272B3E; }
-        .container .tearm_xieyi .table .body .tr .td:first-child {
+        .container .term_xieyi .table .body .tr .td:first-child {
           border-right: 1px solid #DDDDDD; }
-      .container .tearm_xieyi .table .body .tr:nth-child(even) {
+      .container .term_xieyi .table .body .tr:nth-child(even) {
         background: #F9F9FB; }
-      .container .tearm_xieyi .table .body .tr .td_first {
+      .container .term_xieyi .table .body .tr .td_first {
         width: 30%; }
-      .container .tearm_xieyi .table .body .tr .td_last {
+      .container .term_xieyi .table .body .tr .td_last {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
             -ms-flex: 1;
                 flex: 1; }
-  .container .tearm_xieyi .h3 {
+  .container .term_xieyi .h3 {
     font-size: 18px;
     font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #272B3E;
     line-height: 30px; }
-    .container .tearm_xieyi .h3 span {
+    .container .term_xieyi .h3 span {
       color: #1C4BDE; }
-  .container .tearm_xieyi .padding_text_index {
+  .container .term_xieyi .padding_text_index {
     padding-left: 34px; }
-  .container .tearm_xieyi .tearm_icon {
+  .container .term_xieyi .term_icon {
     width: 369px;
     height: 369px;
     position: absolute;
     top: 13px;
     right: 99px; }
-    .container .tearm_xieyi .tearm_icon img {
+    .container .term_xieyi .term_icon img {
       width: 100%; }
-  .container .tearm_xieyi .title_h3 {
+  .container .term_xieyi .title_h3 {
     width: 755px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -120,10 +120,10 @@
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 141px; }
-    .container .tearm_xieyi .title_h3 img {
+    .container .term_xieyi .title_h3 img {
       width: 34px;
       height: 34px; }
-    .container .tearm_xieyi .title_h3 span {
+    .container .term_xieyi .title_h3 span {
       font-size: 64px;
       font-family: "font-PingFangMedium";
       font-weight: 500;
@@ -133,39 +133,39 @@
       margin-left: 26px; }
 
 @media (max-width: 768px) {
-  .container .tearm_xieyi {
+  .container .term_xieyi {
     padding: 0 15px;
     padding-bottom: 20px; }
-    .container .tearm_xieyi .table .head .td_first {
+    .container .term_xieyi .table .head .td_first {
       width: 43%; }
-    .container .tearm_xieyi .table .body .tr .td {
+    .container .term_xieyi .table .body .tr .td {
       line-height: 25px;
       text-align: left;
       height: auto;
       padding: 10px; }
-    .container .tearm_xieyi .table .body .tr .td_first {
+    .container .term_xieyi .table .body .tr .td_first {
       width: 43%; }
-    .container .tearm_xieyi .info {
+    .container .term_xieyi .info {
       font-size: 14px;
       text-align: justify;
       line-height: 25px; }
-    .container .tearm_xieyi .padding_text_index {
+    .container .term_xieyi .padding_text_index {
       padding-left: 20px; }
-    .container .tearm_xieyi .title_h3 {
+    .container .term_xieyi .title_h3 {
       padding-top: 0px;
       margin-bottom: 10px;
       padding-left: 0px;
       height: 102px;
       width: 260px; }
-      .container .tearm_xieyi .title_h3 span {
+      .container .term_xieyi .title_h3 span {
         font-size: 18px;
         margin-left: 16px;
         line-height: 25px;
         font-weight: 700; }
-      .container .tearm_xieyi .title_h3 img {
+      .container .term_xieyi .title_h3 img {
         width: 16px;
         height: 16px; }
-    .container .tearm_xieyi .tearm_icon {
+    .container .term_xieyi .term_icon {
       width: 102px;
       height: 102px;
       top: 0px;

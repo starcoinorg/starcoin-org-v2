@@ -37,7 +37,7 @@
     </script>
     <title></title>
 </head>
-        <link rel="stylesheet" type="text/css" href="css/tearm.css" />
+        <link rel="stylesheet" type="text/css" href="css/term_xieyi.css" />
 </head>
 
 <body>
@@ -100,32 +100,32 @@
                     {
                         name: '增强的中本聪共识协议',
                         i18nName: 'navLearnXieyi',
-                        url: 'tearm_xieyi.html'
+                        url: 'term_xieyi.html'
                     },
                     {
                         name: '状态存储',
                         i18nName: 'navLearnStorage',
-                        url: 'tearm_storage.html'
+                        url: 'term_storage.html'
                     },
                     {
                         name: '治理体系',
                         i18nName: 'navLearnTixi',
-                        url: 'tearm_tixi.html'
+                        url: 'term_tixi.html'
                     },
                     {
                         name: 'Move,虚拟机和标准库',
                         i18nName: 'navLearnBzk',
-                        url: 'tearm_bzk.html'
+                        url: 'term_bzk.html'
                     },
                     {
                         name: '安全的区块链',
                         i18nName: 'navLearnSecurity',
-                        url: 'tearm_security.html'
+                        url: 'term_security.html'
                     },
                     {
                         name: '分层网络',
                         i18nName: 'navLearnNetwork',
-                        url: 'tearm_network.html'
+                        url: 'term_network.html'
                     }
                 ]
             },
@@ -220,111 +220,127 @@
     });
 </script>
         <div class="container">
-            <div class="tearm_bzk">
-                <div class="tearm_icon"><img src="img/tixi_icon.png" /></div>
+            <div class="term_xieyi">
+                <div class="term_icon"><img src="img/bianzu_icon.png" /></div>
                 <div class="title_h3 title_icon">
                     <img src="img/whatwedo@2x.png" />
-                    <span>自我演进的去中心化链上治理体系</span>
+                    <span>增强的中本聪共识协议</span>
                 </div>
-                <div class="info mt10">
-                    区块链的治理结构包含了决策和沟通的过程，对区块链特别是公链生态具有隐形但长远的作用。链下治理始于上一代公链，新一代的公链则更青睐链上治理。 合约协议的代币治理也将以太坊上去中心化金融浪潮推到了前所未有的高峰，这也是下一代公链应该考虑的严肃议题。 长远来看链上治理符合区块链的开放内涵，Starcoin 在链上治理以及合约治理方面也做出了自己独特的改进。
+                <div class="info mt10">Starcoin
+                    共识是一种比特币中本聪共识的增强版本。为了加快出块速度和降低交易确认时间，我们引入叔块率等运行期数据，对出块时间，难度，出块奖励进行动态调整，可以最大限度利用网络，减少用户等待时间。此外，我们还提供了区块链的动态调整能力，一些关键参数通过链上治理机制来实现配置修改。
                 </div>
-                <div class="h3">治理是什么 <span>#</span></div>
-                <div class="info mt10">如果将区块链社区识为一个组织，治理是这个组织就改变区块链特性所做出的决策过程，尤其针对于共识和经济分配，可以说是区块链的“宪法”。在流程上说，治理包含提议者提议、参与者（投票者）投票、决策、部署、执行等几个内容。 治理的作用在于使得区块链系统进入一个更加长久、有序的发展过程，提升整个网络的价值。传统的组织一般局限于一国，治理机制遵循当地法律的规则，治理产生的争议可通过司法系统裁决。而去中心化的区块链治理，其参与者来自全球，无法依赖司法系统裁决，怎样从中抽象出一套合理治理机制，解决争议，构建约束力，仍处于探索阶段。</div>
-                <div class="info mt10">比特币的 BIP，以太坊的 EIP 等治理模式，基本属于链下治理模式。 一般流程是提出提案，社区讨论，核心开发者开发并发布版本，矿工进行节点升级，代码中约定在某个高度自动激活新特性。大多数情况下，这种治理模式也运作良好，但一旦社区中的开发者和矿工就某个特性之间产生不可调和的分歧，链和社区则会面临硬分叉的风险。</div>
-                <div class="info mt10">纵观比特币和以太坊面临的几次重大的分歧，可以发现社区治理面临的最大困境有两个：</div>
-                <div class="info padding_text_index20 mt10">
-                    1、没有一个明确的指标来判断哪一种主张在社区中达成了多数的共识。<br>
-                    2、链下协商的协议在链上没有约束力。
-                </div>
-                <div class="info mt10">因此，我们试图在 Starcoin 中进行链上治理，尝试一定程度解决上面的两个困境。</div>
-                <div class="info mt10">
-                    <img src="img/tixi_pt.png" />
-                </div>
-                <div class="info mt10">我们认为链上治理一定程度能解决前面提到的两个困境。首先无论治理的机制如何设计，投票最终会产生一个明确的结果，给社区传达一个明确的信息。其次，链上治理推迟了决策的时间节点，开发者和矿工可以先履行自己的职业责任，只是从技术角度评估提案的可行性，开发以及升级节点，然后再和社区成员一起决策是否激活以及在什么时候激活新的特性。最后，一旦链上投票产生结果，由于节点实际上已经都升级完成，最终投票结果在链上会自动执行，具有约束力。</div>
-                <div class="info mt10">所以我们提出了治理机制的设计原则：『技术创造可能，社区决定取舍』。在开发以及升级阶段，开发者和矿工应该对提案保持技术中立态度，等升级完成，需要投票的阶段，再作为社区成员一起来行使价值观选择权，决定取舍。</div>
-                <div class="info mt10">Starcoin 的链上治理有以下几个流程：</div>
-                <div class="info padding_text_index20 mt10">
-                    1、提案者发起提案，当前发起提案没有准入限制，任何系统参与者都可以发起提案。<br>
-                    2、经过公示后，投票者进行投票，当前的投票机制是 Token 质押投票，票数与质押的 Token 数量成正比。<br>
-                    3、投票期过后，任何系统参与者都可以调用，决策合约进行提案决策。<br>
-                    4、决策通过后的提案，再次经过公示后，可由任意系统参与者提交执行。
-                </div>
-                <div class="info mt10">Starcoin 的链上治理机制有几个重要的设计考量：</div>
-                <div class="info_title padding_text_index20 mt10">◆ 治理制度可治理</div>
-                <div class="info padding_text_index mt10">每个链上治理系统的设计都需要考虑：</div>
-                <div class="info padding_text_index20 mt10">
-                    1、提案者和投票者的准入原则。<br>
-                    2、决策时的投票参与率以及投票通过率。<br>
-                    3、投票制度的选择。
-                </div>
+                <div class="info mt10">中本聪共识最早由比特币采用，也是区块链早期广泛使用的一种共识方法
+                    [1]。目前为止中本聪共识是容错能力最好的公有链共识机制，其设计简单，通讯开销低，经过了数十年的验证。但是其吞吐能力较低，出块时间过长，用户体验较差。因此，我们选择了对中本聪共识进行加强，使得
+                    Starcoin 具备以下的特性：</div>
                 <div class="info padding_text_index mt10">
-                    这几个因素决定了治理系统的去中心化程度以及决策执行效率。但由于治理的复杂性，不可能在一开始就设计一个完美的治理制度，所以治理制度本身的演进机制非常重要。Starcoin 系统的参与者可以通过链上治理策略对该系统本身的治理参数以及投票制度进行去中心化治理升级，不断演进，以适应瞬息万变，不断更新的区块链技术热潮。
+                    1、动态调整出块速度以及区块大小，在安全，网络吞吐，用户体验之间寻求平衡。<br>
+                    2、共识相关的参数可通过社区治理，经合约升级。
                 </div>
-                <div class="info_title padding_text_index20 mt10">◆ 治理制度可复用</div>
-                <div class="info padding_text_index mt10">很多去中心化金融协议构建于代币治理系统之上，通过协议代币的治理来不断迭代协议。 Starcoin 的治理系统原生支持任意的代币协议，代币协议只需要接入 Starcoin 的治理合约即可实现代币治理，从而复用整个治理制度。 合约治理内置在 Starcoin 的合约标准库中，这使得去中心化金融协议能够更好的利用代币治理达到协议的持续升级和发展。</div>
-                <div class="info_title padding_text_index20 mt10">◆ 最低准入门槛</div>
-                <div class="info padding_text_index mt10">治理过程中多种角色，无论是提案者，投票者，执行者，都尽量不设置准入机制，保证最低准入门槛，充分利用社区的群体智慧。</div>
-                <div class="info_title padding_text_index20 mt10">◆ 小结</div>
+                <div class="h3">引入叔块 <span>#</span></div>
+                <div class="info mt10">中本聪共识中，要提高网络吞吐，可以通过 (1) 增加区块大小，或 (2)
+                    缩短出块间隔。这两种办法都会增大网络中竞争块出现的概率。而这些竞争块中，最多只有一个区块能够进入主链，为打包交易提升吞吐作出贡献，而其他块则成为孤块。区块越大，出块时间越短，孤块会越多，而孤块率增加会降低双花攻击的难度，所以我们需要将孤块率限制在一个阈值之内。
+                </div>
+                <div class="info mt10">我们在孤块基础上，引入叔块概念。首先，定义每 N 个块为一个 Epoch。当满足如下条时，则定义区块 B2 为 B1 的叔块：</div>
                 <div class="info padding_text_index mt10">
-                    区块链的成功取决于其进化能力。这种演变将带来许多方向性决定，而围绕这些决定的治理最能决定系统的未来。有别于其他拥有治理能力的区块链系统， Starcoin 将链本身的治理和合约协议的治理统一在一起，使得 Starcoin 的治理机制能够服务于更广泛的去中心化应用， 同时可通过自演进，不断升级成更加成熟的治理制度。
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="modular">
-                <div class="head">
-                    <div class="title">The name of the title</div>
-                    <div class="desc">The name of the titleThe name of the titleThe name of the title</div>
-                </div>
-                <div class="list">
-                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
-                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
-                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
-                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
-                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="modular">
-                <div class="head">
-                    <div class="title">The name of the title</div>
-                    <div class="desc">The name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the title</div>
-                </div>
-                <div class="flex_list">
-                    <div class="li">
-                        <div class="title">The name of the title</div>
-                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
-                        <div class="link">The name of the title ↗</div>
+                    1、在同一个 Epoch 内。<br>
+                    2、B2 的父块属于 B1 的任一祖先。</div>
+                <div class="info mt10">我们用 Epoch
+                    内的叔块率评估网络的拥塞情况，并以此作为出块时间，出块大小调整的依据，实现充分利用网络，提升吞吐的同时，也可避免区块过大或者出块时间太短导致孤块过多，安全降低。</div>
+                <div class="h3">动态出块时间调整 <span>#</span></div>
+                <div class="info mt10">为了将叔块维持在一个合适的阈值内，在每个 Epoch 末，都会重新调整下一个周期的出块时间。</div>
+                <div class="info mt10">
+                    如果叔块率较高，则说当前的出块时间间隔下，网络中存在较多的分叉和孤块，我们需要调大出块的时间，缓解此问题。反之，则说明全网出块情况良好，还能进一步缩短出块时间，进一步提高全网吞吐。</div>
+                <div class="info mt10">算法引入以下参数：</div>
+                <div class="table">
+                    <div class="head">
+                        <div class="td">名称</div>
+                        <div class="td">描述</div>
                     </div>
-                    <div class="li">
-                        <div class="title">The name of the title</div>
-                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
-                        <div class="link">The name of the title ↗</div>
-                    </div>
-                    <div class="li">
-                        <div class="title">The name of the title</div>
-                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
-                        <div class="link">The name of the title ↗</div>
+                    <div class="body">
+                        <div class="tr">
+                            <div class="td">epoch_avg_time</div>
+                            <div class="td">上一个周期内的算数平均出块时间</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td">epoch_avg_time</div>
+                            <div class="td">上一个周期内的算数平均出块时间</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td">epoch_avg_time</div>
+                            <div class="td">上一个周期内的算数平均出块时间</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td">epoch_avg_time</div>
+                            <div class="td">上一个周期内的算数平均出块时间</div>
+                        </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="modular">
-                <div class="head">
-                    <div class="title">The name of the title</div>
-                    <div class="desc">The name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the title</div>
+                <div class="info mt10">计算方式:</div>
+                <div class="code_info mt20">next_time_target <span class="symbolColor">=</span> epoch_avg_time <span class="symbolColor">*</span> epoch_uncles_rate <span class="symbolColor">/</span> uncles_rate_target</div>
+                <div class="h3">动态调整区块大小 <span>#</span></div>
+                <div class="info mt10">我们希望区块的大小限制能根据网络情况来动态调节，而区块的大小和区块中所有交易使用掉的 Gas 成正比，所以我们通过调整区块的 Gas 限制来调整区块大小。</div>
+                <div class="info mt20">针对一个 Epoch 内的所有区块 Gas 消耗统计，并结合出块速度，动态的调整区块 Gas 限制。当出块速度达到系统设置的最小值，全网拥塞情况处于良好，因此可以调大区块的 Gas 限制，增加区块大小；反之，当出块速度达到系统设置的最大值时，全网较为拥塞，因此需要降低区块的 Gas 限制，降低区块大小。</div>
+                <div class="h3">动态难度调整机制  <span>#</span></div>
+                <div class="info mt10">Starcoin 改进了中本聪共识的难度调整算法，使得:</div>
+                <div class="info padding_text_index mt10">
+                    1、反应更快速：当全网算力发生变化时，难度值能够快速做出反应。<br>
+                    2、出块时间更稳定：在全网算力不变时，有的块偶发性的出快或者出慢，难度不应该剧烈的波动。
                 </div>
-                <div class="flex_h_list">
-                    <div class="li">
-                        <div class="title">The name of the title</div>
-                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
-                        <div class="button">+ MORE</div>
+                <div class="info mt10">通过以下办法进行改进:</div>
+                <div class="info padding_text_index mt10">
+                    1、根据叔块率调整出块时间从而调整下一个 Epoch 的难度。<br>
+                    2、难度计算中引入区块高度做为权重，对平均出块时间的计算为高度加权的算术平均。<br>
+                    3、使用更短的难度周期。
+                </div>
+                <div class="info mt10">算法引入以下参数:</div>
+                <div class="table">
+                    <div class="head">
+                        <div class="td td_first">名称</div>
+                        <div class="td td_last">描述</div>
                     </div>
-                    <div class="li">
-                        <div class="title">The name of the title</div>
-                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
-                        <div class="button">+ MORE</div>
+                    <div class="body">
+                        <div class="tr">
+                            <div class="td td_first">block_time_target</div>
+                            <div class="td td_last">下一 Epoch 的出块时间</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td td_first">n</div>
+                            <div class="td td_last">难度调整周期内的区块数(小于 Epoch 内的区块数，初始值为 Epoch 区块数的十分之一)</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td td_first">next_target</div>
+                            <div class="td td_last">下一周期的难度目标</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td td_first">block_target_i</div>
+                            <div class="td td_last">高度为 i 的区块难度</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td td_first">block_time_i</div>
+                            <div class="td td_last">高度为 i 的区块出块时间</div>
+                        </div>
                     </div>
+                </div>
+                <div class="info mt10">计算方式:</div>
+                <div class="code_info mt20">next_target <span class="symbolColor">=</span> avg_target <span class="symbolColor">*</span> avg_time <span class="symbolColor">/</span> block_time_target</div>
+                <div class="info mt10">其中:</div>
+                <div class="code_all_info mt20">
+                    Arithmetic Mean avg_target<br>
+                    avg_target <span class="symbolColor">=</span> (block_target_cur-n<span class="symbolColor">+</span><span class="numberColor">1</span> <span class="symbolColor">+</span> block_target_cur-n <span class="symbolColor">+</span>...<span class="symbolColor">+</span> block_target_cur) <span class="symbolColor">/</span> n<br><br>
+
+                    Weighted Arithmetic Mean avg_time<br>
+                    avg_time <span class="symbolColor">=</span> block_time_cur<span class="symbolColor">-</span>n<span class="">+</span><span class="numberColor">1</span> <span class="symbolColor">*</span> <span class="numberColor">1</span> <span class="symbolColor">+</span> block_time_cur<span class="symbolColor">-</span>n <span class="symbolColor">*</span> <span class="numberColor">2</span> <span class="symbolColor">+</span>...<span class="symbolColor">+</span> block_time_cur <span class="symbolColor">*</span> n <span class="symbolColor">/</span> ((n) <span class="symbolColor">*</span> (n<span class="symbolColor">+</span><span class="numberColor">1</span>) <span class="symbolColor">/</span> <span class="numberColor">2</span>)
+                </div>
+                <div class="h3">动态出块奖励调整  <span>#</span></div>
+                <div class="info mt10">Starcoin 出块奖励的调整遵循如下原则：</div>
+                <div class="info padding_text_index mt10">
+                    1、奖励为难度 / 时间线性。根据下一个周期的出块时间，来动态调整出块奖励。<br>
+                    2、分配一定比例的奖励给汇报叔块的区块。</div>
+                <div class="info mt10">Starcoin 的动态调整的算法依赖叔块率的数据，而叔块信息需要矿工额外的付出成本去收集，为了奖励矿工在区块中汇报叔块信息，会分配一定的奖励给当前汇报叔块的矿工。</div>
+                <div class="info mt10">叔块奖励计算方式：</div>
+                <div class="code_all_info">
+                    reward <span class="symbolColor">=</span> next_epoch_block_reward <span class="symbolColor">*</span> (<span class="numberColor">1</span> + reward_per_uncle_percent <span class="symbolColor">*</span> uncles)<br>
+                    next_epoch_reward_block <span class="symbolColor">=</span> base_reward_per_block <span class="symbolColor">*</span> block_next_time_target <span class="symbolColor">/</span> base_time_target
                 </div>
                 <div class="clearfix"></div>
             </div>

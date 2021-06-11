@@ -130,53 +130,53 @@
         color: #1C4BDE;
         margin-left: 10px; }
 
-.container .tearm_bzk {
+.container .term_bzk {
   padding: 0 55px;
   position: relative;
   background: #ffffff;
   padding-bottom: 40px;
   border-radius: 4px; }
-  .container .tearm_bzk .pt53 {
+  .container .term_bzk .pt53 {
     padding-top: 53px; }
-  .container .tearm_bzk .info_detail {
+  .container .term_bzk .info_detail {
     width: 1200px;
     margin: 0 auto;
     background: #F9F9FB;
     border-radius: 10px;
     display: none;
     padding-bottom: 30px; }
-    .container .tearm_bzk .info_detail .code_list {
+    .container .term_bzk .info_detail .code_list {
       width: 1090px;
       margin: 0 auto;
       background: #FFFFFF;
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid #021429; }
-      .container .tearm_bzk .info_detail .code_list ul li {
+      .container .term_bzk .info_detail .code_list ul li {
         font-size: 18px;
         font-family: 'font-PingFangBold';
         font-weight: 600;
         color: #151D36;
         padding: 15px 47px;
         cursor: pointer; }
-        .container .tearm_bzk .info_detail .code_list ul li p {
+        .container .term_bzk .info_detail .code_list ul li p {
           font-family: 'font-PingFangRegular';
           font-weight: 400;
           margin-top: 10px;
           color: #9595ab; }
-        .container .tearm_bzk .info_detail .code_list ul li:nth-child(even) {
+        .container .term_bzk .info_detail .code_list ul li:nth-child(even) {
           background: #F9F9FB; }
-        .container .tearm_bzk .info_detail .code_list ul li:hover {
+        .container .term_bzk .info_detail .code_list ul li:hover {
           background: #1C4BDE !important;
           color: #ffffff; }
-          .container .tearm_bzk .info_detail .code_list ul li:hover p {
+          .container .term_bzk .info_detail .code_list ul li:hover p {
             color: #ffffff; }
-      .container .tearm_bzk .info_detail .code_list ul .active {
+      .container .term_bzk .info_detail .code_list ul .active {
         background: #1C4BDE !important;
         color: #ffffff; }
-        .container .tearm_bzk .info_detail .code_list ul .active p {
+        .container .term_bzk .info_detail .code_list ul .active p {
           color: #ffffff; }
-      .container .tearm_bzk .info_detail .code_list .head {
+      .container .term_bzk .info_detail .code_list .head {
         height: 80px;
         background: #021429;
         text-align: center;
@@ -186,7 +186,7 @@
         font-family: "font-PingFangMedium";
         font-weight: 500;
         color: #FFFFFF; }
-        .container .tearm_bzk .info_detail .code_list .head .tab {
+        .container .term_bzk .info_detail .code_list .head .tab {
           width: 66px;
           display: -webkit-box;
           display: -webkit-flex;
@@ -199,26 +199,26 @@
           -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
                   justify-content: space-between; }
-          .container .tearm_bzk .info_detail .code_list .head .tab .circle {
+          .container .term_bzk .info_detail .code_list .head .tab .circle {
             width: 14px;
             height: 14px;
             border-radius: 50%;
             overflow: hidden; }
-          .container .tearm_bzk .info_detail .code_list .head .tab .colour1 {
+          .container .term_bzk .info_detail .code_list .head .tab .colour1 {
             background: #FF605F; }
-          .container .tearm_bzk .info_detail .code_list .head .tab .colour2 {
+          .container .term_bzk .info_detail .code_list .head .tab .colour2 {
             background: #FFD331; }
-          .container .tearm_bzk .info_detail .code_list .head .tab .colour3 {
+          .container .term_bzk .info_detail .code_list .head .tab .colour3 {
             background: #32DF95; }
-    .container .tearm_bzk .info_detail .code_icon {
+    .container .term_bzk .info_detail .code_icon {
       height: 426px;
       margin-top: 39px;
       margin-bottom: 30px; }
-      .container .tearm_bzk .info_detail .code_icon img {
+      .container .term_bzk .info_detail .code_icon img {
         width: 100%; }
-    .container .tearm_bzk .info_detail .plr30 {
+    .container .term_bzk .info_detail .plr30 {
       padding: 0 34px; }
-    .container .tearm_bzk .info_detail .info_tab {
+    .container .term_bzk .info_detail .info_tab {
       width: 1134px;
       margin: 0 auto;
       height: 4px;
@@ -226,7 +226,7 @@
       position: relative;
       margin-bottom: 38px;
       margin-top: 50px; }
-      .container .tearm_bzk .info_detail .info_tab .tab_tap {
+      .container .term_bzk .info_detail .info_tab .tab_tap {
         position: absolute;
         width: 682px;
         margin: 0 auto;
@@ -241,7 +241,7 @@
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .container .tearm_bzk .info_detail .info_tab .tab_tap .li {
+        .container .term_bzk .info_detail .info_tab .tab_tap .li {
           width: 172px;
           height: 48px;
           border-radius: 24px;
@@ -259,7 +259,7 @@
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center; }
-          .container .tearm_bzk .info_detail .info_tab .tab_tap .li span {
+          .container .term_bzk .info_detail .info_tab .tab_tap .li span {
             width: 125px;
             height: 25px;
             font-size: 18px;
@@ -267,11 +267,11 @@
             font-weight: 500;
             color: #272B3E;
             line-height: 25px; }
-        .container .tearm_bzk .info_detail .info_tab .tab_tap .active {
+        .container .term_bzk .info_detail .info_tab .tab_tap .active {
           background: #021429; }
-          .container .tearm_bzk .info_detail .info_tab .tab_tap .active span {
+          .container .term_bzk .info_detail .info_tab .tab_tap .active span {
             color: #FFFFFF; }
-      .container .tearm_bzk .info_detail .info_tab .tab_ul {
+      .container .term_bzk .info_detail .info_tab .tab_ul {
         position: absolute;
         width: 534px;
         margin: 0 auto;
@@ -286,32 +286,32 @@
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        .container .tearm_bzk .info_detail .info_tab .tab_ul .circle {
+        .container .term_bzk .info_detail .info_tab .tab_ul .circle {
           width: 12px;
           height: 12px;
           border-radius: 50%;
           background: #021429;
           border: 2px solid #FFFFFF; }
-  .container .tearm_bzk .tearm_icon {
+  .container .term_bzk .term_icon {
     width: 369px;
     height: 369px;
     position: absolute;
     top: 28px;
     right: 109px; }
-    .container .tearm_bzk .tearm_icon img {
+    .container .term_bzk .term_icon img {
       width: 100%; }
-  .container .tearm_bzk .info {
+  .container .term_bzk .info {
     font-size: 16px;
     font-family: 'font-PingFangRegular';
     font-weight: 400;
     color: #272B3E;
     line-height: 40px;
     margin-bottom: 10px; }
-    .container .tearm_bzk .info img {
+    .container .term_bzk .info img {
       width: 100%; }
-    .container .tearm_bzk .info .text-back {
+    .container .term_bzk .info .text-back {
       background: #ECECEC; }
-  .container .tearm_bzk .code_info {
+  .container .term_bzk .code_info {
     height: 60px;
     line-height: 60px;
     font-family: "font-PingFangMedium";
@@ -319,28 +319,28 @@
     border-radius: 4px;
     color: #ffffff;
     padding-left: 50px; }
-    .container .tearm_bzk .code_info span {
+    .container .term_bzk .code_info span {
       color: red; }
-  .container .tearm_bzk .info_title {
+  .container .term_bzk .info_title {
     font-size: 16px;
     font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #272B3E;
     margin-bottom: 10px; }
-    .container .tearm_bzk .info_title img {
+    .container .term_bzk .info_title img {
       width: 100%; }
-  .container .tearm_bzk .padding_text_index {
+  .container .term_bzk .padding_text_index {
     padding-left: 41px; }
-  .container .tearm_bzk .padding_text_index20 {
+  .container .term_bzk .padding_text_index20 {
     padding-left: 20px; }
-  .container .tearm_bzk .padding_text_index54 {
+  .container .term_bzk .padding_text_index54 {
     padding-left: 54px; }
-  .container .tearm_bzk .wl_icon {
+  .container .term_bzk .wl_icon {
     width: 92%;
     margin: 0 auto; }
-    .container .tearm_bzk .wl_icon img {
+    .container .term_bzk .wl_icon img {
       width: 100%; }
-  .container .tearm_bzk .info1 {
+  .container .term_bzk .info1 {
     font-size: 16px;
     font-family: 'font-PingFangRegular';
     font-weight: 400;
@@ -348,15 +348,15 @@
     line-height: 40px;
     margin-bottom: 10px;
     padding-left: 20px; }
-  .container .tearm_bzk .h3 {
+  .container .term_bzk .h3 {
     font-size: 18px;
     font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #272B3E;
     line-height: 30px; }
-    .container .tearm_bzk .h3 span {
+    .container .term_bzk .h3 span {
       color: #1C4BDE; }
-  .container .tearm_bzk .title_h3 {
+  .container .term_bzk .title_h3 {
     width: 755px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -369,10 +369,10 @@
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 141px; }
-    .container .tearm_bzk .title_h3 img {
+    .container .term_bzk .title_h3 img {
       width: 34px;
       height: 34px; }
-    .container .tearm_bzk .title_h3 span {
+    .container .term_bzk .title_h3 span {
       font-size: 64px;
       font-family: "font-PingFangMedium";
       font-weight: 500;
@@ -380,12 +380,12 @@
       line-height: 90px;
       letter-spacing: 1px;
       margin-left: 26px; }
-  .container .tearm_bzk .title_icon {
+  .container .term_bzk .title_icon {
     -webkit-box-align: initial;
     -webkit-align-items: initial;
         -ms-flex-align: initial;
             align-items: initial; }
-    .container .tearm_bzk .title_icon img {
+    .container .term_bzk .title_icon img {
       margin-top: 28px; }
 
 @media (max-width: 768px) {
@@ -425,66 +425,66 @@
         margin-bottom: 15px; }
         .container .modular .list .item span {
           font-size: 14px; }
-  .container .tearm_bzk {
+  .container .term_bzk {
     padding: 0 15px;
     padding-bottom: 20px; }
-    .container .tearm_bzk .info {
+    .container .term_bzk .info {
       font-size: 14px;
       text-align: justify;
       line-height: 25px; }
-    .container .tearm_bzk .info1 {
+    .container .term_bzk .info1 {
       padding-left: 10px;
       font-size: 14px;
       text-align: justify;
       line-height: 25px; }
-    .container .tearm_bzk .info_title {
+    .container .term_bzk .info_title {
       font-size: 14px; }
-    .container .tearm_bzk .padding_text_index20 {
+    .container .term_bzk .padding_text_index20 {
       padding-left: 0px; }
-    .container .tearm_bzk .padding_text_index54 {
+    .container .term_bzk .padding_text_index54 {
       padding-left: 20px; }
-    .container .tearm_bzk .title_h3 {
+    .container .term_bzk .title_h3 {
       padding-top: 0px;
       margin-bottom: 10px;
       padding-left: 0px;
       height: 102px;
       width: 260px; }
-      .container .tearm_bzk .title_h3 span {
+      .container .term_bzk .title_h3 span {
         font-size: 18px;
         margin-left: 16px;
         line-height: 25px;
         font-weight: 700; }
-      .container .tearm_bzk .title_h3 img {
+      .container .term_bzk .title_h3 img {
         width: 16px;
         height: 16px; }
-    .container .tearm_bzk .title_icon {
+    .container .term_bzk .title_icon {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .container .tearm_bzk .title_icon img {
+      .container .term_bzk .title_icon img {
         margin-top: 0px;
         margin-bottom: 22px; }
-    .container .tearm_bzk .m-tx-mb40 {
+    .container .term_bzk .m-tx-mb40 {
       margin-bottom: 40px; }
-    .container .tearm_bzk .tearm_icon {
+    .container .term_bzk .term_icon {
       width: 102px;
       height: 102px;
       top: 0px;
       right: 0px; }
-    .container .tearm_bzk .padding_text_index {
+    .container .term_bzk .padding_text_index {
       padding-left: 20px; }
-    .container .tearm_bzk .m-mt20 {
+    .container .term_bzk .m-mt20 {
       margin-top: 20px; }
-    .container .tearm_bzk .m-mt40 {
+    .container .term_bzk .m-mt40 {
       margin-top: 40px; }
-    .container .tearm_bzk .info_detail {
+    .container .term_bzk .info_detail {
       width: 100%;
       padding-top: 20px;
       padding-bottom: 0px; }
-      .container .tearm_bzk .info_detail .code_list {
+      .container .term_bzk .info_detail .code_list {
         width: auto; }
-        .container .tearm_bzk .info_detail .code_list .head {
+        .container .term_bzk .info_detail .code_list .head {
           height: 40px;
           background: #021429;
           text-align: center;
@@ -494,34 +494,34 @@
           font-family: "font-PingFangMedium";
           font-weight: 500;
           color: #FFFFFF; }
-          .container .tearm_bzk .info_detail .code_list .head .tab {
+          .container .term_bzk .info_detail .code_list .head .tab {
             width: 40px;
             position: absolute;
             top: 50%;
             left: 10px;
             margin-top: -5px; }
-            .container .tearm_bzk .info_detail .code_list .head .tab .circle {
+            .container .term_bzk .info_detail .code_list .head .tab .circle {
               width: 10px;
               height: 10px; }
-        .container .tearm_bzk .info_detail .code_list ul li {
+        .container .term_bzk .info_detail .code_list ul li {
           padding: 15px 15px; }
-      .container .tearm_bzk .info_detail .code_icon {
+      .container .term_bzk .info_detail .code_icon {
         height: 100%; }
-      .container .tearm_bzk .info_detail .plr30 {
+      .container .term_bzk .info_detail .plr30 {
         padding: 0 15px; }
-      .container .tearm_bzk .info_detail .m-plr30 {
+      .container .term_bzk .info_detail .m-plr30 {
         padding: 0 0px; }
-      .container .tearm_bzk .info_detail .info_tab {
+      .container .term_bzk .info_detail .info_tab {
         width: auto;
         margin-bottom: 20px; }
-        .container .tearm_bzk .info_detail .info_tab .tab_ul {
+        .container .term_bzk .info_detail .info_tab .tab_ul {
           width: auto;
           margin: 0px 45px auto; }
-        .container .tearm_bzk .info_detail .info_tab .tab_tap {
+        .container .term_bzk .info_detail .info_tab .tab_tap {
           width: auto;
           top: -30px; }
-          .container .tearm_bzk .info_detail .info_tab .tab_tap .li {
+          .container .term_bzk .info_detail .info_tab .tab_tap .li {
             width: 100px;
             height: 24px; }
-            .container .tearm_bzk .info_detail .info_tab .tab_tap .li span {
+            .container .term_bzk .info_detail .info_tab .tab_tap .li span {
               font-size: 10px; } }

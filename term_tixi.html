@@ -37,7 +37,7 @@
     </script>
     <title></title>
 </head>
-        <link rel="stylesheet" type="text/css" href="css/tearm.css" />
+        <link rel="stylesheet" type="text/css" href="css/term.css" />
 </head>
 
 <body>
@@ -100,32 +100,32 @@
                     {
                         name: '增强的中本聪共识协议',
                         i18nName: 'navLearnXieyi',
-                        url: 'tearm_xieyi.html'
+                        url: 'term_xieyi.html'
                     },
                     {
                         name: '状态存储',
                         i18nName: 'navLearnStorage',
-                        url: 'tearm_storage.html'
+                        url: 'term_storage.html'
                     },
                     {
                         name: '治理体系',
                         i18nName: 'navLearnTixi',
-                        url: 'tearm_tixi.html'
+                        url: 'term_tixi.html'
                     },
                     {
                         name: 'Move,虚拟机和标准库',
                         i18nName: 'navLearnBzk',
-                        url: 'tearm_bzk.html'
+                        url: 'term_bzk.html'
                     },
                     {
                         name: '安全的区块链',
                         i18nName: 'navLearnSecurity',
-                        url: 'tearm_security.html'
+                        url: 'term_security.html'
                     },
                     {
                         name: '分层网络',
                         i18nName: 'navLearnNetwork',
-                        url: 'tearm_network.html'
+                        url: 'term_network.html'
                     }
                 ]
             },
@@ -220,60 +220,111 @@
     });
 </script>
         <div class="container">
-            <div class="tearm_bzk">
-                <div class="tearm_icon"><img src="img/anquan_icon.png" /></div>
-                <div class="title_h3">
+            <div class="term_bzk">
+                <div class="term_icon"><img src="img/tixi_icon.png" /></div>
+                <div class="title_h3 title_icon">
                     <img src="img/whatwedo@2x.png" />
-                    <span>安全的区块链</span>
+                    <span>自我演进的去中心化链上治理体系</span>
                 </div>
                 <div class="info mt10">
-                    Starcoin 从设计之初就把「安全」作为首要目标之一，从基础层、共识层、协议层、扩展层、应用层等多层面进行深入思考，从数据逻辑、智能合约、操作权等多维度进行深度设计，力争全方位覆盖，全力保障链和数字资产的安全。</div>
-
+                    区块链的治理结构包含了决策和沟通的过程，对区块链特别是公链生态具有隐形但长远的作用。链下治理始于上一代公链，新一代的公链则更青睐链上治理。 合约协议的代币治理也将以太坊上去中心化金融浪潮推到了前所未有的高峰，这也是下一代公链应该考虑的严肃议题。 长远来看链上治理符合区块链的开放内涵，Starcoin 在链上治理以及合约治理方面也做出了自己独特的改进。
+                </div>
+                <div class="h3">治理是什么 <span>#</span></div>
+                <div class="info mt10">如果将区块链社区识为一个组织，治理是这个组织就改变区块链特性所做出的决策过程，尤其针对于共识和经济分配，可以说是区块链的“宪法”。在流程上说，治理包含提议者提议、参与者（投票者）投票、决策、部署、执行等几个内容。 治理的作用在于使得区块链系统进入一个更加长久、有序的发展过程，提升整个网络的价值。传统的组织一般局限于一国，治理机制遵循当地法律的规则，治理产生的争议可通过司法系统裁决。而去中心化的区块链治理，其参与者来自全球，无法依赖司法系统裁决，怎样从中抽象出一套合理治理机制，解决争议，构建约束力，仍处于探索阶段。</div>
+                <div class="info mt10">比特币的 BIP，以太坊的 EIP 等治理模式，基本属于链下治理模式。 一般流程是提出提案，社区讨论，核心开发者开发并发布版本，矿工进行节点升级，代码中约定在某个高度自动激活新特性。大多数情况下，这种治理模式也运作良好，但一旦社区中的开发者和矿工就某个特性之间产生不可调和的分歧，链和社区则会面临硬分叉的风险。</div>
+                <div class="info mt10">纵观比特币和以太坊面临的几次重大的分歧，可以发现社区治理面临的最大困境有两个：</div>
+                <div class="info padding_text_index20 mt10">
+                    1、没有一个明确的指标来判断哪一种主张在社区中达成了多数的共识。<br>
+                    2、链下协商的协议在链上没有约束力。
+                </div>
+                <div class="info mt10">因此，我们试图在 Starcoin 中进行链上治理，尝试一定程度解决上面的两个困境。</div>
                 <div class="info mt10">
-                    <img src="img/qukuailian.png" />
+                    <img src="img/tixi_pt.png" />
                 </div>
-                <div class="h3">基础层安全 <span>#</span></div>
-                <div class="info mt10">Starcoin 使用 Rust 语言开发，保障基础组件的内存安全与高效。众所周知，使用 C/C++ 语言经常有内存安全方面的问题，而其他一些高级语言如 Java/Go/Python 等，受 Runtime 和垃圾回收机制等方面的影响，执行效率通常会比 C/C++ 略逊一筹。Rust 语言集二者长处于一身，在保证了内存安全的同时，又兼顾了极致的执行效率。Starcoin 在选择开发语言的时候充分考虑到了安全性和运行效率等因素，选择 Rust 语言开发，最大程度上保障 Starcoin 的安全与高效。</div>
-                <div class="info mt10">在 Starcoin 的整体设计中，提供了四个层面的数据校验机制：</div>
+                <div class="info mt10">我们认为链上治理一定程度能解决前面提到的两个困境。首先无论治理的机制如何设计，投票最终会产生一个明确的结果，给社区传达一个明确的信息。其次，链上治理推迟了决策的时间节点，开发者和矿工可以先履行自己的职业责任，只是从技术角度评估提案的可行性，开发以及升级节点，然后再和社区成员一起决策是否激活以及在什么时候激活新的特性。最后，一旦链上投票产生结果，由于节点实际上已经都升级完成，最终投票结果在链上会自动执行，具有约束力。</div>
+                <div class="info mt10">所以我们提出了治理机制的设计原则：『技术创造可能，社区决定取舍』。在开发以及升级阶段，开发者和矿工应该对提案保持技术中立态度，等升级完成，需要投票的阶段，再作为社区成员一起来行使价值观选择权，决定取舍。</div>
+                <div class="info mt10">Starcoin 的链上治理有以下几个流程：</div>
+                <div class="info padding_text_index20 mt10">
+                    1、提案者发起提案，当前发起提案没有准入限制，任何系统参与者都可以发起提案。<br>
+                    2、经过公示后，投票者进行投票，当前的投票机制是 Token 质押投票，票数与质押的 Token 数量成正比。<br>
+                    3、投票期过后，任何系统参与者都可以调用，决策合约进行提案决策。<br>
+                    4、决策通过后的提案，再次经过公示后，可由任意系统参与者提交执行。
+                </div>
+                <div class="info mt10">Starcoin 的链上治理机制有几个重要的设计考量：</div>
+                <div class="info_title padding_text_index20 mt10">◆ 治理制度可治理</div>
+                <div class="info padding_text_index mt10">每个链上治理系统的设计都需要考虑：</div>
+                <div class="info padding_text_index20 mt10">
+                    1、提案者和投票者的准入原则。<br>
+                    2、决策时的投票参与率以及投票通过率。<br>
+                    3、投票制度的选择。
+                </div>
                 <div class="info padding_text_index mt10">
-                    1、交易可校验：BlockHeader 包含一个全局交易累加器的根哈希，任何上链的交易都有对应的全局证明。<br>
-                    2、状态可校验：BlockHeader 包含一个全局状态状态树的根哈希，保障了状态可验证。<br>
-                    3、区块可校验：BlockHeader 包含一个 BlockBody 的哈希，用于校验 BlockBody 中的数据。<br>
-                    4、链可校验：BlockHeader 包含一个全局区块累加器的根哈希。任何一个区块可以提供一个和当前区块的关系证明，不需要遍历区块即可验证某个区块是否是当前区块的祖先区块。参考下图
-
+                    这几个因素决定了治理系统的去中心化程度以及决策执行效率。但由于治理的复杂性，不可能在一开始就设计一个完美的治理制度，所以治理制度本身的演进机制非常重要。Starcoin 系统的参与者可以通过链上治理策略对该系统本身的治理参数以及投票制度进行去中心化治理升级，不断演进，以适应瞬息万变，不断更新的区块链技术热潮。
                 </div>
-                <div class="info mt10">
-                    <img src="img/bianzhu.png" />
-                </div>
-                <div class="info mt10">以上是 Starcoin 安全性的基石。其中，「交易累加器」和「区块累积器」组成了 Starcoin 独特的「双累加器」模型，为数据安全提供坚实的基础。</div>
-                <div class="h3">共识层安全 <span>#</span></div>
-                <div class="info mt10">Starcoin 共识针对中本聪共识做了一些改良，在继承中本聪共识安全、完全去中心化和防篡改等特性的同时，在安全方面的改进体现在：</div>
+                <div class="info_title padding_text_index20 mt10">◆ 治理制度可复用</div>
+                <div class="info padding_text_index mt10">很多去中心化金融协议构建于代币治理系统之上，通过协议代币的治理来不断迭代协议。 Starcoin 的治理系统原生支持任意的代币协议，代币协议只需要接入 Starcoin 的治理合约即可实现代币治理，从而复用整个治理制度。 合约治理内置在 Starcoin 的合约标准库中，这使得去中心化金融协议能够更好的利用代币治理达到协议的持续升级和发展。</div>
+                <div class="info_title padding_text_index20 mt10">◆ 最低准入门槛</div>
+                <div class="info padding_text_index mt10">治理过程中多种角色，无论是提案者，投票者，执行者，都尽量不设置准入机制，保证最低准入门槛，充分利用社区的群体智慧。</div>
+                <div class="info_title padding_text_index20 mt10">◆ 小结</div>
                 <div class="info padding_text_index mt10">
-
-                    1、更加敏锐的感知和适应算力波动<br>
-                    2、可通过链上治理调整共识参数，降低硬分叉带来的安全风险的可能。
-
+                    区块链的成功取决于其进化能力。这种演变将带来许多方向性决定，而围绕这些决定的治理最能决定系统的未来。有别于其他拥有治理能力的区块链系统， Starcoin 将链本身的治理和合约协议的治理统一在一起，使得 Starcoin 的治理机制能够服务于更广泛的去中心化应用， 同时可通过自演进，不断升级成更加成熟的治理制度。
                 </div>
-                <div class="h3">协议层安全 <span>#</span></div>
-
-                <div class="info padding_text_index mt10">
-                    Starcoin 协议在数据安全和共识层安全的基础上进行设计，充分保障了链在非可信网络中的安全性。Starcoin 协议本着数据可验证的原则，对接收到的网络数据进行严格的校验，迅速甄别作恶节点，从而起到保护节点安全的作用。
+                <div class="clearfix"></div>
+            </div>
+            <div class="modular">
+                <div class="head">
+                    <div class="title">The name of the title</div>
+                    <div class="desc">The name of the titleThe name of the titleThe name of the title</div>
                 </div>
-                <div class="h3">扩展层安全 <span>#</span></div>
-                <div class="info mt10">为了更好地扩展区块链的能力，Starcoin 将智能合约的安全作为重要设计目标。Starcoin 使用 Move 语言作为智能合约语言。Move 语言的设计理念是让针对数字资产的编程更加安全、简单，所以在语言的设计过程中首先考虑了安全性和可靠性。Move 语言的设计者们从以往的智能合约安全事件中充分吸取经验教训，最大可能的降低 Move 合约出现意外漏洞或安全事件的风险，其安全性主要由以下几个方面保证：</div>
-                <div class="info padding_text_index mt10">
-                    1、自底向上的静态类型系统；<br>
-                    2、资源不可复制或者隐式丢弃；<br>
-                    3、资源按用户存储，重新定义链，合约，用户三方的数据操作权限；<br>
-                    4、引入形式化验证技术，通过数学原理来证明合约的安全性；
-
+                <div class="list">
+                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
+                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
+                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
+                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
+                    <div class="item">◆ <span>The name of the titleThe name of the titleThe name of the title ↗</span></div>
                 </div>
-                <div class="h3">应用层安全 <span>#</span></div>
-                <div class="info mt10">Starcoin 主要在以下层面支撑应用层的安全性：</div>
-                <div class="info padding_text_index"  style="margin-bottom: 0px;">
-                    1、提供多签交易，方便通过多签来管理数字资产。<br>
-                    2、提供私钥重置功能，在账号地址不变的情况下，可变更私钥。<br>
-                    3、应用层可通过前面提到的数据校验机制，方便地确定交易是否上链、验证状态以及区块是否合法，从而保证应用的安全与可靠。
+                <div class="clearfix"></div>
+            </div>
+            <div class="modular">
+                <div class="head">
+                    <div class="title">The name of the title</div>
+                    <div class="desc">The name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the title</div>
+                </div>
+                <div class="flex_list">
+                    <div class="li">
+                        <div class="title">The name of the title</div>
+                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
+                        <div class="link">The name of the title ↗</div>
+                    </div>
+                    <div class="li">
+                        <div class="title">The name of the title</div>
+                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
+                        <div class="link">The name of the title ↗</div>
+                    </div>
+                    <div class="li">
+                        <div class="title">The name of the title</div>
+                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
+                        <div class="link">The name of the title ↗</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modular">
+                <div class="head">
+                    <div class="title">The name of the title</div>
+                    <div class="desc">The name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the titleThe name of the title</div>
+                </div>
+                <div class="flex_h_list">
+                    <div class="li">
+                        <div class="title">The name of the title</div>
+                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
+                        <div class="button">+ MORE</div>
+                    </div>
+                    <div class="li">
+                        <div class="title">The name of the title</div>
+                        <div class="desc">The name of the titleThe name of the title The name of the title The name of the title  …</div>
+                        <div class="button">+ MORE</div>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>

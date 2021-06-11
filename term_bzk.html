@@ -37,7 +37,7 @@
     </script>
     <title></title>
 </head>
-        <link rel="stylesheet" type="text/css" href="css/tearm.css" />
+        <link rel="stylesheet" type="text/css" href="css/term.css" />
 </head>
 
 <body>
@@ -100,32 +100,32 @@
                     {
                         name: '增强的中本聪共识协议',
                         i18nName: 'navLearnXieyi',
-                        url: 'tearm_xieyi.html'
+                        url: 'term_xieyi.html'
                     },
                     {
                         name: '状态存储',
                         i18nName: 'navLearnStorage',
-                        url: 'tearm_storage.html'
+                        url: 'term_storage.html'
                     },
                     {
                         name: '治理体系',
                         i18nName: 'navLearnTixi',
-                        url: 'tearm_tixi.html'
+                        url: 'term_tixi.html'
                     },
                     {
                         name: 'Move,虚拟机和标准库',
                         i18nName: 'navLearnBzk',
-                        url: 'tearm_bzk.html'
+                        url: 'term_bzk.html'
                     },
                     {
                         name: '安全的区块链',
                         i18nName: 'navLearnSecurity',
-                        url: 'tearm_security.html'
+                        url: 'term_security.html'
                     },
                     {
                         name: '分层网络',
                         i18nName: 'navLearnNetwork',
-                        url: 'tearm_network.html'
+                        url: 'term_network.html'
                     }
                 ]
             },
@@ -220,8 +220,8 @@
     });
 </script>
         <div class="container">
-            <div class="tearm_bzk">
-                <div class="tearm_icon"><img src="img/tearm_bzk.png" /></div>
+            <div class="term_bzk">
+                <div class="term_icon"><img src="img/term_bzk.png" /></div>
                 <div class="title_h3 title_icon">
                     <img src="img/whatwedo@2x.png" />
                     <span>新一代智能合约编程语言、虚拟机和标准库</span>
@@ -232,7 +232,7 @@
                 <div class="info_detail pt53" style="display: block;">
                     <div class="plr30">
                         <div class="info_tab">
-                            <div id="tearm_tap" class="tab_tap">
+                            <div id="term_tap" class="tab_tap">
                                 <div class="li active">
                                     <span>Move 编程语言</span>
                                 </div>
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tearm_detail m-mt20">
+                        <div class="term_detail m-mt20">
                             <div class="info mt20 m-mt40">Move 编程语言最早出现在 Facebook 的 Diem 区块链项目中 [5]。作为一种面向数字资产的智能合约编程语言，Move 具有
                                 Resource 作为一等公民、灵活、安全、可验证等特性。这些特性和 Starcoin 的智能合约编程语言设计理念极为契合，因此 Starcoin 选择 Move
                                 做为其智能合约的首选编程语言。</div>
@@ -278,7 +278,7 @@
                                 内声明的数据类型。必须通过
                                 Module 里声明的方法来创建、更新和销毁。</div>
 
-                            <div class="code_icon"><img src="img/tearm_code_icon.png" /></div>
+                            <div class="code_icon"><img src="img/term_code_icon.png" /></div>
                             <div class="plr30 m-plr30">
                                 <div class="info mt10">◆ 可验证性</div>
                                 <div class="info1 mt10">
@@ -336,7 +336,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="info_detail tearm_detail">
+                <div class="info_detail term_detail">
                     <div class="plr30">
                         <div class="info mt10">从抽象的角度看，区块链实际上是一个复制状态机（Replicated State Machine）。世界状态通过在虚拟机上执行交易而更新。Move
                             虚拟机的输入就是交易的字节码加上当前的世界状态，输出是对世界状态进行更新的变更集。</div>
@@ -345,7 +345,7 @@
                             类似，Move 也是采用 Gas 机制来解决停机问题。</div>
                     </div>
 
-                    <div class="code_icon"><img src="img/tearm_icon1.png" /></div>
+                    <div class="code_icon"><img src="img/term_icon1.png" /></div>
                     <div class="plr30">
                         <div class="info mt10">Move
                             的安全性主要是由字节码校验器来保证的。在解释器执行之前，先要由校验器对安全性进行检查。校验器的核心功能包括：控制流图的生成、栈的越界检查、类型和种类检查、引用检查，还有与世界状态的链接等。其中栈越界检查就是检测每个方法访问操作数栈的范围，保证访问的栈的深度是合法的。具体做法是以基础代码块为单位，查看每条字节码执行之后对操作数栈的影响。接下来是通过类型检查保证操作数的类型是正确的。通过种类检查保证
@@ -353,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info_detail tearm_detail">
+                <div class="info_detail term_detail">
                     <div class="plr30">
                         <div class="info mt10">作为一个通用、安全的智能合约平台，Starcoin
                             为开发者提供了经过形式化验证的智能合约标准库。标准库包含了40多个常用的功能模块，其中除了账户、转账、交易、事件、Errors、Math、Vector
@@ -387,10 +387,10 @@
         </div>
         <script>
             $(document).ready(function () {
-                $("#tearm_tap .li").click(function () {
-                    $("#tearm_tap .li").removeClass("active")
-                    $(".tearm_detail").hide()
-                    $(".tearm_detail").eq($(this).index()).show()
+                $("#term_tap .li").click(function () {
+                    $("#term_tap .li").removeClass("active")
+                    $(".term_detail").hide()
+                    $(".term_detail").eq($(this).index()).show()
                     $(this).addClass("active")
                 })
                 $(".code_view li").click(function () {
