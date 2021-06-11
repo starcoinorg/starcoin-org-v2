@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+    <meta id="i18n_pagename" content="index-common">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="js/jquery.i18n.properties.js"> </script>
+    <script src="js/language.js"> </script>
+    <script>
+        (function(doc,win){
+            const baseSize = 196
+                function change(){
+                    console.log(111)
+                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
+                    const scale =
+                        (document.documentElement.clientWidth) / 1920
+                    // 设置页面根节点字体大小
+                    const fontSize = baseSize * Math.min(scale, 2)
+                    document.documentElement.style.fontSize = fontSize + 'px'
+                }
+                change();
+                addEventListener('resize',change,false);
+            })(document,window);
+    </script>
+    <title></title>
+</head>
+        <link rel="stylesheet" type="text/css" href="css/news.css" />
+</head>
+
+<body>
+    <div class="visible-lg-block">
+    <div class="header_top"></div>
+    <div class="top scrollTop-nav">
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="nav navClick">
+            </div>
+            <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
+            <!-- <select id="language">
+                <option value="zh-CN">中文简体</option>
+                <option value="en">English</option>
+            </select> -->
+        </div>
+    </div>
+</div>
+<!-- 手机端导航 -->
+<div class="visible-xs visible-sm visible-md" style="display: block;">
+    <div class="header_top m_header_top"></div>
+    <div class="top m_top scrollTop-nav">
+        <div class="container m_container">
+            <div class="m_logo"><img src="img/logo.png" /></div>
+            <div class="m_nav m_nav_tap">
+                <img src="img/m_nav_more.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="m_nav_model">
+        <div class="nav navClick m_nav_navigation">
+        </div>
+        <div class="m-language">
+            <div language="zh-CN" class="item">
+                中文
+                <div class="line"></div>
+            </div>
+            <div language="en" class="item">English</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let urlArr = url.split('?');
+        let appU = urlArr[0].split('/');
+        let getUrl = appU[appU.length - 1]
+        let nav_data = [
+            {
+                name: 'Overiew',
+                i18nName: 'navOveriew',
+                url: 'index.html'
+            },
+            {
+                name: 'Learn',
+                url: '',
+                i18nName: 'navLearn',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'tearm_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'tearm_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'tearm_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'tearm_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'tearm_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'tearm_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'News',
+                i18nName: 'navNews',
+                url: 'news.html'
+            },
+            {
+                name: 'Developer',
+                i18nName: 'navDeveloper',
+                url: 'developer.html'
+            },
+            {
+                name: 'About us',
+                i18nName: 'navAbout',
+                url: 'about_us.html'
+            },
+        ]
+        var str = ''
+        for (var i = 0; i < nav_data.length; i++) {
+            let menuDom = ''
+            let nav_childen = ''
+            let leveClass = ""
+            let navSelect = false
+            if (nav_data[i].name === 'Learn') {
+                for (var k = 0; k < nav_data[i].childen.length; k++) {
+                    let isSelect = false
+                    if (nav_data[i].childen[k].url === getUrl) {
+                        isSelect = true
+                        navSelect = true
+                    } else {
+                        isSelect = false
+                    }
+                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                }
+                leveClass = 'allSelect';
+                nav_childen = `<div class="more_nav">
+                        <div class="box">
+                            ${menuDom}
+                        </div>
+                    </div>`
+            }
+            if (nav_data[i].url) {
+                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
+            } else  {
+                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
+            }
+
+            $(".navClick").append(str)
+            $(".allSelect").append(nav_childen)
+        }
+        $(".navClick .item").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".more_nav .box .li").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".m_nav_navigation").find(".allSelect").click(function(){
+            if($(this).attr("class").indexOf("m_tab_select") > -1){
+                console.log($(this))
+                $(this).removeClass("m_tab_select")
+
+            }else{
+                $(this).addClass("m_tab_select")
+            }
+            
+            
+        })
+        
+        $(".m_nav_tap").click(function(){
+            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
+                $(this).find("img").attr("src","img/m_nav_close.png")
+                $(".m_nav_model").show()
+                $(".m_nav_model").animate({height:"100%"});
+                $(".scrollTop-nav").addClass("home-nav");
+            }else{
+                $(this).find("img").attr("src","img/m_nav_more.png")
+                $(".scrollTop-nav").removeClass("home-nav");
+                $(".m_nav_model").animate({height:"0%"});
+                $(".m_nav_model").hide()
+            }
+           
+            // $(".m_nav_model").show()
+        })
+    });
+</script>
+        <div class="container">
+            <div class="news">
+                <div class="news_list">
+                    <ul>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot1"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot2"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot3"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot1"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot2"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                        <li>
+                            <div class="right_arrow"><img src="img/right_news_arrow.png" /></div>
+                            <div class="title"><span class="spot spot3"></span>Starcoin 早期支持者回馈计划</div>
+                            <div class="desc">Published at April 9, 2021 · 1 min read</div>
+                        </li>
+                    </ul>
+                    <div class="page_list">
+                        <div class="li">prev<div class="page_left_arrow"></div>
+                        </div>
+                        <div class="li action">1</div>
+                        <div class="li">2</div>
+
+
+                        <div class="li">next<div class="page_right_arrow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_right">
+                    <div class="right_card">
+                        <div class="right-column">
+                            <div class="column_title"><span>Tags</span></div>
+                        </div>
+                        <div class="column_list">
+                            <div class="item">competition</div>
+                            <div class="item">epoch</div>
+                            <div class="item">competition</div>
+                            <div class="item">competition</div>
+                            <div class="item">competition</div>
+                            <div class="item">competition</div>
+                            <div class="item">epoch</div>
+                            <div class="item">competition</div>
+                            <div class="item">competition</div>
+                            <div class="item">competition</div>
+                        </div>
+                    </div>
+                    <div class="right_card">
+                        <div class="right-column margin-top">
+                            <div class="column_title"><span>Recent posts</span></div>
+                        </div>
+                        <div class="posts_list">
+                            <ul>
+                                <li>
+                                    Starcoin 早期支持者回馈计划
+                                    <p>9 April 2021</p>
+                                </li>
+                                <li>
+                                    Starcoin 挖矿比赛第二期-Barnard 测试网暨主网上线预告
+                                    <p>9 April 2021</p>
+                                </li>
+                                <li>
+                                    Starcoin 早期支持者回馈计划
+                                    <p>9 April 2021</p>
+                                </li>
+                                <li>
+                                    Starcoin 早期支持者回馈计划
+                                    <p>9 April 2021</p>
+                                </li>
+                                <li>
+                                    Starcoin 早期支持者回馈计划
+                                    <p>9 April 2021</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right_card">
+                        <div class="right-column margin-top">
+                            <div class="column_title"><span>Archives</span></div>
+                        </div>
+                        <div class="date_list">
+                            <div class="item"><a>2021</a>（3）</div>
+                            <div class="item"><a>0202</a>（12）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer  visible-lg">
+    <div class="container">
+        <div class="row hr">
+            <div class="col-md-4 item">
+                <a href="contact_us.html">联系我们</a>
+            </div>
+            <div class="col-md-4 item">
+                技术
+            </div>
+            <div class="col-md-4 item">
+                设计区
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                客服电话 400-4556-557
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                在线联系
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                更多服务
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+        </div>
+        <div class="foot">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
+        </div>
+    </div>
+</div>
+<!-- 手机端显示 -->
+<div class="m-footer visible-xs visible-sm visible-md">
+    <div class="container">
+        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
+        <div class="row-li">
+            <div class="item">
+                客服电话 400-4556-557
+            </div>
+            <div class="item">
+                技术
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                在线联系
+            </div>
+            <div class="item">
+                代币
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                更多服务
+            </div>
+            <div class="item">
+                线框图
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="f-logo">
+                <img src="img/logo.png"/>
+            </div>
+            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
+        </div>
+        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

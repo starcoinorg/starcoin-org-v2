@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+    <meta id="i18n_pagename" content="index-common">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="js/jquery.i18n.properties.js"> </script>
+    <script src="js/language.js"> </script>
+    <script>
+        (function(doc,win){
+            const baseSize = 196
+                function change(){
+                    console.log(111)
+                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
+                    const scale =
+                        (document.documentElement.clientWidth) / 1920
+                    // 设置页面根节点字体大小
+                    const fontSize = baseSize * Math.min(scale, 2)
+                    document.documentElement.style.fontSize = fontSize + 'px'
+                }
+                change();
+                addEventListener('resize',change,false);
+            })(document,window);
+    </script>
+    <title></title>
+</head>
+        <link rel="stylesheet" type="text/css" href="css/tearm.css" />
+</head>
+
+<body>
+    <div class="visible-lg-block">
+    <div class="header_top"></div>
+    <div class="top scrollTop-nav">
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="nav navClick">
+            </div>
+            <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
+            <!-- <select id="language">
+                <option value="zh-CN">中文简体</option>
+                <option value="en">English</option>
+            </select> -->
+        </div>
+    </div>
+</div>
+<!-- 手机端导航 -->
+<div class="visible-xs visible-sm visible-md" style="display: block;">
+    <div class="header_top m_header_top"></div>
+    <div class="top m_top scrollTop-nav">
+        <div class="container m_container">
+            <div class="m_logo"><img src="img/logo.png" /></div>
+            <div class="m_nav m_nav_tap">
+                <img src="img/m_nav_more.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="m_nav_model">
+        <div class="nav navClick m_nav_navigation">
+        </div>
+        <div class="m-language">
+            <div language="zh-CN" class="item">
+                中文
+                <div class="line"></div>
+            </div>
+            <div language="en" class="item">English</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let urlArr = url.split('?');
+        let appU = urlArr[0].split('/');
+        let getUrl = appU[appU.length - 1]
+        let nav_data = [
+            {
+                name: 'Overiew',
+                i18nName: 'navOveriew',
+                url: 'index.html'
+            },
+            {
+                name: 'Learn',
+                url: '',
+                i18nName: 'navLearn',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'tearm_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'tearm_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'tearm_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'tearm_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'tearm_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'tearm_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'News',
+                i18nName: 'navNews',
+                url: 'news.html'
+            },
+            {
+                name: 'Developer',
+                i18nName: 'navDeveloper',
+                url: 'developer.html'
+            },
+            {
+                name: 'About us',
+                i18nName: 'navAbout',
+                url: 'about_us.html'
+            },
+        ]
+        var str = ''
+        for (var i = 0; i < nav_data.length; i++) {
+            let menuDom = ''
+            let nav_childen = ''
+            let leveClass = ""
+            let navSelect = false
+            if (nav_data[i].name === 'Learn') {
+                for (var k = 0; k < nav_data[i].childen.length; k++) {
+                    let isSelect = false
+                    if (nav_data[i].childen[k].url === getUrl) {
+                        isSelect = true
+                        navSelect = true
+                    } else {
+                        isSelect = false
+                    }
+                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                }
+                leveClass = 'allSelect';
+                nav_childen = `<div class="more_nav">
+                        <div class="box">
+                            ${menuDom}
+                        </div>
+                    </div>`
+            }
+            if (nav_data[i].url) {
+                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
+            } else  {
+                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
+            }
+
+            $(".navClick").append(str)
+            $(".allSelect").append(nav_childen)
+        }
+        $(".navClick .item").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".more_nav .box .li").click(function(){
+            if($(this).attr("href")){
+                window.open($(this).attr("href"),"_self")
+            }
+            
+        })
+        $(".m_nav_navigation").find(".allSelect").click(function(){
+            if($(this).attr("class").indexOf("m_tab_select") > -1){
+                console.log($(this))
+                $(this).removeClass("m_tab_select")
+
+            }else{
+                $(this).addClass("m_tab_select")
+            }
+            
+            
+        })
+        
+        $(".m_nav_tap").click(function(){
+            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
+                $(this).find("img").attr("src","img/m_nav_close.png")
+                $(".m_nav_model").show()
+                $(".m_nav_model").animate({height:"100%"});
+                $(".scrollTop-nav").addClass("home-nav");
+            }else{
+                $(this).find("img").attr("src","img/m_nav_more.png")
+                $(".scrollTop-nav").removeClass("home-nav");
+                $(".m_nav_model").animate({height:"0%"});
+                $(".m_nav_model").hide()
+            }
+           
+            // $(".m_nav_model").show()
+        })
+    });
+</script>
+        <div class="container">
+            <div class="tearm_bzk">
+                <div class="tearm_icon"><img src="img/anquan_icon.png" /></div>
+                <div class="title_h3">
+                    <img src="img/whatwedo@2x.png" />
+                    <span>安全的区块链</span>
+                </div>
+                <div class="info mt10">
+                    Starcoin 从设计之初就把「安全」作为首要目标之一，从基础层、共识层、协议层、扩展层、应用层等多层面进行深入思考，从数据逻辑、智能合约、操作权等多维度进行深度设计，力争全方位覆盖，全力保障链和数字资产的安全。</div>
+
+                <div class="info mt10">
+                    <img src="img/qukuailian.png" />
+                </div>
+                <div class="h3">基础层安全 <span>#</span></div>
+                <div class="info mt10">Starcoin 使用 Rust 语言开发，保障基础组件的内存安全与高效。众所周知，使用 C/C++ 语言经常有内存安全方面的问题，而其他一些高级语言如 Java/Go/Python 等，受 Runtime 和垃圾回收机制等方面的影响，执行效率通常会比 C/C++ 略逊一筹。Rust 语言集二者长处于一身，在保证了内存安全的同时，又兼顾了极致的执行效率。Starcoin 在选择开发语言的时候充分考虑到了安全性和运行效率等因素，选择 Rust 语言开发，最大程度上保障 Starcoin 的安全与高效。</div>
+                <div class="info mt10">在 Starcoin 的整体设计中，提供了四个层面的数据校验机制：</div>
+                <div class="info padding_text_index mt10">
+                    1、交易可校验：BlockHeader 包含一个全局交易累加器的根哈希，任何上链的交易都有对应的全局证明。<br>
+                    2、状态可校验：BlockHeader 包含一个全局状态状态树的根哈希，保障了状态可验证。<br>
+                    3、区块可校验：BlockHeader 包含一个 BlockBody 的哈希，用于校验 BlockBody 中的数据。<br>
+                    4、链可校验：BlockHeader 包含一个全局区块累加器的根哈希。任何一个区块可以提供一个和当前区块的关系证明，不需要遍历区块即可验证某个区块是否是当前区块的祖先区块。参考下图
+
+                </div>
+                <div class="info mt10">
+                    <img src="img/bianzhu.png" />
+                </div>
+                <div class="info mt10">以上是 Starcoin 安全性的基石。其中，「交易累加器」和「区块累积器」组成了 Starcoin 独特的「双累加器」模型，为数据安全提供坚实的基础。</div>
+                <div class="h3">共识层安全 <span>#</span></div>
+                <div class="info mt10">Starcoin 共识针对中本聪共识做了一些改良，在继承中本聪共识安全、完全去中心化和防篡改等特性的同时，在安全方面的改进体现在：</div>
+                <div class="info padding_text_index mt10">
+
+                    1、更加敏锐的感知和适应算力波动<br>
+                    2、可通过链上治理调整共识参数，降低硬分叉带来的安全风险的可能。
+
+                </div>
+                <div class="h3">协议层安全 <span>#</span></div>
+
+                <div class="info padding_text_index mt10">
+                    Starcoin 协议在数据安全和共识层安全的基础上进行设计，充分保障了链在非可信网络中的安全性。Starcoin 协议本着数据可验证的原则，对接收到的网络数据进行严格的校验，迅速甄别作恶节点，从而起到保护节点安全的作用。
+                </div>
+                <div class="h3">扩展层安全 <span>#</span></div>
+                <div class="info mt10">为了更好地扩展区块链的能力，Starcoin 将智能合约的安全作为重要设计目标。Starcoin 使用 Move 语言作为智能合约语言。Move 语言的设计理念是让针对数字资产的编程更加安全、简单，所以在语言的设计过程中首先考虑了安全性和可靠性。Move 语言的设计者们从以往的智能合约安全事件中充分吸取经验教训，最大可能的降低 Move 合约出现意外漏洞或安全事件的风险，其安全性主要由以下几个方面保证：</div>
+                <div class="info padding_text_index mt10">
+                    1、自底向上的静态类型系统；<br>
+                    2、资源不可复制或者隐式丢弃；<br>
+                    3、资源按用户存储，重新定义链，合约，用户三方的数据操作权限；<br>
+                    4、引入形式化验证技术，通过数学原理来证明合约的安全性；
+
+                </div>
+                <div class="h3">应用层安全 <span>#</span></div>
+                <div class="info mt10">Starcoin 主要在以下层面支撑应用层的安全性：</div>
+                <div class="info padding_text_index"  style="margin-bottom: 0px;">
+                    1、提供多签交易，方便通过多签来管理数字资产。<br>
+                    2、提供私钥重置功能，在账号地址不变的情况下，可变更私钥。<br>
+                    3、应用层可通过前面提到的数据校验机制，方便地确定交易是否上链、验证状态以及区块是否合法，从而保证应用的安全与可靠。
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer  visible-lg">
+    <div class="container">
+        <div class="row hr">
+            <div class="col-md-4 item">
+                <a href="contact_us.html">联系我们</a>
+            </div>
+            <div class="col-md-4 item">
+                技术
+            </div>
+            <div class="col-md-4 item">
+                设计区
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                客服电话 400-4556-557
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+            <div class="col-md-4 item">
+                代币
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                在线联系
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+            <div class="col-md-4 item">
+                线框图
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                更多服务
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+            <div class="col-md-4 item">
+                严控
+            </div>
+        </div>
+        <div class="foot">
+            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
+        </div>
+    </div>
+</div>
+<!-- 手机端显示 -->
+<div class="m-footer visible-xs visible-sm visible-md">
+    <div class="container">
+        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
+        <div class="row-li">
+            <div class="item">
+                客服电话 400-4556-557
+            </div>
+            <div class="item">
+                技术
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                在线联系
+            </div>
+            <div class="item">
+                代币
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                更多服务
+            </div>
+            <div class="item">
+                线框图
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="f-logo">
+                <img src="img/logo.png"/>
+            </div>
+            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
+        </div>
+        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
