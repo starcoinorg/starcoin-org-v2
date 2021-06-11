@@ -7,7 +7,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
-
+    <meta id="i18n_pagename" content="index-common">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.css"> 
     <link rel="stylesheet" type="text/css" href="css/nav.css"/>
@@ -17,6 +17,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"> </script>
+    <script src="js/jquery.i18n.properties.js"> </script>
+    <script src="js/language.js"> </script>
     <script>
         (function(doc,win){
             const baseSize = 196
@@ -46,6 +48,11 @@
             <div class="logo"><img src="img/logo.png" /></div>
             <div class="nav navClick">
             </div>
+            <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
+            <!-- <select id="language">
+                <option value="zh-CN">中文简体</option>
+                <option value="en">English</option>
+            </select> -->
         </div>
     </div>
 </div>
@@ -63,24 +70,13 @@
     <div class="m_nav_model">
         <div class="nav navClick m_nav_navigation">
         </div>
-
-        <!-- <div class="m_nav_list">
-            <div class="item">Overiew</div>
-            <div class="item">
-                Learn
-                <div class="more_nav">
-                    <div class="box">
-                       <div class="li">增强的中本聪共识协议</div>
-                       <div class="li">存储状态</div>
-                       <div class="li">治理体系</div>
-                       <div class="li">治理体系</div>
-                    </div>
-                </div>
+        <div class="m-language">
+            <div language="zh-CN" class="item">
+                中文
+                <div class="line"></div>
             </div>
-            <div class="item">News</div>
-            <div class="item">Developer</div>
-            <div class="item">About us</div>
-        </div> -->
+            <div language="en" class="item">English</div>
+        </div>
     </div>
     <div class="clearfix"></div>
 </div>
@@ -93,48 +89,59 @@
         let nav_data = [
             {
                 name: 'Overiew',
+                i18nName: 'navOveriew',
                 url: 'index.html'
             },
             {
                 name: 'Learn',
                 url: '',
+                i18nName: 'navLearn',
                 childen: [
                     {
                         name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
                         url: 'tearm_xieyi.html'
                     },
                     {
                         name: '状态存储',
+                        i18nName: 'navLearnStorage',
                         url: 'tearm_storage.html'
                     },
                     {
                         name: '治理体系',
+                        i18nName: 'navLearnTixi',
                         url: 'tearm_tixi.html'
                     },
                     {
                         name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
                         url: 'tearm_bzk.html'
                     },
                     {
                         name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
                         url: 'tearm_security.html'
                     },
                     {
                         name: '分层网络',
+                        i18nName: 'navLearnNetwork',
                         url: 'tearm_network.html'
                     }
                 ]
             },
             {
                 name: 'News',
+                i18nName: 'navNews',
                 url: 'news.html'
             },
             {
                 name: 'Developer',
+                i18nName: 'navDeveloper',
                 url: 'developer.html'
             },
             {
                 name: 'About us',
+                i18nName: 'navAbout',
                 url: 'about_us.html'
             },
         ]
@@ -153,7 +160,7 @@
                     } else {
                         isSelect = false
                     }
-                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
                 }
                 leveClass = 'allSelect';
                 nav_childen = `<div class="more_nav">
@@ -163,9 +170,9 @@
                     </div>`
             }
             if (nav_data[i].url) {
-                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a href="javascript:void(0)">${nav_data[i].name}</a></div>`
+                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
             } else  {
-                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span>${nav_data[i].name}</span></div>`
+                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
             }
 
             $(".navClick").append(str)
@@ -428,6 +435,7 @@
     </div>
 
 </div>
+
 </body>
 
 </html>
