@@ -45,7 +45,9 @@
     <div class="header_top"></div>
     <div class="top scrollTop-nav">
         <div class="container">
-            <div class="logo"><img src="img/logo.png" /></div>
+            <div class="logo">
+                <img src="img/logo.png" />
+            </div>
             <div class="nav navClick">
             </div>
             <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
@@ -90,7 +92,9 @@
             {
                 name: 'Overview',
                 i18nName: 'navOverview',
+                /*
                 url: 'index.html',
+                */
                 childen: [
                     {
                         name: '增强的中本聪共识协议',
@@ -125,9 +129,9 @@
                 ]
             },
             {
-                name: 'Learn',
+                name: 'Guide',
                 url: '',
-                i18nName: 'navLearn',
+                i18nName: 'navGuide',
                 childen: [
                     {
                         name: '增强的中本聪共识协议',
@@ -161,6 +165,118 @@
                     }
                 ]
             },
+            {
+                name: 'Developer',
+                url: '',
+                i18nName: 'navDeveloper',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'term_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'term_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'term_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'term_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'term_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'term_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'Community',
+                url: '',
+                i18nName: 'navCommunity',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'term_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'term_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'term_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'term_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'term_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'term_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'Q&A',
+                url: '',
+                i18nName: 'navQA',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'term_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'term_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'term_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'term_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'term_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'term_network.html'
+                    }
+                ]
+            },
+            /*
             {
                 name: 'News',
                 i18nName: 'navNews',
@@ -171,6 +287,7 @@
                 i18nName: 'navDeveloper',
                 url: 'developer.html'
             },
+            */
             {
                 name: 'About us',
                 i18nName: 'navAbout',
@@ -184,7 +301,11 @@
             let leveClass = ""
             let navSelect = false
             let navName = nav_data[i].name
-            if (navName === 'Learn' || navName === 'Overview') {
+            if (navName === 'Overview' || 
+                navName === 'Guide' ||
+                navName === 'Developer' || 
+                navName === 'Community' ||
+                navName === 'Q&A') {
                 for (var k = 0; k < nav_data[i].childen.length; k++) {
                     let isSelect = false
                     if (nav_data[i].childen[k].url === getUrl) {
