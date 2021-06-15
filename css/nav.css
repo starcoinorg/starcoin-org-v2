@@ -337,7 +337,9 @@ button {
           z-index: 10; }
           .top .container .nav .item .more_nav .box {
             background: #FFFFFF;
+            /* 
             height: 480px;
+            */
             -webkit-box-shadow: 0px 7px 30px 0px rgba(37, 59, 129, 0.21);
                     box-shadow: 0px 7px 30px 0px rgba(37, 59, 129, 0.21); }
             .top .container .nav .item .more_nav .box .li {
@@ -412,8 +414,12 @@ button {
         /*鼠标划入li时显示第二列表*/
         display: block; }
         .top .container .nav .allSelect:hover .more_nav .box {
+          /*
           -webkit-animation: move 0.5s 0s;
                   animation: move 0.5s 0s;
+                  */
+          -webkit-animation: move 0.1s 0s;
+                  animation: move 0.1s 0s;
           /*设置划入导航栏下拉的动画效果*/ }
 
 @-webkit-keyframes move {
@@ -423,7 +429,10 @@ button {
     height: 0px; }
   100% {
     /*动画结束时*/
+    /*
     height: 480px; } }
+    */
+    height: 80px; } }
 
 @keyframes move {
   /*设置animation动画参数*/
@@ -432,7 +441,10 @@ button {
     height: 0px; }
   100% {
     /*动画结束时*/
+    /*
     height: 480px; } }
+    */
+    height: 80px; } }
       .top .container .nav .select a {
         font-size: 26px;
         display: inline;
