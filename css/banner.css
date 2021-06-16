@@ -40,6 +40,8 @@ body {
   .swiper-slide img {
     width: 100%; }
 
+  .swiper-slide .banner-text.chinese {
+    padding-top:400px; }
 .button-next {
   width: 54px;
   height: 82px;
@@ -107,5 +109,7 @@ body {
       padding-top: 0px;
       padding-left: 0px;
       margin: 256px 0 0 20px; }
+      .swiper-slide .banner-text.chinese {
+        padding-top:unset; }
       .swiper-slide .banner-text p {
         color: #FF5714; } }
