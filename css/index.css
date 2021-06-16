@@ -318,9 +318,11 @@
       font-weight: 400;
       line-height: 33px;
       letter-spacing: 1px;
+      /*
       overflow: hidden;
-      color: #272B3E;
       display: -webkit-box;
+      */
+      color: #272B3E;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical; }
 
