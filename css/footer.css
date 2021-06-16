@@ -16,6 +16,9 @@
       padding-bottom: 33px; }
       .footer .container .hr a {
         color: #FFFFFF; }
+    .item a {
+      color: #1da1f2;
+    }
     .footer .container .td {
       font-size: 16px;
       font-family: "font-PingFangMedium";
@@ -61,7 +64,10 @@
     .m-footer .container .copyright .f-logo {
       width: 87px;
       height: 22px;
+      /*
       margin-right: 33px; }
+      */
+      margin: auto; }
       .m-footer .container .copyright .f-logo img {
         width: 100%; }
     .m-footer .container .copyright .r-a {
@@ -95,7 +101,8 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 28px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
     .m-footer .container .go-contact-us a {
       color: #FFFFFF; }
     .m-footer .container .go-contact-us img {
