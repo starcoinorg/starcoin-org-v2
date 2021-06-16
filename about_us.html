@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
@@ -35,9 +34,11 @@
                 addEventListener('resize',change,false);
             })(document,window);
     </script>
-    <title></title>
-</head>
-        <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <script>
+        $(function(){ $("#footer").load("footer.html") });
+    </script>
+    <title>Starcoin - About</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
 </head>
 
 <body>
@@ -528,97 +529,10 @@
             <div class="clearfix"></div>
         </div>
         <script src="js/about.js"></script>
-        <div class="footer  visible-lg">
-    <div class="container">
-        <div class="row hr">
-            <div class="col-md-4 item">
-                <a href="contact_us.html">联系我们</a>
-            </div>
-            <div class="col-md-4 item">
-                技术
-            </div>
-            <div class="col-md-4 item">
-                设计区
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                客服电话 400-4556-557
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                在线联系
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                更多服务
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-        </div>
-        <div class="foot">
-            <div class="logo"><img src="img/logo.png" /></div>
-            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
-        </div>
-    </div>
-</div>
-<!-- 手机端显示 -->
-<div class="m-footer visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
-        <div class="row-li">
-            <div class="item">
-                客服电话 400-4556-557
-            </div>
-            <div class="item">
-                技术
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                在线联系
-            </div>
-            <div class="item">
-                代币
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                更多服务
-            </div>
-            <div class="item">
-                线框图
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="f-logo">
-                <img src="img/logo.png"/>
-            </div>
-            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
-        </div>
-        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
-    </div>
+
+        <div id="footer"></div>
 
 </div>
 
 </body>
-
 </html>
