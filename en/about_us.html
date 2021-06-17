@@ -7,17 +7,17 @@
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
     <meta id="i18n_pagename" content="index-common">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
-    <link rel="stylesheet" href="/css/swiper-bundle.css"> 
-    <link rel="stylesheet" type="text/css" href="/css/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/banner.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/swiper-bundle.min.js"> </script>
-    <script src="/js/jquery.i18n.properties.js"> </script>
-    <script src="/js/language.js"> </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="js/jquery.i18n.properties.js"> </script>
+    <script src="js/language.js"> </script>
     <script>
         (function(doc,win){
             const baseSize = 196
@@ -38,7 +38,7 @@
         $(function(){ $("#footer").load("/en/footer.html") });
     </script>
     <title>Starcoin - About</title>
-    <link rel="stylesheet" type="text/css" href="/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
 </head>
 
 <body>
@@ -47,7 +47,7 @@
     <div class="top scrollTop-nav">
         <div class="container">
             <a href="/">
-                <div class="logo"><img src="/img/logo.png" /></div>
+                <div class="logo"><img src="img/logo.png" /></div>
             </a>
             <div class="nav navClick">
             </div>
@@ -65,10 +65,10 @@
     <div class="top m_top scrollTop-nav">
         <div class="container m_container">
             <a href="/">
-                <div class="m_logo"><img src="/img/logo.png" /></div>
+                <div class="m_logo"><img src="img/logo.png" /></div>
             </a>
             <div class="m_nav m_nav_tap">
-                <img src="/img/m_nav_more.png"/>
+                <img src="img/m_nav_more.png"/>
             </div>
         </div>
     </div>
@@ -315,13 +315,13 @@
         })
         
         $(".m_nav_tap").click(function(){
-            if($(this).find("img").attr("src") == '/img/m_nav_more.png'){
-                $(this).find("img").attr("src","/img/m_nav_close.png")
+            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
+                $(this).find("img").attr("src","img/m_nav_close.png")
                 $(".m_nav_model").show()
                 $(".m_nav_model").animate({height:"100%"});
                 $(".scrollTop-nav").addClass("home-nav");
             }else{
-                $(this).find("img").attr("src","/img/m_nav_more.png")
+                $(this).find("img").attr("src","img/m_nav_more.png")
                 $(".scrollTop-nav").removeClass("home-nav");
                 $(".m_nav_model").animate({height:"0%"});
                 $(".m_nav_model").hide()
@@ -358,11 +358,11 @@
             </div>
 
             <div class="introduce_content">
-                <img class="about_back" src="/img/about@2x.png" />
+                <img class="about_back" src="img/about@2x.png" />
 
                 <div class="logo">
                     <img style="-webkit-filter: invert(1);
-                    filter: invert(1);" src="/img/logo.png" />
+                    filter: invert(1);" src="img/logo.png" />
                 </div>
 
                 <div class="about_content">
@@ -396,12 +396,12 @@
                 </div>
                 <div class="jinrong_list">
                     <div class="item">
-                        <div class="jinrong_img"><img src="/img/jinrong_kaifang.png"/> </div>
+                        <div class="jinrong_img"><img src="img/jinrong_kaifang.png"/> </div>
                         <div class="jinrong_title">Open Financial Network</div>
                         <div class="jinrong_desc">Easy payment between any users within the Network</div>
                     </div>
                     <div class="item">
-                        <div class="jinrong_img"><img src="/img/jinrong_yz.png"/> </div>
+                        <div class="jinrong_img"><img src="img/jinrong_yz.png"/> </div>
                         <div class="jinrong_title">Replacing trust with verification</div>
                         <div class="jinrong_desc">Inherit a layer of security features while including the protocol's own security mechanisms</div>
                     </div>
@@ -418,7 +418,7 @@
                     -->
                 </div>
                 <div class="about_westar_img">
-                    <img src="/img/about_westar.png"/>
+                    <img src="img/about_westar.png"/>
                 </div>
                 <!-- <div class="team_dashiji">
                     <div class="team_line">
@@ -439,7 +439,7 @@
                 <div class="lsh_list">
                     <ul>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/noah_jessop.jpeg"/></div>
+                            <div class="lsh_portrait"><img src="img/noah_jessop.jpeg"/></div>
                             <div class="post_title">
                                 Noah Jessop
                                 <p><a target="_blank" href="https://www.linkedin.com/in/njess/">LinkedIn</a></p>
@@ -447,7 +447,7 @@
                             <div class="post_name">Member</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/damir_s.jpeg"/></div>
+                            <div class="lsh_portrait"><img src="img/damir_s.jpeg"/></div>
                             <div class="post_title">
                                 Damir S
                                 <p><a target="_blank" href="https://ru.linkedin.com/in/damir-s-151888101/zh-cn?trk=people-guest_people_search-card">LinkedIn</a></p>
@@ -458,14 +458,14 @@
                 </div>
                 <!--
                 <div class="team_introduce m-team-introduce">
-                    <img class="about_hs_back" src="/img/about_hs_back.png"/>
+                    <img class="about_hs_back" src="img/about_hs_back.png"/>
                     <div class="team_h3">运作方式</div>
                     <div class="team_yw">Operations</div>
                 </div>
                 <div class="lsh_list lsh_back">
                     <ul>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -473,7 +473,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -481,7 +481,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -489,7 +489,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -497,7 +497,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -511,7 +511,7 @@
               </div>
             <div class="clearfix"></div>
         </div>
-        <script src="/js/about.js"></script>
+        <script src="js/about.js"></script>
 
         <div id="footer"></div>
 

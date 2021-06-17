@@ -1,0 +1,115 @@
+html,
+body {
+  position: relative;
+  height: 100%; }
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+.swiper-container {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#113B69), to(#052E5D));
+  background: -webkit-linear-gradient(left, #113B69 0%, #052E5D 100%);
+  background: -o-linear-gradient(left, #113B69 0%, #052E5D 100%);
+  background: linear-gradient(90deg, #113B69 0%, #052E5D 100%); }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: 1000px;
+  width: 100%;
+  background: url("../img/p-banner.png") no-repeat center top;
+  /* Center slide text vertically */ }
+  .swiper-slide .banner-text {
+    color: #ffffff;
+    font-size: 66px;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 315px;
+    padding-left: 105px;
+    text-align: center;
+    line-height: 96px;
+    letter-spacing: 3px; }
+    .swiper-slide .banner-text p {
+      color: #FF5714; }
+  .swiper-slide img {
+    width: 100%; }
+
+  .swiper-slide .banner-text.chinese {
+    padding-top:400px; }
+.button-next {
+  width: 54px;
+  height: 82px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  right: 90px;
+  margin-top: -41px;
+  left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .button-next img {
+    width: 100%;
+    opacity: 0.4; }
+
+.button-prev {
+  width: 54px;
+  height: 82px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  margin-top: -41px;
+  left: 90px;
+  right: auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .button-prev img {
+    width: 100%;
+    opacity: 0.4; }
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    height: 667px;
+    background: #1C4BDE;
+    width: 100%;
+    background: url("../img/m-banner.png");
+    background-size: 100% 100%; }
+    .swiper-slide .banner-text {
+      font-size: 26px;
+      line-height: 40px;
+      width: 325px;
+      letter-spacing: 2px;
+      padding-top: 0px;
+      padding-left: 0px;
+      margin: 256px 0 0 20px; }
+      .swiper-slide .banner-text.chinese {
+        padding-top:unset; }
+      .swiper-slide .banner-text p {
+        color: #FF5714; } }
