@@ -2,17 +2,14 @@
 <html lang="en">
 
 <head>
-    
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
     <meta id="i18n_pagename" content="index-common">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.css"> 
     <link rel="stylesheet" type="text/css" href="css/nav.css"/>
     <link rel="stylesheet" type="text/css" href="css/banner.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -20,205 +17,15 @@
     <script src="js/jquery.i18n.properties.js"> </script>
     <script src="js/language.js"> </script>
     <script>
-        (function(doc,win){
-            const baseSize = 196
-                function change(){
-                    console.log(111)
-                      // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
-                    const scale =
-                        (document.documentElement.clientWidth) / 1920
-                    // 设置页面根节点字体大小
-                    const fontSize = baseSize * Math.min(scale, 2)
-                    document.documentElement.style.fontSize = fontSize + 'px'
-                }
-                change();
-                addEventListener('resize',change,false);
-            })(document,window);
+        $(function(){ $("head").load("en/head.html") });
+        $(function(){ $("#nav").load("en/nav.html") });
+        $(function(){ $("#footer").load("en/footer.html") });
     </script>
-    <title></title>
-</head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <body>
-    <div class="visible-lg-block">
-    <div class="header_top"></div>
-    <div class="top scrollTop-nav">
-        <div class="container">
-            <div class="logo"><img src="img/logo.png" /></div>
-            <div class="nav navClick">
-            </div>
-            <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
-            <!-- <select id="language">
-                <option value="zh-CN">中文简体</option>
-                <option value="en">English</option>
-            </select> -->
-        </div>
-    </div>
-</div>
-<!-- 手机端导航 -->
-<div class="visible-xs visible-sm visible-md" style="display: block;">
-    <div class="header_top m_header_top"></div>
-    <div class="top m_top scrollTop-nav">
-        <div class="container m_container">
-            <div class="m_logo"><img src="img/logo.png" /></div>
-            <div class="m_nav m_nav_tap">
-                <img src="img/m_nav_more.png"/>
-            </div>
-        </div>
-    </div>
-    <div class="m_nav_model">
-        <div class="nav navClick m_nav_navigation">
-        </div>
-        <div class="m-language">
-            <div language="zh-CN" class="item">
-                中文
-                <div class="line"></div>
-            </div>
-            <div language="en" class="item">English</div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-<script>
-    $(document).ready(function () {
-        let url = window.location.href;
-        let urlArr = url.split('?');
-        let appU = urlArr[0].split('/');
-        let getUrl = appU[appU.length - 1]
-        let nav_data = [
-            {
-                name: 'Overiew',
-                i18nName: 'navOveriew',
-                url: 'index.html'
-            },
-            {
-                name: 'Learn',
-                url: '',
-                i18nName: 'navLearn',
-                childen: [
-                    {
-                        name: '增强的中本聪共识协议',
-                        i18nName: 'navLearnXieyi',
-                        url: 'term_xieyi.html'
-                    },
-                    {
-                        name: '状态存储',
-                        i18nName: 'navLearnStorage',
-                        url: 'term_storage.html'
-                    },
-                    {
-                        name: '治理体系',
-                        i18nName: 'navLearnTixi',
-                        url: 'term_tixi.html'
-                    },
-                    {
-                        name: 'Move,虚拟机和标准库',
-                        i18nName: 'navLearnBzk',
-                        url: 'term_bzk.html'
-                    },
-                    {
-                        name: '安全的区块链',
-                        i18nName: 'navLearnSecurity',
-                        url: 'term_security.html'
-                    },
-                    {
-                        name: '分层网络',
-                        i18nName: 'navLearnNetwork',
-                        url: 'term_network.html'
-                    }
-                ]
-            },
-            {
-                name: 'News',
-                i18nName: 'navNews',
-                url: 'news.html'
-            },
-            {
-                name: 'Developer',
-                i18nName: 'navDeveloper',
-                url: 'developer.html'
-            },
-            {
-                name: 'About us',
-                i18nName: 'navAbout',
-                url: 'about_us.html'
-            },
-        ]
-        var str = ''
-        for (var i = 0; i < nav_data.length; i++) {
-            let menuDom = ''
-            let nav_childen = ''
-            let leveClass = ""
-            let navSelect = false
-            if (nav_data[i].name === 'Learn') {
-                for (var k = 0; k < nav_data[i].childen.length; k++) {
-                    let isSelect = false
-                    if (nav_data[i].childen[k].url === getUrl) {
-                        isSelect = true
-                        navSelect = true
-                    } else {
-                        isSelect = false
-                    }
-                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
-                }
-                leveClass = 'allSelect';
-                nav_childen = `<div class="more_nav">
-                        <div class="box">
-                            ${menuDom}
-                        </div>
-                    </div>`
-            }
-            if (nav_data[i].url) {
-                str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
-            } else  {
-                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
-            }
+    <div id="nav"></div>
 
-            $(".navClick").append(str)
-            $(".allSelect").append(nav_childen)
-        }
-        $(".navClick .item").click(function(){
-            if($(this).attr("href")){
-                window.open($(this).attr("href"),"_self")
-            }
-            
-        })
-        $(".more_nav .box .li").click(function(){
-            if($(this).attr("href")){
-                window.open($(this).attr("href"),"_self")
-            }
-            
-        })
-        $(".m_nav_navigation").find(".allSelect").click(function(){
-            if($(this).attr("class").indexOf("m_tab_select") > -1){
-                console.log($(this))
-                $(this).removeClass("m_tab_select")
-
-            }else{
-                $(this).addClass("m_tab_select")
-            }
-            
-            
-        })
-        
-        $(".m_nav_tap").click(function(){
-            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
-                $(this).find("img").attr("src","img/m_nav_close.png")
-                $(".m_nav_model").show()
-                $(".m_nav_model").animate({height:"100%"});
-                $(".scrollTop-nav").addClass("home-nav");
-            }else{
-                $(this).find("img").attr("src","img/m_nav_more.png")
-                $(".scrollTop-nav").removeClass("home-nav");
-                $(".m_nav_model").animate({height:"0%"});
-                $(".m_nav_model").hide()
-            }
-           
-            // $(".m_nav_model").show()
-        })
-    });
-</script>
         <!-- <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="img/home-banner.png" /></div>
@@ -233,8 +40,14 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="banner-text">
-        A LAYERED SMART<br> CONTRACT
+        Starcoin — A LAYERED SMART<br> CONTRACT
         <p>AND DISTRBUTED FINANCIAL NETWOEK</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="banner-text chinese">
+        Starcoin — 分层的智能合约
+        <p>和分布式金融网络</p>
       </div>
     </div>
   </div>
@@ -260,12 +73,15 @@
                     <div class="content">
                         <div class="left">
                             <div class="About_h3"><img src="img/whatwedo@2x.png" />What we do</div>
-                            <div class="title">受比特币，以太坊启发，新一代分层的智<br />能合约和分布式金融网络</div>
+                            <div class="title">Inspired by Bitcoin and <br />Re-create the Cryptocurrency</div>
                             <div class="desc">
-                                Starcoin 的灵感来自于比特币，并对其安全性和性能进行了增强。<br />
-                                我们继承了比特币卓越的安全机制，并提供了高额的交易吞吐量的 能力，通过改进PoW算法和引入多层网络<br />
-                                此外，我们创建了分层智能合约模型，可以保证安全和稳定的。 基础设施加密货币，并能满足Defi 的性能要求。</div>
-                            <div class="button btn-8"><span>White-paper Link
+                                Starcoin is inspired by Bitcoin with enhanced security and reasonable performance.<br />
+                                We inherit Bitcoin's remarkable security mechanism and provide the high transaction throughput capability, by improving the PoW algorithm and introducing a multi-layer network.<br />
+                                Moreover, we create a layered Smart Contract Model, which could guarantee the security and stability of the infrastructural cryptocurrency, and be able to fulfill the performance requirement for DApps.</div>
+                            <div class="button btn-8">
+                                <a style="color: white" target="_blank" href="https://developer.starcoin.org/en/sips/sip-2/">
+                                    <span>White-paper Link</span>
+                                </a>
                                     <svg t="1621312353017" class="icon" viewBox="0 0 1024 1024" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" p-id="4265" width="200" height="200">
                                         <path d="M609.456 271.74l-60.944 60.943 241.36 241.36 60.943-60.944z"
@@ -285,14 +101,15 @@
 
                 <div class="m-about-us wrapper visible-xs visible-sm visible-md">
                     <div class="m-about-h3"><img src="img/whatwedo@2x.png" />What we do</div>
-                    <div class="m-title">受比特币，以太坊启发，新一代分层的智能合约和分布式金融网络</div>
+                    <div class="m-title">Inspired by Bitcoin and <br />Re-create the Cryptocurrency</div>
                     <div class="m-about-pic"><img src="img/VCG211311175330@2x.png" /></div>
-                    <div class="m-desc"><p>Starcoin 的灵感来自于比特币，并对其安全性和性能进行了增强。</p>
-
-                        <p>我们继承了比特币卓越的安全机制，并提供了高额的交易吞吐量的 能力，通过改进PoW算法和引入多层网络</p>
-                        
-                        <p>此外，我们创建了分层智能合约模型，可以保证安全和稳定的。 基础设施加密货币，并能满足Defi 的性能要求。</p></div>
-                    <div class="m-button"><span>White-paper Link
+                    <div class="m-desc"><p>Starcoin is inspired by Bitcoin with enhanced security and reasonable performance.</p>
+                        <p>We inherit Bitcoin's remarkable security mechanism and provide the high transaction throughput capability, by improving the PoW algorithm and introducing a multi-layer network.</p>
+                        <p>Moreover, we create a layered Smart Contract Model, which could guarantee the security and stability of the infrastructural cryptocurrency, and be able to fulfill the performance requirement for DApps.</p></div>
+                    <div class="m-button">
+                                <a style="color: white" target="_blank" href="https://developer.starcoin.org/en/sips/sip-2/">
+                                    <span>White-paper Link</span>
+                                </a>
                             <svg t="1621312353017" class="icon" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="4265" width="200" height="200">
                                 <path d="M609.456 271.74l-60.944 60.943 241.36 241.36 60.943-60.944z" fill="#444444"
@@ -311,32 +128,35 @@
             <div class="Advantages">
                 <div class="container wrapper">
                     <div class="Advantages_title">
-                        <div class="Advantages_h3"><img src="img/whatwedo@2x.png" />What we do</div>
+                        <div class="Advantages_h3"><img src="img/whatwedo@2x.png" />Key Features</div>
                         <div class="more btn-8 visible-lg"><span>MORE +</span></div>
                     </div>
                     <div class="row ad_top">
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/anquan.png" /></div>
-                                <div class="title">安全</div>
-                                <div class="desc">Starcoin 分别在基础层，共识层，协议层，扩展层和应用层五个层次保证了其安全性。对于基础层而言，一方面Starcoin
-                                    使用Rust开发在保证内存安全的同时兼顾运行效率.</div>
+                                <div class="title">Security</div>
+                                <div class="desc">
+                                    Starcoin guarantees its security in five layers: the base layer, consensus layer, protocol layer, extension layer and application layer. On the one hand, Starcoin uses Rust programming language to ensure memory security and operational efficiency, on the other hand, Starcoin has designed a complete data verification mechanism to ensure the verifiability of transactions, blocks, state and blockchain. Those ensures the security of the basic layer. As for the consensus layer, Starcoin Consensus has made many improvements to Satoshi Consensus, which not only inherits the security, complete decentralization and anti-tampering features of Satoshi Consensus, but also greatly enhances the security and efficiency of the consensus. Likewise, Starcoin protocol is designed on the basis of data security and consensus layer security to fully guarantee the security of the chain in untrusted networks. In addition, Starcoin guarantees the security of the extension layer by ensuring the security of smart contracts, and enhances the security of the application layer by means of asymmetric signature.
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/gongshi.png" /></div>
-                                <div class="title">中本聪共识和POW</div>
-                                <div class="desc">Starcoin 共识是比特币中本聪共识的增强。Starcoin
-                                    采用的POW算法设计满足新颖性、简单性、安全性等方面的要求，并降低了硬件开发的门槛。另外，为了加快出块速度和交易确认时间，我们通过叔块率等运行期…</div>
+                                <div class="title">Satoshi Consensus and POW</div>
+                                <div class="desc">
+                                    Starcoin consensus is an enhancement of the Satoshi consensus in Bitcoin.The POW algorithm design adopted by Starcoin meets the requirements of novelty, simplicity, and security, and lowers the threshold of hardware development. In addition, in order to speed up the block out speed and transaction confirmation time, we adjust the block out time, difficulty, and block reward through the uncle-block rate and other runtime data, which can maximize the use of the network and reduce user waiting time. In addition, we have also enhanced the dynamic adjustment capability of the blockchain so that some key parameters can be configured online, which can minimize hard forks. In order to do this in a decentralized environment, we have also introduced an on-chain governance mechanism to facilitate the participation of the community, developers and miners at large.
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/yuyan.png" /></div>
-                                <div class="title">Move语言</div>
-                                <div class="desc">Move 是专为表达数字资产而生的编程语言，它最早出现在Facebook的区块链项目Libra中，最大的特点是
-                                    Resource作为Move的一等公民。它为提供了一个安全和可编程的基础。</div>
+                                <div class="title">Move Programming Language</div>
+                                <div class="desc">
+                                    Move is a programming language created for expressing digital assets, which first appeared in Facebook's blockchain project Libra, and features Resource as a first-class element of Move. It provides a secure and programmable foundation. the characteristics of Move fit so well with Starcoin's model that Starcoin chose Move as its smart contract programming language. Move is capable of defining custom resource types in the semantics of linear logic: resources can never be copied or implicitly discarded and can only be moved between programs. These security guarantees result from the static execution of Move's type system. As a smart contract language, the linear logic semantics are very obvious and very useful for smart contracts to do reviews of resource use and prevent engineers from accidentally causing security issues. This is also the direction in which the blockchain smart contract language is evolving.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,25 +164,28 @@
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/cunchu.png" /></div>
-                                <div class="title">状态存储和计费</div>
-                                <div class="desc">Starcoin 分别在基础层，共识层，协议层，扩展层和应用层五个层次保证了其安全性。对于基础层而言，一方面Starcoin
-                                    使用Rust开发在保证内存安全的同时兼顾运行效率.</div>
+                                <div class="title">Status Storage and Fee</div>
+                                <div class="desc">
+                                    In the case of Ethereum, since its contract data is stored under the contract account, the user pays only the GAS fee for the current transaction when writing data, and does not have to pay separately for the state storage. Users, however, do not have to pay for the storage. In Starcoin, since there is no contract account in Ethernet, user data is stored under their own account, which is more convenient and beneficial for state billing, and can also help solve the state explosion problem.
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/zhili.png" /></div>
-                                <div class="title">链上治理</div>
-                                <div class="desc">Starcoin 共识是比特币中本聪共识的增强。Starcoin
-                                    采用的POW算法设计满足新颖性、简单性、安全性等方面的要求，并降低了硬件开发的门槛。另外，为了加快出块速度和交易确认时间，我们通过叔块率等运行期…</div>
+                                <div class="title">On-Chain Governance</div>
+                                <div class="desc">
+                                    The governance of the blockchain encompasses decision-making and communication processes that have an invisible but long-term effect on the blockchain and especially the public chain ecology. While off-chain governance started with the previous generation of public chains, the new generation of public chains favors on-chain governance. The token governance of contractual agreements has also pushed the DEFI on Ethereum to an unprecedented peak, which is a serious issue that the next-generation public chain should consider.Starcoin embraces the on-chain governance model in its design, solidifying most of the chain's governance rules in the form of contracts, while combining on-chain governance and off-chain governance to achieve decentralized, open and efficient governance as our target.
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="item">
                                 <div class="ad_icon"><img src="img/wangluo.png" /></div>
-                                <div class="title">分层网络</div>
-                                <div class="desc">Move 是专为表达数字资产而生的编程语言，它最早出现在Facebook的区块链项目Libra中，最大的特点是
-                                    Resource作为Move的一等公民。它为提供了一个安全和可编程的基础。</div>
+                                <div class="title">Layered Network</div>
+                                <div class="desc">
+                                    Layered networks are one of the features that Starcoin has been designed for. Starcoin considers security and decentralization as features that must be guaranteed, but speeding up transactions and increasing throughput are also very user-friendly features. Also, global consensus, while slow and costly, is not required for all transactions, so the idea of building a layered blockchain was born. Specifically, on layer 1 of the network use POW and global consensus to ensure decentralization and security, and other technical solutions to speed up transaction execution and reduce transaction waiting time, and on the layer 2 use local consensus to maximize the speed and throughput of transactions to ensure security while supporting commercial applications. Due to the special design of Starcoin, Starcoin layer 2 can use the data of layer 1, and layer 1 can also verify the calculation results of layer 2, which is an organic combination of layer 1 and layer 2, assets can move freely between layer 1 and layer 2.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -719,96 +542,8 @@
                     </div>
                 </div>
             </div>
-            <div class="footer  visible-lg">
-    <div class="container">
-        <div class="row hr">
-            <div class="col-md-4 item">
-                <a href="contact_us.html">联系我们</a>
-            </div>
-            <div class="col-md-4 item">
-                技术
-            </div>
-            <div class="col-md-4 item">
-                设计区
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                客服电话 400-4556-557
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                在线联系
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                更多服务
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-        </div>
-        <div class="foot">
-            <div class="logo"><img src="img/logo.png" /></div>
-            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
-        </div>
-    </div>
-</div>
-<!-- 手机端显示 -->
-<div class="m-footer visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
-        <div class="row-li">
-            <div class="item">
-                客服电话 400-4556-557
-            </div>
-            <div class="item">
-                技术
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                在线联系
-            </div>
-            <div class="item">
-                代币
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                更多服务
-            </div>
-            <div class="item">
-                线框图
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="f-logo">
-                <img src="img/logo.png"/>
-            </div>
-            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
-        </div>
-        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
-    </div>
 
-</div>
+            <div id="footer"></div>
 
             <div id="code_fixed_back" class="code_fixed_back">
     <div class="code_model">
