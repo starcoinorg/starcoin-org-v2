@@ -2,23 +2,22 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
     <meta id="i18n_pagename" content="index-common">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/swiper-bundle.css"> 
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
-    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/swiper-bundle.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"/>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper-bundle.min.js"> </script>
-    <script src="js/jquery.i18n.properties.js"> </script>
-    <script src="js/language.js"> </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/swiper-bundle.min.js"> </script>
+    <script src="/js/jquery.i18n.properties.js"> </script>
+    <script src="/js/language.js"> </script>
     <script>
         (function(doc,win){
             const baseSize = 196
@@ -35,9 +34,11 @@
                 addEventListener('resize',change,false);
             })(document,window);
     </script>
-    <title></title>
-</head>
-        <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <script>
+        $(function(){ $("#footer").load("/en/footer.html") });
+    </script>
+    <title>Starcoin - About</title>
+    <link rel="stylesheet" type="text/css" href="/css/about.css" />
 </head>
 
 <body>
@@ -45,7 +46,9 @@
     <div class="header_top"></div>
     <div class="top scrollTop-nav">
         <div class="container">
-            <div class="logo"><img src="img/logo.png" /></div>
+            <a href="/">
+                <div class="logo"><img src="/img/logo.png" /></div>
+            </a>
             <div class="nav navClick">
             </div>
             <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
@@ -61,9 +64,11 @@
     <div class="header_top m_header_top"></div>
     <div class="top m_top scrollTop-nav">
         <div class="container m_container">
-            <div class="m_logo"><img src="img/logo.png" /></div>
+            <a href="/">
+                <div class="m_logo"><img src="/img/logo.png" /></div>
+            </a>
             <div class="m_nav m_nav_tap">
-                <img src="img/m_nav_more.png"/>
+                <img src="/img/m_nav_more.png"/>
             </div>
         </div>
     </div>
@@ -88,82 +93,188 @@
         let getUrl = appU[appU.length - 1]
         let nav_data = [
             {
-                name: 'Overiew',
-                i18nName: 'navOveriew',
-                url: 'index.html'
-            },
-            {
-                name: 'Learn',
+                name: 'Overview',
+                i18nName: 'navOverview',
                 url: '',
-                i18nName: 'navLearn',
-                childen: [
+                children: [
                     {
-                        name: '增强的中本聪共识协议',
-                        i18nName: 'navLearnXieyi',
-                        url: 'term_xieyi.html'
+                        name: '技术白皮书',
+                        i18nName: 'navOverviewTechnologyWhitepaper',
+                        url: 'https://developer.starcoin.org/zh/sips/sip-2/'
                     },
                     {
-                        name: '状态存储',
-                        i18nName: 'navLearnStorage',
-                        url: 'term_storage.html'
-                    },
-                    {
-                        name: '治理体系',
-                        i18nName: 'navLearnTixi',
-                        url: 'term_tixi.html'
-                    },
-                    {
-                        name: 'Move,虚拟机和标准库',
-                        i18nName: 'navLearnBzk',
-                        url: 'term_bzk.html'
-                    },
-                    {
-                        name: '安全的区块链',
-                        i18nName: 'navLearnSecurity',
-                        url: 'term_security.html'
-                    },
-                    {
-                        name: '分层网络',
-                        i18nName: 'navLearnNetwork',
-                        url: 'term_network.html'
+                        name: '经济模型白皮书',
+                        i18nName: 'navOverviewEconomyWhitepaper',
+                        url: 'https://developer.starcoin.org/zh/sips/sip-3/'
                     }
                 ]
             },
             {
-                name: 'News',
-                i18nName: 'navNews',
-                url: 'news.html'
+                name: 'Guide',
+                url: '',
+                i18nName: 'navGuide',
+                children: [
+                    {
+                        name: 'Starmask安装指南',
+                        i18nName: 'navGuideStarmaskInstall',
+                        url: 'https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md'
+                    },
+                    {
+                        name: 'Starmask使用指南',
+                        i18nName: 'navGuideStarmaskUse',
+                        url: 'https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md'
+                    },
+                    {
+                        name: 'Starcoin区块链浏览器',
+                        i18nName: 'navGuideExplorer',
+                        url: 'https://explorer.starcoin.org'
+                    },
+                    {
+                        name: 'Starcoin挖矿指南',
+                        i18nName: 'navGuideMining',
+                        url: 'https://starcoin-miner.gitbook.io/starcoin-miner-guide/'
+                    },
+                    {
+                        name: 'Starcoin节点命令行行',
+                        i18nName: 'navGuideNodeCommand',
+                        url: 'https://developer.starcoin.org/zh/cli/'
+                    },
+                ]
             },
             {
                 name: 'Developer',
+                url: '',
                 i18nName: 'navDeveloper',
-                url: 'developer.html'
+                children: [
+                    {
+                        name: '安装并加入网络',
+                        i18nName: 'navDeveloperInstallAndJoin',
+                        url: 'https://developer.starcoin.org/zh/setup/'
+                    },
+                    {
+                        name: 'RPC协议接口说明',
+                        i18nName: 'navDeveloperRPCProtocol',
+                        url: 'https://developer.starcoin.org/zh/rpc/rpc_document/'
+                    },
+                    {
+                        name: 'Starcion改进提案',
+                        i18nName: 'navDeveloperSIP',
+                        url: 'https://developer.starcoin.org/zh/sips/'
+                    },
+                    {
+                        name: 'Python & JS SDK',
+                        i18nName: 'navDeveloperSDK',
+                        url: 'https://developer.starcoin.org/zh/sdk/'
+                    },
+                    {
+                        name: 'Move Book',
+                        i18nName: 'navDeveloperMoveBook',
+                        url: 'https://move-book.com/cn/index.html'
+                    },
+                    {
+                        name: 'Move CLI',
+                        i18nName: 'navDeveloperMoveCLI',
+                        url: 'https://github.com/starcoinorg/starcoin/commit/23ee860a3213f25386b26929307bf851b5af34f9'
+                    },
+                    {
+                        name: 'Move Examples',
+                        i18nName: 'navDeveloperMoveExamples',
+                        url: 'https://developer.starcoin.org/zh/tutorials/'
+                    },
+                    {
+                        name: '矿池接入指南',
+                        i18nName: 'navDeveloperStratumPool',
+                        url: 'https://github.com/starcoinorg/starcoin/discussions/2541'
+                    }
+                ]
             },
             {
-                name: 'About us',
+                name: 'Community',
+                url: '',
+                i18nName: 'navCommunity',
+                children: [
+                    {
+                        name: '新闻',
+                        i18nName: 'navNews',
+                        url: 'https://news.starcoin.org/zh/'
+                    },
+                    {
+                        name: 'Westar实验室',
+                        i18nName: 'navCommunityWestar',
+                        url: 'http://westar.io'
+                    },
+                    {
+                        name: 'Twitter',
+                        i18nName: 'navCommunityTwitter',
+                        url: 'https://twitter.com/StarcoinSTC'
+                    },
+                    {
+                        name: 'Move中文社区',
+                        i18nName: 'navCommunityMoveChinese',
+                        url: 'https://www.movelang.io'
+                    },
+                    {
+                        name: 'Documentation',
+                        i18nName: 'navCommunityDocumentation',
+                        url: 'https://developer.starcoin.org'
+                    }
+                ]
+            },
+            {
+                name: 'QA',
+                url: '',
+                i18nName: 'navQA',
+                children: [
+                    {
+                        name: 'GitHub Discussion',
+                        i18nName: 'navQAGitHub',
+                        url: 'https://github.com/starcoinorg/starcoin/discussions'
+                    },
+                    {
+                        name: 'Starcoin FAQ',
+                        i18nName: 'navQAFAQ',
+                        url: 'https://explorer.starcoin.org/faq'
+                    }
+                ]
+            },
+            {
+                name: 'About',
                 i18nName: 'navAbout',
-                url: 'about_us.html'
+                url: '',
+                children: [
+                    {
+                        name: 'About Starcoin',
+                        i18nName: 'navAboutStarcoin',
+                        url: 'about_us.html'
+                    }
+                ]
             },
         ]
         var str = ''
         for (var i = 0; i < nav_data.length; i++) {
             let menuDom = ''
-            let nav_childen = ''
+            let nav_children = ''
             let leveClass = ""
             let navSelect = false
-            if (nav_data[i].name === 'Learn') {
-                for (var k = 0; k < nav_data[i].childen.length; k++) {
+            let navName = nav_data[i].name
+            if (navName === 'Overview' || 
+                navName === 'Guide' ||
+                navName === 'Developer' || 
+                navName === 'Community' ||
+                navName === 'About' ||
+                navName === 'QA') {
+                for (var k = 0; k < nav_data[i].children.length; k++) {
                     let isSelect = false
-                    if (nav_data[i].childen[k].url === getUrl) {
+                    if (nav_data[i].children[k].url === getUrl) {
                         isSelect = true
                         navSelect = true
                     } else {
                         isSelect = false
                     }
-                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                    menuDom += `<div href="${nav_data[i].children[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].children[k].i18nName}" href="javascript:void(0)">${nav_data[i].children[k].name}</a></div>`
                 }
                 leveClass = 'allSelect';
-                nav_childen = `<div class="more_nav">
+                nav_children = `<div class="more_nav">
                         <div class="box">
                             ${menuDom}
                         </div>
@@ -172,11 +283,12 @@
             if (nav_data[i].url) {
                 str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
             } else  {
-                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
+                str = `<div class='item ${navName} ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
             }
 
             $(".navClick").append(str)
-            $(".allSelect").append(nav_childen)
+            // $(".allSelect").append(nav_childen)
+            $(`.${navName}`).append(nav_children)
         }
         $(".navClick .item").click(function(){
             if($(this).attr("href")){
@@ -203,13 +315,13 @@
         })
         
         $(".m_nav_tap").click(function(){
-            if($(this).find("img").attr("src") == 'img/m_nav_more.png'){
-                $(this).find("img").attr("src","img/m_nav_close.png")
+            if($(this).find("img").attr("src") == '/img/m_nav_more.png'){
+                $(this).find("img").attr("src","/img/m_nav_close.png")
                 $(".m_nav_model").show()
                 $(".m_nav_model").animate({height:"100%"});
                 $(".scrollTop-nav").addClass("home-nav");
             }else{
-                $(this).find("img").attr("src","img/m_nav_more.png")
+                $(this).find("img").attr("src","/img/m_nav_more.png")
                 $(".scrollTop-nav").removeClass("home-nav");
                 $(".m_nav_model").animate({height:"0%"});
                 $(".m_nav_model").hide()
@@ -227,7 +339,7 @@
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
-                        Starcoin 基金会介绍
+                        Starcoin Foundation
                     </li>
                     <li>
                         <div class="line">
@@ -235,36 +347,37 @@
                             <div class="right"></div>
                         </div>
                         
-                        Westar Labs 介绍</li>
+                        Westar Blockchain Lab</li>
                     <li>
                         <div class="line">
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
-                    Team 顾问介绍</li>
+                    Team Advisor</li>
                 </ul>
             </div>
 
             <div class="introduce_content">
-                <img class="about_back" src="img/about@2x.png" />
+                <img class="about_back" src="/img/about@2x.png" />
 
                 <div class="logo">
-                    <img src="img/cardano_logo.png" />
+                    <img style="-webkit-filter: invert(1);
+                    filter: invert(1);" src="/img/logo.png" />
                 </div>
 
                 <div class="about_content">
-                    The Cardano Foundation is an independent standards body that oversees and supervises the advancement
-                    of Cardano and the Cardano ecosystem. As the legal custodian of the protocol and the owner of the
-                    Cardano brand, the Foundation works to drive adoption and partnerships, grow the Cardano community
+                    The Starcoin Foundation is an independent standards body that oversees and supervises the advancement
+                    of Starcoin and the Starcoin ecosystem. As the legal custodian of the protocol and the owner of the
+                    Starcoin brand, the Foundation works to drive adoption and partnerships, grow the Starcoin community
                     globally, shape legislation and commercial standards, and ensure stakeholder accountability at every
                     level.
                 </div>
                 <div class="about_content">
                     The Foundation’s most crucial responsibility is driving platform adoption and supporting the diverse
-                    Cardano community – people like you – engaging with and implementing ideas on the Cardano platform.
-                    To fulfil this caretaking role to the highest standards, the Cardano Foundation has a governing
+                    Starcoin community – people like you – engaging with and implementing ideas on the Starcoin platform.
+                    To fulfil this caretaking role to the highest standards, the Starcoin Foundation has a governing
                     Council, a professional executive team and community managers, recruited in many cases directly from
-                    the wider Cardano community.
+                    the wider Starcoin community.
                 </div>
                 <div class="about_content p-mt60">
                     However, their focus is as outward-looking as it is inward. The Foundation is equally committed to
@@ -278,30 +391,34 @@
             <!-- Westar Labs 介绍   -->
             <div class="introduce_content" style="display: none;">
                 <div class="westr_title">
-                    Westar成立于2018年<br>
-                    Westar是分层区块链的先行者
+                    Westar was founded in 2018<br>
+                    Westar is a pioneer in layered blockchains
                 </div>
                 <div class="jinrong_list">
                     <div class="item">
-                        <div class="jinrong_img"><img src="img/jinrong_kaifang.png"/> </div>
-                        <div class="jinrong_title">开放金融网络</div>
-                        <div class="jinrong_desc">Hub内任意用户之间可以轻松支付</div>
+                        <div class="jinrong_img"><img src="/img/jinrong_kaifang.png"/> </div>
+                        <div class="jinrong_title">Open Financial Network</div>
+                        <div class="jinrong_desc">Easy payment between any users within the Network</div>
                     </div>
                     <div class="item">
-                        <div class="jinrong_img"><img src="img/jinrong_yz.png"/> </div>
-                        <div class="jinrong_title">用验证代替信任</div>
-                        <div class="jinrong_desc">继承一层的安全特性，同时包含协议本身的安全机制</div>
+                        <div class="jinrong_img"><img src="/img/jinrong_yz.png"/> </div>
+                        <div class="jinrong_title">Replacing trust with verification</div>
+                        <div class="jinrong_desc">Inherit a layer of security features while including the protocol's own security mechanisms</div>
                     </div>
                 </div>
                 <div class="team_introduce">
-                    <div class="team_h3">团队愿景</div>
+                    <div class="team_h3">Team Vision</div>
+                    <!--
                     <div class="team_yw">Team Vision</div>
-                    <div class="team_desc">创建下一代分层区块链及金融基础设施。通过先进技术和工程能力，构建我们的产品和基础网络，从而减少对信任的依赖，提高金融市场的效率。对于区块链生态，我们通过分层区块链技术，在保证安全性的同时，保证处理速度，达到可以商用的目的。通过开放的金融网络，改变世界，改变普通人的生活。</div>
-                    <div class="team_h3 m-mt10">大事记</div>
+                    -->
+                    <div class="team_desc">Create the next generation of layered blockchain and financial infrastructure. Build our products and underlying networks through advanced technology and engineering capabilities, thereby reducing reliance on trust and improving the efficiency of financial markets. For the blockchain ecosystem, we achieve commercially viable processing speed while ensuring security through layered blockchain technology. Change the world and the lives of ordinary people through an open financial network.</div>
+                    <div class="team_h3 m-mt10">Key Events</div>
+                    <!--
                     <div class="team_yw">Development Course</div>
+                    -->
                 </div>
                 <div class="about_westar_img">
-                    <img src="img/about_westar.png"/>
+                    <img src="/img/about_westar.png"/>
                 </div>
                 <!-- <div class="team_dashiji">
                     <div class="team_line">
@@ -316,62 +433,39 @@
               <!-- Team 顾问介绍   -->
               <div class="introduce_content m-mt40"  style="display: none;">
                 <div class="team_introduce">
-                    <div class="team_h3">基金会理事会</div>
-                    <div class="team_yw">Foundation Council</div>
+                    <div class="team_h3">Foundation Council</div>
+                    <div class="team_yw"></div>
                 </div>
                 <div class="lsh_list">
                     <ul>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/noah_jessop.jpeg"/></div>
                             <div class="post_title">
-                                塔玛
-                                <p>tamara Haasen</p>
+                                Noah Jessop
+                                <p><a target="_blank" href="https://www.linkedin.com/in/njess/">LinkedIn</a></p>
                             </div>
-                            <div class="post_name">理事会成员</div>
+                            <div class="post_name">Member</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/damir_s.jpeg"/></div>
                             <div class="post_title">
-                                塔玛
-                                <p>tamara Haasen</p>
+                                Damir S
+                                <p><a target="_blank" href="https://ru.linkedin.com/in/damir-s-151888101/zh-cn?trk=people-guest_people_search-card">LinkedIn</a></p>
                             </div>
-                            <div class="post_name">理事会成员</div>
-                        </li>
-                        <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
-                            <div class="post_title">
-                                塔玛
-                                <p>tamara Haasen</p>
-                            </div>
-                            <div class="post_name">理事会成员</div>
-                        </li>
-                        <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
-                            <div class="post_title">
-                                塔玛
-                                <p>tamara Haasen</p>
-                            </div>
-                            <div class="post_name">理事会成员</div>
-                        </li>
-                        <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
-                            <div class="post_title">
-                                塔玛
-                                <p>tamara Haasen</p>
-                            </div>
-                            <div class="post_name">理事会成员</div>
+                            <div class="post_name">Member</div>
                         </li>
                     </ul>
                 </div>
+                <!--
                 <div class="team_introduce m-team-introduce">
-                    <img class="about_hs_back" src="img/about_hs_back.png"/>
+                    <img class="about_hs_back" src="/img/about_hs_back.png"/>
                     <div class="team_h3">运作方式</div>
                     <div class="team_yw">Operations</div>
                 </div>
                 <div class="lsh_list lsh_back">
                     <ul>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -379,7 +473,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -387,7 +481,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -395,7 +489,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -403,7 +497,7 @@
                             <div class="post_name">理事会成员</div>
                         </li>
                         <li>
-                            <div class="lsh_portrait"><img src="img/touxiang.png"/></div>
+                            <div class="lsh_portrait"><img src="/img/touxiang.png"/></div>
                             <div class="post_title">
                                 塔玛
                                 <p>tamara Haasen</p>
@@ -412,102 +506,16 @@
                         </li>
                     </ul>
                 </div>
+            -->
 
               </div>
             <div class="clearfix"></div>
         </div>
-        <script src="js/about.js"></script>
-        <div class="footer  visible-lg">
-    <div class="container">
-        <div class="row hr">
-            <div class="col-md-4 item">
-                <a href="contact_us.html">联系我们</a>
-            </div>
-            <div class="col-md-4 item">
-                技术
-            </div>
-            <div class="col-md-4 item">
-                设计区
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                客服电话 400-4556-557
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-            <div class="col-md-4 item">
-                代币
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                在线联系
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-            <div class="col-md-4 item">
-                线框图
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                更多服务
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-            <div class="col-md-4 item">
-                严控
-            </div>
-        </div>
-        <div class="foot">
-            <div class="logo"><img src="img/logo.png" /></div>
-            <div class="copyright">2021 Web3 starcoin | 版权所有。 印象派 | 免责声明 | Cookie设置</div>
-        </div>
-    </div>
-</div>
-<!-- 手机端显示 -->
-<div class="m-footer visible-xs visible-sm visible-md">
-    <div class="container">
-        <div class="go-contact-us"><a href="contact_us.html">联系我们</a> <img src="img/r-arrow.png"/></div>
-        <div class="row-li">
-            <div class="item">
-                客服电话 400-4556-557
-            </div>
-            <div class="item">
-                技术
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                在线联系
-            </div>
-            <div class="item">
-                代币
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
-                更多服务
-            </div>
-            <div class="item">
-                线框图
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="f-logo">
-                <img src="img/logo.png"/>
-            </div>
-            <div class="r-a"><span>印象派</span><span>|</span><span>免责声明</span><span>|</span><span>Cookie设置</span></div>
-        </div>
-        <div class="crt">2021  Web3  starcoin | 版权备案号IC938449224</div>
-    </div>
+        <script src="/js/about.js"></script>
+
+        <div id="footer"></div>
 
 </div>
 
 </body>
-
 </html>
