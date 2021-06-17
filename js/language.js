@@ -155,19 +155,33 @@ $(function(){
 
         $(".p-language span").click(function(){
             console.log($(this).attr("language"))
+            const chosenLanguage = $(this).attr("language")
             getCookie("userLanguage",$(this).attr("language"),{
-                expires: 30,
+                expires: 86400 * 180,
                 path:'/'
             });
             location.reload();
+            if (chosenLanguage === 'en') {
+                window.location.pathname = '/en'
+            }
+            if (chosenLanguage === 'zh-CN') {
+                window.location.pathname = '/'
+            }
         })
         $(".m-language .item").click(function(){
             console.log($(this).attr("language"))
+            const chosenLanguage = $(this).attr("language")
             getCookie("userLanguage",$(this).attr("language"),{
-                expires: 30,
+                expires: 86400 * 180,
                 path:'/'
             });
             location.reload();
+            if (chosenLanguage === 'en') {
+                window.location.pathname = '/en'
+            }
+            if (chosenLanguage === 'zh-CN') {
+                window.location.pathname = '/'
+            }
         })
         // $("#language").on('change', function() {
         //     var language = $(this).children('option:selected').val()
