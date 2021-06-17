@@ -2,7 +2,11 @@
     <div class="header_top"></div>
     <div class="top scrollTop-nav">
         <div class="container">
-            <div class="logo"><img src="img/logo.png" /></div>
+            <a href="/">
+                <div class="logo">
+                    <img src="img/logo.png" />
+                </div>
+            </a>
             <div class="nav navClick">
             </div>
             <div class="language p-language"><span language="zh-CN">中文</span>｜<span language="en">English</span></div>
@@ -18,7 +22,9 @@
     <div class="header_top m_header_top"></div>
     <div class="top m_top scrollTop-nav">
         <div class="container m_container">
-            <div class="m_logo"><img src="img/logo.png" /></div>
+            <a href="/">
+                <div class="m_logo"><img src="img/logo.png" /></div>
+            </a>
             <div class="m_nav m_nav_tap">
                 <img src="img/m_nav_more.png"/>
             </div>
@@ -45,82 +51,191 @@
         let getUrl = appU[appU.length - 1]
         let nav_data = [
             {
-                name: 'Overiew',
-                i18nName: 'navOveriew',
-                url: 'index.html'
-            },
-            {
-                name: 'Learn',
+                name: 'Overview',
+                i18nName: 'navOverview',
                 url: '',
-                i18nName: 'navLearn',
-                childen: [
+                children: [
                     {
-                        name: '增强的中本聪共识协议',
-                        i18nName: 'navLearnXieyi',
-                        url: 'term_xieyi.html'
+                        name: '技术白皮书',
+                        i18nName: 'navOverviewTechnologyWhitepaper',
+                        url: 'https://developer.starcoin.org/zh/sips/sip-2/'
                     },
                     {
-                        name: '状态存储',
-                        i18nName: 'navLearnStorage',
-                        url: 'term_storage.html'
-                    },
-                    {
-                        name: '治理体系',
-                        i18nName: 'navLearnTixi',
-                        url: 'term_tixi.html'
-                    },
-                    {
-                        name: 'Move,虚拟机和标准库',
-                        i18nName: 'navLearnBzk',
-                        url: 'term_bzk.html'
-                    },
-                    {
-                        name: '安全的区块链',
-                        i18nName: 'navLearnSecurity',
-                        url: 'term_security.html'
-                    },
-                    {
-                        name: '分层网络',
-                        i18nName: 'navLearnNetwork',
-                        url: 'term_network.html'
+                        name: '经济模型白皮书',
+                        i18nName: 'navOverviewEconomyWhitepaper',
+                        url: 'https://developer.starcoin.org/zh/sips/sip-3/'
                     }
                 ]
             },
             {
-                name: 'News',
-                i18nName: 'navNews',
-                url: 'news.html'
+                name: 'Guide',
+                url: '',
+                i18nName: 'navGuide',
+                children: [
+                    {
+                        name: 'Starmask安装指南',
+                        i18nName: 'navGuideStarmaskInstall',
+                        url: 'https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md'
+                    },
+                    {
+                        name: 'Starmask使用指南',
+                        i18nName: 'navGuideStarmaskUse',
+                        url: 'https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md'
+                    },
+                    {
+                        name: 'Starcoin区块链浏览器',
+                        i18nName: 'navGuideExplorer',
+                        url: 'https://explorer.starcoin.org'
+                    },
+                    {
+                        name: 'Starcoin挖矿指南',
+                        i18nName: 'navGuideMining',
+                        url: 'https://starcoin-miner.gitbook.io/starcoin-miner-guide/'
+                    },
+                    {
+                        name: 'Starcoin节点命令行行',
+                        i18nName: 'navGuideNodeCommand',
+                        url: 'https://developer.starcoin.org/zh/cli/'
+                    },
+                ]
             },
             {
                 name: 'Developer',
+                url: '',
                 i18nName: 'navDeveloper',
-                url: 'developer.html'
+                children: [
+                    {
+                        name: '安装并加入网络',
+                        i18nName: 'navDeveloperInstallAndJoin',
+                        url: 'https://developer.starcoin.org/zh/setup/'
+                    },
+                    {
+                        name: 'RPC协议接口说明',
+                        i18nName: 'navDeveloperRPCProtocol',
+                        url: 'https://developer.starcoin.org/zh/rpc/rpc_document/'
+                    },
+                    {
+                        name: 'Starcion改进提案',
+                        i18nName: 'navDeveloperSIP',
+                        url: 'https://developer.starcoin.org/zh/sips/'
+                    },
+                    {
+                        name: 'Python & JS SDK',
+                        i18nName: 'navDeveloperSDK',
+                        url: 'https://developer.starcoin.org/zh/sdk/'
+                    },
+                    {
+                        name: 'Move Book',
+                        i18nName: 'navDeveloperMoveBook',
+                        url: 'https://move-book.com/cn/index.html'
+                    },
+                    {
+                        name: 'Move CLI',
+                        i18nName: 'navDeveloperMoveCLI',
+                        url: 'https://github.com/starcoinorg/starcoin/commit/23ee860a3213f25386b26929307bf851b5af34f9'
+                    },
+                    {
+                        name: 'Move Examples',
+                        i18nName: 'navDeveloperMoveExamples',
+                        url: 'https://developer.starcoin.org/zh/tutorials/'
+                    },
+                    {
+                        name: '矿池接入指南',
+                        i18nName: 'navDeveloperStratumPool',
+                        url: 'https://github.com/starcoinorg/starcoin/discussions/2541'
+                    }
+                ]
             },
             {
-                name: 'About us',
+                name: 'Community',
+                url: '',
+                i18nName: 'navCommunity',
+                children: [
+                    {
+                        name: '新闻',
+                        i18nName: 'navNews',
+                        url: 'https://news.starcoin.org/zh/'
+                    },
+                    {
+                        name: 'Westar实验室',
+                        i18nName: 'navCommunityWestar',
+                        url: 'http://westar.io'
+                    },
+                    {
+                        name: 'Twitter',
+                        i18nName: 'navCommunityTwitter',
+                        url: 'https://twitter.com/StarcoinSTC'
+                    },
+                    {
+                        name: 'Move中文社区',
+                        i18nName: 'navCommunityMoveChinese',
+                        url: 'https://www.movelang.io'
+                    },
+                    {
+                        name: 'Documentation',
+                        i18nName: 'navCommunityDocumentation',
+                        url: 'https://developer.starcoin.org'
+                    }
+                ]
+            },
+            {
+                name: 'QA',
+                url: '',
+                i18nName: 'navQA',
+                children: [
+                    {
+                        name: 'GitHub Discussion',
+                        i18nName: 'navQAGitHub',
+                        url: 'https://github.com/starcoinorg/starcoin/discussions'
+                    },
+                    {
+                        name: 'Starcoin FAQ',
+                        i18nName: 'navQAFAQ',
+                        url: 'https://explorer.starcoin.org/faq'
+                    }
+                ]
+            },
+            {
+                name: 'About',
                 i18nName: 'navAbout',
-                url: 'about_us.html'
+                url: '',
+                children: [
+                    {
+                        name: 'About Starcoin',
+                        i18nName: 'navAboutStarcoin',
+                        url: 'about_us.html'
+                    }
+                ]
             },
         ]
         var str = ''
         for (var i = 0; i < nav_data.length; i++) {
             let menuDom = ''
-            let nav_childen = ''
+            let nav_children = ''
             let leveClass = ""
             let navSelect = false
-            if (nav_data[i].name === 'Learn') {
-                for (var k = 0; k < nav_data[i].childen.length; k++) {
+            let navName = nav_data[i].name
+            /*
+            if (navName === 'Overview') {
+            */
+            if (navName === 'Overview' || 
+                navName === 'Guide' ||
+                navName === 'Developer' || 
+                navName === 'Community' ||
+                navName === 'About' ||
+                navName === 'QA') {
+                for (var k = 0; k < nav_data[i].children.length; k++) {
                     let isSelect = false
-                    if (nav_data[i].childen[k].url === getUrl) {
+                    if (nav_data[i].children[k].url === getUrl) {
                         isSelect = true
                         navSelect = true
                     } else {
                         isSelect = false
                     }
-                    menuDom += `<div href="${nav_data[i].childen[k].url}" class="li ${isSelect ? 'active' : ''}"><a class="i18n" name="${nav_data[i].childen[k].i18nName}" href="javascript:void(0)">${nav_data[i].childen[k].name}</a></div>`
+                    menuDom += `<div class="li ${isSelect ? 'active' : ''}"><a class="i18n" onclick="window.open('${nav_data[i].children[k].url}', '');return false" name="${nav_data[i].children[k].i18nName}" href="javascript:void(0)">${nav_data[i].children[k].name}</a></div>`
                 }
                 leveClass = 'allSelect';
-                nav_childen = `<div class="more_nav">
+                nav_children = `<div class="more_nav">
                         <div class="box">
                             ${menuDom}
                         </div>
@@ -129,11 +244,12 @@
             if (nav_data[i].url) {
                 str = `<div href="${nav_data[i].url}" class='item ${leveClass} ${nav_data[i].url === getUrl || getUrl === ''&& nav_data[i].url === 'index.html' || navSelect ? 'select' : ''}'><a class="i18n" name="${nav_data[i].i18nName}"  href="javascript:void(0)">${nav_data[i].name}</a></div>`
             } else  {
-                str = `<div class='item ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
+                str = `<div class='item ${navName} ${leveClass} ${nav_data[i].url === getUrl && getUrl  || navSelect ? 'select' : ''}'><span class="i18n" name="${nav_data[i].i18nName}">${nav_data[i].name}</span></div>`
             }
 
             $(".navClick").append(str)
-            $(".allSelect").append(nav_childen)
+            // $(".allSelect").append(nav_childen)
+            $(`.${navName}`).append(nav_children)
         }
         $(".navClick .item").click(function(){
             if($(this).attr("href")){
