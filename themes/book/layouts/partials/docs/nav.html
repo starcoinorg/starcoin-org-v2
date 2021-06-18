@@ -115,7 +115,18 @@
                     </div>
                 </div>
             </div>
-            <div class="language p-language"><span language="zh">中文</span>｜<span language="en">English</span></div>
+            <div class="language p-language">
+                {{ $translations := dict }}
+                {{ range .Site.Home.AllTranslations }}
+                {{ $translations = merge $translations (dict .Language.Lang .) }}
+                {{ end }}
+                {{ range .Translations }}
+                {{ $translations = merge $translations (dict .Language.Lang .) }}
+                {{ end }}
+                {{ range .Site.Languages }}{{ with index $translations .Lang }}
+                <span language="{{ .Language }}">{{ .Language.LanguageName }}</span>｜
+                {{ end }}{{ end }}
+            </div>
         </div>
     </div>
 </div>
@@ -258,69 +269,16 @@
 
 <script>
     $(document).ready(function () {
-        let url = window.location.href;
-        let urlArr = url.split('?');
-        let appU = urlArr[0].split('/');
-        let getUrl = appU[appU.length - 1]
-        let nav_data = [
-            {
-                name: 'Overiew',
-                i18nName: 'navOverview',
-                url: 'index.html'
-            },
-            {
-                name: 'Learn',
-                url: '',
-                i18nName: 'navLearn',
-                childen: [
-                    {
-                        name: '增强的中本聪共识协议',
-                        i18nName: 'navLearnXieyi',
-                        url: 'term_xieyi.html'
-                    },
-                    {
-                        name: '状态存储',
-                        i18nName: 'navLearnStorage',
-                        url: 'term_storage.html'
-                    },
-                    {
-                        name: '治理体系',
-                        i18nName: 'navLearnTixi',
-                        url: 'term_tixi.html'
-                    },
-                    {
-                        name: 'Move,虚拟机和标准库',
-                        i18nName: 'navLearnBzk',
-                        url: 'term_bzk.html'
-                    },
-                    {
-                        name: '安全的区块链',
-                        i18nName: 'navLearnSecurity',
-                        url: 'term_security.html'
-                    },
-                    {
-                        name: '分层网络',
-                        i18nName: 'navLearnNetwork',
-                        url: 'term_network.html'
-                    }
-                ]
-            },
-            {
-                name: 'News',
-                i18nName: 'navNews',
-                url: 'news.html'
-            },
-            {
-                name: 'Developer',
-                i18nName: 'navDeveloper',
-                url: 'developer.html'
-            },
-            {
-                name: 'About us',
-                i18nName: 'navAbout',
-                url: 'about_us.html'
-            },
-        ]
+        $(".p-language span").click(function () {
+            let url = window.location.href;
+            let choosed = $(this).attr('language');
+            let current = "{{ .Lang }}";
+            if (current !== choosed) {
+                url = url.replace(`/${current}/`, `/${choosed}/`)
+                window.location.href = url;
+
+            }
+        })
         $(".navClick .item").click(function () {
             if ($(this).attr("href")) {
                 window.open($(this).attr("href"), "_self")

@@ -109,7 +109,7 @@
     display: flex;
     margin-bottom: 20px; }
     .m-footer .container .row-li .item {
-      width: 50%;
+      width: 100px;
       font-size: 12px;
       font-family: 'font-PingFangRegular';
       font-weight: 400;
