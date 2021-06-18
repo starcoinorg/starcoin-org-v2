@@ -1,0 +1,84 @@
+- id: Search
+  translation: 搜索
+
+- id: Edit this page
+  translation: 编辑本页
+
+- id: Last modified by
+  translation: 最后修改者
+
+- id: Expand
+  translation: 展开
+
+- id: bookSearchConfig
+  translation: |
+    {
+      encode: false,
+      tokenize: function(str) {
+        return str.replace(/[\x00-\x7F]/g, '').split('');
+      }
+    }
+
+- id: check other language version
+  translation: 当前语言文档的版本尚在完善中，请查看其他语言的版本
+
+- id: navOverview
+  translation: 首页
+- id: navGuide
+  translation: 使用指南
+- id: navDeveloper
+  translation: 开发者
+- id: navCommunity
+  translation: 社区
+- id: navQA
+  translation: 问答
+- id: navNews
+  translation: 新闻
+- id: navOverviewIntroduction
+  translation: 整体介绍
+- id: navOverviewTechnologyWhitepaper
+  translation: 技术白皮书
+- id: navOverviewEconomyWhitepaper
+  translation: 经济模型白皮书
+- id: navGuideStarmaskInstall
+  translation: 安装 Starmask 钱包
+- id: navGuideStarmaskUse
+  translation: 使用 Starmask 钱包
+- id: navGuideExplorer
+  translation: 区块链浏览器
+- id: navGuideMining
+  translation: STC挖矿
+- id: navGuideNodeCommand
+  translation: 节点命令行
+- id: navDeveloperInstallAndJoin
+  translation: 安装并加入网络
+- id: navDeveloperRPCProtocol
+  translation: RPC协议接口
+- id: navDeveloperSIP
+  translation: SIP
+- id: navDeveloperSDK
+  translation: Python 和 JS SDK
+- id: navDeveloperMoveBook
+  translation: Move 开发指南
+- id: navDeveloperMoveCLI
+  translation: Move CLI
+- id: navDeveloperMoveExamples
+  translation: Move 合约示例
+- id: navDeveloperStratumPool
+  translation: 矿池接入
+- id: navCommunityWestar
+  translation: Westar 实验室 
+- id: navCommunityTwitter
+  translation: Twitter
+- id: navCommunityMoveChinese
+  translation: Move 中文社区
+- id: navCommunityDocumentation
+  translation: 文档
+- id: navQAGitHub
+  translation: GitHub 讨论区
+- id: navQAFAQ
+  translation: Starcoin 常见问题
+- id: navAbout
+  translation: 关于
+- id: navAboutStarcoin
+  translation: 关于 Starcoin

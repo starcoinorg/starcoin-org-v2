@@ -1,0 +1,392 @@
+.about_us {
+  width: 1300px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 40px 0px rgba(16, 31, 88, 0.04);
+          box-shadow: 0px 3px 40px 0px rgba(16, 31, 88, 0.04);
+  border-radius: 4px;
+  margin-bottom: 100px;
+  padding-top: 29px;
+  position: relative; }
+  .about_us .lsh_list {
+    padding-left: 136px;
+    position: relative;
+    z-index: 2; }
+    .about_us .lsh_list ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .about_us .lsh_list li {
+      width: 220px;
+      text-align: center;
+      margin-right: 136px;
+      margin-bottom: 100px; }
+      .about_us .lsh_list li .lsh_portrait {
+        width: 220px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 50%; }
+        .about_us .lsh_list li .lsh_portrait img {
+          width: 100%; }
+      .about_us .lsh_list li .post_title {
+        font-size: 34px;
+        font-family: "font-PingFangBold";
+        font-weight: 600;
+        color: #272B3E;
+        line-height: 48px;
+        letter-spacing: 3px; }
+        .about_us .lsh_list li .post_title p {
+          font-size: 14px;
+          font-family: "font-PingFangBold";
+          font-weight: 600;
+          color: #272B3E;
+          line-height: 20px;
+          letter-spacing: 1px; }
+      .about_us .lsh_list li .post_name {
+        padding: 0 10px;
+        height: 27px;
+        width: 98px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: #1C4BDE;
+        border-radius: 4px;
+        color: #ffffff; }
+  .about_us .lsh_back {
+    background: #F9F9F9; }
+  .about_us .team_dashiji .team_line {
+    width: 2px;
+    height: 1800px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(39, 43, 62, 0.5);
+    border-radius: 1px; }
+    .about_us .team_dashiji .team_line .team_dsj_blue {
+      width: 138px;
+      height: 138px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      top: -50px;
+      left: -50%;
+      margin-left: -62px;
+      z-index: 2;
+      background-image: url("../img/dsj_blue_back.png");
+      background-size: 100% 100%;
+      font-size: 30px;
+      font-family: "font-PingFangMedium";
+      font-weight: 500;
+      color: #FFFFFF;
+      line-height: 42px; }
+    .about_us .team_dashiji .team_line .team_dsj_red {
+      width: 138px;
+      height: 138px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      top: -50px;
+      left: -50%;
+      margin-left: -62px;
+      z-index: 2;
+      background-image: url("../img/dsj_red_back.png");
+      background-size: 100% 100%;
+      font-size: 20px;
+      font-family: "font-PingFangMedium";
+      font-weight: 500;
+      color: #FFFFFF;
+      line-height: 42px; }
+    .about_us .team_dashiji .team_line .top2019 {
+      top: 200px; }
+    .about_us .team_dashiji .team_line .top2020 {
+      top: 438px; }
+    .about_us .team_dashiji .team_line .top2021 {
+      top: 814px; }
+    .about_us .team_dashiji .team_line .topweilai {
+      top: 1538px; }
+  .about_us .team_introduce {
+    position: relative;
+    z-index: 2; }
+    .about_us .team_introduce .about_hs_back {
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      top: -98px;
+      z-index: 1; }
+    .about_us .team_introduce .team_h3 {
+      font-size: 44px;
+      font-family: "font-PingFangMedium";
+      font-weight: 500;
+      color: #1C4BDE;
+      text-align: center;
+      line-height: 62px;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2; }
+    .about_us .team_introduce .team_yw {
+      font-size: 22px;
+      font-family: 'font-PingFangRegular';
+      font-weight: 400;
+      color: #7E96E2;
+      text-align: center;
+      line-height: 30px;
+      letter-spacing: 3px;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 2; }
+    .about_us .team_introduce .team_desc {
+      font-size: 20px;
+      font-family: 'font-PingFangRegular';
+      font-weight: 400;
+      color: #272B3E;
+      line-height: 40px;
+      letter-spacing: 2px;
+      text-align: justify;
+      padding: 0 50px;
+      margin-bottom: 100px; }
+  .about_us .jinrong_list {
+    margin-top: 101px;
+    padding: 0 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 100px; }
+    .about_us .jinrong_list .item {
+      width: 50%;
+      text-align: center; }
+      .about_us .jinrong_list .item .jinrong_img {
+        width: 150px;
+        height: 127px;
+        margin: 0 auto;
+        margin-bottom: 40px; }
+        .about_us .jinrong_list .item .jinrong_img img {
+          width: 100%; }
+      .about_us .jinrong_list .item .jinrong_title {
+        font-size: 30px;
+        font-family: "font-PingFangMedium";
+        font-weight: 500;
+        color: #485372; }
+      .about_us .jinrong_list .item .jinrong_desc {
+        font-size: 16px;
+        font-family: 'font-PingFangRegular';
+        font-weight: 400;
+        color: #A3A3A3;
+        letter-spacing: 3px;
+        margin-top: 20px; }
+  .about_us .westr_title {
+    text-align: center;
+    font-family: "font-PingFangBold";
+    font-size: 40px;
+    font-weight: 500;
+    color: #333645;
+    line-height: 60px;
+    letter-spacing: 6px; }
+  .about_us .about_back {
+    width: 706px;
+    height: 527px;
+    position: absolute;
+    top: 150px;
+    right: 0; }
+    .about_us .about_back img {
+      width: 100%; }
+  .about_us .about_westar_img {
+    margin: 0 auto; }
+    .about_us .about_westar_img img {
+      width: 100%; }
+  .about_us .logo {
+    margin-bottom: 60px;
+    padding-left: 50px; }
+    .about_us .logo img {
+      width: 366px;
+      height: 101px; }
+  .about_us .about_content {
+    font-size: 20px;
+    font-family: 'font-PingFangRegular';
+    text-indent: 100px;
+    font-weight: 400;
+    color: #272B3E;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+    text-align: justify;
+    padding: 0 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  .about_us .p-mt60 {
+    padding-bottom: 60px; }
+  .about_us .tab {
+    margin: 0 70px;
+    position: relative;
+    margin-bottom: 131px; }
+    .about_us .tab ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .about_us .tab ul li {
+        font-size: 20px;
+        font-family: "font-PingFangBold";
+        font-weight: 600;
+        color: #272B3E;
+        cursor: pointer; }
+        .about_us .tab ul li:hover {
+          color: #1C4BDE; }
+      .about_us .tab ul .select {
+        font-size: 26px;
+        font-family: "font-PingFangBold";
+        font-weight: 600;
+        color: #1C4BDE;
+        letter-spacing: 1px;
+        position: relative; }
+        .about_us .tab ul .select .line {
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          position: absolute;
+          bottom: -25px;
+          left: 0; }
+          .about_us .tab ul .select .line .left {
+            width: 50%;
+            height: 4px;
+            background: #FF5714; }
+          .about_us .tab ul .select .line .right {
+            width: 50%;
+            height: 4px;
+            background: #1C4BDE; }
+
+@media (max-width: 768px) {
+  .about_us {
+    width: auto;
+    margin: 0 15px;
+    padding-top: 20px;
+    margin-bottom: 10px; }
+    .about_us .lsh_list {
+      padding-top: 15px; }
+      .about_us .lsh_list li {
+        width: 100%;
+        margin-bottom: 70px; }
+        .about_us .lsh_list li .lsh_portrait {
+          width: 130px;
+          height: 130px; }
+        .about_us .lsh_list li .post_title {
+          font-size: 20px; }
+    .about_us .m-mt20 {
+      margin-top: 20px; }
+    .about_us .m-mt40 {
+      margin-top: 40px; }
+    .about_us .m-team-introduce {
+      background: #F9F9F9;
+      padding-top: 30px; }
+    .about_us .team_introduce .about_hs_back {
+      display: none; }
+    .about_us .team_introduce .team_h3 {
+      font-size: 22px;
+      line-height: normal; }
+    .about_us .team_introduce .m-mt10 {
+      margin-top: 10px; }
+    .about_us .team_introduce .team_yw {
+      margin-bottom: 0;
+      font-size: 12px;
+      padding-bottom: 20px; }
+    .about_us .team_introduce .team_desc {
+      padding: 0 15px;
+      font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 20px; }
+    .about_us .jinrong_list {
+      padding: 0 10px;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .about_us .jinrong_list .item .jinrong_img {
+        width: 75px;
+        height: 63px; }
+      .about_us .jinrong_list .item .jinrong_title {
+        font-size: 16px; }
+      .about_us .jinrong_list .item .jinrong_desc {
+        font-size: 12px;
+        line-height: 20px; }
+    .about_us .westr_title {
+      font-size: 20px;
+      line-height: normal;
+      margin-top: 40px; }
+    .about_us .about_content {
+      padding: 0 12px;
+      text-indent: 40px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 28px; }
+    .about_us .p-mt60 {
+      padding-bottom: 40px; }
+    .about_us .about_back {
+      width: 218px;
+      height: 163px;
+      top: 58px; }
+    .about_us .logo {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      margin-top: 40px; }
+      .about_us .logo img {
+        width: 120px;
+        height: 33px; }
+    .about_us .tab {
+      margin: 0 10px; }
+      .about_us .tab ul li {
+        font-size: 12px;
+        height: 25px;
+        line-height: 25px; }
+      .about_us .tab ul .select {
+        font-size: 14px; }
+        .about_us .tab ul .select .line {
+          bottom: -5px; }
+          .about_us .tab ul .select .line .left {
+            height: 2px; }
+          .about_us .tab ul .select .line .right {
+            height: 2px; } }

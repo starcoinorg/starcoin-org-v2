@@ -1,0 +1,13 @@
+<!-- <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="{{ " svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>{{ partial "docs/title" . }}</strong>
+</div> -->
+<label for="menu-control" class="hidden book-menu-overlay"></label>
+<div class="m_mask"></div>
+<div class="column_title m-d-title">
+  <img class="m_left_nav_click" state="0" src="/img/m_nav_more.png" />
+  <span>{{ partial "docs/title" . }}</span>
+</div>

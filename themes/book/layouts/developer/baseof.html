@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir={{ .Site.Language.LanguageDirection }}>
+
+<head>
+    {{ partial "docs/html-head" . }}
+    {{ partial "docs/inject/head" . }}
+</head>
+
+<body>
+    {{ template "nav" . }}
+
+    <div class="container">
+        <div class="developer m-column-drawer">
+            <div class="developer_left">
+                {{ template "menu" . }}
+            </div>
+            <div class="developer_right">
+
+                <!-- Page Content -->
+
+                {{ template "menu-nav" . }}
+                <div class="content m-d-content">
+                    {{ template "main" . }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ template "footer" . }}
+
+</body>
+
+</html>
+
+
+{{ define "menu" }}
+{{ partial "docs/menu" . }}
+{{ end }}
+
+
+{{ define "main" }}
+<article class="markdown">
+    {{- .Content -}}
+</article>
+{{ end }}
+
+{{ define "menu-nav" }}
+{{ partial "docs/menu-nav" . }}
+{{ end }}
+
+{{ define "nav" }}
+{{ partial "docs/nav" . }}
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "docs/footer" . }}
+{{ end }}

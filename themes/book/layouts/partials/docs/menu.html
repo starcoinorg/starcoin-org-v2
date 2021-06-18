@@ -1,0 +1,13 @@
+{{ partial "docs/brand" . }}
+<div class="developer_column_list">
+  {{ partial "docs/search" . }}
+
+  {{ partial "docs/menu-filetree" . }}
+</div>
+{{ partial "docs/inject/menu-after" . }}
+
+<!-- Restore menu position as soon as possible to avoid flickering -->
+<!-- {{ $script := resources.Get "menu-reset.js" | resources.Minify }}
+{{ with $script.Content }}
+  <script>{{ . | safeJS }}</script>
+{{ end }} -->

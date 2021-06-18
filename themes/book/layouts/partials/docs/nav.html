@@ -1,0 +1,364 @@
+<div class="visible-lg-block">
+    <div class="header_top"></div>
+    <div class="top scrollTop-nav">
+        <div class="container">
+            <a href="/{{ .Site.Language.Lang }}">
+                <div class="logo">
+                    <img src="/img/logo.png" />
+                </div>
+            </a>
+            <div class="nav navClick">
+                <div class="item Overview allSelect ">
+                    <span class="i18n">{{ i18n "navOverview" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://developer.starcoin.org/zh/sips/sip-2/', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navOverviewTechnologyWhitepaper" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://developer.starcoin.org/zh/sips/sip-3/', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navOverviewEconomyWhitepaper" }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item Guide allSelect ">
+                    <span class="i18n">{{ i18n "navGuide" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navGuideStarmaskInstall" }}</a>
+                            </div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navGuideStarmaskUse" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://explorer.starcoin.org', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navGuideExplorer" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://starcoin-miner.gitbook.io/starcoin-miner-guide/', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navGuideMining" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://developer.starcoin.org/zh/cli/', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navGuideNodeCommand" }}</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item Developer allSelect "><span class="i18n" name="">{{ i18n "navDeveloper" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/setup/">{{ i18n
+                                    "navDeveloperInstallAndJoin" }}</a>
+                            </div>
+                            <div class="li "><a class="i18n"
+                                    href="/{{ .Site.Language.Lang }}/developer/rpc/rpc_document/">{{ i18n
+                                    "navDeveloperRPCProtocol" }}</a>
+                            </div>
+                            <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/sips/">{{ i18n
+                                    "navDeveloperSIP" }}</a></div>
+                            <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/sdk/">{{ i18n
+                                    "navDeveloperSDK" }}</a></div>
+                            <div class="li "><a class="i18n" href="https://move-book.com/cn/index.html">{{ i18n
+                                    "navDeveloperMoveBook" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    href="https://github.com/starcoinorg/starcoin/commit/23ee860a3213f25386b26929307bf851b5af34f9">{{
+                                    i18n "navDeveloperMoveCLI" }}</a></div>
+                            <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/tutorials/">{{
+                                    i18n
+                                    "navDeveloperMoveExamples" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    href="https://github.com/starcoinorg/starcoin/discussions/2541">{{ i18n
+                                    "navDeveloperStratumPool" }}</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item Community allSelect "><span class="i18n" name="">{{ i18n "navCommunity" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://news.starcoin.org/zh/', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navNews" }}</a></div>
+                            <div class="li "><a class="i18n" onclick="window.open('http://westar.io', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navCommunityWestar" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://twitter.com/StarcoinSTC', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navCommunityTwitter" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://www.movelang.io', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navCommunityMoveChinese" }}</a>
+                            </div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://developer.starcoin.org', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navCommunityDocumentation" }}</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item QA allSelect "><span class="i18n" name="">{{ i18n "navQA" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://github.com/starcoinorg/starcoin/discussions', '');return false"
+                                    href="javascript:void(0)">{{ i18n "navQAGitHub" }}</a></div>
+                            <div class="li "><a class="i18n"
+                                    onclick="window.open('https://explorer.starcoin.org/faq', '');return false" name=""
+                                    href="javascript:void(0)">{{ i18n "navQAFAQ" }}</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item About allSelect "><span class="i18n" name="">{{ i18n "navAbout" }}</span>
+                    <div class="more_nav">
+                        <div class="box">
+                            <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/about">{{ i18n
+                                    "navAboutStarcoin" }}</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="language p-language"><span language="zh">中文</span>｜<span language="en">English</span></div>
+        </div>
+    </div>
+</div>
+<!-- 手机端导航 -->
+<div class="visible-xs visible-sm visible-md" style="display: none;">
+    <div class="header_top m_header_top"></div>
+    <div class="top m_top scrollTop-nav">
+        <div class="container m_container">
+            <a href="/">
+                <div class="m_logo"><img src="/img/logo.png"></div>
+            </a>
+            <div class="m_nav m_nav_tap">
+                <img src="/img/m_nav_more.png">
+            </div>
+        </div>
+    </div>
+    <div class="m_nav_model">
+        <div class="nav navClick m_nav_navigation">
+            <div class="item Overview allSelect ">
+                <span class="i18n">{{ i18n "navOverview" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/sips/sip-2/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navOverviewTechnologyWhitepaper" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/sips/sip-3/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navOverviewEconomyWhitepaper" }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item Guide allSelect ">
+                <span class="i18n">{{ i18n "navGuide" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md', '');return false"
+                                href="javascript:void(0)">{{ i18n "navGuideStarmaskInstall" }}</a>
+                        </div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md', '');return false"
+                                href="javascript:void(0)">{{ i18n "navGuideStarmaskUse" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://explorer.starcoin.org', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navGuideExplorer" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://starcoin-miner.gitbook.io/starcoin-miner-guide/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navGuideMining" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/cli/', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navGuideNodeCommand" }}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item Developer allSelect "><span class="i18n" name="">{{ i18n "navDeveloper" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/setup/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperInstallAndJoin" }}</a>
+                        </div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/rpc/rpc_document/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperRPCProtocol" }}</a>
+                        </div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/sips/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperSIP" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/sdk/', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navDeveloperSDK" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://move-book.com/cn/index.html', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navDeveloperMoveBook" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://github.com/starcoinorg/starcoin/commit/23ee860a3213f25386b26929307bf851b5af34f9', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperMoveCLI" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org/zh/tutorials/', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperMoveExamples" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://github.com/starcoinorg/starcoin/discussions/2541', '');return false"
+                                href="javascript:void(0)">{{ i18n "navDeveloperStratumPool" }}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item Community allSelect "><span class="i18n" name="">{{ i18n "navCommunity" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://news.starcoin.org/zh/', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navNews" }}</a></div>
+                        <div class="li "><a class="i18n" onclick="window.open('http://westar.io', '');return false"
+                                href="javascript:void(0)">{{ i18n "navCommunityWestar" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://twitter.com/StarcoinSTC', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navCommunityTwitter" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://www.movelang.io', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navCommunityMoveChinese" }}</a>
+                        </div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://developer.starcoin.org', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navCommunityDocumentation" }}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item QA allSelect "><span class="i18n" name="">{{ i18n "navQA" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://github.com/starcoinorg/starcoin/discussions', '');return false"
+                                href="javascript:void(0)">{{ i18n "navQAGitHub" }}</a></div>
+                        <div class="li "><a class="i18n"
+                                onclick="window.open('https://explorer.starcoin.org/faq', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navQAFAQ" }}</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item About allSelect "><span class="i18n" name="">{{ i18n "navAbout" }}</span>
+                <div class="more_nav">
+                    <div class="box">
+                        <div class="li "><a class="i18n" onclick="window.open('about_us.html', '');return false" name=""
+                                href="javascript:void(0)">{{ i18n "navAboutStarcoin" }}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-language">
+            <div language="zh" class="item">
+                中文
+                <div class="line"></div>
+            </div>
+            <div language="en" class="item">English</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let urlArr = url.split('?');
+        let appU = urlArr[0].split('/');
+        let getUrl = appU[appU.length - 1]
+        let nav_data = [
+            {
+                name: 'Overiew',
+                i18nName: 'navOverview',
+                url: 'index.html'
+            },
+            {
+                name: 'Learn',
+                url: '',
+                i18nName: 'navLearn',
+                childen: [
+                    {
+                        name: '增强的中本聪共识协议',
+                        i18nName: 'navLearnXieyi',
+                        url: 'term_xieyi.html'
+                    },
+                    {
+                        name: '状态存储',
+                        i18nName: 'navLearnStorage',
+                        url: 'term_storage.html'
+                    },
+                    {
+                        name: '治理体系',
+                        i18nName: 'navLearnTixi',
+                        url: 'term_tixi.html'
+                    },
+                    {
+                        name: 'Move,虚拟机和标准库',
+                        i18nName: 'navLearnBzk',
+                        url: 'term_bzk.html'
+                    },
+                    {
+                        name: '安全的区块链',
+                        i18nName: 'navLearnSecurity',
+                        url: 'term_security.html'
+                    },
+                    {
+                        name: '分层网络',
+                        i18nName: 'navLearnNetwork',
+                        url: 'term_network.html'
+                    }
+                ]
+            },
+            {
+                name: 'News',
+                i18nName: 'navNews',
+                url: 'news.html'
+            },
+            {
+                name: 'Developer',
+                i18nName: 'navDeveloper',
+                url: 'developer.html'
+            },
+            {
+                name: 'About us',
+                i18nName: 'navAbout',
+                url: 'about_us.html'
+            },
+        ]
+        $(".navClick .item").click(function () {
+            if ($(this).attr("href")) {
+                window.open($(this).attr("href"), "_self")
+            }
+
+        })
+        $(".more_nav .box .li").click(function () {
+            if ($(this).attr("href")) {
+                window.open($(this).attr("href"), "_self")
+            }
+
+        })
+        $(".m_nav_navigation").find(".allSelect").click(function () {
+            if ($(this).attr("class").indexOf("m_tab_select") > -1) {
+                console.log($(this))
+                $(this).removeClass("m_tab_select")
+
+            } else {
+                $(this).addClass("m_tab_select")
+            }
+
+
+        })
+
+        $(".m_nav_tap").click(function () {
+            if ($(this).find("img").attr("src") == 'img/m_nav_more.png') {
+                $(this).find("img").attr("src", "/img/m_nav_close.png")
+                $(".m_nav_model").show()
+                $(".m_nav_model").animate({ height: "100%" });
+                $(".scrollTop-nav").addClass("home-nav");
+            } else {
+                $(this).find("img").attr("src", "/img/m_nav_more.png")
+                $(".scrollTop-nav").removeClass("home-nav");
+                $(".m_nav_model").animate({ height: "0%" });
+                $(".m_nav_model").hide()
+            }
+
+            // $(".m_nav_model").show()
+        })
+    });
+</script>
