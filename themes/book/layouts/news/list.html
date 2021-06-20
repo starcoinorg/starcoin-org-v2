@@ -6,7 +6,7 @@
         <ul>
             {{ range $paginator.Pages }}
             <li>
-                <div class="right_arrow"><img src="/img/right_news_arrow.png" /></div>
+                <!-- <div class="right_arrow"><img src="/img/right_news_arrow.png" /></div> -->
                 <div class="title"><span class="spot"></span><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
                 <div class="desc">Published at {{ .Date.Format "January 2, 2006" }} &middot; {{.ReadingTime}} min read
                     <p>{{ .Summary }}...</p>
