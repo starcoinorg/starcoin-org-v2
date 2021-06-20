@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir={{ .Site.Language.LanguageDirection }}>
+
+<head>
+    {{ partial "docs/html-head" . }}
+    {{ partial "news/inject/head" . }}
+</head>
+
+<body>
+    {{ template "nav" . }}
+
+    <div class="container">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ template "footer" . }}
+
+</body>
+
+</html>
+
+{{ define "nav" }}
+{{ partial "docs/nav" . }}
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "docs/footer" . }}
+{{ end }}

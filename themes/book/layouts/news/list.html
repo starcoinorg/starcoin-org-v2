@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "news").ByPublishDate.Reverse }}
+
+<div class="news">
+    <div class="news_list">
+        <ul>
+            {{ range $paginator.Pages }}
+            <li>
+                <div class="right_arrow"><img src="/img/right_news_arrow.png" /></div>
+                <div class="title"><span class="spot"></span><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
+                <div class="desc">Published at {{ .Date.Format "January 2, 2006" }} &middot; {{.ReadingTime}} min read
+                    <p>{{ .Summary }}...</p>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+        <div class="page_list">
+            {{ if $paginator.HasPrev }}
+            <div class="li">
+                <a class="pagination-previous" href="{{ $paginator.Prev.URL }}">Previous</a>
+                <div class="page_left_arrow"></div>
+            </div>
+            {{ end }}
+            {{ range $paginator.Pagers }}
+            <div class="li {{ if eq . $paginator }} action{{ end }}">
+                <a class="pagination-link{{ if eq . $paginator }} is-current{{ end }}"
+                    aria-label="Goto page {{ .PageNumber }}" href="{{ .URL }}">{{ .PageNumber }}</a>
+            </div>
+            {{ end }}
+            {{ if $paginator.HasNext }}
+            <div class="li">
+                <a class="pagination-next" href="{{ $paginator.Next.URL }}">Next</a>
+                <div class="page_right_arrow"></div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="news_right">
+        {{ partial "news/widget-tags.html" . }}
+        {{ partial "news/widget-recent.html" . }}
+        {{ partial "news/widget-archives.html" . }}
+    </div>
+</div>
+{{ end }}

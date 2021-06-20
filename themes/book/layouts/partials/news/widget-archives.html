@@ -1,0 +1,10 @@
+<div class="right_card">
+    <div class="right-column margin-top">
+        <div class="column_title"><span>Archives</span></div>
+    </div>
+    <div class="date_list">
+        {{ range (where .Site.RegularPages "Section" "news").GroupByDate "2006" }}
+        <div class="item"><a href='{{ "news/archives" | relLangURL }}/{{ .Key }}'>{{ .Key }}</a>（{{ len .Pages }}）</div>
+        {{ end }}
+    </div>
+</div>
