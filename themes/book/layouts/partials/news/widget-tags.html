@@ -4,7 +4,7 @@
     </div>
     <div class="column_list">
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-        <div class="item"><a href="{{ " tags" | relLangURL }}/{{ $name | urlize }}">{{ $name }}</a></div>
+        <div class="item"><a href='{{ "tags" | relLangURL }}/{{ $name | urlize }}'>{{ $name }}</a></div>
         {{ end }}
     </div>
 </div>
