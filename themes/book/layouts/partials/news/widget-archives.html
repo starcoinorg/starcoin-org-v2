@@ -4,7 +4,7 @@
     </div>
     <div class="date_list">
         {{ range (where .Site.RegularPages "Section" "news").GroupByDate "2006" }}
-        <div class="item"><a href='{{ "news/archives" | relLangURL }}/{{ .Key }}'>{{ .Key }}</a>（{{ len .Pages }}）</div>
+        <div class="item"><a href='{{ "archives" | relLangURL }}/{{ .Key }}'>{{ .Key }}</a>（{{ len .Pages }}）</div>
         {{ end }}
     </div>
 </div>
