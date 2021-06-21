@@ -14,7 +14,7 @@ git submodule update --init
 
 ### Run server
 ```
-hugo -s ./developer.starcoin.org server --minify --port 8004
+hugo server --minify --port 8004
 ```
 open http://localhost:8004/ in browser
 

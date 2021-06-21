@@ -1,13 +1,26 @@
 {{ define "main" }}
-<article class="markdown">
-  <h1>{{ .Title | title }}</h1>
-  {{ $taxonomies := index .Site.Taxonomies .Page.Type }}
-  {{ range $taxonomies }}
-    <div><a href="{{ .Page.Permalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a></div>
-  {{ end }}
-</article>
-{{ end }}
 
-{{ define "toc" }}
-  {{ partial "docs/taxonomy" . }}
+{{ partial "news/inject/head" . }}
+<div class="container">
+  <div class="news">
+    <div class="news_list">
+      <ul>
+        {{ range sort .Paginator.Pages }}
+        <li>
+          <!-- <div class="right_arrow"><img src="/img/right_news_arrow.png" /></div> -->
+          <div class="title"><span class="spot"></span><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
+          <div class="desc">Published at {{ .Date.Format "January 2, 2006" }} &middot; {{.ReadingTime}} min read
+            <p>{{ .Summary }}...</p>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="news_right">
+      {{ partial "news/widget-tags.html" . }}
+      {{ partial "news/widget-recent.html" . }}
+      {{ partial "news/widget-archives.html" . }}
+    </div>
+  </div>
+</div>
 {{ end }}

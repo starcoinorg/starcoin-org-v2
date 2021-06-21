@@ -1,0 +1,16 @@
+<div class="right_card">
+    <div class="right-column margin-top">
+        <div class="column_title"><span>Recent posts</span></div>
+    </div>
+    <div class="posts_list">
+        <ul>
+            {{ range first 5 (where .Site.RegularPages "Section" "news").ByPublishDate.Reverse }}
+            <li>
+                <a href="{{ .Permalink | absURL }}">{{ .Title }}</a>
+                <p><time class="has-text-grey-light is-size-7">{{ .Date.Day }} {{ .Date.Month }} {{ .Date.Year }}</time>
+                </p>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

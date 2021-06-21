@@ -15,6 +15,12 @@
             box-shadow: 0px 2px 40px 0px rgba(16, 50, 88, 0.1);
     border-radius: 4px;
     padding-bottom: 50px; }
+    .news a {
+      color: #337ab7; }
+    .news .news_list ul li .desc p {
+      margin-top: 15px;
+      color: #333; 
+    }
     .news .news_list .page_list {
       display: -webkit-box;
       display: -webkit-flex;
@@ -59,6 +65,8 @@
           border-left: 13px solid #1C4BDE; }
         .news .news_list .page_list .action .page_right_arrow {
           border-left: 13px solid #1C4BDE; }
+          .news .news_list .page_list .action a {
+            color: #fff; }
     .news .news_list ul li {
       padding: 30px 0;
       margin: 0 40px;
