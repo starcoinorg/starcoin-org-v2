@@ -30,11 +30,15 @@ body {
     font-size: 66px;
     width: 1300px;
     margin: 0 auto;
-    padding-top: 315px;
-    padding-left: 105px;
+    padding-top: 305px;
+    padding-left: 140px;
+    padding-right: 140px;
     text-align: left;
     line-height: 96px;
     letter-spacing: 3px; }
+  .swiper-slide .banner-text.chinese {
+    padding-top: 390px;
+  }
     .swiper-slide .banner-text p {
       color: #FF5714; }
   .swiper-slide img {

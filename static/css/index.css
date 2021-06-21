@@ -318,10 +318,12 @@
       font-weight: 400;
       line-height: 33px;
       letter-spacing: 1px;
-      overflow: hidden;
       color: #272B3E;
+      /*
+      overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 4;
+      */
       -webkit-box-orient: vertical; }
 
 .Example .container .Advantages_title {
