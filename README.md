@@ -23,7 +23,7 @@ open http://localhost:8004/ in browser
 
 1. edit `config.toml`:
 change 
-baseURL = "https://developer.starcoin.org/"
+baseURL = "https://starcoin.org/"
 
 to
 
