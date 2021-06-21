@@ -1,1 +1,34 @@
 {{ define "dummy" }}{{ end }}
+{{ define "main" }}
+
+{{ partial "news/inject/head" . }}
+<div class="container">
+    <div class="news">
+        <div class="news_list">
+            <div class="tile is-child box">
+                <div class="content">
+                    <div class="content-title">
+                        <h1 class="title is-size-1">
+                            {{ if eq .Type "tags" }}
+                            #{{ .Title }}
+                            {{ else if eq .Type "archives" }}
+                            Archive {{ .Title }}
+                            {{ else }}
+                            {{ .Title }}
+                            {{ end }}
+                        </h1>
+                    </div>
+                    Published at {{ .Date.Format "January 2, 2006" }} By {{ $.Param "author" }}.
+                    <hr style="margin: 5px 0px 1.5rem 0px;" />
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+        <div class="news_right">
+            {{ partial "news/widget-tags.html" . }}
+            {{ partial "news/widget-recent.html" . }}
+            {{ partial "news/widget-archives.html" . }}
+        </div>
+    </div>
+</div>
+{{ end }}

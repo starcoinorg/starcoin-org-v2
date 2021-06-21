@@ -203,3 +203,27 @@
           font-size: 14px; }
     .news .news_right {
       width: auto; } }
+
+
+.tile {
+  align-items: stretch;
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content
+}
+.tile.is-child {
+  margin: 0!important
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.1);
+  color: #4a4a4a;
+  display: block;
+  padding: 20px;
+}
