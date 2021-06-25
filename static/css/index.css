@@ -117,7 +117,7 @@
         bottom: 0;
         background: #1C4BDE;
         /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                            -4px -4px 6px 0 rgba(116, 125, 136, .2),
                   inset -4px -4px 6px 0 rgba(255,255,255,.5),
                   inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
         -webkit-transition: all 0.8s ease;
@@ -145,7 +145,7 @@
         top: 0;
         background: #1C4BDE;
         /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                            -4px -4px 6px 0 rgba(116, 125, 136, .2),
                   inset -4px -4px 6px 0 rgba(255,255,255,.5),
                   inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
         -webkit-transition: all 0.8s ease;
@@ -261,6 +261,19 @@
   background-image: url("../img/advantages_back.png");
   background-size: 100% 100%;
   padding-bottom: 109px; }
+
+.Advantages .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Advantages .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
   .Advantages .container .Advantages_title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -286,6 +299,7 @@
   .Advantages .container .item_top {
     margin-top: 41px; }
   .Advantages .container .item {
+    height: 100%;
     background: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 40px;
