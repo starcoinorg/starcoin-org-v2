@@ -1,0 +1,32 @@
+.top .container .nav .item.Developer .more_nav {
+    overflow: visible;
+}
+
+.top .container .nav .item.Developer .more_nav .box .li {
+    position: relative;
+}
+
+.top .container .nav .item.Developer .more_nav .box .li .second_nav .li:first-child:before {
+    display: none;
+}
+
+.top .container .nav .item.Developer .more_nav .box .li .second_nav {
+    display: none;
+}
+
+.top .container .nav .item.Developer .more_nav .box .li:hover .second_nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 56px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 0 !important;
+    -webkit-box-shadow: 0 7px 30px 0 rgb(37 59 129 / 21%);
+    box-shadow: 0 7px 30px 0 rgb(37 59 129 / 21%);
+}

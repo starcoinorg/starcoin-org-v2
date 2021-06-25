@@ -10,6 +10,9 @@
 - id: Expand
   translation: Expand
 
+- id: More
+  translation: More
+
 - id: bookSearchConfig
   translation: '{ cache: true }'
 
@@ -50,22 +53,34 @@
   translation: Node Command
 - id: navDeveloperNode
   translation: Node
+- id: navDeveloperNodeKeyConcept
+  translation: Key Concept
 - id: navDeveloperInstallAndJoin
   translation: Install and Join
-- id: navDeveloperRPCProtocol
+- id: navDeveloperNodeRPCProtocol
   translation: RPC Protocol & APIs
-- id: navDeveloperSIP
-  translation: SIP
-- id: navDeveloperSDK
-  translation: Python & JS SDK
+- id: navDeveloperNodeSIP
+  translation: SIPs
+- id: navDeveloperNodeSDK
+  translation: SDK
+- id: navDeveloperMove
+  translation: Move
 - id: navDeveloperMoveBook
   translation: Move Book
+- id: navDeveloperMove1.2ChangeLog
+  translation: Move ChangeLog 1.2
+- id: navDeveloperMoveIDE
+  translation: Move IDE
 - id: navDeveloperMoveCLI
   translation: Move CLI
 - id: navDeveloperMoveExamples
   translation: Move Examples
 - id: navDeveloperStratumPool
   translation: Stratum Pool
+- id: navDeveloperStratumPool
+  translation: Stratum Pool Guide
+- id: navDeveloperStratumPoolStratumMiningProtocol
+  translation: Stratum mining protocol
 - id: navCommunityWestar
   translation: Westar Lab
 - id: navCommunityTwitter
