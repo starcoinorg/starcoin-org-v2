@@ -7,7 +7,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%; 
+}
   .news .news_list {
     width: 72%;
     background: #FFFFFF;
@@ -226,4 +227,77 @@
   color: #4a4a4a;
   display: block;
   padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;    
+}
+.tile .content h2 {
+  font-size: 1.75em;
+  margin-bottom: .5714em;
+}
+.tile strong {
+  color: #363636;
+  font-weight: 700;
+}
+
+.tile .content h1, .tile .content h2, .tile .content h3, .tile .content h4, .tile .content h5, .tile .content h6 {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+}
+.tile a {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+}
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+.tile .content ul {
+  list-style: disc outside;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.tile .content ol {
+  list-style: decimal outside;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.news_list .tile .content ul li {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.tile .content pre {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.tile pre {
+  -webkit-overflow-scrolling: touch;
+  background-color: #f5f5f5;
+  color: #4a4a4a;
+  font-size: .875em;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
+  white-space: pre;
+  word-wrap: normal;
+}
+.tile code, pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+.tile img {
+  height: auto;
+  max-width: 100%;
+}
+.tile audio, .tile img, .tile video {
+  height: auto;
+  max-width: 100%;
 }
