@@ -10,6 +10,9 @@
 - id: Expand
   translation: 展开
 
+- id: More
+  translation: 更多
+
 - id: bookSearchConfig
   translation: |
     {
@@ -24,7 +27,7 @@
 
 - id: navOverview
   translation: 首页
-- id: navGuide
+- id: navLearn
   translation: 使用指南
 - id: navDeveloper
   translation: 开发者
@@ -40,34 +43,52 @@
   translation: 技术白皮书
 - id: navOverviewEconomyWhitepaper
   translation: 经济模型白皮书
-- id: navGuideStarmaskInstall
-  translation: 安装 Starmask 钱包
-- id: navGuideStarmaskUse
-  translation: 使用 Starmask 钱包
+- id: navLearnWalletInstall
+  translation: 钱包安装指南
+- id: navLearnWalletUse
+  translation: Starmask 使用指南
+- id: navLearnNodeMining
+  translation: 节点挖矿指南
+- id: navLearnNodeCommand
+  translation: 节点命令指南
 - id: navGuideExplorer
   translation: 区块链浏览器
 - id: navGuideMining
   translation: STC挖矿
 - id: navGuideNodeCommand
   translation: 节点命令行
+- id: navDeveloperNode
+  translation: Node
+- id: navDeveloperNodeKeyConcept
+  translation: 关键概念
 - id: navDeveloperInstallAndJoin
   translation: 安装并加入网络
-- id: navDeveloperRPCProtocol
-  translation: RPC协议接口
-- id: navDeveloperSIP
-  translation: SIP
-- id: navDeveloperSDK
-  translation: Python 和 JS SDK
+- id: navDeveloperNodeRPCProtocol
+  translation: RPC 协议
+- id: navDeveloperNodeSIP
+  translation: SIPs
+- id: navDeveloperNodeSDK
+  translation: SDK
+- id: navDeveloperMove
+  translation: Move
 - id: navDeveloperMoveBook
   translation: Move 开发指南
+- id: navDeveloperMove1.2ChangeLog
+  translation: Move 1.2 更新
+- id: navDeveloperMoveIDE
+  translation: Move IDE
 - id: navDeveloperMoveCLI
   translation: Move CLI
 - id: navDeveloperMoveExamples
   translation: Move 合约示例
 - id: navDeveloperStratumPool
   translation: 矿池接入
+- id: navDeveloperStratumPoolGuide
+  translation: 矿池接入指南
+- id: navDeveloperStratumPoolStratumMiningProtocol
+  translation: 层开采协议
 - id: navCommunityWestar
-  translation: Westar 实验室 
+  translation: Westar 实验室
 - id: navCommunityTwitter
   translation: Twitter
 - id: navCommunityMoveChinese
@@ -78,6 +99,8 @@
   translation: GitHub 讨论区
 - id: navQAFAQ
   translation: Starcoin 常见问题
+- id: navQAAMA
+  translation: AMA
 - id: navAbout
   translation: 关于
 - id: navAboutStarcoin
