@@ -205,15 +205,15 @@ title: Index
 1     module Hello {
 2         use 0x1::Signer;
 3         use 0x1::Event;
-4     
+4
 5         struct AnyWordEvent has drop, store {
 6             words: vector<u8>,
 7         }
-8     
+8
 9         struct EventHolder has key {
 10            any_word_events: Event::EventHandle<AnyWordEvent>,
 11        }
-12    
+12
 13        public(script) fun hello(account: &signer) acquires EventHolder {
 14            let addr = Signer::address_of(account);
 15            if (!exists<EventHolder>(copy addr)){
@@ -233,14 +233,14 @@ title: Index
 1     module MyToken {
 2         use 0x1::Token;
 3         use 0x1::Account;
-4    
+4
 5         struct MyToken has copy, drop, store { }
-6    
+6
 7         public(script) fun init(account: &signer) {
 8             Token::register_token<MyToken>(account, 3);
 9             Account::do_accept_token<MyToken>(account);
 10        }
-11   
+11
 12        public(script) fun mint(account: &signer, amount: u128) {
 13           let token = Token::mint<MyToken>(account, amount);
 14           Account::deposit_to_self<MyToken>(account, token)
@@ -254,17 +254,17 @@ title: Index
 2         use 0x1::Dao;
 3         use {{coder}}::MyToken::MyToken;
 4         use 0x1::Config;
-5     
+5
 6         fun set_dao_config(signer: signer) {
 7             let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
 8                 &signer
 9             );
-10    
+10
 11            Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
 12            Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
 13            Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
 14            Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
-15    
+15
 16            Config::restore_modify_config_capability(cap);
 17        }
 18    }
@@ -341,48 +341,22 @@ title: Index
             <div class="li">
                 <div class="label">理事会成员</div>
                 <div class="left-pic">
-                    <img src="/img/touxiang.png" />
+                    <img src="/img/noah_jessop.jpeg" />
                 </div>
                 <div class="right-content">
                     <div class="info">
-                        <div class="name">塔玛拉·哈森</div>
-                        <p>（Tamara Haasen）</p>
+                        <div class="name">Noah Jessop</div>
                     </div>
                 </div>
             </div>
             <div class="li">
                 <div class="label">理事会成员</div>
                 <div class="left-pic">
-                    <img src="/img/touxiang.png" />
+                    <img src="/img/damir_s.jpeg" />
                 </div>
                 <div class="right-content">
                     <div class="info">
-                        <div class="name">塔玛拉·哈森</div>
-                        <p>（Tamara Haasen）</p>
-                    </div>
-                </div>
-            </div>
-            <div class="li">
-                <div class="label">理事会成员</div>
-                <div class="left-pic">
-                    <img src="/img/touxiang.png" />
-                </div>
-                <div class="right-content">
-                    <div class="info">
-                        <div class="name">塔玛拉·哈森</div>
-                        <p>（Tamara Haasen）</p>
-                    </div>
-                </div>
-            </div>
-            <div class="li">
-                <div class="label">理事会成员</div>
-                <div class="left-pic">
-                    <img src="/img/touxiang.png" />
-                </div>
-                <div class="right-content">
-                    <div class="info">
-                        <div class="name">塔玛拉·哈森</div>
-                        <p>（Tamara Haasen）</p>
+                        <div class="name">Damir S</div>
                     </div>
                 </div>
             </div>
