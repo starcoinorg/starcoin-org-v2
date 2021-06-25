@@ -17,9 +17,9 @@
   translation: The current language version of this document is still under improvement, please check other language versions
 
 - id: navOverview
-  translation: Index
-- id: navGuide
-  translation: Guide
+  translation: Overview
+- id: navLearn
+  translation: Learn
 - id: navDeveloper
   translation: Developer
 - id: navCommunity
@@ -34,9 +34,13 @@
   translation: Technology Whitepaper
 - id: navOverviewEconomyWhitepaper
   translation: Economy Whitepaper
-- id: navGuideStarmaskInstall
+- id: navLearnWalletInstall
   translation: Install Starmask Wallet
-- id: navGuideStarmaskUse
+- id: navLearnNodeMining
+  translation: Node Mining
+- id: navLearnNodeCommand
+  translation: Node Command
+- id: navLearnWalletUse
   translation: Use Starmask Wallet
 - id: navGuideExplorer
   translation: Starcoin Explorer
@@ -44,6 +48,8 @@
   translation: Mining STC
 - id: navGuideNodeCommand
   translation: Node Command
+- id: navDeveloperNode
+  translation: Node
 - id: navDeveloperInstallAndJoin
   translation: Install and Join
 - id: navDeveloperRPCProtocol
@@ -72,6 +78,8 @@
   translation: GitHub Discussion
 - id: navQAFAQ
   translation: Starcoin FAQ
+- id: navQAAMA
+  translation: AMA
 - id: navAbout
   translation: About
 - id: navAboutStarcoin

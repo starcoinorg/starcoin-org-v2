@@ -13,25 +13,20 @@
     </div>
 </div>
 <div class="item Guide allSelect ">
-    <span class="i18n">{{ i18n "navGuide" }}</span>
+    <span class="i18n">{{ i18n "navLearn" }}</span>
     <div class="more_nav">
         <div class="box">
-            <div class="li "><a class="i18n"
-                    onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md', '');return false"
-                    href="javascript:void(0)">{{ i18n "navGuideStarmaskInstall" }}</a>
+            <div class="li "><a class="i18n"  href="/{{ .Site.Language.Lang }}/learn/install">{{ i18n "navLearnWalletInstall" }}</a>
             </div>
             <div class="li "><a class="i18n"
                     onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md', '');return false"
-                    href="javascript:void(0)">{{ i18n "navGuideStarmaskUse" }}</a></div>
-            <div class="li "><a class="i18n" onclick="window.open('https://explorer.starcoin.org', '');return false"
-                    name="" href="javascript:void(0)">{{ i18n "navGuideExplorer" }}</a></div>
-            <div class="li "><a class="i18n"
-                    onclick="window.open('https://starcoin-miner.gitbook.io/starcoin-miner-guide/', '');return false"
-                    href="javascript:void(0)">{{ i18n "navGuideMining" }}</a></div>
+                    href="javascript:void(0)">{{ i18n "navLearnWalletUse" }}</a></div>
+            <div class="li "><a class="i18n" onclick="window.open('https://developer.starcoin.org/zh/cli/mint/', '');return false"
+                    name="" href="javascript:void(0)">{{ i18n "navLearnNodeMining" }}</a></div>
             <div class="li "><a class="i18n"
                     onclick="window.open('https://developer.starcoin.org/zh/cli/', '');return false"
-                    href="javascript:void(0)">{{ i18n "navGuideNodeCommand" }}</a></div>
-        </div>
+                    href="javascript:void(0)">{{ i18n "navLearnNodeCommand" }}</a></div>
+           </div>
     </div>
 </div>
 <div class="item Developer allSelect "><span class="i18n" name="">{{ i18n "navDeveloper" }}</span>
@@ -66,32 +61,34 @@
             <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/news/">{{ i18n "navNews" }}</a></div>
             <div class="li "><a class="i18n" onclick="window.open('http://westar.io', '');return false"
                     href="javascript:void(0)">{{ i18n "navCommunityWestar" }}</a></div>
-            <div class="li "><a class="i18n" onclick="window.open('https://twitter.com/StarcoinSTC', '');return false"
-                    name="" href="javascript:void(0)">{{ i18n "navCommunityTwitter" }}</a></div>
+            <!-- <div class="li "><a class="i18n" onclick="window.open('https://twitter.com/StarcoinSTC', '');return false"
+                    name="" href="javascript:void(0)">{{ i18n "navCommunityTwitter" }}</a></div> -->
             <div class="li "><a class="i18n" onclick="window.open('https://www.movelang.io', '');return false" name=""
                     href="javascript:void(0)">{{ i18n "navCommunityMoveChinese" }}</a>
             </div>
-            <div class="li "><a class="i18n" onclick="window.open('https://developer.starcoin.org', '');return false"
-                    name="" href="javascript:void(0)">{{ i18n "navCommunityDocumentation" }}</a></div>
+            <!-- <div class="li "><a class="i18n" onclick="window.open('https://developer.starcoin.org', '');return false"
+                    name="" href="javascript:void(0)">{{ i18n "navCommunityDocumentation" }}</a></div> -->
         </div>
     </div>
 </div>
 <div class="item QA allSelect "><span class="i18n" name="">{{ i18n "navQA" }}</span>
     <div class="more_nav">
         <div class="box">
-            <div class="li "><a class="i18n"
+            <!-- <div class="li "><a class="i18n"
                     onclick="window.open('https://github.com/starcoinorg/starcoin/discussions', '');return false"
                     href="javascript:void(0)">{{ i18n "navQAGitHub" }}</a></div>
             <div class="li "><a class="i18n" onclick="window.open('https://explorer.starcoin.org/faq', '');return false"
-                    name="" href="javascript:void(0)">{{ i18n "navQAFAQ" }}</a></div>
+                    name="" href="javascript:void(0)">{{ i18n "navQAFAQ" }}</a></div> -->
+                    <div class="li "><a class="i18n" onclick="window.open('https://shimo.im/docs/pXYcrkWYkpJxy8wh', '');return false"
+                        name="" href="javascript:void(0)">{{ i18n "navQAAMA" }}</a></div>
         </div>
     </div>
 </div>
-<div class="item About allSelect "><span class="i18n" name="">{{ i18n "navAbout" }}</span>
+<!-- <div class="item About allSelect "><span class="i18n" name="">{{ i18n "navAbout" }}</span>
     <div class="more_nav">
         <div class="box">
             <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/about">{{ i18n
                     "navAboutStarcoin" }}</a></div>
         </div>
     </div>
-</div>
+</div> -->
