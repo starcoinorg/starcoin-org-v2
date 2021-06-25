@@ -46,6 +46,8 @@
 
 <script>
     $(document).ready(function () {
+        const NAVTIVE = JSON.parse(localStorage.getItem('navActive')) || 0
+        $(".navClick .item")[NAVTIVE].classList.add('navActive')
         $(".p-language span, .m-language .item").click(function () {
             let url = window.location.href;
             let choosed = $(this).attr('language');
@@ -65,6 +67,9 @@
                 for (var i = 0, elseLil = elseLi.length; i < elseLil; i++) {
                     if (elseLi[i] !== navDom) {//判断是否是ele节点，是否与触发事件的节点相同
                         siblingss.push(elseLi[i]);
+                    } else {
+                        console.log(i)
+                        localStorage.setItem('navActive', i)
                     }
                 }
                 siblingss.forEach(item => {
