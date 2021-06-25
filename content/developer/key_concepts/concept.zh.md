@@ -1,5 +1,6 @@
 +++
-title = "关键概念"
+title = "节点关键概念"
+weight =  "9"
 date = "2020-04-09"
 image = 'read.jpg'
 summary = " "
@@ -9,7 +10,7 @@ author = "Tim"
 
 <br />
 
-## 交易
+**交易**
 
 交易SignedUserTransaction是Starcoin区块链的基本概念，是用户跟链打交道的入口。用户通过客户端提交签名后的交易，更新链上的账本状态。
 
@@ -36,7 +37,7 @@ RawUserTransaction则包括以下内容：
 
 
 
-## 区块头
+**区块头**
 
 区块头BlockHeader表示了当前区块包含的所有交易执行完之后，链所处的状态。BlockHeader是Starcoin区块链的核心概念，包含了重要的数据。
 
@@ -61,7 +62,7 @@ RawUserTransaction则包括以下内容：
 
 
 
-## 区块
+**区块**
 
 区块Block包含了一批有序的交易，并且也包括了这些交易按顺序执行之后的状态。区块是Starcoin区块链的核心概念，如图所示：
 
@@ -74,7 +75,7 @@ Block包含了BlockHeader和BlockBody。其中BlockBody包含了两部分：
 
 
 
-## 全局状态树
+**全局状态树**
 
 全局状态树GlobalStateTree存储了链上所有用户账号的状态。Starcoin区块链使用双层的稀疏默克尔树SparseMerkleTree作为状态树，如下图所示：
 
@@ -92,7 +93,7 @@ Block包含了BlockHeader和BlockBody。其中BlockBody包含了两部分：
 
 
 
-## 默克尔累加器
+**默克尔累加器**
 
 默克尔累加器MerkleAccumulator是Starcoin区块链另一个核心数据结构，用于提供区块和交易的证明。它的结构如图所示：
 
