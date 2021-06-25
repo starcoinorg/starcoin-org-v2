@@ -509,6 +509,15 @@
       padding: 5px;
       background-color: #ffffff;
     }
+    .code_fixed_back .code_model .code_view {
+      padding: 0;
+    }
+    .code_fixed_back .code_model .code_view pre {
+      border: none;
+      padding: 5px;
+      background-color: #1a1f2d;
+      color: #FFFFFF;
+    }
     .Example .container .code_view .code_right .code_body .grzBLt {
       font-size: 14px;
       font-family: "font-PingFangMedium";
