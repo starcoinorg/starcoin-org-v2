@@ -310,6 +310,9 @@ button {
       padding-top: 22px;
       width: 753px;
       margin-left: 80px; }
+      .top .container .nav .navActive{
+        border-bottom: 3px solid #fff;
+      }
       .top .container .nav .item {
         font-size: 20px;
         cursor: pointer;
