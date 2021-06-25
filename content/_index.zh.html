@@ -171,15 +171,15 @@ title: 首页
                     <div class="list index_code_view_tab">
                         <ul>
                             <li class="select">
-                                <div class="title"> hello world </div>
+                                <div class="title"> Hello world </div>
                                 <div class="desc"></div>
                             </li>
                             <li>
-                                <div class="title">my token</div>
+                                <div class="title"> My token </div>
                                 <div class="desc"></div>
                             </li>
                             <li>
-                                <div class="title">Deploy Stmart Contract</div>
+                                <div class="title"> Deploy Stmart Contract </div>
                                 <div class="desc"></div>
                             </li>
                         </ul>
@@ -195,394 +195,74 @@ title: 首页
                     </div>
                     <div class="code_body">
                         <div class="code_page_0 code_page_item">
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">1</span>
-                                <span class="cVTXYw">
-                                    module Hello {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">2</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Signer;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">3</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Event;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">4</span>
-                                <span class="cVTXYw">
-                                    struct AnyWordEvent has drop, store {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">5</span>
-                                <span class="cVTXYw">
-                                    words: vector<u8>,
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">6</span>
-                                <span class="cVTXYw">
-                                    struct EventHolder has key {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">7</span>
-                                <span class="cVTXYw">
-                                    any_word_events: Event::EventHandle<AnyWordEvent>,
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">8</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">9</span>
-                                <span class="cVTXYw">
-                                    public(script) fun hello(account: &signer) acquires EventHolder {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">10</span>
-                                <span class="cVTXYw">
-                                    let addr = Signer::address_of(account);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">11</span>
-                                <span class="cVTXYw">
-                                    if (!exists<EventHolder>(copy addr)){
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">12</span>
-                                <span class="cVTXYw">
-                                    move_to(account, EventHolder {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">13</span>
-                                <span class="cVTXYw">
-                                    any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">14</span>
-                                <span class="cVTXYw">
-                                    });
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">15</span>
-                                <span class="cVTXYw">
-                                };
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">16</span>
-                                <span class="cVTXYw">
-                                    let hello_world = x"68656c6c6f20776f726c64";//hello world
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">17</span>
-                                <span class="cVTXYw">
-                                    let holder = borrow_global_mut<EventHolder>(addr);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">18</span>
-                                <span class="cVTXYw">
-                                    Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">19</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">20</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
+<pre>
+1     module Hello {
+2         use 0x1::Signer;
+3         use 0x1::Event;
+4     
+5         struct AnyWordEvent has drop, store {
+6             words: vector<u8>,
+7         }
+8     
+9         struct EventHolder has key {
+10            any_word_events: Event::EventHandle<AnyWordEvent>,
+11        }
+12    
+13        public(script) fun hello(account: &signer) acquires EventHolder {
+14            let addr = Signer::address_of(account);
+15            if (!exists<EventHolder>(copy addr)){
+16                move_to(account, EventHolder {
+17                    any_word_events: Event::new_event_handle<AnyWordEvent>(account),
+18                });
+19            };
+20            let hello_world = x"68656c6c6f20776f726c64";//hello world
+21            let holder = borrow_global_mut<EventHolder>(addr);
+22            Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+23        }
+24    }
+</pre>
                         </div>
                         <div class="code_page_1 code_page_item" style="display: none;">
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">1</span>
-                                <span class="cVTXYw">
-                                    module MyToken {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">2</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Token;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">3</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Account;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">4</span>
-                                <span class="cVTXYw">
-                                    struct MyToken has copy, drop, store { }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">5</span>
-                                <span class="cVTXYw">
-                                    public(script) fun init(account: &signer) {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">6</span>
-                                <span class="cVTXYw">
-                                    Token::register_token<MyToken>(account, 3);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">7</span>
-                                <span class="cVTXYw">
-                                    Account::do_accept_token<MyToken>(account);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">8</span>
-                                <span class="cVTXYw">
-                                    }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">9</span>
-                                <span class="cVTXYw">
-                                    public(script) fun mint(account: &signer, amount: u128) {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">10</span>
-                                <span class="cVTXYw">
-                                    let token = Token::mint<MyToken>(account, amount);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">11</span>
-                                <span class="cVTXYw">
-                                    Account::deposit_to_self<MyToken>(account, token)
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">12</span>
-                                <span class="cVTXYw">
-                                    }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">13</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
+<pre>
+1     module MyToken {
+2         use 0x1::Token;
+3         use 0x1::Account;
+4    
+5         struct MyToken has copy, drop, store { }
+6    
+7         public(script) fun init(account: &signer) {
+8             Token::register_token<MyToken>(account, 3);
+9             Account::do_accept_token<MyToken>(account);
+10        }
+11   
+12        public(script) fun mint(account: &signer, amount: u128) {
+13           let token = Token::mint<MyToken>(account, amount);
+14           Account::deposit_to_self<MyToken>(account, token)
+15        }
+16   }
+</pre>
                         </div>
                         <div class="code_page_2 code_page_item" style="display: none;">
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">1</span>
-                                <span class="cVTXYw">
-                                    module MyToken {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">2</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Token;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">3</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Account;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">4</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Dao;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">5</span>
-                                <span class="cVTXYw">
-                                    struct MyToken has copy, drop, store { }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">6</span>
-                                <span class="cVTXYw">
-                                    public(script) fun init(account: &signer) {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">7</span>
-                                <span class="cVTXYw">
-                                    Token::register_token<MyToken>(account, 3);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">8</span>
-                                <span class="cVTXYw">
-                                    Account::do_accept_token<MyToken>(account);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">9</span>
-                                <span class="cVTXYw">
-                                    Dao::plugin<MyToken>(account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">10</span>
-                                <span class="cVTXYw">
-                                    }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #1A234D;">
-                                <span class="grzBLt">11</span>
-                                <span class="cVTXYw">
-                                    public(script) fun mint(account: &signer, amount: u128) {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">12</span>
-                                <span class="cVTXYw">
-                                    let token = Token::mint<MyToken>(account, amount);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">13</span>
-                                <span class="cVTXYw">
-                                    Account::deposit_to_self<MyToken>(account, token)
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">14</span>
-                                <span class="cVTXYw">
-                                    }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">15</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">16</span>
-                                <span class="cVTXYw">
-                                    修改MyToken模块的Dao配置
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">17</span>
-                                <span class="cVTXYw">
-                                    script {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">18</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Dao;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">19</span>
-                                <span class="cVTXYw">
-                                    use {{coder}}::MyToken::MyToken;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">20</span>
-                                <span class="cVTXYw">
-                                    use 0x1::Config;
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">21</span>
-                                <span class="cVTXYw">
-                                    fun set_dao_config(signer: signer) {
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">22</span>
-                                <span class="cVTXYw">
-                                    let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">23</span>
-                                <span class="cVTXYw">
-                                    &signer
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">24</span>
-                                <span class="cVTXYw">
-                                    );
-                                </span>
-                            </div>    
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">25</span>
-                                <span class="cVTXYw">
-                                    Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">26</span>
-                                <span class="cVTXYw">
-                                    Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">27</span>
-                                <span class="cVTXYw">
-                                    Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">28</span>
-                                <span class="cVTXYw">
-                                    Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">29</span>
-                                <span class="cVTXYw">
-                                    Config::restore_modify_config_capability(cap);
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">30</span>
-                                <span class="cVTXYw">
-                                    }
-                                </span>
-                            </div>
-                            <div class="Codeblock__Line-bq0bh-3 izzMiH token-line" style="color: #FFFFFF;">
-                                <span class="grzBLt">31</span>
-                                <span class="cVTXYw">
-                                }
-                                </span>
-                            </div>
+<pre>
+1     script {
+2         use 0x1::Dao;
+3         use {{coder}}::MyToken::MyToken;
+4         use 0x1::Config;
+5     
+6         fun set_dao_config(signer: signer) {
+7             let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
+8                 &signer
+9             );
+10    
+11            Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
+12            Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
+13            Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
+14            Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
+15    
+16            Config::restore_modify_config_capability(cap);
+17        }
+18    }
+</pre>
                         </div>
                     </div>
                 </div>
@@ -605,15 +285,15 @@ title: 首页
                     <div class="list index_code_view_tab">
                         <ul>
                             <li class="select">
-                                <div class="title"> hello world </div>
+                                <div class="title"> Hello world </div>
                                 <div class="desc"></div>
                             </li>
                             <li>
-                                <div class="title"> my token </div>
+                                <div class="title"> My token </div>
                                 <div class="desc"></div>
                             </li>
                             <li>
-                                <div class="title">Deploy Stmart Contract</div>
+                                <div class="title"> Deploy Stmart Contract </div>
                                 <div class="desc"></div>
                             </li>
                         </ul>
