@@ -500,10 +500,15 @@
     border-left: 2px solid #5B76F1;
     border-right: 2px solid #5B76F1;
     border-bottom: 2px solid #5B76F1;
-    padding: 9px 0 9px 30px;
+    /* padding: 9px 0 9px 30px; */
     overflow: auto;
     line-height: 2.3;
     letter-spacing: 0.5px; }
+    .Example .container .code_view .code_right .code_body .code_page_item pre {
+      border: none;
+      padding: 5px;
+      background-color: #ffffff;
+    }
     .Example .container .code_view .code_right .code_body .grzBLt {
       font-size: 14px;
       font-family: "font-PingFangMedium";
