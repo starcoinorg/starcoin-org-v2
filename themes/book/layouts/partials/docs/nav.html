@@ -57,10 +57,23 @@
             }
         })
         $(".navClick .item").click(function () {
+            let navDom = $(this)[0] || null
+            if (navDom) {
+                navDom.classList.add('navActive')
+                let siblingss = []; //用来存放其他的兄弟节点
+                let elseLi = navDom.parentNode.children;
+                for (var i = 0, elseLil = elseLi.length; i < elseLil; i++) {
+                    if (elseLi[i] !== navDom) {//判断是否是ele节点，是否与触发事件的节点相同
+                        siblingss.push(elseLi[i]);
+                    }
+                }
+                siblingss.forEach(item => {
+                    item.classList.remove('navActive')
+                })
+            }
             if ($(this).attr("href")) {
                 window.open($(this).attr("href"), "_self")
             }
-
         })
         $(".more_nav .box .li").click(function () {
             if ($(this).attr("href")) {
