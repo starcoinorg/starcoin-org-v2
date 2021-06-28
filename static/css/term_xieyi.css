@@ -9,8 +9,11 @@
     font-family: 'font-PingFangRegular';
     font-weight: 400;
     color: #272B3E;
-    line-height: 40px;
-    margin-bottom: 10px; }
+    line-height: 32px;
+    margin-bottom: 16px; }
+  .container .term_xieyi .info a {
+    color: #1c95e0;
+  }
   .container .term_xieyi .code_info {
     height: 60px;
     line-height: 60px;
@@ -108,18 +111,21 @@
     .container .term_xieyi .term_icon img {
       width: 100%; }
   .container .term_xieyi .title_h3 {
+    /* 
     width: 755px;
+    */
+    width: 85%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-left: 42px;
-    padding-top: 193px;
+    padding-top: 120px;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 141px; }
+    margin-bottom: 80px; }
     .container .term_xieyi .title_h3 img {
       width: 34px;
       height: 34px; }
