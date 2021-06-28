@@ -28,17 +28,13 @@
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
-      .footer .container .foot .logo {
-        width: 142px;
-        height: 36px; }
-        .footer .container .foot .logo img {
-          width: 100%; }
+      display: flex; 
+      text-align: center;}
       .footer .container .foot .copyright {
         font-size: 16px;
         font-family: 'font-PingFangRegular';
         font-weight: 400;
-        margin-left: 41px;
+        margin: 0 auto !important;
         height: 36px;
         line-height: 46px;
         color: rgba(255, 255, 255, 0.6); }
