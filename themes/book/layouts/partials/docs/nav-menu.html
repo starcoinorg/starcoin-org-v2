@@ -2,11 +2,18 @@
         <a class="i18n" href="/{{ .Site.Language.Lang }}/">{{ i18n "navOverview" }}</a>
         <div class="more_nav">
                 <div class="box">
+                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/overview/technology_whitepaper/">{{ i18n
+                                        "navOverviewTechnologyWhitepaper" }}</a></div>
+                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/overview/economy_whitepaper/">{{ i18n
+                                        "navOverviewEconomyWhitepaper" }}</a>
+                        </div>
+                        <!--
                         <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/sips/sip-2/">{{ i18n
                                         "navOverviewTechnologyWhitepaper" }}</a></div>
                         <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/sips/sip-3/">{{ i18n
                                         "navOverviewEconomyWhitepaper" }}</a>
                         </div>
+                        -->
                 </div>
         </div>
 </div>
@@ -14,8 +21,16 @@
         <span class="i18n">{{ i18n "navLearn" }}</span>
         <div class="more_nav">
                 <div class="box">
-                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/learn/install">{{ i18n
+                        <!--
+                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/learn/use_wallet">{{ i18n
+                                        "navLearnWalletUse" }}</a>
+                        </div>
+                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/learn/install_wallet">{{ i18n
                                         "navLearnWalletInstall" }}</a>
+                        </div>
+                        -->
+                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/learn/install">{{ i18n
+                                "navLearnWalletInstall" }}</a>
                         </div>
                         <div class="li "><a class="i18n"
                                         onclick="window.open('https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md', '');return false"
