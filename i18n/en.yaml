@@ -38,13 +38,13 @@
 - id: navOverviewEconomyWhitepaper
   translation: Economy Whitepaper
 - id: navLearnWalletInstall
-  translation: Install Starmask Wallet
+  translation: Install Starcoin Wallet
 - id: navLearnNodeMining
   translation: Node Mining
 - id: navLearnNodeCommand
   translation: Node Command
 - id: navLearnWalletUse
-  translation: Use Starmask Wallet
+  translation: Use Starcoin Wallet
 - id: navGuideExplorer
   translation: Starcoin Explorer
 - id: navGuideMining

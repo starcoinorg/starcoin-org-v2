@@ -44,13 +44,13 @@
 - id: navOverviewEconomyWhitepaper
   translation: 经济模型白皮书
 - id: navLearnWalletInstall
-  translation: 钱包安装指南
+  translation: 安装钱包
 - id: navLearnWalletUse
-  translation: Starmask 使用指南
+  translation: 使用钱包
 - id: navLearnNodeMining
-  translation: 节点挖矿指南
+  translation: 节点挖矿
 - id: navLearnNodeCommand
-  translation: 节点命令指南
+  translation: 节点命令
 - id: navGuideExplorer
   translation: 区块链浏览器
 - id: navGuideMining
