@@ -46,7 +46,7 @@
 - id: navLearnStarcoinWallet
   translation: Starcoin钱包
 - id: navLearnStarmask
-  translation: StarMask浏览器插件钱包
+  translation: StarMask浏览器钱包
 - id: navLearnNodeMining
   translation: 节点挖矿
 - id: navLearnNodeCommand
