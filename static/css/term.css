@@ -428,6 +428,12 @@
   .container .term_bzk {
     padding: 0 15px;
     padding-bottom: 20px; }
+    .container .term_bzk .term_icon {
+      width: 369px;
+      height: 369px;
+      position: absolute;
+      top: 13px;
+      right: 99px; }
     .container .term_bzk .info {
       font-size: 14px;
       text-align: justify;

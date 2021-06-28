@@ -1,5 +1,5 @@
 +++
-title = "Install Starcoin wallet"
+title = "Starcoin wallet"
 date = "2020-04-09"
 image = 'read.jpg'
 summary = " "

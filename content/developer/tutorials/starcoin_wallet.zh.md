@@ -1,5 +1,5 @@
 +++
-title = "钱包安装指南"
+title = "Starcoin钱包使用指南"
 date = "2020-04-09"
 image = 'read.jpg'
 summary = " "

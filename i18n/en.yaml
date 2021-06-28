@@ -37,14 +37,14 @@
   translation: Technology Whitepaper
 - id: navOverviewEconomyWhitepaper
   translation: Economy Whitepaper
-- id: navLearnWalletInstall
-  translation: Install Starcoin Wallet
+- id: navLearnStarcoinWallet
+  translation: Starcoin Wallet
 - id: navLearnNodeMining
   translation: Node Mining
 - id: navLearnNodeCommand
   translation: Node Command
-- id: navLearnWalletUse
-  translation: Use Starcoin Wallet
+- id: navLearnStarmask
+  translation: StarMask Chrome Wallet
 - id: navGuideExplorer
   translation: Starcoin Explorer
 - id: navGuideMining
