@@ -14,7 +14,7 @@ git submodule update --init
 
 ### Run server
 ```
-hugo server --minify --port 8004
+hugo server --minify --port 8004
 ```
 open http://localhost:8004/ in browser
 
@@ -22,7 +22,7 @@ open http://localhost:8004/ in browser
 ### test publish in localhost
 
 1. edit `config.toml`:
-change 
+change
 baseURL = "https://starcoin.org/"
 
 to
