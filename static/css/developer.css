@@ -272,9 +272,9 @@
         font-weight: 500;
         color: #FFFFFF; }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   .container .developer {
-    margin-left: -140px; }
+    margin-left: -212px; }
     .container .developer .developer_left {
       width: 221px; }
     .container .developer .developer_right {

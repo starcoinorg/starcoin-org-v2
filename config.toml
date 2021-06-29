@@ -1,6 +1,6 @@
 baseURL = "http://localhost:8004/"
 languageCode = "en"
-title = "Starcoin Developer"
+title = "Starcoin"
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 theme = "book"
@@ -25,11 +25,11 @@ features = ["pagination","archives","tags"]
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Starcoin Developer"
+    title = "Starcoin"
     weight = 10
   [languages.zh]
     languageName = "中文"
-    title = "Starcoin 开发者"
+    title = "Starcoin"
     weight = 20
 
 [menu]
