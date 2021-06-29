@@ -283,7 +283,8 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 114px; }
+    padding-top: 114px; 
+    margin-bottom: 40px;}
     .Advantages .container .Advantages_title .Advantages_h3 {
       font-size: 50px;
       font-family: "font-PingFangBold";
@@ -623,7 +624,7 @@
       .Team .container .Team_list .item img {
         width: 100%;
         border-radius: 50%; }
-    .Team .container .Team_list .touxiang1 {
+    /* .Team .container .Team_list .touxiang1 {
       width: 183px;
       height: 183px;
       top: 0;
@@ -636,22 +637,22 @@
       top: 58px;
       left: 299px; }
       .Team .container .Team_list .touxiang2 img {
-        border: 2px solid #C8D88A; }
+        border: 2px solid #C8D88A; } */
     .Team .container .Team_list .touxiang3 {
       width: 240px;
       height: 240px;
       top: 55px;
-      left: 539px; }
+      left: 320px; }
       .Team .container .Team_list .touxiang3 img {
         border: 2px solid #C8D88A; }
     .Team .container .Team_list .touxiang4 {
-      width: 183px;
-      height: 183px;
-      top: -18px;
-      left: 887px; }
+      width: 240px;
+      height: 240px;
+      top: 55px;
+      left: 767px; }
       .Team .container .Team_list .touxiang4 img {
         border: 2px solid #C8D88A; }
-    .Team .container .Team_list .touxiang5 {
+    /* .Team .container .Team_list .touxiang5 {
       width: 126px;
       height: 126px;
       top: 16px;
@@ -692,7 +693,7 @@
       top: 205px;
       left: 1042px; }
       .Team .container .Team_list .touxiang10 img {
-        border: 2px solid #AAAEB7; }
+        border: 2px solid #AAAEB7; } */
   .Team .container .visible + .Team_title {
     opacity: 1;
     -webkit-transform: translate3d(0, 0px, 0);
