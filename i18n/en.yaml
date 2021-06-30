@@ -99,3 +99,38 @@
   translation: About
 - id: navAboutStarcoin
   translation: About Starcoin
+
+- id: footerContactUs
+  translation: Contact Us
+- id: footerTechnology
+  translation: Technology
+- id: footerCommunity
+  translation: Community
+- id: footerWechatPublicAccount
+  translation: 'WeChat Public Account: Starcoin区块链'
+- id: footerStarMaskWallet
+  translation: StarMask Wallet
+- id: footerBlockchainExplorer
+  translation: Blockchain Explorer
+- id: footerNews
+  translation: News
+- id: footerTwitter
+  translation: 'Twitter: '
+- id: footerWestarLab
+  translation: Westar Lab
+- id: footerWestarLab
+  translation: Westar Lab
+- id: footerWechatGroup
+  translation: 'Join WeChat Group: '
+- id: footerDeveloperDocs
+  translation: Developer Docs
+- id: footerSDK
+  translation: SDK
+- id: footerMoveChineseCommunity
+  translation: Move Chinese Community
+- id: footerDiscord
+  translation: 'Discord: '
+- id: footerGitHubDiscussion
+  translation: 'GitHub Discussion'
+- id: footerAllRightsReserved
+  translation: All Rights Reserved.

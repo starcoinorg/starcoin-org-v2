@@ -105,3 +105,36 @@
   translation: 关于
 - id: navAboutStarcoin
   translation: 关于 Starcoin
+
+- id: footerContactUs
+  translation: 联系我们
+- id: footerTechnology
+  translation: 技术
+- id: footerCommunity
+  translation: 社区
+- id: footerWechatPublicAccount
+  translation: '微信公众号: Starcoin区块链'
+- id: footerStarMaskWallet
+  translation: StarMask 插件钱包
+- id: footerBlockchainExplorer
+  translation: 区块浏览器
+- id: footerNews
+  translation: 新闻
+- id: footerTwitter
+  translation: '推特: '
+- id: footerWestarLab
+  translation: Westar 实验室
+- id: footerWechatGroup
+  translation: '微信群请加: '
+- id: footerDeveloperDocs
+  translation: 开发者文档
+- id: footerSDK
+  translation: SDK
+- id: footerMoveChineseCommunity
+  translation: Move 中文社区
+- id: footerDiscord
+  translation: 'Discord 群: '
+- id: footerGitHubDiscussion
+  translation: 'GitHub 讨论区'
+- id: footerAllRightsReserved
+  translation: 保留一切权利。
