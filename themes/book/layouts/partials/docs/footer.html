@@ -5,122 +5,124 @@
                 <!--
                 <a href="contact_us.html">联系我们</a>
                 -->
-                联系我们
+                {{ i18n "footerContactUs" }}
             </div>
             <div class="col-md-4 item">
-                技术
+                {{ i18n "footerTechnology" }}
             </div>
             <div class="col-md-4 item">
-                社区
+                {{ i18n "footerCommunity" }}
             </div>
         </div>
         <div class="row td">
             <div class="col-md-4 item">
-                微信公众号: Starcoin区块链
+                {{ i18n "footerWechatPublicAccount"}}
             </div>
             <div class="col-md-4 item">
                 <a target="_blank"
-                    href="https://chrome.google.com/webstore/detail/starmask/mfhbebgoclkghebffdldpobeajmbecfk?hl=zh-CN">StarMask
-                    Wallet</a>
+                    href="https://chrome.google.com/webstore/detail/starmask/mfhbebgoclkghebffdldpobeajmbecfk?hl=zh-CN">
+                    {{ i18n "footerStarMaskWallet" }}
+                </a>
             </div>
             <div class="col-md-4 item">
-                <a target="_blank" href="https://starcoin.org/en/news/">News 新闻</a>
-            </div>
-        </div>
-        <div class="row td">
-            <div class="col-md-4 item">
-                Twitter: <a target="_blank" href="https://twitter.com/starcoinstc">StarcoinSTC</a>
-            </div>
-            <div class="col-md-4 item">
-                <a target="_blank" href="https://explorer.starcoin.org">区块浏览器</a>
-            </div>
-            <div class="col-md-4 item">
-                <a target="_blank" href="https://westar.io">Westar 实验室</a>
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/news/">{{ i18n "footerNews" }}</a>
             </div>
         </div>
         <div class="row td">
             <div class="col-md-4 item">
-                微信群请加：starcoinorg
+                {{ i18n "footerTwitter" }} <a target="_blank" href="https://twitter.com/starcoinstc">StarcoinSTC</a>
             </div>
             <div class="col-md-4 item">
-                <a target="_blank" href="https://starcoin.org/en/developer/">开发者文档</a>
+                <a target="_blank" href="https://explorer.starcoin.org">{{ i18n "footerBlockchainExplorer" }}</a>
             </div>
             <div class="col-md-4 item">
-                <a target="_blank" href="https://www.movelang.io">Move 中文社区</a>
+                <a target="_blank" href="https://westar.io">{{ i18n "footerWestarLab" }}</a>
             </div>
         </div>
         <div class="row td">
             <div class="col-md-4 item">
-                Discord：<a target="_blank" href="https://discord.gg/96tKt5exaE">Starcoin Spaceship</a>
+                {{ i18n "footerWechatGroup" }} starcoinorg
             </div>
             <div class="col-md-4 item">
-                <a target="_blank" href="https://starcoin.org/en/developer/sdk/">SDK</a>
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/developer/">{{ i18n "footerDeveloperDocs" }}</a>
             </div>
             <div class="col-md-4 item">
-                <a target="_blank" href="https://github.com/starcoinorg/starcoin/discussions">GitHub 讨论区</a>
+                <a target="_blank" href="https://www.movelang.io">{{ i18n "footerMoveChineseCommunity" }}</a>
+            </div>
+        </div>
+        <div class="row td">
+            <div class="col-md-4 item">
+                {{ i18n "footerDiscord" }}<a target="_blank" href="https://discord.gg/96tKt5exaE">Starcoin Spaceship</a>
+            </div>
+            <div class="col-md-4 item">
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/developer/sdk/">{{ i18n "footerSDK" }}</a>
+            </div>
+            <div class="col-md-4 item">
+                <a target="_blank" href="https://github.com/starcoinorg/starcoin/discussions">{{ i18n "footerGitHubDiscussion" }}</a>
             </div>
         </div>
         <div class="foot">
-            <div class="copyright">© 2018-2021 Starcoin.org All rights reserved.</div>
+            <div class="copyright">© 2018-2021 Starcoin.org {{ i18n "footerAllRightsReserved" }}</div>
         </div>
     </div>
 </div>
 <!-- 手机端显示 -->
 <div class="m-footer visible-xs visible-sm visible-md">
     <div class="container">
-        <div class="go-contact-us">联系我们<img src="/img/r-arrow.png" /></div>
+        <div class="go-contact-us"> {{ i18n "footerContactUs" }}<img src="/img/r-arrow.png" /></div>
         <div class="row-li">
             <div class="item">
-                微信公众号: Starcoin区块链
+                {{ i18n "footerWechatPublicAccount"}}
             </div>
             <div class="item">
-                微信群: starcoinorg
+                {{ i18n "footerWechatGroup" }} starcoinorg
             </div>
         </div>
         <div class="row-li">
             <div class="item">
-                Twitter: <a target="_blank" href="https://twitter.com/starcoinstc">StarcoinSTC</a>
+                {{ i18n "footerTwitter" }} <a target="_blank" href="https://twitter.com/starcoinstc">StarcoinSTC</a>
             </div>
             <div class="item">
-                Discord：<a target="_blank" href="https://discord.gg/96tKt5exaE">Starcoin Spaceship</a>
+                {{ i18n "footerDiscord" }}<a target="_blank" href="https://discord.gg/96tKt5exaE">Starcoin Spaceship</a>
             </div>
         </div>
-        <div class="go-contact-us">技术<img src="/img/r-arrow.png" /></div>
+        <div class="go-contact-us">{{ i18n "footerTechnology" }}<img src="/img/r-arrow.png" /></div>
         <div class="row-li">
             <div class="item">
                 <a target="_blank"
-                    href="https://chrome.google.com/webstore/detail/starmask/mfhbebgoclkghebffdldpobeajmbecfk?hl=zh-CN">StarMask
-                    Wallet</a>
+                    href="https://chrome.google.com/webstore/detail/starmask/mfhbebgoclkghebffdldpobeajmbecfk?hl=zh-CN">
+                    {{ i18n "footerStarMaskWallet" }}
+                </a>
             </div>
             <div class="item">
-                <a target="_blank" href="https://explorer.starcoin.org">区块浏览器</a>
+                <a target="_blank" href="https://explorer.starcoin.org">{{ i18n "footerBlockchainExplorer" }}</a>
             </div>
         </div>
         <div class="row-li">
             <div class="item">
-                <a target="_blank" href="https://starcoin.org/en/developer/">开发者文档</a>
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/developer/">{{ i18n "footerDeveloperDocs" }}</a>
             </div>
             <div class="item">
-                <a target="_blank" href="https://starcoin.org/en/developer/sdk/">SDK</a>
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/developer/sdk/">{{ i18n "footerSDK" }}</a>
             </div>
         </div>
-        <div class="go-contact-us">社区<img src="/img/r-arrow.png" /></div>
+        <div class="go-contact-us">{{ i18n "footerCommunity" }}<img src="/img/r-arrow.png" /></div>
         <div class="row-li">
             <div class="item">
-                <a target="_blank" href="https://starcoin.org/en/news/">News 新闻</a>
+                <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/news/">{{ i18n "footerNews" }}</a>
             </div>
             <div class="item">
-                <a target="_blank" href="https://westar.io">Westar 实验室</a>
+                <a target="_blank" href="https://westar.io">{{ i18n "footerWestarLab" }}</a>
             </div>
         </div>
         <div class="row-li">
             <div class="item">
-                <a target="_blank" href="https://www.movelang.io">Move 中文社区</a>
+                <a target="_blank" href="https://www.movelang.io">{{ i18n "footerMoveChineseCommunity" }}</a>
             </div>
             <div class="item">
-                <a target="_blank" href="https://github.com/starcoinorg/starcoin/discussions">GitHub 讨论区</a>
+                <a target="_blank" href="https://github.com/starcoinorg/starcoin/discussions">{{ i18n "footerGitHubDiscussion" }}</a>
             </div>
         </div>
-        <div class="crt">© 2018-2021 Starcoin.org All rights reserved.</div>
+        <div class="crt">© 2018-2021 Starcoin.org {{ i18n "footerAllRightsReserved" }}</div>
     </div>
 </div>
