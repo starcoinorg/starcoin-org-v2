@@ -11,6 +11,10 @@
     color: #272B3E;
     line-height: 32px;
     margin-bottom: 16px; }
+
+  .container .term_xieyi .info img {
+    display: block; 
+    margin: 0 auto; }
   .container .term_xieyi .info a {
     color: #1c95e0;
   }
@@ -108,8 +112,6 @@
     position: absolute;
     top: 13px;
     right: 99px; }
-    .container .term_xieyi .term_icon img {
-      width: 100%; }
   .container .term_xieyi .title_h3 {
     /* 
     width: 755px;
@@ -142,6 +144,8 @@
   .container .term_xieyi {
     padding: 0 15px;
     padding-bottom: 20px; }
+    .container .term_xieyi img {
+      max-width: 100%; }
     .container .term_xieyi .table .head .td_first {
       width: 43%; }
     .container .term_xieyi .table .body .tr .td {

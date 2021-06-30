@@ -82,7 +82,7 @@
 - id: navDeveloperStratumPoolStratumMiningProtocol
   translation: Stratum mining protocol
 - id: navCommunityWestar
-  translation: Westar Lab
+  translation: Westar Labs
 - id: navCommunityTwitter
   translation: Twitter
 - id: navCommunityMoveChinese
@@ -117,9 +117,9 @@
 - id: footerTwitter
   translation: 'Twitter: '
 - id: footerWestarLab
-  translation: Westar Lab
+  translation: Westar Labs
 - id: footerWestarLab
-  translation: Westar Lab
+  translation: Westar Labs
 - id: footerWechatGroup
   translation: 'Join WeChat Group: '
 - id: footerDeveloperDocs

@@ -35,7 +35,7 @@ body {
     text-align: left;
     line-height: 96px;
     letter-spacing: 3px; }
-    .swiper-slide .banner-text p {
+    .swiper-slide .banner-text span {
       color: #FF5714; }
   .swiper-slide img {
     width: 100%; }
@@ -160,11 +160,11 @@ line-height: 1.125;
     background-size: 100% 100%; }
     .swiper-slide .banner-text {
       font-size: 26px;
-      line-height: 40px;
+      line-height: 55px;
       width: 350px;
       letter-spacing: 2px;
       padding-top: 0px;
       padding-left: 0px;
-      margin: 256px 0 0 20px; }
-      .swiper-slide .banner-text p {
+      margin: 166px 0 0 20px; }
+      .swiper-slide .banner-text span {
         color: #FF5714; } }
