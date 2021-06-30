@@ -275,9 +275,17 @@
 @media only screen and (max-device-width: 768px) {
   .container .developer {
     margin-left: -212px; }
+/*
+@media (max-width: 991px) {
+  .container .developer {
+    margin-left: -190px;
+    margin-right: -15px; }
+*/
     .container .developer .developer_left {
-      width: 221px; }
+      width: 221px;
+      margin-left: -11px; }
     .container .developer .developer_right {
+      margin-left: 20px; 
       width: 100%; }
       .container .developer .developer_right .content {
         padding: 15px 15px;
