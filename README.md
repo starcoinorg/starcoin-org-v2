@@ -29,7 +29,7 @@ open http://localhost:8004/ in browser
 
 1. edit `config.toml`:
 change
-baseURL = "https://starcoin.org/"
+baseURL = "http://starcoin.org.s3-website.us-east-2.amazonaws.com/"
 
 to
 
@@ -37,10 +37,7 @@ baseURL = "http://localhost:8004/"
 
 
 2. generate public folder
-hugo -s . --minify
-
-<!-- need to replace initial-scale and maximum-scale value from 1 to 1.0 -->
-find ./public -name *.html | xargs sed -i 's/-scale=1;/-scale=1.0;/g'
+./publish.sh
 
 3. serve pubic folder as static site
 cd public

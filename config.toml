@@ -1,4 +1,4 @@
-baseURL = "http://localhost:8004/"
+baseURL = "http://starcoin.org.s3-website.us-east-2.amazonaws.com/"
 languageCode = "en"
 title = "Starcoin"
 DefaultContentLanguage = "en"
