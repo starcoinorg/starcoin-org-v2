@@ -302,7 +302,7 @@
             height: 4px;
             background: #1C4BDE; }
 
-@media (max-width: 768px) {
+@media (max-device-width: 768px) {
   .about_us {
     width: auto;
     margin: 0 15px;
@@ -314,6 +314,7 @@
         width: 100%;
         margin-bottom: 70px; }
         .about_us .lsh_list li .lsh_portrait {
+          display: inline-flex;
           width: 130px;
           height: 130px; }
         .about_us .lsh_list li .post_title {

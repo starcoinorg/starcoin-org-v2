@@ -27,7 +27,7 @@
             // 设置页面根节点字体大小
             const fontSize = baseSize * Math.min(scale, 2)
             document.documentElement.style.fontSize = fontSize + 'px'
-            console.log('resize', document.documentElement.clientWidth, document.documentElement.clientHeight, 'fontSize', fontSize)
+            // console.log('resize', screen.width, document.documentElement.clientWidth, 'fontSize', fontSize)
         }
         change();
         addEventListener('resize', change, false);
@@ -40,6 +40,7 @@
             isMobile()
         });
         function isMobile() {
+            // console.log('document.body.clientWidth', document.body.clientWidth)
             if (screen.width <= 768) {
                 $(".m-d-title").css("width", document.body.clientWidth - 30 + 'px');
                 $(".m-d-content").css("width", document.body.clientWidth - 30 + 'px');
