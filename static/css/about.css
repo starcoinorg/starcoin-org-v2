@@ -302,7 +302,7 @@
             height: 4px;
             background: #1C4BDE; }
 
-@media (max-device-width: 768px) {
+@media (max-width: 768px) {
   .about_us {
     width: auto;
     margin: 0 15px;

@@ -23,11 +23,9 @@
         function change() {
             // 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。
             const scale =
-                (screen.width) / 1920
-            // 设置页面根节点字体大小
+                (document.documentElement.clientWidth) / 1920            // 设置页面根节点字体大小
             const fontSize = baseSize * Math.min(scale, 2)
             document.documentElement.style.fontSize = fontSize + 'px'
-            // console.log('resize', screen.width, document.documentElement.clientWidth, 'fontSize', fontSize)
         }
         change();
         addEventListener('resize', change, false);
@@ -40,8 +38,7 @@
             isMobile()
         });
         function isMobile() {
-            // console.log('document.body.clientWidth', document.body.clientWidth)
-            if (screen.width <= 768) {
+            if (window.innerWidth <= 768) {
                 $(".m-d-title").css("width", document.body.clientWidth - 30 + 'px');
                 $(".m-d-content").css("width", document.body.clientWidth - 30 + 'px');
                 $(".developer").css("marginLeft", "-221px");
@@ -68,14 +65,14 @@
             } else {
                 $(this).attr("state", 0);
                 $(".m_mask").hide();
-                $(".m-column-drawer").animate({ marginLeft: "-140px" });
+                $(".m-column-drawer").animate({ marginLeft: "-212px" });
             }
 
         })
         $(".m_mask").click(function () {
             $(this).hide()
             $(".m_left_nav_click").attr("state", 0);
-            $(".m-column-drawer").animate({ marginLeft: "-140px" });
+            $(".m-column-drawer").animate({ marginLeft: "-212px" });
         })
     })
 </script>

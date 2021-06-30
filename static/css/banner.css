@@ -22,7 +22,7 @@ body {
   font-size: 18px;
   height: 1000px;
   width: 100%;
-  background: url("../img/p-banner.png") no-repeat center top;
+  background: url("/img/p-banner.png") no-repeat center top;
   /* Center slide text vertically */ }
   .swiper-slide .banner-text {
     color: #ffffff;
@@ -35,9 +35,6 @@ body {
     text-align: left;
     line-height: 96px;
     letter-spacing: 3px; }
-  .swiper-slide .banner-text.chinese {
-    padding-top: 390px;
-  }
     .swiper-slide .banner-text p {
       color: #FF5714; }
   .swiper-slide img {
@@ -164,7 +161,7 @@ line-height: 1.125;
     .swiper-slide .banner-text {
       font-size: 26px;
       line-height: 40px;
-      width: 325px;
+      width: 350px;
       letter-spacing: 2px;
       padding-top: 0px;
       padding-left: 0px;

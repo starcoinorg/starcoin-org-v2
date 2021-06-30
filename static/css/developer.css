@@ -272,7 +272,7 @@
         font-weight: 500;
         color: #FFFFFF; }
 
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
   .container .developer {
     margin-left: -212px; }
     .container .developer .developer_left {

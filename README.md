@@ -13,8 +13,14 @@ git submodule update --init
 
 
 ### Run server
+> `--minify` will change scale in html header meta value from 1.0 to 1:
+> <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+> to 
+> <meta content="width=device-width;initial-scale=1;maximum-scale=1;user-scalable=0" name="viewport" />
+> which will cause resonsive layout bug in phone.
+
 ```
-hugo server --minify --port 8004
+hugo server --port 8004
 ```
 open http://localhost:8004/ in browser
 
@@ -32,6 +38,9 @@ baseURL = "http://localhost:8004/"
 
 2. generate public folder
 hugo -s . --minify
+
+<!-- need to replace initial-scale and maximum-scale value from 1 to 1.0 -->
+find ./public -name *.html | xargs sed -i 's/-scale=1;/-scale=1.0;/g'
 
 3. serve pubic folder as static site
 cd public
