@@ -2,7 +2,7 @@
 title = "Starcoin 区块链发布了测试网版本 v0.2"
 date = "2020-06-28"
 image = 'read.jpg'
-summary = " "
+summary = "Stacoin 发布了测试网版本 v0.2，该版本包含了一系列特性升级及更新。"
 archives="2020"
 author = "Tim"
 +++

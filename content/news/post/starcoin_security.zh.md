@@ -1,7 +1,7 @@
 +++
 title = "Starcoin 区块链安全赏金计划"
 date = "2021-03-17"
-summary = " "
+summary = "Starcoin 区块链主网即将上线，现启动安全赏金计划，该计划时间为2021年3月24日到2021年4月24日。"
 author = "fikgol"
 tags = [
     "security",

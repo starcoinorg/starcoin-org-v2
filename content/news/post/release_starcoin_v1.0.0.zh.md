@@ -1,7 +1,7 @@
 +++
 title = "Starcoin 发布 v1.0.0 版，主网正式启动"
 date = "2021-05-18"
-summary = " "
+summary = "Starcoin 发布 v1.0.0 版本，主网已经正式启动，创世块哈希 0x80848150abee7e9a3bfe9542a019eb0b8b01f124b63b011f9c338fdb935c417d 。"
 author = "jolestar"
 tags = [
     "Starcoin"

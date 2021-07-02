@@ -1,7 +1,7 @@
 +++
 title = "Starcoin Move 合约标准库 v5 版升级完成"
 date = "2021-06-17"
-summary = " "
+summary = "Starcoin Move 合约标准库 v5 版升级完成，交易信息：[0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://explorer.starcoin.org/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)"
 author = "jolestar"
 tags = [
     "Starcoin"

@@ -1,7 +1,7 @@
 +++
 title = "Starcoin released v1.0, the mainnet has launched"
 date = "2021-05-18"
-summary = " "
+summary = "Starcoin released v1.0.0, the main network has been launched, Genesis block hash is 0x80848150abee7e9a3bfe9542a019eb0b8b01f124b63b011f9c338fdb935c417d."
 author = "jolestar"
 tags = [
     "Starcoin"

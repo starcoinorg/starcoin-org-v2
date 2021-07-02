@@ -1,7 +1,7 @@
 +++
 title = "Starcoin 区块链发布 v0.3 版本"
 date = "2020-07-21"
-summary = " "
+summary = "Starcoin 区块链发布 v0.3 版本，主要包含叔块，难度调整动态算法以及 Starcoin MoveVM stdlib 等主要更新。"
 author = "jolestar"
 tags = [
     "Epoch",

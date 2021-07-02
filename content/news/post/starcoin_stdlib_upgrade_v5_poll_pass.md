@@ -1,7 +1,7 @@
 +++
 title = "Starcoin Move stdlib upgrade voting is end，will be executed in 24 hours"
 date = "2021-06-15"
-summary = " "
+summary = "Voting for the Starcoin Move stdlib v5 upgrade is end with 7088587.7104 STC votes agree and 2 STC votes against. The poll is now in the pending execute status."
 author = "jolestar"
 tags = [
     "Starcoin"

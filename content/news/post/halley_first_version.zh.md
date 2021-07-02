@@ -2,7 +2,7 @@
 title = "Starcoin区块链发布第一个测试网版本, 测试网Halley也已经同步启动"
 date = "2020-04-09"
 image = 'read.jpg'
-summary = " "
+summary = "经过 3 个月的紧张开发，Stacoin 发布了其 Layer 1 第 1 个测试网版本 V0.1，该版本基本实现了一个完整的去中心化区块链网络，测试网 Halley 也已经同步启动。"
 archives="2020"
 author = "Tim"
 tags = [

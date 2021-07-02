@@ -1,7 +1,7 @@
 +++
 title = "Starcoin 发布 v1.0.0-rc 版，主网将在 Barnard 网络的 310000 高度启动"
 date = "2021-05-17"
-summary = " "
+summary = "Starcoin 发布 v1.0.0-rc 版本，主网将于 Barnard 网络的 310000 高度启动，届时全球用户可以一起启动 Starcoin 主网。"
 author = "jolestar"
 tags = [
     "Starcoin"

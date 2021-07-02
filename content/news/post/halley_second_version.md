@@ -2,7 +2,7 @@
 title = "Starcoin BlockChain release v0.2 "
 date = "2020-06-28"
 image = 'read.jpg'
-summary = " "
+summary = "The second version of the Stacoin blockchain developer beta for Halley, which includes many new features. such as upgraded stdlib, enhanced block validation logic, refactored block executors, etc."
 archives="2020"
 author = "Tim"
 +++

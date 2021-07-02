@@ -2,7 +2,7 @@
 title = "Starcoin BlockChain release the First developer version"
 date = "2020-04-09"
 image = 'read.jpg'
-summary = " "
+summary = "Stacoin Blockchain released its first developer beta, Halley, which contains a lot of new features. technologies, including Move Smart Contract Language, Move Virtual Machine, and more."
 archives="2020"
 author = "Tim"
 +++

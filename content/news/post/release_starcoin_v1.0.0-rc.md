@@ -1,7 +1,7 @@
 +++
 title = "Starcoin released v1.0.0-rc, the mainnet will be launched at the height of 310000 in the Barnard network"
 date = "2021-05-17"
-summary = " "
+summary = "Starcoin released v1.0.0-rc, the mainnet will be launched at the height of 310000 in the Barnard network, and the global users can launch Starcoin mainnet together."
 author = "jolestar"
 tags = [
     "Starcoin"

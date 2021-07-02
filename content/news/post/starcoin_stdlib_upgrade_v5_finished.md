@@ -1,7 +1,7 @@
 +++
 title = "Starcoin Move stdlib v5 upgrade completed"
 date = "2021-06-17"
-summary = " "
+summary = "Starcoin Move stdlib v5 upgrade completed, transaction information: [0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://explorer.starcoin.org/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)"
 author = "jolestar"
 tags = [
     "Starcoin"

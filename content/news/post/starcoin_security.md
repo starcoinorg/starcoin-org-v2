@@ -1,7 +1,7 @@
 +++
 title = "Starcoin  security bounty plan"
 date = "2021-03-17"
-summary = " "
+summary = "With the upcoming launch of the Starcoin blockchain mainnet, a security bounty program is being launched, which will run from March 24, 2021 to April 24, 2021. "
 author = "fikgol"
 tags = [
     "security",

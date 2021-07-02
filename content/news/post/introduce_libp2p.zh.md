@@ -2,7 +2,7 @@
 title = "深入浅出libp2p"
 date = "2020-05-28"
 image = 'read.jpg'
-summary = " "
+summary = "libp2p 是一套分布式的点对点网络传输协议，用于分布式网络下节点间的发现，连接，内容分发等。来自 WeStar 区块链实验室的李俊老师，在线分享了 libp2p 的方方面面。该分享深入讨论 libp2p 的设计原理以及架构，并展示如何利用 libp2p 进行分布式网络编程。"
 archives="2020"
 author = "李俊"
 +++
