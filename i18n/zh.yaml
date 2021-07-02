@@ -95,6 +95,10 @@
   translation: Move 中文社区
 - id: navCommunityDocumentation
   translation: 文档
+- id: navCommunityExplorer
+  translation: Starcoin 浏览器
+- id: navCommunityPoll
+  translation: Starcoin 投票
 - id: navQAGitHub
   translation: GitHub 讨论区
 - id: navQAFAQ

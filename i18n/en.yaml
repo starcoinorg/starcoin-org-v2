@@ -89,6 +89,10 @@
   translation: Move Chinese Community
 - id: navCommunityDocumentation
   translation: Documentation
+- id: navCommunityExplorer
+  translation: Starcoin Explorer
+- id: navCommunityPoll
+  translation: Starcoin Polls
 - id: navQAGitHub
   translation: GitHub Discussion
 - id: navQAFAQ
