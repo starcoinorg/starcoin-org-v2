@@ -1,0 +1,25 @@
+name: Build and Deploy Hugo Site
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  Build_and_Deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.82.0'
+
+      - name: Build
+        run: rm -rf public && rm -rf resources && hugo --minify 
+
+      - name: Deploy to S3
+        run: find public -name .DS_Store && hugo deploy --force --maxDeletes -1 --invalidateCDN
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
