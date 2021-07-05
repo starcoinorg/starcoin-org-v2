@@ -39,4 +39,9 @@ serve ./public -l 8004
 ```
 ./publish.sh
 ```
-> need to install AWS cli and config authentication first.
+
+### References
+1. [install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) 
+
+2. [setup AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds)
+
