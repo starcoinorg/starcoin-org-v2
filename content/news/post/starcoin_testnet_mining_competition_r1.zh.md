@@ -13,7 +13,7 @@ tags = [
 ]
 +++
 
-![image](https://news.starcoin.org/images/starcoin_mining_competition.png)
+![image](/img/starcoin_mining_competition.png)
 
 为了让社区更好地参与 Starcoin 的建设，Starcoin 将举办测试网挖矿大赛。
 
@@ -81,7 +81,7 @@ tags = [
 4. 打开电脑 系统偏好设置（齿轮图标）-->安全性与隐私--> 点击「仍要打开」（页面右下角）
 5. 弹出安全提示窗口，点击：「打开」
 6. Starcoin 挖矿程序窗口：创建昵称-->确认-->点击小三角即可开始挖矿。
-![image](https://news.starcoin.org/images/macos-security.png)
+![image](/img/macos-security.png)
 Windows版本启动程序后，跳出安全弹窗点击确认即可。
 
 ## 关于我们

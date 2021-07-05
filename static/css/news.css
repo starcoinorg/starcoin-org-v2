@@ -242,6 +242,7 @@
 }
 
 .tile .content h1, .tile .content h2, .tile .content h3, .tile .content h4, .tile .content h5, .tile .content h6 {
+  margin-top: 10px;
   color: #363636;
   font-weight: 600;
   line-height: 1.125;
