@@ -310,7 +310,6 @@
         width: 100%; }
     .Advantages .container .item .title {
       font-size: 34px;
-      font-family: "font-PingFangMedium";
       font-weight: 600;
       color: #272B3E;
       text-align: center;
@@ -384,7 +383,6 @@
     cursor: pointer; }
     .Example .container .m-code-view .m-code-left .list li .title {
       font-size: 18px;
-      font-family: 'font-PingFangMedium';
       font-weight: 600;
       margin-bottom: 5px;
       color: #151D36; }
@@ -425,7 +423,6 @@
       cursor: pointer; }
       .Example .container .code_view .code_left .list li .title {
         font-size: 18px;
-        font-family: 'font-PingFangMedium';
         font-weight: 600;
         margin-bottom: 5px;
         color: #151D36; }
@@ -505,13 +502,11 @@
     }
     .Example .container .code_view .code_right .code_body .grzBLt {
       font-size: 14px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #262B40;
       margin-right: 20px; }
     .Example .container .code_view .code_right .code_body .cVTXYw {
       font-size: 14px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #262B40; }
 

@@ -10,7 +10,6 @@
     padding-left: 200px; }
     .footer .container .hr {
       font-size: 30px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #FFFFFF;
       padding-bottom: 33px; }
@@ -18,7 +17,6 @@
         color: #FFFFFF; }
     .footer .container .td {
       font-size: 16px;
-      font-family: "font-PingFangMedium";
       font-weight: 500; }
       .footer .container .td .item {
         margin-bottom: 38px; }
@@ -79,7 +77,6 @@
       margin-top: 5px; }
   .m-footer .container .go-contact-us {
     font-size: 18px;
-    font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #FFFFFF;
     display: -webkit-box;

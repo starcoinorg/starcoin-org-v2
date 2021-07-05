@@ -20,7 +20,6 @@
   .container .term_xieyi .code_info {
     height: 60px;
     line-height: 60px;
-    font-family: "font-PingFangMedium";
     background: #021429;
     border-radius: 4px;
     color: #ffffff;
@@ -29,7 +28,6 @@
       color: red; }
   .container .term_xieyi .code_all_info {
     font-size: 16px;
-    font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #FFFFFF;
     line-height: 35px;
@@ -51,7 +49,6 @@
         width: 50%;
         text-align: center;
         font-size: 16px;
-        font-family: "font-PingFangMedium";
         font-weight: 500;
         color: #272B3E;
         line-height: 22px;
@@ -96,7 +93,6 @@
                 flex: 1; }
   .container .term_xieyi .h3 {
     font-size: 18px;
-    font-family: "font-PingFangMedium";
     font-weight: 500;
     color: #272B3E;
     line-height: 30px; }
@@ -131,7 +127,6 @@
       height: 34px; }
     .container .term_xieyi .title_h3 span {
       font-size: 64px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #1C4BDE;
       line-height: 90px;

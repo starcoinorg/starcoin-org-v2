@@ -100,7 +100,6 @@
       background-image: url("../img/dsj_blue_back.png");
       background-size: 100% 100%;
       font-size: 30px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #FFFFFF;
       line-height: 42px; }
@@ -127,7 +126,6 @@
       background-image: url("../img/dsj_red_back.png");
       background-size: 100% 100%;
       font-size: 20px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #FFFFFF;
       line-height: 42px; }
@@ -150,7 +148,6 @@
       z-index: 1; }
     .about_us .team_introduce .team_h3 {
       font-size: 44px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #1C4BDE;
       text-align: center;
@@ -202,7 +199,6 @@
           width: 100%; }
       .about_us .jinrong_list .item .jinrong_title {
         font-size: 30px;
-        font-family: "font-PingFangMedium";
         font-weight: 500;
         color: #485372; }
       .about_us .jinrong_list .item .jinrong_desc {

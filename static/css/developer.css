@@ -27,7 +27,6 @@
       position: absolute;
       bottom: 0;
       font-size: 16px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #272B3E;
       display: -webkit-box;
@@ -263,7 +262,6 @@
         z-index: 10; }
       .container .developer .developer_right .column_title span {
         font-size: 16px;
-        font-family: "font-PingFangMedium";
         font-weight: 500;
         color: #FFFFFF; }
 

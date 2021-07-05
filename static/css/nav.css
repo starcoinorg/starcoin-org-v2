@@ -278,7 +278,6 @@ button {
     opacity: 1;
     position: relative; }
     .top .container .language {
-      font-family: 'font-PingFangMedium';
       color: #ffffff;
       float: right;
       line-height: 56px;
@@ -316,7 +315,7 @@ button {
       .top .container .nav .item {
         font-size: 20px;
         cursor: pointer;
-        font-family: 'font-PingFangMedium';
+
         line-height: 56px;
         position: relative;
         width: 150px;
@@ -529,14 +528,12 @@ button {
               color: #BABABA; }
           .m_nav_model .nav .item .more_nav .box .active a {
             font-size: 14px;
-            font-family: "font-PingFangMedium";
             font-weight: 500;
             color: #FFFFFF; }
       .m_nav_model .nav .item a {
         color: #FFFFFF; }
     .m_nav_model .nav .select {
       font-size: 20px;
-      font-family: "font-PingFangMedium";
       font-weight: 500;
       color: #FFFFFF; }
     .m_nav_model .nav .allSelect span {
