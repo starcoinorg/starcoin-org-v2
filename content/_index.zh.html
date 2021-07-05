@@ -6,33 +6,21 @@ title: 首页
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="banner-text chinese">
+                <a href="/zh/news/post/move_hackathon_intro/">首届Starcoin Move<br />
+                    <span>线上黑客松参赛说明</span></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="banner-text chinese">
                 Starcoin 分层的智能合约<br />
                 <span>和分布式金融网络</span>
             </div>
         </div>
-        <!-- <div class="swiper-slide">
-            <div class="banner-text">
-                Starcoin — A LAYERED SMART<br> CONTRACT
-                <p>AND DISTRBUTED FINANCIAL NETWOEK</p>
-            </div>
-        </div> -->
     </div>
-    <!-- Add Arrows -->
-    <!-- <div class="button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div> -->
-    <!-- <div class="button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div> -->
+    <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
+    <div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div>
+    <div class="swiper-pagination visible-xs"></div>
 </div>
-<script>
-
-    $(document).ready(function () {
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.button-next',
-                prevEl: '.button-prev',
-            },
-        });
-    });
-
-</script>
 <div class="container">
     <div class="About-us wrapper visible-lg">
 
@@ -518,11 +506,25 @@ title: 首页
     $(document).ready(function () {
         $("#popup_close").click(function () {
             $("#code_fixed_back").hide()
-        })
-    })
-</script>
-<script>
-    $(document).ready(function () {
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            speed: 1000,
+            direction: 'horizontal',
+            autoplay:
+            {
+                delay: 5000,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+
         $(".index_code_view_tab li").click(function () {
             $(".index_code_view_tab li").removeClass("select")
             $(this).addClass("select")
@@ -532,7 +534,7 @@ title: 首页
                 item.style.display = 'none'
             })
             $(`.code_page_${index}`)[0].style.display = 'block'
-        })
+        });
 
         $(".m-code-view li").click(function () {
             $(".code_fixed_back .code_model .head_top")[0].innerText = $(this)[0].innerText
@@ -545,7 +547,7 @@ title: 首页
                 item.style.display = 'none'
             })
             $(`.code_view_page_${index}`)[0].style.display = 'block'
-        })
+        });
     })
 </script>
 <script src="/js/script.js"> </script>

@@ -35,62 +35,67 @@ body {
     text-align: left;
     line-height: 96px;
     letter-spacing: 3px; }
+    .swiper-slide .banner-text a {
+      color: #fff; 
+      text-decoration: none;}
     .swiper-slide .banner-text span {
       color: #D05829; }
   .swiper-slide img {
     width: 100%; }
 
-.button-next {
-  width: 54px;
-  height: 82px;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  cursor: pointer;
-  right: 90px;
-  margin-top: -41px;
-  left: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .button-next img {
-    width: 100%;
-    opacity: 0.4; }
-
-.button-prev {
-  width: 54px;
-  height: 82px;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  margin-top: -41px;
-  left: 90px;
-  right: auto;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .button-prev img {
-    width: 100%;
-    opacity: 0.4; }
+    .button-next {
+      width: 54px;
+      height: 82px;
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      cursor: pointer;
+      right: 90px;
+      margin-top: -41px;
+      left: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .button-next img {
+        width: 100%; }
+      .button-next:after {
+        content: ''; }
+    
+    .button-prev {
+      width: 54px;
+      height: 82px;
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      margin-top: -41px;
+      left: 90px;
+      right: auto;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .button-prev img {
+        width: 100%; }
+      .button-prev:after {
+        content: ''; }
 
 /* news新闻样式 */
 /* news的样式 */
@@ -161,7 +166,7 @@ line-height: 1.125;
     .swiper-slide .banner-text {
       font-size: 26px;
       line-height: 55px;
-      width: 370px;
+      width: 400px;
       letter-spacing: 2px;
       padding-top: 0px;
       padding-left: 0px;
