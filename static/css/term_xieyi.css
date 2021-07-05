@@ -6,7 +6,6 @@
   border-radius: 4px; }
   .container .term_xieyi .info {
     font-size: 16px;
-    font-family: 'font-PingFangRegular';
     font-weight: 400;
     color: #272B3E;
     line-height: 32px;
@@ -82,7 +81,6 @@
         line-height: 60px;
         text-align: center;
         font-size: 16px;
-        font-family: 'font-PingFangRegular';
         font-weight: 400;
         color: #272B3E; }
         .container .term_xieyi .table .body .tr .td:first-child {

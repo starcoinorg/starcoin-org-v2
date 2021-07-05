@@ -85,7 +85,6 @@
           width: 100%; }
       .news .news_list ul li .title {
         font-size: 21px;
-        font-family: 'font-PingFangBold';
         font-weight: 600;
         color: #272B3E;
         line-height: 33px;
@@ -114,7 +113,6 @@
         color: #1C4BDE; }
       .news .news_list ul li .desc {
         font-size: 18px;
-        font-family: 'font-PingFangRegular';
         font-weight: 400;
         color: #C4C4C4;
         line-height: 25px; }
@@ -146,7 +144,6 @@
         cursor: pointer; }
     .news .news_right .posts_list ul li {
       font-size: 14px;
-      font-family: 'font-PingFangRegular';
       font-weight: 400;
       color: #272B3E;
       padding: 20px;
@@ -154,7 +151,6 @@
       cursor: pointer; }
       .news .news_right .posts_list ul li p {
         font-size: 12px;
-        font-family: 'font-PingFangRegular';
         font-weight: 400;
         color: #C4C4C4;
         margin-top: 5px; }

@@ -349,7 +349,6 @@ button {
                     box-shadow: 0px 7px 30px 0px rgba(37, 59, 129, 0.21); }
             .top .container .nav .item .more_nav .box .li {
               font-size: 14px;
-              font-family: 'font-PingFangRegular';
               font-weight: 400;
               color: #606266;
               height: 56px;
@@ -511,7 +510,6 @@ button {
     padding-top: 100px; }
     .m_nav_model .nav .item {
       font-size: 16px;
-      font-family: 'font-PingFangRegular';
       font-weight: 400;
       color: #FFFFFF;
       text-align: center;
@@ -527,7 +525,6 @@ button {
             margin-bottom: 26px; }
             .m_nav_model .nav .item .more_nav .box .li a {
               font-size: 12px;
-              font-family: 'font-PingFangRegular';
               font-weight: 400;
               color: #BABABA; }
           .m_nav_model .nav .item .more_nav .box .active a {
@@ -621,7 +618,6 @@ button {
       border-bottom: 1px solid rgba(106, 106, 106, 0.7); }
       .code_fixed_back .code_model .head .head_top {
         font-size: 30px;
-        font-family: "font-PingFangBold";
         font-weight: 600;
         color: #FFFFFF; }
       .code_fixed_back .code_model .head .popup_close {

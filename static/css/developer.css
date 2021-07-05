@@ -21,7 +21,6 @@
       font-size: 20px;
       line-height: 43px;
       padding-left: 20px;
-      font-family: 'font-PingFangRegular';
       font-weight: 400;
       color: #FFFFFF; }
     .container .developer .developer_left .developer_column_bottom {
@@ -54,7 +53,6 @@
       cursor: pointer; }
       .container .developer .developer_left .developer_column_list li a {
         font-size: 12px;
-        font-family: 'font-PingFangRegular';
         font-weight: 400;
         color: #272B3E;
         padding: 12px 10px;
@@ -94,7 +92,6 @@
                 align-items: center; }
         .container .developer .developer_left .developer_column_list .li .li_content .name {
           font-size: 12px;
-          font-family: 'font-PingFangRegular';
           font-weight: 400;
           color: #272B3E;
           padding: 12px 0;
@@ -131,7 +128,6 @@
         overflow: hidden; }
         .container .developer .developer_left .developer_column_list .li .all_list li {
           font-size: 12px;
-          font-family: 'font-PingFangRegular';
           font-weight: 400;
           color: #272B3E;
           padding-top: 20px; }
@@ -231,7 +227,6 @@
     .container .developer .developer_right .content {
       padding: 40px 40px;
       font-size: 16px;
-      font-family: 'font-PingFangRegular';
       font-weight: 400;
       color: #272B3E;
       line-height: 40px; }
