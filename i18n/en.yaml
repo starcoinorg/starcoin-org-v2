@@ -63,6 +63,8 @@
   translation: SIPs
 - id: navDeveloperNodeSDK
   translation: SDK
+- id: navDeveloperFaucet
+  translation: Faucet
 - id: navDeveloperMove
   translation: Move
 - id: navDeveloperMoveBook

@@ -58,7 +58,7 @@
 - id: navGuideNodeCommand
   translation: 节点命令行
 - id: navDeveloperNode
-  translation: Node
+  translation: 节点
 - id: navDeveloperNodeKeyConcept
   translation: 关键概念
 - id: navDeveloperInstallAndJoin
@@ -69,6 +69,8 @@
   translation: SIPs
 - id: navDeveloperNodeSDK
   translation: SDK
+- id: navDeveloperFaucet
+  translation: 水龙头
 - id: navDeveloperMove
   translation: Move
 - id: navDeveloperMoveBook
