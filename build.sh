@@ -4,6 +4,6 @@ rm -rf public
 
 rm -rf resources
 
-git submodule init && git submodule update
+git submodule update --init --recursive
 
 hugo -s . --minify
