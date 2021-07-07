@@ -392,6 +392,7 @@ ul {
 	list-style: decimal outside;
 	margin-left: 20px;
 	margin-top: 10px;
+	margin-bottom: 10px !important;
 }
 
 .news_list .tile .content ul li {
