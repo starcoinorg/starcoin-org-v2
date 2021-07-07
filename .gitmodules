@@ -1,0 +1,3 @@
+[submodule "content/developer/SIPs"]
+	path = content/developer/SIPs
+	url = https://github.com/starcoinorg/SIPs
