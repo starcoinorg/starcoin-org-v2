@@ -20,7 +20,7 @@ jobs:
           hugo-version: '0.82.0'
 
       - name: Build
-        run: rm -rf public && rm -rf resources && find content/developer/SIPs/ -name index*.md | xargs sed -i 's/^type\:/\# type\:/' && hugo --minify
+        run: rm -rf public && rm -rf resources && hugo --minify
 
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
