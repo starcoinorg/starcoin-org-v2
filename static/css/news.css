@@ -22,7 +22,7 @@
 	color: #337ab7;
 	cursor: pointer;
 	text-decoration: none;
-	line-height: 1.5;
+	line-height: 1;
 }
 
 .news a:hover{
@@ -168,7 +168,9 @@
 .news .news_right {
 	width: 25%;
 }
-
+.news .news_right a {
+	line-height: 1.5;
+}
 .news .news_right .right_card {
 	-webkit-box-shadow: 0px 2px 40px 0 rgba(16, 50, 88, 0.1);
 	box-shadow: 0px 2px 40px 0 rgba(16, 50, 88, 0.1);
