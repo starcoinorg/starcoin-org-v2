@@ -16,7 +16,8 @@ body {
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 0px !important; }
 
 h1,
 h2,
