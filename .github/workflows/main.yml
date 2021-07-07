@@ -20,11 +20,11 @@ jobs:
           hugo-version: '0.82.0'
 
       - name: Build
-        run: rm -rf public && rm -rf resources && hugo --minify
+        run: hugo --minify
 
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
-        run: find public -name .DS_Store && hugo deploy --force --maxDeletes -1 --invalidateCDN
+        run: hugo deploy --force --maxDeletes -1 --invalidateCDN
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

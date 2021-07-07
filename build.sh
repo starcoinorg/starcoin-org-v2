@@ -6,4 +6,4 @@ rm -rf resources
 
 git submodule update --init --recursive
 
-hugo -s . --minify
+hugo --minify
