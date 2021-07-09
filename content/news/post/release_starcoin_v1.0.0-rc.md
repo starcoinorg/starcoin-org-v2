@@ -19,4 +19,4 @@ After the main network is launched, the core dev team will publish the Genesis b
 
 * [Starcoin v1.0.0-rc](https://github.com/starcoinorg/starcoin/releases/tag/v1.0.0-rc)
 * [Mainnet launch Guide](https://github.com/starcoinorg/starcoin/discussions/2506)
-* [Mainnet Block Explorer](https://explorer.starcoin.org/main)
+* [Mainnet Block Explorer](https://stcscan.io/main)

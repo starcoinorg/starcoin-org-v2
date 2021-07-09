@@ -16,4 +16,4 @@ Starcoin released v1.0.0, the main network has been launched, Genesis block hash
 
 * [Starcoin v1.0.0](https://github.com/starcoinorg/starcoin/releases/tag/v1.0.0)
 * [Mainnet launch Guide](https://github.com/starcoinorg/starcoin/discussions/2506)
-* [Mainnet Block Explorer](https://explorer.starcoin.org/main)
+* [Mainnet Block Explorer](https://stcscan.io/main)

@@ -22,7 +22,7 @@ Move 语言是一门为数字资产量身打造的智能合约语言，包括如
 
 ## 一、Starcoin公链开放Move发布合约功能说明
 
-2021年6月23日，Starcoin发起正式开放Move合约的新提案，倡议全面开放部署Move合约，允许任何人往链上部署Move合约。该提案完全遵循链上治理流程，从2021年6月23日开始投票，经过7天的社区投票，于2021年6月30日投票结束。在社区的共同努力下，提案最终以7357180.4992个STC赞成票和1个STC反对票的结果投票通过（[提案和投票详情](https://poll.starcoin.org/polls/detail/1)）。2021年7月1日，该提案在Starcoin主网被顺利执行（[交易详情](https://explorer.starcoin.org/main/transactions/detail/0x2f5de2f8c7b5f944d8785eeca36576db6decef4563600340e430294a99839de3)），这是一个意义非凡的时刻，标志着Starcoin生态正式完全敞开怀抱，开启全新的应用时代。
+2021年6月23日，Starcoin发起正式开放Move合约的新提案，倡议全面开放部署Move合约，允许任何人往链上部署Move合约。该提案完全遵循链上治理流程，从2021年6月23日开始投票，经过7天的社区投票，于2021年6月30日投票结束。在社区的共同努力下，提案最终以7357180.4992个STC赞成票和1个STC反对票的结果投票通过（[提案和投票详情](https://poll.starcoin.org/polls/detail/1)）。2021年7月1日，该提案在Starcoin主网被顺利执行（[交易详情](https://stcscan.io/main/transactions/detail/0x2f5de2f8c7b5f944d8785eeca36576db6decef4563600340e430294a99839de3)），这是一个意义非凡的时刻，标志着Starcoin生态正式完全敞开怀抱，开启全新的应用时代。
 
 ## 二、正式发布Move生态的首款DApp——投票系统
 

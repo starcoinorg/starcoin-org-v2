@@ -20,7 +20,7 @@ Starcoin Move 合约标准库 v5 版升级投票开始。本次 Move 合约标�
 1. 升级包二进制：https://github.com/starcoinorg/starcoin/tree/master/vm/stdlib/compiled/5/4-5
 2. Package 哈希：0x20d79acaca9c50d4cbf51a992e5de658dcecf39c1573244f7d850b4b47af56d360
 3. 提案 id：0
-4. 提案交易: https://explorer.starcoin.org/main/transactions/detail/0x0237dba2eb4ea5971f7fb53693acb91f6879bfa12db3c15f1a6281e1661d9ee0
+4. 提案交易: https://stcscan.io/main/transactions/detail/0x0237dba2eb4ea5971f7fb53693acb91f6879bfa12db3c15f1a6281e1661d9ee0
 5. 提案发起账号：0xb2aa52f94db4516c5beecef363af850a
 
 ## 升级流程

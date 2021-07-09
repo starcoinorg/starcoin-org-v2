@@ -24,7 +24,7 @@ To take full advantage of the Move language, Starcoin activated the Move smart c
 
 Starcoin launched a new proposal to officially activate the Move publish permission on June 23, 2021, advocating a full publishing functionality and allowing anyone to deploy Move contracts to the chain. The proposal fully follows the Starcoin on-chain governance process, voting starting on June 23, 2021, and ending on June 30, 2021, after seven days of community voting. With the community's efforts, the proposal was finally voted in with 7357180.4992 STC votes in favor and 1 STC vote against ([proposal and voting details](https://poll.starcoin.org/polls/detail/1)).
 
-On July 1, 2021, the proposal was successfully executed ([transaction details](https://explorer.starcoin.org/main/transactions/detail/)) 0x2f5de2f8c7b5f944d8785eeca36576db6decef4563600340e430294a99839de3)), a moment of great significance, marking the official and complete opening of the Starcoin ecosystem to a whole new era of decentralized applications.
+On July 1, 2021, the proposal was successfully executed ([transaction details](https://stcscan.io/main/transactions/detail/)) 0x2f5de2f8c7b5f944d8785eeca36576db6decef4563600340e430294a99839de3)), a moment of great significance, marking the official and complete opening of the Starcoin ecosystem to a whole new era of decentralized applications.
 
 ## II. Officially released the first DApp of Move ecology - POLL
 

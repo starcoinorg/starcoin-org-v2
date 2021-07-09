@@ -1,7 +1,7 @@
 +++
 title = "Starcoin Move stdlib v5 upgrade completed"
 date = "2021-06-17"
-summary = "Starcoin Move stdlib v5 upgrade completed, transaction information: [0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://explorer.starcoin.org/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)"
+summary = "Starcoin Move stdlib v5 upgrade completed, transaction information: [0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://stcscan.io/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)"
 author = "jolestar"
 tags = [
     "Starcoin"
@@ -9,7 +9,7 @@ tags = [
 archives="2021"
 +++
 
-Starcoin Move stdlib v5 upgrade completed, transaction information: [0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://explorer.starcoin.org/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)
+Starcoin Move stdlib v5 upgrade completed, transaction information: [0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3](https://stcscan.io/main/transactions/detail/0x7d4275ca7d444c57ffdccfd0baf6bb5f5f5d2abca90d3763d6b2a93dc046b1e3)
 
 This upgrade includes the hard fork feature. Versions prior to v1.2.0 will not be able to execute the latest transactions, please upgrade to v1.2.0 as soon as possible.
 

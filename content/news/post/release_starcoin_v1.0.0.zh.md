@@ -15,5 +15,5 @@ Starcoin 发布 v1.0.0 版本，主网已经正式启动，创世块哈希 0x808
 
 * [v1.0.0 版本下载](https://github.com/starcoinorg/starcoin/releases/tag/v1.0.0)
 * [主网启动指南](https://github.com/starcoinorg/starcoin/discussions/2506)
-* [主网区块浏览器](https://explorer.starcoin.org/main)
+* [主网区块浏览器](https://stcscan.io/main)
 

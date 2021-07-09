@@ -17,5 +17,5 @@ Starcoin 发布 v1.0.0-rc 版本，主网将于 Barnard 网络的 310000 高度�
 
 * [v1.0.0-rc 版本下载](https://github.com/starcoinorg/starcoin/releases/tag/v1.0.0-rc)
 * [主网启动指南](https://github.com/starcoinorg/starcoin/discussions/2506)
-* [主网区块浏览器](https://explorer.starcoin.org/main)
+* [主网区块浏览器](https://stcscan.io/main)
 
