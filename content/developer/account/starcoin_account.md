@@ -5,7 +5,7 @@ weight: 1
 
 Blockchain development so far, there are two different bookkeeping models: UTXO and Account. UTXO has characteristics such as statelessness, while facing the increasingly strong personalized business needs, the expression ability is relatively poor; Account model has the advantage of programmability, and can change the user's on-chain status through smart contract language. Starcoin based on Account model, made some interesting design, through the smart contract language Move to the on-chain account bookkeeping operations, so that the user's data is more secure.
 
-## Addresses no longer need to be activated
+## 1. Addresses no longer need to be activated
 
 Starcoin supports two ways of initializing accounts.
 
@@ -52,7 +52,7 @@ The length of the Public Key array is not fixed, which will increase the storage
 1. fixed length.
 2. separation of the Account from the multi-signature logic.
 
-## Setting the Authentication Key for the first time
+## 3. Setting the Authentication Key for the first time
 
 The passive initialization of the Account method, which occurs when Account A creates Account B using Address, means that Account B does not exist on-chain. So as long as the default value of Authentication Key is identified and set to the correct value when the new Account B executes its first transaction, it is fully compatible with the whole process, as shown in the figure.
 
