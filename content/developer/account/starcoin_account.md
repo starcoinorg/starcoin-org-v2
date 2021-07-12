@@ -1,6 +1,6 @@
 ---
 title: Starcoin Account Introduction
-weight: 2
+weight: 1
 ---
 
 Blockchain development so far, there are two different bookkeeping models: UTXO and Account. UTXO has characteristics such as statelessness, while facing the increasingly strong personalized business needs, the expression ability is relatively poor; Account model has the advantage of programmability, and can change the user's on-chain status through smart contract language. Starcoin based on Account model, made some interesting design, through the smart contract language Move to the on-chain account bookkeeping operations, so that the user's data is more secure.
