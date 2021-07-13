@@ -4,8 +4,6 @@ weight: 10
 bookCollapseSection: true
 ---
 
-Starcoin账户说明
+Starcoin账户更新
 
 <!--more-->
-
-{{< section >}}
