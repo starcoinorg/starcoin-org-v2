@@ -8,5 +8,3 @@ Starcoin Account
 
 <!--more-->
 
-{{< section >}}
-

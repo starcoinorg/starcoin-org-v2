@@ -5,6 +5,8 @@ weight: 1
 
 Blockchain development so far, there are two different bookkeeping models: UTXO and Account. UTXO has characteristics such as statelessness, while facing the increasingly strong personalized business needs, the expression ability is relatively poor; Account model has the advantage of programmability, and can change the user's on-chain status through smart contract language. Starcoin based on Account model, made some interesting design, through the smart contract language Move to the on-chain account bookkeeping operations, so that the user's data is more secure.
 
+
+
 ## 1. Addresses no longer need to be activated
 
 Starcoin supports two ways of initializing accounts.
@@ -33,7 +35,9 @@ On June 15, 2021, Starcoin completed its first upgrade since the launch of the m
 
 Upgrading from the active to the passive method, the Address no longer needs to be activated.  Although the Authentication Key is set to the default value 0000000000000000000000000000000000000000000000000000000000000000, it will be set to the correct value at some point in the future (when the first transaction initiated by the current account is on-chain). Now, Starcoin users are completely free to choose any method to initialize their on-chain account.
 
-## Role of Authentication Key
+
+
+## 2. Role of Authentication Key
 
 In the above process, the role of the Authentication Key is not reflected; in fact, the role of the Authentication Key is to authenticate transactions. As shown in the figure.
 
@@ -52,6 +56,8 @@ The length of the Public Key array is not fixed, which will increase the storage
 1. fixed length.
 2. separation of the Account from the multi-signature logic.
 
+
+
 ## 3. Setting the Authentication Key for the first time
 
 The passive initialization of the Account method, which occurs when Account A creates Account B using Address, means that Account B does not exist on-chain. So as long as the default value of Authentication Key is identified and set to the correct value when the new Account B executes its first transaction, it is fully compatible with the whole process, as shown in the figure.
@@ -60,7 +66,9 @@ The passive initialization of the Account method, which occurs when Account A cr
 
 The green line part of the diagram indicates that if the Authentication Key of the account on-chain is the default value, the Address calculated by the Authentication Key of the transaction must be equal to the Address saved on-chain of the account before the transaction can continue to be executed. After the transaction is executed, the correct Authentication Key will be saved under the account on-chain, completing the Authentication Key setup.
 
-## Recommended Use of Address Transfer
+
+
+## 4. Recommended Use of Address Transfer
 
 A typical application scenario was mentioned earlier, transferring funds to an Address that does not exist on-chain.
 

@@ -5,6 +5,8 @@ weight: 1
 
 区块链发展至今，有两种不同的记账模型：UTXO和Account。UTXO具备无状态等特点，而面对日益强烈的个性化业务需求，表达能力比较差；Account模型则具有可编程的优势，能够通过智能合约语言改变用户的链上状态。Starcoin在继承Account模型的基础上，有一些特别的设计，通过智能合约语言Move对链上账户进行记账操作，让用户的数据更加安全。
 
+
+
 ## 1. 地址不再需要激活
 
 Starcoin支持两种初始化账户的方式：
@@ -33,6 +35,8 @@ Starcoin支持两种初始化账户的方式：
 
 从主动方式升级到被动方式，地址不再需要激活。虽然Authentication Key被设置成了默认值0000000000000000000000000000000000000000000000000000000000000000，但是在未来的某个时刻（当前账户主动发起的第一个交易上链时）会被设置成正确的值。现在，Starcoin用户完全可以自由地选择任何一种方式来初始化链上账户。
 
+
+
 ## 2. Authentication Key的作用
 
 在上面的流程中，并没有体现出Authentication Key的作用，实际上，Authentication Key的作用是验证交易。如图：
@@ -52,13 +56,17 @@ Starcoin支持两种初始化账户的方式：
 1. 固定长度；
 2. 分离Account与多签逻辑；
 
-## 首次设置Authentication Key
+
+
+## 3. 首次设置Authentication Key
 
 被动初始化账户方式，发生在账户A使用Address创建账户B的情况下，意味着账户B在链上不存在。所以只要在新的账户B上链第一个交易的时候，识别出Authentication Key的默认值，并且将它设置成正确的值，就能完全兼容整个流程，如图：
 
 ![starcoin_account_5](/img/account/starcoin_account_5.png)
 
 图中绿线部分表示链上账户的Authentication Key为默认值的情况下，通过交易的Authentication Key计算出来的Address，必须等于该账户链上保存的Address，交易才能继续往下执行。在交易执行结束后，将正确的Authentication Key保存到该链上账户下，完成Authentication Key的设置。
+
+
 
 ## 4. 推荐使用Address转账
 
