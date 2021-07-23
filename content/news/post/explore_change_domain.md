@@ -1,17 +1,17 @@
 +++
-title = "Starcoin block browser change domain name"
+title = "Starcoin block explorer changes domain name"
 date = "2021-07-22"
 image = 'read.jpg'
-summary = "Starcoin block browser change domain name to https://stcscan.io/"
+summary = "Starcoin block explorer changes domain name to https://stcscan.io/"
 archives="2021"
 author = "Tim"
 tags = [
     "Starcoin",
-    "block browser"
+    "block explorer"
 ]
 +++
 
 <br/>
 
 
-Because explorer.starcoin.org will replaced by stcscan.io，so if developers have used api in explorer.starcoin.org ,should change to stcscan.io as soon as possible。
+[explorer.starcoin.org](https://explorer.starcoin.org) will be replaced by [stcscan.io](https://stcscan.io)，so if developers have used APIs from [explorer.starcoin.org](https://explorer.starcoin.org), please switch to [stcscan.io](https://stcscan.io) as soon as possible.
