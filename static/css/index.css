@@ -31,64 +31,102 @@
             justify-content: space-between;
     width: 1300px;
     margin: 0 auto; }
-    .About-us .content .left {
+    .About-us .content .right {
+      /*
       width: 858px;
+      */
+      width: 50%;
       text-align: justify; }
-      .About-us .content .left .About_h3 {
+      .About-us .content .right .About_h3 {
+        width: 217px;
+        height: 42px;
+        font-size: 42px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 42px;
+        /*
         font-size: 50px;
         font-weight: 600;
-        color: #1C4BDE;
+        color: #fff;
         line-height: 70px;
         letter-spacing: 1px;
-        margin-bottom: 60px; }
-        .About-us .content .left .About_h3 img {
+        */
+        margin-bottom: 24px; }
+        .About-us .content .right .About_h3 img {
           width: 34px;
           height: 34px;
           margin-right: 30px; }
-      .About-us .content .left .title {
+      .About-us .content .right .title {
+        /* width: 468px; */
+        width: 70%;
+        height: 26px;
+        font-size: 26px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 30px;
+        /*
         font-size: 40px;
         font-weight: bold;
-        color: #272B3E;
+        color: #fff;
         line-height: 56px;
         letter-spacing: 1px;
-        margin-bottom: 50px; }
-      .About-us .content .left .desc {
+        */
+        margin-bottom: 60px; }
+      .About-us .content .right .desc {
+        width: 70%;
+        height: 160px;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 32px;
+        /*
         width: 858px;
         font-size: 18px;
         font-weight: 400;
-        color: #3B3F54;
+        color: #fff;
         text-align: justify;
         line-height: 48px;
+        */
         overflow: hidden; }
-      .About-us .content .left .button {
-        width: 386px;
-        height: 77px;
-        background: #1C4BDE;
+      .About-us .content .right .button {
+        height: 48px;
+        background: #113EC5;
         border-radius: 4px;
-        font-size: 28px;
-        font-weight: 600;
-        color: #FFFFFF;
-        cursor: pointer;
         margin-top: 26px;
-        letter-spacing: 1px;
         cursor: pointer;
         -webkit-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
         transition: all 0.8s ease;
         position: relative;
         display: inline-block; }
-        .About-us .content .left .button img {
+        .About-us .content .right .button a span {
+          height: 20px;
+          font-size: 20px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          margin-top: 14px;
+          margin-right: 14px;
+          margin-left: 14px;
+          letter-spacing: 1px;
+          position: relative;
+          display: inline-block;
+          line-height: 20px; }
+        .About-us .content .right .button img {
           width: 22px;
           height: 26px;
           margin-left: 20px; }
-      .About-us .content .left .btn-8 {
+      .About-us .content .right .btn-8 {
         border: none; }
-      .About-us .content .left .btn-8 svg {
+      .About-us .content .right .btn-8 svg {
         width: 30px;
         margin-left: 15px; }
-      .About-us .content .left .btn-8 svg path {
+      .About-us .content .right .btn-8 svg path {
         fill: #ffffff; }
-      .About-us .content .left .btn-8 span {
+      .About-us .content .right .btn-8 span {
         position: relative;
         display: block;
         width: 100%;
@@ -105,8 +143,8 @@
             -ms-flex-align: center;
                 align-items: center;
         height: 100%; }
-      .About-us .content .left .btn-8:before,
-      .About-us .content .left .btn-8:after {
+      .About-us .content .right .btn-8:before,
+      .About-us .content .right .btn-8:after {
         position: absolute;
         content: "";
         right: 0;
@@ -119,22 +157,22 @@
         -webkit-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
         transition: all 0.8s ease; }
-      .About-us .content .left .btn-8:before {
+      .About-us .content .right .btn-8:before {
         height: 0%;
         width: 2px; }
-      .About-us .content .left .btn-8:after {
+      .About-us .content .right .btn-8:after {
         width: 0%;
         height: 2px; }
-      .About-us .content .left .btn-8:hover:before {
+      .About-us .content .right .btn-8:hover:before {
         height: 100%; }
-      .About-us .content .left .btn-8:hover:after {
+      .About-us .content .right .btn-8:hover:after {
         width: 100%; }
-      .About-us .content .left .btn-8:hover {
+      .About-us .content .right .btn-8:hover {
         background: transparent; }
-      .About-us .content .left .btn-8 span:hover {
+      .About-us .content .right .btn-8 span:hover {
         color: #1C4BDE; }
-      .About-us .content .left .btn-8 span:before,
-      .About-us .content .left .btn-8 span:after {
+      .About-us .content .right .btn-8 span:before,
+      .About-us .content .right .btn-8 span:after {
         position: absolute;
         content: "";
         left: 0;
@@ -147,24 +185,25 @@
         -webkit-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
         transition: all 0.8s ease; }
-      .About-us .content .left .btn-8 span:before {
+      .About-us .content .right .btn-8 span:before {
         width: 2px;
         height: 0%; }
-      .About-us .content .left .btn-8 span:after {
+      .About-us .content .right .btn-8 span:after {
         height: 2px;
         width: 0%; }
-      .About-us .content .left .btn-8 span:hover:before {
+      .About-us .content .right .btn-8 span:hover:before {
         height: 100%; }
-      .About-us .content .left .btn-8 span:hover:after {
+      .About-us .content .right .btn-8 span:hover:after {
         width: 100%; }
-      .About-us .content .left .btn-8:hover svg path {
+      .About-us .content .right .btn-8:hover svg path {
         fill: #1C4BDE; }
-    .About-us .content .right {
-      width: 431px;
+    .About-us .content .left {
+      /* width: 431px;*/
+      width: 50%; 
       height: 488px;
       margin-top: 50px; }
-      .About-us .content .right img {
-        width: 100%; }
+      .About-us .content .left img {
+        width: 80%; }
 
 .m-about-us {
   margin-top: 40px;
@@ -250,6 +289,7 @@
 .Advantages {
   width: 100%;
   background-image: url("../img/advantages_back.png");
+  background-color: #1B1C28;
   background-size: 100% 100%;
   padding-bottom: 109px; }
 
@@ -263,6 +303,13 @@
 .Advantages .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
+}
+
+.container, .Advantages {
+  background-color: #1B1C28;
+}
+body {
+  background-color: #1B1C28!important;
 }
 
   .Advantages .container .Advantages_title {
