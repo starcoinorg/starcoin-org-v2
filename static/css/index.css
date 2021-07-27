@@ -284,7 +284,7 @@
   background-image: url("../img/advantages_back.png");
   background-color: #1B1C28;
   background-size: 100% 100%;
-  padding-bottom: 109px; }
+  margin-bottom: 100px; }
 
 .Advantages .row {
   display: -webkit-box;
@@ -332,40 +332,53 @@ body {
   .Advantages .container .item {
     height: 100%;
     /*background: #FFFFFF;*/
-    background-image: url("../img/square_bg@2x.png");
-    padding-top: 30px;
-    padding-bottom: 40px;
+    background-image: url("../img/square_bg.png");
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 41px;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     -webkit-box-shadow: 0px 2px 30px 0 rgba(28, 75, 222, 0.1);
             box-shadow: 0px 2px 30px 0 rgba(28, 75, 222, 0.1); }
     .Advantages .container .item:hover {
       border: 1px solid #1C4BDE; }
+    .Advantages .container .col-md-6 .item {
+      background-image: url("../img/square_bg_long.png");
+      height: 212px;
+    }
+    .Advantages .container .col-md-6 .item .col-md-10 {
+      margin-top: 20px;
+    }
+    .Advantages .container .col-md-6 .item .col-md-10 .title {
+      margin-bottom: 20px;
+    }
     .Advantages .container .item .ad_icon {
-      width: 130px;
-      height: 130px;
-      margin: 0 auto;
-      margin-bottom: 23px; }
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 16px 20px; }
       .Advantages .container .item .ad_icon img {
         width: 100%; }
     .Advantages .container .item .title {
-      font-size: 34px;
-      font-weight: 600;
-      color: #272B3E;
-      text-align: center;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+      line-height: 24px;
+      text-align: left;
       letter-spacing: 3px;
-      margin-bottom: 18px; }
+      margin-left: 20px;
+      margin-bottom: 10px; }
     .Advantages .container .item .desc {
       font-size: 14px;
       padding: 0 20px;
       font-weight: 400;
-      line-height: 33px;
+      line-height: 26px;
       letter-spacing: 1px;
-      color: #272B3E;
+      font-family: PingFangSC-Medium, PingFang SC;
+      color: #fff;
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; }
 
 .Example .container .Advantages_title {
@@ -782,6 +795,7 @@ body {
   display: inline-block; }
 .more img {
   height: 24px;
+  margin: 8px;
 }
 
 .Advantages .wrapper {
