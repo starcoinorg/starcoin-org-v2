@@ -10,12 +10,15 @@
   margin-top: 0px; }
 
 .home-nav {
-  background: -webkit-gradient(linear, left top, right top, from(#113B69), to(#052E5D));
-  background: -webkit-linear-gradient(left, #113B69 0%, #052E5D 100%);
-  background: -o-linear-gradient(left, #113B69 0%, #052E5D 100%);
-  background: linear-gradient(90deg, #113B69 0%, #052E5D 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1b1c28), to(#1b1c28));
+  background: -webkit-linear-gradient(left, #1b1c28 0%, #1b1c28 100%);
+  background: -o-linear-gradient(left, #1b1c28 0%, #1b1c28 100%);
+  background: linear-gradient(90deg, #1b1c28 0%, #1b1c28 100%);
+  /*
   -webkit-box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13);
           box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13); }
+          */
+}
 
 .About-us {
   margin-top: 164px;
@@ -52,7 +55,7 @@
         line-height: 70px;
         letter-spacing: 1px;
         */
-        margin-bottom: 24px; }
+        margin-bottom: 16px; }
         .About-us .content .right .About_h3 img {
           width: 34px;
           height: 34px;
@@ -73,15 +76,15 @@
         line-height: 56px;
         letter-spacing: 1px;
         */
-        margin-bottom: 60px; }
+        margin-bottom: 54px; }
       .About-us .content .right .desc {
         width: 70%;
-        height: 160px;
+        height: 230px;
         font-size: 16px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #FFFFFF;
-        line-height: 32px;
+        line-height: 28px;
         /*
         width: 858px;
         font-size: 18px;
@@ -97,24 +100,12 @@
         border-radius: 4px;
         margin-top: 26px;
         cursor: pointer;
+        font-family: PingFangSC-Medium, PingFang SC;
         -webkit-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
         transition: all 0.8s ease;
         position: relative;
         display: inline-block; }
-        .About-us .content .right .button a span {
-          height: 20px;
-          font-size: 20px;
-          font-family: PingFangSC-Medium, PingFang SC;
-          font-weight: 500;
-          color: #FFFFFF;
-          margin-top: 14px;
-          margin-right: 14px;
-          margin-left: 14px;
-          letter-spacing: 1px;
-          position: relative;
-          display: inline-block;
-          line-height: 20px; }
         .About-us .content .right .button img {
           width: 22px;
           height: 26px;
@@ -130,6 +121,8 @@
         position: relative;
         display: block;
         width: 100%;
+        font-size: 20px;
+        padding: 0 20px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -149,7 +142,7 @@
         content: "";
         right: 0;
         bottom: 0;
-        background: #1C4BDE;
+        /*background: #1C4BDE;*/
         /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
                             -4px -4px 6px 0 rgba(116, 125, 136, .2),
                   inset -4px -4px 6px 0 rgba(255,255,255,.5),
@@ -170,7 +163,7 @@
       .About-us .content .right .btn-8:hover {
         background: transparent; }
       .About-us .content .right .btn-8 span:hover {
-        color: #1C4BDE; }
+        color: #fff; }
       .About-us .content .right .btn-8 span:before,
       .About-us .content .right .btn-8 span:after {
         position: absolute;
@@ -321,7 +314,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 114px; 
+    padding-top: 20px; 
     margin-bottom: 40px;}
     .Advantages .container .Advantages_title .Advantages_h3 {
       font-size: 50px;
@@ -338,7 +331,8 @@ body {
     margin-top: 41px; }
   .Advantages .container .item {
     height: 100%;
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
+    background-image: url("../img/square_bg@2x.png");
     padding-top: 30px;
     padding-bottom: 40px;
     margin-bottom: 41px;
@@ -767,13 +761,17 @@ body {
             transition-delay: .75s; }
 
 .more {
-  width: 138px;
-  height: 50px;
-  line-height: 50px;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
+  /*
   background: #1C4BDE;
+  */
   border-radius: 4px;
   font-size: 20px;
+  margin-left: auto; 
+  margin-right: 0;
   cursor: pointer;
   font-weight: 600;
   color: #FFFFFF;
@@ -782,8 +780,19 @@ body {
   transition: all 0.8s ease;
   position: relative;
   display: inline-block; }
+.more img {
+  height: 24px;
+}
+
+.Advantages .wrapper {
+  padding-left: 12%; 
+  padding-right: 12%;
+}
 
 .wrapper {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
   opacity: 0;
   -webkit-transform: translate3d(0, 30px, 0);
           transform: translate3d(0, 30px, 0);
