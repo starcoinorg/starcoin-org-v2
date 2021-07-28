@@ -390,7 +390,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 107px; }
+  padding-top: 80px; }
   .Example .container .Advantages_title .Example_h3 {
     font-size: 50px;
     font-weight: 600;
@@ -462,51 +462,71 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 117px;
-  margin-bottom: 123px; }
+  margin-top: 40px;
+  margin-bottom: 100px; }
   .Example .container .code_view .code_left {
     padding-top: 80px; }
     .Example .container .code_view .code_left .list li {
+      /*
       width: 519px;
-      background: #FFFFFF;
+      border-radius: 10px;
       -webkit-box-shadow: 2px 2px 17px 0px #E5E9F0;
               box-shadow: 2px 2px 17px 0px #E5E9F0;
-      border-radius: 10px;
       margin-bottom: 36px;
+      */
+      border-left: 4px solid rgba(255, 255, 255, 0.7);
+      background: unset;
       padding: 15px 0 15px 17px;
       cursor: pointer; }
       .Example .container .code_view .code_left .list li .title {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #151D36; }
+        font-size: 24px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 400;
+        color: #909095;
+        line-height: 24px;
+        margin-bottom: 5px;}
       .Example .container .code_view .code_left .list li .desc {
         font-size: 14px;
         color: #151D36; }
       .Example .container .code_view .code_left .list li:hover {
+        /*
         width: 578px;
-        background: #5B76F1;
         -webkit-box-shadow: 2px 2px 17px 0px #E5E9F0;
                 box-shadow: 2px 2px 17px 0px #E5E9F0;
         border-radius: 10px 0 0 10px;
+        background: #5B76F1;
+        */
+        font-weight: 600;
         color: #FFFFFF; }
         .Example .container .code_view .code_left .list li:hover .title {
+          font-weight: 500;
           color: #FFFFFF; }
         .Example .container .code_view .code_left .list li:hover .desc {
           color: #FFFFFF; }
+    .Example .container .code_view .code_left .list li.select {
+      border-left: 4px solid #113EC5;
+    }
     .Example .container .code_view .code_left .list .select {
+      /*
       width: 578px;
-      background: #5B76F1;
       -webkit-box-shadow: 2px 2px 17px 0px #E5E9F0;
               box-shadow: 2px 2px 17px 0px #E5E9F0;
       border-radius: 10px 0 0 10px;
+      background: #5B76F1;
+      */
       color: #FFFFFF; }
       .Example .container .code_view .code_left .list .select .title {
         color: #FFFFFF; }
       .Example .container .code_view .code_left .list .select .desc {
         color: #FFFFFF; }
+  .Example .container .code_view .code_right {
+    background-image: url("/img/code_bg@2x.png");
+    background-repeat: no-repeat;
+    background-size: 96% 120%;
+    background-position: top right;
+  }
   .Example .container .code_view .code_right .code_head {
-    width: 721px;
+    /* width: 721px;*/
     height: 80px;
     background: #5B76F1;
     border-radius: 10px 10px 0px 0px;
@@ -529,21 +549,26 @@ body {
       .Example .container .code_view .code_right .code_head .code_img .green {
         background: #32DF95; }
   .Example .container .code_view .code_right .code_body {
+    /*
     width: 721px;
-    height: 488px;
     background: #FFFFFF;
-    border-radius: 0px 0px 10px 10px;
     border-left: 2px solid #5B76F1;
     border-right: 2px solid #5B76F1;
+    border-radius: 0px 0px 10px 10px;
     border-bottom: 2px solid #5B76F1;
-    /* padding: 9px 0 9px 30px; */
+    padding: 9px 0 9px 30px;
+    */
+    height: 510px;
+    margin-left:166px;
+    margin-top: 48px;
     overflow: auto;
     line-height: 2.3;
     letter-spacing: 0.5px; }
     .Example .container .code_view .code_right .code_body .code_page_item pre {
       border: none;
       padding: 5px;
-      background-color: #ffffff;
+      background-color: unset;
+      color: #FFFFFF;
     }
     .code_fixed_back .code_model .code_view {
       padding: 0;
@@ -551,7 +576,7 @@ body {
     .code_fixed_back .code_model .code_view pre {
       border: none;
       padding: 5px;
-      background-color: #1a1f2d;
+      background-color: unset;
       color: #FFFFFF;
     }
     .Example .container .code_view .code_right .code_body .grzBLt {
@@ -798,7 +823,8 @@ body {
   margin: 8px;
 }
 
-.Advantages .wrapper {
+.Advantages .wrapper,
+.Example .wrapper {
   padding-left: 12%; 
   padding-right: 12%;
 }
