@@ -44,13 +44,13 @@ body {
     width: 100%; }
 
     .button-next {
-      width: 54px;
+      width: 30px;
       height: 82px;
       position: absolute;
       top: 50%;
       z-index: 10;
       cursor: pointer;
-      right: 90px;
+      right: 40px;
       margin-top: -41px;
       left: auto;
       display: -webkit-box;
@@ -71,13 +71,13 @@ body {
         content: ''; }
     
     .button-prev {
-      width: 54px;
+      width: 30px;
       height: 82px;
       position: absolute;
       top: 50%;
       z-index: 10;
       margin-top: -41px;
-      left: 90px;
+      left: 40px;
       right: auto;
       cursor: pointer;
       display: -webkit-box;

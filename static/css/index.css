@@ -522,7 +522,7 @@ body {
   .Example .container .code_view .code_right {
     background-image: url("/img/code_bg@2x.png");
     background-repeat: no-repeat;
-    background-size: 96% 120%;
+    background-size: 100% 120%;
     background-position: top right;
   }
   .Example .container .code_view .code_right .code_head {
@@ -558,8 +558,8 @@ body {
     border-bottom: 2px solid #5B76F1;
     padding: 9px 0 9px 30px;
     */
-    height: 510px;
-    margin-left:166px;
+    height: 540px;
+    margin-left:100px;
     margin-top: 48px;
     overflow: auto;
     line-height: 2.3;

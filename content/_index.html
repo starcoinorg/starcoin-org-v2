@@ -2,24 +2,26 @@
 title: Homepage
 ---
 <link rel="stylesheet" type="text/css" href="/css/index.css" />
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="banner-text">
-                <br /><a href="/en/news/post/move_hackathon_intro/">First Starcoin Move Online
-                    <br><span>Hackathon Introduction</span></a>
+<div class="container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="banner-text">
+                    <br /><a href="/en/news/post/move_hackathon_intro/">First Starcoin Move Online
+                        <br><span>Hackathon Introduction</span></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-text">
+                    A LAYERED <br> SMART CONTRACT
+                    <br><span>AND DISTRBUTED FINANCIAL NETWORK</span>
+                </div>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="banner-text">
-                A LAYERED <br> SMART CONTRACT
-                <br><span>AND DISTRBUTED FINANCIAL NETWORK</span>
-            </div>
-        </div>
+        <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
+        <div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div>
+        <div class="swiper-pagination visible-xs"></div>
     </div>
-    <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
-    <div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div>
-    <div class="swiper-pagination visible-xs"></div>
 </div>
 
 <div class="container">
@@ -64,354 +66,356 @@ title: Homepage
     </div>
 </div>
 
-<div class="Advantages">
-    <div class="container wrapper">
-        <div class="Advantages_title">
-            <!--
-            <div class="Advantages_h3"><img src="/img/whatwedo@2x.png" />Key Features</div>
-            <a class="more btn-8" href="/en/developer/key_concepts/"><span>MORE +</span></a>
-            -->
-            <a class="more btn-8" href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <div class="item">
-                    <div class="ad_icon"><img src="/img/features/1.png" /></div>
-                    <div class="title">Security</div>
-                    <div class="desc">
-                        Starcoin guarantees its security in five layers: the base layer, consensus layer, protocol
-                        layer, extension layer and application layer. On the one hand, Starcoin uses Rust programming
-                        language to ensure memory security and operational efficiency, on the other hand, Starcoin has
-                        designed a complete data verification mechanism to ensure the verifiability of transactions,
-                        blocks, state and blockchain. Those ensures the security of the basic layer. As for the
-                        consensus layer, Starcoin Consensus has made many improvements to Satoshi Consensus, which not
-                        only inherits the security, complete decentralization and anti-tampering features of Satoshi
-                        Consensus, but also greatly enhances the security and efficiency of the consensus. Likewise,
-                        Starcoin protocol is designed on the basis of data security and consensus layer security to
-                        fully guarantee the security of the chain in untrusted networks. In addition, Starcoin
-                        guarantees the security of the extension layer by ensuring the security of smart contracts, and
-                        enhances the security of the application layer by means of asymmetric signature.
-                    </div>
-                </div>
+<div class="container">
+    <div class="Advantages">
+        <div class="container wrapper">
+            <div class="Advantages_title">
+                <!--
+                <div class="Advantages_h3"><img src="/img/whatwedo@2x.png" />Key Features</div>
+                <a class="more btn-8" href="/en/developer/key_concepts/"><span>MORE +</span></a>
+                -->
+                <a class="more btn-8" href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
             </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="item">
-                    <div class="ad_icon"><img src="/img/features/2.png" /></div>
-                    <div class="title">Satoshi Consensus and POW</div>
-                    <div class="desc">
-                        Starcoin consensus is an enhancement of the Satoshi consensus in Bitcoin.The POW algorithm
-                        design adopted by Starcoin meets the requirements of novelty, simplicity, and security, and
-                        lowers the threshold of hardware development. In addition, in order to speed up the block out
-                        speed and transaction confirmation time, we adjust the block out time, difficulty, and block
-                        reward through the uncle-block rate and other runtime data, which can maximize the use of the
-                        network and reduce user waiting time. In addition, we have also enhanced the dynamic adjustment
-                        capability of the blockchain so that some key parameters can be configured online, which can
-                        minimize hard forks. In order to do this in a decentralized environment, we have also introduced
-                        an on-chain governance mechanism to facilitate the participation of the community, developers
-                        and miners at large.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="item">
-                    <div class="ad_icon"><img src="/img/features/3.png" /></div>
-                    <div class="title">Move Programming Language</div>
-                    <div class="desc">
-                        Move is a programming language created for expressing digital assets, which first appeared in
-                        Facebook's blockchain project Libra, and features Resource as a first-class element of Move. It
-                        provides a secure and programmable foundation. the characteristics of Move fit so well with
-                        Starcoin's model that Starcoin chose Move as its smart contract programming language. Move is
-                        capable of defining custom resource types in the semantics of linear logic: resources can never
-                        be copied or implicitly discarded and can only be moved between programs. These security
-                        guarantees result from the static execution of Move's type system. As a smart contract language,
-                        the linear logic semantics are very obvious and very useful for smart contracts to do reviews of
-                        resource use and prevent engineers from accidentally causing security issues. This is also the
-                        direction in which the blockchain smart contract language is evolving.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="item">
-                    <div class="ad_icon"><img src="/img/features/4.png" /></div>
-                    <div class="title">Status Storage<br />and Fee</div>
-                    <div class="desc">
-                        In the case of Ethereum, since its contract data is stored under the contract account, the user
-                        pays only the GAS fee for the current transaction when writing data, and does not have to pay
-                        separately for the state storage. Users, however, do not have to pay for the storage. In
-                        Starcoin, since there is no contract account in Ethernet, user data is stored under their own
-                        account, which is more convenient and beneficial for state billing, and can also help solve the
-                        state explosion problem.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <div class="item">
-                    <div class="col-md-2">
-                       <div class="ad_icon"><img src="/img/features/5.png" /></div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="title">On-Chain Governance</div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="item">
+                        <div class="ad_icon"><img src="/img/features/1.png" /></div>
+                        <div class="title">Security</div>
                         <div class="desc">
-                            The governance of the blockchain encompasses decision-making and communication processes that
-                            have an invisible but long-term effect on the blockchain and especially the public chain
-                            ecology. While off-chain governance started with the previous generation of public chains, the
-                            new generation of public chains favors on-chain governance. The token governance of contractual
-                            agreements has also pushed the DEFI on Ethereum to an unprecedented peak, which is a serious
-                            issue that the next-generation public chain should consider.Starcoin embraces the on-chain
-                            governance model in its design, solidifying most of the chain's governance rules in the form of
-                            contracts, while combining on-chain governance and off-chain governance to achieve
-                            decentralized, open and efficient governance as our target.
+                            Starcoin guarantees its security in five layers: the base layer, consensus layer, protocol
+                            layer, extension layer and application layer. On the one hand, Starcoin uses Rust programming
+                            language to ensure memory security and operational efficiency, on the other hand, Starcoin has
+                            designed a complete data verification mechanism to ensure the verifiability of transactions,
+                            blocks, state and blockchain. Those ensures the security of the basic layer. As for the
+                            consensus layer, Starcoin Consensus has made many improvements to Satoshi Consensus, which not
+                            only inherits the security, complete decentralization and anti-tampering features of Satoshi
+                            Consensus, but also greatly enhances the security and efficiency of the consensus. Likewise,
+                            Starcoin protocol is designed on the basis of data security and consensus layer security to
+                            fully guarantee the security of the chain in untrusted networks. In addition, Starcoin
+                            guarantees the security of the extension layer by ensuring the security of smart contracts, and
+                            enhances the security of the application layer by means of asymmetric signature.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="item">
+                        <div class="ad_icon"><img src="/img/features/2.png" /></div>
+                        <div class="title">Satoshi Consensus and POW</div>
+                        <div class="desc">
+                            Starcoin consensus is an enhancement of the Satoshi consensus in Bitcoin.The POW algorithm
+                            design adopted by Starcoin meets the requirements of novelty, simplicity, and security, and
+                            lowers the threshold of hardware development. In addition, in order to speed up the block out
+                            speed and transaction confirmation time, we adjust the block out time, difficulty, and block
+                            reward through the uncle-block rate and other runtime data, which can maximize the use of the
+                            network and reduce user waiting time. In addition, we have also enhanced the dynamic adjustment
+                            capability of the blockchain so that some key parameters can be configured online, which can
+                            minimize hard forks. In order to do this in a decentralized environment, we have also introduced
+                            an on-chain governance mechanism to facilitate the participation of the community, developers
+                            and miners at large.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="item">
+                        <div class="ad_icon"><img src="/img/features/3.png" /></div>
+                        <div class="title">Move Programming Language</div>
+                        <div class="desc">
+                            Move is a programming language created for expressing digital assets, which first appeared in
+                            Facebook's blockchain project Libra, and features Resource as a first-class element of Move. It
+                            provides a secure and programmable foundation. the characteristics of Move fit so well with
+                            Starcoin's model that Starcoin chose Move as its smart contract programming language. Move is
+                            capable of defining custom resource types in the semantics of linear logic: resources can never
+                            be copied or implicitly discarded and can only be moved between programs. These security
+                            guarantees result from the static execution of Move's type system. As a smart contract language,
+                            the linear logic semantics are very obvious and very useful for smart contracts to do reviews of
+                            resource use and prevent engineers from accidentally causing security issues. This is also the
+                            direction in which the blockchain smart contract language is evolving.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="item">
+                        <div class="ad_icon"><img src="/img/features/4.png" /></div>
+                        <div class="title">Status Storage<br />and Fee</div>
+                        <div class="desc">
+                            In the case of Ethereum, since its contract data is stored under the contract account, the user
+                            pays only the GAS fee for the current transaction when writing data, and does not have to pay
+                            separately for the state storage. Users, however, do not have to pay for the storage. In
+                            Starcoin, since there is no contract account in Ethernet, user data is stored under their own
+                            account, which is more convenient and beneficial for state billing, and can also help solve the
+                            state explosion problem.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="item">
-                    <div class="col-md-2">
-                        <div class="ad_icon"><img src="/img/features/6.png" /></div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="item">
+                        <div class="col-md-2">
+                        <div class="ad_icon"><img src="/img/features/5.png" /></div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="title">On-Chain Governance</div>
+                            <div class="desc">
+                                The governance of the blockchain encompasses decision-making and communication processes that
+                                have an invisible but long-term effect on the blockchain and especially the public chain
+                                ecology. While off-chain governance started with the previous generation of public chains, the
+                                new generation of public chains favors on-chain governance. The token governance of contractual
+                                agreements has also pushed the DEFI on Ethereum to an unprecedented peak, which is a serious
+                                issue that the next-generation public chain should consider.Starcoin embraces the on-chain
+                                governance model in its design, solidifying most of the chain's governance rules in the form of
+                                contracts, while combining on-chain governance and off-chain governance to achieve
+                                decentralized, open and efficient governance as our target.
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-10">
-                        <div class="title">Layered Network</div>
-                        <div class="desc">
-                            Layered networks are one of the features that Starcoin has been designed for. Starcoin considers
-                            security and decentralization as features that must be guaranteed, but speeding up transactions
-                            and increasing throughput are also very user-friendly features. Also, global consensus, while
-                            slow and costly, is not required for all transactions, so the idea of building a layered
-                            blockchain was born. Specifically, on layer 1 of the network use POW and global consensus to
-                            ensure decentralization and security, and other technical solutions to speed up transaction
-                            execution and reduce transaction waiting time, and on the layer 2 use local consensus to
-                            maximize the speed and throughput of transactions to ensure security while supporting commercial
-                            applications. Due to the special design of Starcoin, Starcoin layer 2 can use the data of layer
-                            1, and layer 1 can also verify the calculation results of layer 2, which is an organic
-                            combination of layer 1 and layer 2, assets can move freely between layer 1 and layer 2.
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="item">
+                        <div class="col-md-2">
+                            <div class="ad_icon"><img src="/img/features/6.png" /></div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="title">Layered Network</div>
+                            <div class="desc">
+                                Layered networks are one of the features that Starcoin has been designed for. Starcoin considers
+                                security and decentralization as features that must be guaranteed, but speeding up transactions
+                                and increasing throughput are also very user-friendly features. Also, global consensus, while
+                                slow and costly, is not required for all transactions, so the idea of building a layered
+                                blockchain was born. Specifically, on layer 1 of the network use POW and global consensus to
+                                ensure decentralization and security, and other technical solutions to speed up transaction
+                                execution and reduce transaction waiting time, and on the layer 2 use local consensus to
+                                maximize the speed and throughput of transactions to ensure security while supporting commercial
+                                applications. Due to the special design of Starcoin, Starcoin layer 2 can use the data of layer
+                                1, and layer 1 can also verify the calculation results of layer 2, which is an organic
+                                combination of layer 1 and layer 2, assets can move freely between layer 1 and layer 2.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </div>
-<div class="Example">
-    <div class="container wrapper">
-        <div class="Advantages_title">
-            <!--
-            <div class="Example_h3"><img src="/img/whatwedo@2x.png" />Code Example</div>
-            -->
-            <a class="more btn-8" href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
-        </div>
-        <div class="visible-lg">
-            <div class="code_view row">
-                <div class="code_left col-md-3">
-                    <div class="list index_code_view_tab">
-                        <ul>
-                            <li>
-                                <div class="title"> Hello World </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li class="select">
-                                <div class="title"> Token </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> NFT </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> Resource </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> Deploy Smart Contract </div>
-                                <div class="desc"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="code_right col-md-9">
-                    <!--
-                    <div class="code_head">
-                        <div class="code_img">
-                            <div class="garden red"></div>
-                            <div class="garden yellow"></div>
-                            <div class="garden green"></div>
+
+<div class="container">
+    <div class="Example">
+        <div class="container wrapper">
+            <div class="Advantages_title">
+                <!--
+                <div class="Example_h3"><img src="/img/whatwedo@2x.png" />Code Example</div>
+                -->
+                <a class="more btn-8" href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
+            </div>
+            <div class="visible-lg">
+                <div class="code_view row">
+                    <div class="code_left col-md-3">
+                        <div class="list index_code_view_tab">
+                            <ul>
+                                <li>
+                                    <div class="title"> Hello World </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li class="select">
+                                    <div class="title"> Token </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> NFT </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> Resource </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> Deploy Smart Contract </div>
+                                    <div class="desc"></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    -->
-                    <div class="code_body">
-                        <div class="code_page_0 code_page_item" style="display: none;">
-                            <pre>
-1   module Hello {
-2       use 0x1::Signer;
-3       use 0x1::Event;
-4
-5       struct AnyWordEvent has drop, store {
-6           words: vector<u8>,
-7       }
-8
-9       struct EventHolder has key {
-10          any_word_events: Event::EventHandle<AnyWordEvent>,
-11      }
-12
-13      public(script) fun hello(account: &signer) acquires EventHolder {
-14          let addr = Signer::address_of(account);
-15          if (!exists<EventHolder>(copy addr)){
-16              move_to(account, EventHolder {
-17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-18              });
-19          };
-20          let hello_world = x"68656c6c6f20776f726c64";//hello world
-21          let holder = borrow_global_mut<EventHolder>(addr);
-22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-23      }
-24  }
-</pre>
+                    <div class="code_right col-md-9">
+                        <!--
+                        <div class="code_head">
+                            <div class="code_img">
+                                <div class="garden red"></div>
+                                <div class="garden yellow"></div>
+                                <div class="garden green"></div>
+                            </div>
                         </div>
-                        <div class="code_page_1 code_page_item">
-                            <pre>
-1   module MyToken {
-2       use 0x1::Token;
-3       use 0x1::Account;
-4
-5       struct MyToken has copy, drop, store { }
-6
-7       public(script) fun init(account: &signer) {
-8           Token::register_token<MyToken>(account, 3);
-9           Account::do_accept_token<MyToken>(account);
-10      }
-11
-12      public(script) fun mint(account: &signer, amount: u128) {
-13         let token = Token::mint<MyToken>(account, amount);
-14         Account::deposit_to_self<MyToken>(account, token)
-15      }
-16  }
-</pre>
-                        </div>
-                        <div class="code_page_2 code_page_item" style="display: none;">
-                            <pre>
-1   module NFTExample {
-2       use 0x1::Signer;
-3       struct NFT has key, store { name: vector<u8> }
-4   
-5       struct UniqIdList has key, store {
-6           data: vector<vector<u8>>
-7       }
-8       public fun initialize(account: &signer) {
-9           move_to(account, UniqIdList {data: Vector::empty<vector<u8>>()});
-10      }
-11      public fun new(account: &signer, name: vector<u8>): NFT acquires UniqIdList {
-12          let account_address = Signer::address_of(account);
-13          let exist = Vector::contains<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
-14          assert(!exist, 1);
-15          let id_list = borrow_global_mut<UniqIdList>(account_address);
-16          Vector::push_back<vector<u8>>(&mut id_list.data, copy name);
-17          NFT { name }
-18      }
-19      public fun destroy(account_address: address, nft: NFT) acquires UniqIdList {
-20          let NFT { name } = nft;
-21          let (exist, index) = Vector::index_of<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
-22          assert(!exist, 2);
-23          let id_list = borrow_global_mut<UniqIdList>(account_address);
-24          Vector::remove<vector<u8>>(&mut id_list.data, index);
-25      }
-26  }
-</pre>
-                        </div>
-                        <div class="code_page_3 code_page_item" style="display: none;">
-                            <pre>
-1   module ResourceExample {
-2       use 0x1::Signer;
-3   
-4       struct R has key, store { x: bool }
-5   
-6       public fun new(): R {
-7           R { x: true }
-8       }
-9   
-10      public fun destroy(r: R) {
-11          R { x: _ } = r;
-12      }
-13  
-14      public fun save(account: &signer, r: R){
-15          move_to(account, r);
-16      }
-17  
-18      public fun get_x(account: &signer): bool acquires R {
-19          let sender = Signer::address_of(account);
-20          assert(exists<R>(sender), 1);
-21          let r = borrow_global<R>(sender);
-22          r.x
-23      }
-24  }
-</pre>
-                        </div>
-                        <div class="code_page_4 code_page_item" style="display: none;">
-                            <pre>
-1   script {
-2       use 0x1::Dao;
-3       use {{coder}}::MyToken::MyToken;
-4       use 0x1::Config;
-5
-6       fun set_dao_config(signer: signer) {
-7           let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
-8               &signer
-9           );
-10
-11          Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
-12          Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
-13          Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
-14          Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
-15
-16          Config::restore_modify_config_capability(cap);
-17      }
-18  }
-</pre>
+                        -->
+                        <div class="code_body">
+                            <div class="code_page_0 code_page_item" style="display: none;">
+                                <pre>
+    1   module Hello {
+    2       use 0x1::Signer;
+    3       use 0x1::Event;
+    4
+    5       struct AnyWordEvent has drop, store {
+    6           words: vector<u8>,
+    7       }
+    8
+    9       struct EventHolder has key {
+    10          any_word_events: Event::EventHandle<AnyWordEvent>,
+    11      }
+    12
+    13      public(script) fun hello(account: &signer) acquires EventHolder {
+    14          let addr = Signer::address_of(account);
+    15          if (!exists<EventHolder>(copy addr)){
+    16              move_to(account, EventHolder {
+    17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
+    18              });
+    19          };
+    20          let hello_world = x"68656c6c6f20776f726c64";//hello world
+    21          let holder = borrow_global_mut<EventHolder>(addr);
+    22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+    23      }
+    24  }
+    </pre>
+                            </div>
+                            <div class="code_page_1 code_page_item">
+                                <pre>
+    1   module MyToken {
+    2       use 0x1::Token;
+    3       use 0x1::Account;
+    4
+    5       struct MyToken has copy, drop, store { }
+    6
+    7       public(script) fun init(account: &signer) {
+    8           Token::register_token<MyToken>(account, 3);
+    9           Account::do_accept_token<MyToken>(account);
+    10      }
+    11
+    12      public(script) fun mint(account: &signer, amount: u128) {
+    13         let token = Token::mint<MyToken>(account, amount);
+    14         Account::deposit_to_self<MyToken>(account, token)
+    15      }
+    16  }
+    </pre>
+                            </div>
+                            <div class="code_page_2 code_page_item" style="display: none;">
+                                <pre>
+    1   module NFTExample {
+    2       use 0x1::Signer;
+    3       struct NFT has key, store { name: vector<u8> }
+    4   
+    5       struct UniqIdList has key, store {
+    6           data: vector<vector<u8>>
+    7       }
+    8       public fun initialize(account: &signer) {
+    9           move_to(account, UniqIdList {data: Vector::empty<vector<u8>>()});
+    10      }
+    11      public fun new(account: &signer, name: vector<u8>): NFT acquires UniqIdList {
+    12          let account_address = Signer::address_of(account);
+    13          let exist = Vector::contains<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
+    14          assert(!exist, 1);
+    15          let id_list = borrow_global_mut<UniqIdList>(account_address);
+    16          Vector::push_back<vector<u8>>(&mut id_list.data, copy name);
+    17          NFT { name }
+    18      }
+    19      public fun destroy(account_address: address, nft: NFT) acquires UniqIdList {
+    20          let NFT { name } = nft;
+    21          let (exist, index) = Vector::index_of<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
+    22          assert(!exist, 2);
+    23          let id_list = borrow_global_mut<UniqIdList>(account_address);
+    24          Vector::remove<vector<u8>>(&mut id_list.data, index);
+    25      }
+    26  }
+    </pre>
+                            </div>
+                            <div class="code_page_3 code_page_item" style="display: none;">
+                                <pre>
+    1   module ResourceExample {
+    2       use 0x1::Signer;
+    3   
+    4       struct R has key, store { x: bool }
+    5   
+    6       public fun new(): R {
+    7           R { x: true }
+    8       }
+    9   
+    10      public fun destroy(r: R) {
+    11          R { x: _ } = r;
+    12      }
+    13  
+    14      public fun save(account: &signer, r: R){
+    15          move_to(account, r);
+    16      }
+    17  
+    18      public fun get_x(account: &signer): bool acquires R {
+    19          let sender = Signer::address_of(account);
+    20          assert(exists<R>(sender), 1);
+    21          let r = borrow_global<R>(sender);
+    22          r.x
+    23      }
+    24  }
+    </pre>
+                            </div>
+                            <div class="code_page_4 code_page_item" style="display: none;">
+                                <pre>
+    1   script {
+    2       use 0x1::Dao;
+    3       use {{coder}}::MyToken::MyToken;
+    4       use 0x1::Config;
+    5
+    6       fun set_dao_config(signer: signer) {
+    7           let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
+    8               &signer
+    9           );
+    10
+    11          Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
+    12          Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
+    13          Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
+    14          Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
+    15
+    16          Config::restore_modify_config_capability(cap);
+    17      }
+    18  }
+    </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--  手机端显示  -->
-        <div class="visible-xs visible-sm visible-md">
+            <!--  手机端显示  -->
+            <div class="visible-xs visible-sm visible-md">
 
-            <div class="m-code_head">
-                <div class="code_img">
-                    <div class="garden red"></div>
-                    <div class="garden yellow"></div>
-                    <div class="garden green"></div>
+                <div class="m-code_head">
+                    <div class="code_img">
+                        <div class="garden red"></div>
+                        <div class="garden yellow"></div>
+                        <div class="garden green"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="m-code-view">
+                <div class="m-code-view">
 
 
-                <div class="m-code-left">
-                    <div class="list index_code_view_tab">
-                        <ul>
-                            <li class="select">
-                                <div class="title"> Hello World </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title">Token </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> NFT </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> Resource </div>
-                                <div class="desc"></div>
-                            </li>
-                            <li>
-                                <div class="title"> Deploy Smart Contract </div>
-                                <div class="desc"></div>
-                            </li>
-                        </ul>
+                    <div class="m-code-left">
+                        <div class="list index_code_view_tab">
+                            <ul>
+                                <li class="select">
+                                    <div class="title"> Hello World </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title">Token </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> NFT </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> Resource </div>
+                                    <div class="desc"></div>
+                                </li>
+                                <li>
+                                    <div class="title"> Deploy Smart Contract </div>
+                                    <div class="desc"></div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
