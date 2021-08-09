@@ -162,7 +162,7 @@ line-height: 1.125;
     background: #1B1C28;
     width: 100%;
     background: url("../img/m-banner.png");
-    background-size: 110% 100%; }
+    background-size: cover; }
     .swiper-slide .banner-text {
       font-size: 26px;
       line-height: 55px;
