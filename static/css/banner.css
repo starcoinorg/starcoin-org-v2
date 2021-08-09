@@ -159,10 +159,10 @@ line-height: 1.125;
 @media (max-width: 768px) {
   .swiper-slide {
     height: 667px;
-    background: #1C4BDE;
+    background: #1B1C28;
     width: 100%;
     background: url("../img/m-banner.png");
-    background-size: 100% 100%; }
+    background-size: 110% 100%; }
     .swiper-slide .banner-text {
       font-size: 26px;
       line-height: 55px;

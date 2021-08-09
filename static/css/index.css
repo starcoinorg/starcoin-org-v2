@@ -297,6 +297,10 @@
   display: flex;
   flex-direction: column;
 }
+.top .container {
+  background-color: transparent;
+}
+
 
 .container, .Advantages {
   background-color: #1B1C28;
