@@ -85,7 +85,13 @@
     font-weight: 100;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    margin-top: 15px; }
+    border-top: 1px solid #898E9A;
+    background: #151620;
+    padding-top: 28px;
+    padding-bottom: 4px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 50px; }
   .m-footer .container .copyright {
     display: -webkit-box;
     display: -webkit-flex;
@@ -116,9 +122,11 @@
       color: rgba(255, 255, 255, 0.6);
       margin-top: 5px; }
   .m-footer .container .go-contact-us {
-    font-size: 18px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #FFFFFF;
+    line-height: 16px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -143,9 +151,13 @@
     margin-bottom: 20px; }
     .m-footer .container .row-li .item {
       width: 100%;
-      font-size: 12px;
+      font-size: 13px;
+      font-family: PingFangSC-Regular, PingFang SC;
       font-weight: 400;
-      color: #EEEEEE; }
-    .m-footer .container .row-li .item a {
+      color: #898E9A;
+      line-height: 13px;
+      }
+    .m-footer .container .row-li .item a,
+    .m-footer .container .row-li .item {
       color: #898E9A;; }
     }
