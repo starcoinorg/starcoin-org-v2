@@ -121,13 +121,13 @@
 - id: footerNews
   translation: News
 - id: footerTwitter
-  translation: 'Twitter: '
+  translation: 'Twitter: StarcoinSTC'
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWechatGroup
-  translation: 'Join WeChat Group: '
+  translation: 'Join WeChat Group: starcoinorg'
 - id: footerDeveloperDocs
   translation: Developer Docs
 - id: footerSDK
@@ -135,7 +135,7 @@
 - id: footerMoveChineseCommunity
   translation: Move Chinese Community
 - id: footerDiscord
-  translation: 'Discord: '
+  translation: 'Discord: Starcoin Spaceship'
 - id: footerGitHubDiscussion
   translation: 'GitHub Discussion'
 - id: footerAllRightsReserved

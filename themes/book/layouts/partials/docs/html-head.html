@@ -37,6 +37,10 @@
         $(window).resize(function () {
             isMobile()
         });
+        $(function () {
+            $('.footer [data-toggle="tooltip"]').tooltip({
+            })
+        })
         function isMobile() {
             if (window.innerWidth <= 768) {
                 $(".m-d-title").css("width", document.body.clientWidth - 30 + 'px');

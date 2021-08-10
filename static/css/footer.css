@@ -9,19 +9,24 @@
     padding-top: 113px;
     padding-left: 200px; }
     .footer .container .hr {
-      font-size: 30px;
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
       font-weight: 500;
       color: #FFFFFF;
+      line-height:18px;
       padding-bottom: 33px; }
       .footer .container .hr a {
         color: #FFFFFF; }
     .footer .container .td {
       font-size: 16px;
-      font-weight: 500; }
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #898E9A;
+      line-height: 16px;}
       .footer .container .td .item {
         margin-bottom: 38px; }
       .footer .container .td .item a {
-        color: #32ccfe; }
+        color: #898E9A; }
     .footer .container .foot {
       display: -webkit-box;
       display: -webkit-flex;
@@ -35,6 +40,41 @@
         height: 36px;
         line-height: 46px;
         color: rgba(255, 255, 255, 0.6); }
+
+.footer .logo-container img {
+  width: 142px;
+  height: 36px;
+  margin-bottom: 8px;
+}
+.footer .logo-container .logo {
+  width: 145px;
+}
+.footer .logo-container {
+  height: 12px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #898E9A;
+  line-height: 12px;
+}
+.footer .contact-container img {
+  height: 24px;
+  margin-right: 16px;
+}
+.footer .tooltip  {
+  left: 200px;
+}
+
+.footer .tooltip-inner {
+  max-width: 200px;
+  padding: 4px 8px;
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
 
 .m-footer {
   background: #1B1C28;
@@ -107,5 +147,5 @@
       font-weight: 400;
       color: #EEEEEE; }
     .m-footer .container .row-li .item a {
-      color: #32ccfe; }
+      color: #898E9A;; }
     }
