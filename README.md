@@ -7,7 +7,7 @@
 ### Checkout
 
 ```shell script
-git clone https://github.com/starcoinorg/starcoin
+git clone https://github.com/starcoinorg/starcoin-org-v2.git
 git submodule update --init
 ```
 

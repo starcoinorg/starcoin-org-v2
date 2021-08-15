@@ -201,18 +201,19 @@ title: 首页
 9       struct EventHolder has key {
 10          any_word_events: Event::EventHandle<AnyWordEvent>,
 11      }
-13      public(script) fun hello(account: &signer) acquires EventHolder {
-14          let addr = Signer::address_of(account);
-15          if (!exists<EventHolder>(copy addr)){
-16              move_to(account, EventHolder {
-17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-18              });
-19          };
-20          let hello_world = x"68656c6c6f20776f726c64";//hello world
-21          let holder = borrow_global_mut<EventHolder>(addr);
-22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-23      }
-24  }
+13      public(script) fun hello(account: signer) acquires EventHolder {
+14          let _account = &account;
+15          let addr = Signer::address_of(_account);
+16          if (!exists<EventHolder>(copy addr)){
+17              move_to(_account, EventHolder {
+18                  any_word_events: Event::new_event_handle<AnyWordEvent>(_account),
+19              });
+20          };
+21          let hello_world = x"68656c6c6f20776f726c64";//hello world
+22          let holder = borrow_global_mut<EventHolder>(addr);
+23          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+24      }
+25  }
 </pre>
                         </div>
                         <div class="code_page_1 code_page_item">
@@ -223,15 +224,18 @@ title: 首页
 4
 5       struct MyToken has copy, drop, store { }
 6
-7       public(script) fun init(account: &signer) {
-8           Token::register_token<MyToken>(account, 3);
-9           Account::do_accept_token<MyToken>(account);
-10      }
-12      public(script) fun mint(account: &signer, amount: u128) {
-13         let token = Token::mint<MyToken>(account, amount);
-14         Account::deposit_to_self<MyToken>(account, token)
-15      }
-16  }
+7       public(script) fun init(account: signer) {
+8           let _account = &account;
+9           Token::register_token<MyToken>(_account, 3);
+10          Account::do_accept_token<MyToken>(_account);
+11      }
+12
+13      public(script) fun mint(account: signer, amount: u128) {
+14          let _account = &account;
+15          let token = Token::mint<MyToken>(_account, amount);
+16          Account::deposit_to_self<MyToken>(_account, token)
+17      }
+18  }
 </pre>
                         </div>
                         <div class="code_page_2 code_page_item" style="display: none;">
@@ -385,18 +389,19 @@ title: 首页
 10          any_word_events: Event::EventHandle<AnyWordEvent>,
 11      }
 12  
-13      public(script) fun hello(account: &signer) acquires EventHolder {
-14          let addr = Signer::address_of(account);
-15          if (!exists<EventHolder>(copy addr)){
-16              move_to(account, EventHolder {
-17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-18              });
-19          };
-20          let hello_world = x"68656c6c6f20776f726c64";//hello world
-21          let holder = borrow_global_mut<EventHolder>(addr);
-22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-23      }
-24  }
+13      public(script) fun hello(account: signer) acquires EventHolder {
+14          let _account = &account;
+15          let addr = Signer::address_of(_account);
+16          if (!exists<EventHolder>(copy addr)){
+17              move_to(_account, EventHolder {
+18                  any_word_events: Event::new_event_handle<AnyWordEvent>(_account),
+19              });
+20          };
+21          let hello_world = x"68656c6c6f20776f726c64";//hello world
+22          let holder = borrow_global_mut<EventHolder>(addr);
+23          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+24      }
+25  }
 </pre>
             </div>
             <div class="code_view_page_1 code_view_page_item" style="display: none;">
@@ -404,19 +409,21 @@ title: 首页
 1   module MyToken {
 2       use 0x1::Token;
 3       use 0x1::Account;
-4   
+4
 5       struct MyToken has copy, drop, store { }
-6   
-7       public(script) fun init(account: &signer) {
-8           Token::register_token<MyToken>(account, 3);
-9           Account::do_accept_token<MyToken>(account);
-10      }
-11  
-12      public(script) fun mint(account: &signer, amount: u128) {
-13         let token = Token::mint<MyToken>(account, amount);
-14         Account::deposit_to_self<MyToken>(account, token)
-15      }
-16  }
+6
+7       public(script) fun init(account: signer) {
+8           let _account = &account;
+9           Token::register_token<MyToken>(_account, 3);
+10          Account::do_accept_token<MyToken>(_account);
+11      }
+12
+13      public(script) fun mint(account: signer, amount: u128) {
+14          let _account = &account;
+15          let token = Token::mint<MyToken>(_account, amount);
+16          Account::deposit_to_self<MyToken>(_account, token)
+17      }
+18  }
 </pre>
             </div>
             <div class="code_view_page_2 code_view_page_item" style="display: none;">
