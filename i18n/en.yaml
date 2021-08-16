@@ -51,6 +51,16 @@
   translation: Mining STC
 - id: navGuideNodeCommand
   translation: Node Command
+- id: navDeveloperGetStarted
+  translation: Get Started
+- id: navDeveloperStartInstall
+  translation: Install
+- id: navDeveloperStartBuild
+  translation: Build from Source
+- id: navDeveloperStartDocker
+  translation: Run by Docker
+- id: navDeveloperStartNetwork
+  translation: Run/Join Network
 - id: navDeveloperNode
   translation: Node
 - id: navDeveloperNodeKeyConcept
