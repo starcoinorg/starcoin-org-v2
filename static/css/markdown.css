@@ -28,6 +28,21 @@
 .markdown h4,.markdown h5,.markdown h6 {
     font-weight: bolder
 }
+.markdown h1 {
+    font-size: 3em
+}
+
+.markdown h2 {
+    font-size: 2em
+}
+
+.markdown h3 {
+    font-size: 1.5em
+}
+
+.markdown h4 {
+    font-size: 1em
+}
 
 .markdown h5 {
     font-size: .875em
