@@ -96,15 +96,17 @@ any_word_events: Event::EventHandle,
 
 
 
-public(script) fun hello(account: &signer) acquires EventHolder {
+public(script) fun hello(account: signer) acquires EventHolder {
 
-let addr = Signer::address_of(account);
+let _account = &account;
+
+let addr = Signer::address_of(_account);
 
 if (! exists(copy addr)){
 
-move_to(account, EventHolder {
+move_to(_account, EventHolder {
 
-any_word_events: Event::new_event_handle(account),
+any_word_events: Event::new_event_handle(_account),
 
 });
 
@@ -522,21 +524,25 @@ struct MyToken has copy, drop, store { }
 
 
 
-public(script) fun init(account: &signer) {
+public(script) fun init(account: signer) {
 
-Token::register_token(account, 3);
+let _account = &account;
 
-Account::do_accept_token(account);
+Token::register_token(_account, 3);
+
+Account::do_accept_token(_account);
 
 }
 
 
 
-public(script) fun mint(account: &signer, amount: u128) {
+public(script) fun mint(account: signer, amount: u128) {
 
-let token = Token::mint(account, amount);
+let _account = &account;
 
-Account::deposit_to_self(account, token)
+let token = Token::mint(_account, amount);
+
+Account::deposit_to_self(_account, token)
 
 }
 
@@ -608,23 +614,27 @@ struct MyToken has copy, drop, store { }
 
 
 
-public(script) fun init(account: &signer) {
+public(script) fun init(account: signer) {
 
-Token::register_token(account, 3);
+let _account = &account;    
 
-Account::do_accept_token(account);
+Token::register_token(_account, 3);
 
-Dao::plugin(account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
+Account::do_accept_token(_account);
+
+Dao::plugin(_account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
 
 }
 
 
 
-public(script) fun mint(account: &signer, amount: u128) {
+public(script) fun mint(account: signer, amount: u128) {
 
-let token = Token::mint(account, amount);
+let _account = &account;  
 
-Account::deposit_to_self(account, token)
+let token = Token::mint(_account, amount);
+
+Account::deposit_to_self(_account, token)
 
 }
 
