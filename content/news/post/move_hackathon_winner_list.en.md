@@ -63,13 +63,15 @@ Each of the above 20 teams will receive a Starcoin Mini + a Starcoin commemorati
 
 There were many interesting and representative projects among all the participants of this hackathon. From these projects, we have selected the finalists and some of the best participation projects for a brief introduction.
 
+
+
 ### MyLegacy
 
 "MyLegacy" is dedicated to solving the problem of intergenerational inheritance of wealth property and reconstructing the trust system of wealth property inheritance in the digital era. Through blockchain contracts built on the Starcoin public chain, it provides an open and transparent solution for the inheritance of property, realizing the safe storage of assets, unlocking them in batches, and entrusting them to beneficiaries.
 
-\- Project Direction： Asset-Management
-\- Experience the entrance: https://mylegacy.westxu.com/
-\- View source code: https://github.com/WestXu/mylegacy
+* Project Direction： Asset-Management
+* Experience the entrance: https://mylegacy.westxu.com/
+* View source code: https://github.com/WestXu/mylegacy
 
 
 
@@ -77,11 +79,12 @@ There were many interesting and representative projects among all the participan
 
 Atlaspad is a protocol built for projects to raise capital, construct community on a decentralized, permissionless, and interoperable environment based on Starcoin Network. 
 
-\- Project Direction: IDO
-\- Experience the portal: https://atlaspad.co/
-\- View source code:
- \- https://github.com/hhhpw/IDO
- \- https://github.com/xfhxfh1212/initial-dex-offering
+* Project Direction: IDO
+* Experience the portal: https://atlaspad.co/
+
+* View source code:
+  * https://github.com/hhhpw/IDO
+  * https://github.com/xfhxfh1212/initial-dex-offering
 
 
 
@@ -89,9 +92,9 @@ Atlaspad is a protocol built for projects to raise capital, construct community 
 
 P(A) #1-#100 is a collection of 100 randomly generated images, and each set of works is released as a separate NFT. Unlike most individual artists or galleries that use the NFT marketplace as a way to trade artwork online, the P(A) project is actually "art on the blockchain"; using TokenID as a record of unique identifiers on the chain, the P(A) project deploys a contract with TokenID as a unique identifier. A record of the TokenID as a unique identifier on the chain and the algorithm associated with the TokenID is deployed within the contract to generate the artwork.
 
-\- Project Direction: NFT
-\- Experience the portal: https://pa.memex.studio/index.html#/
-\- View source code: https://github.com/liuxieric123/nft_move_starcoin
+* Project Direction: NFT
+* Experience the portal: https://pa.memex.studio/index.html#/
+* View source code: https://github.com/liuxieric123/nft_move_starcoin
 
 
 
@@ -99,9 +102,9 @@ P(A) #1-#100 is a collection of 100 randomly generated images, and each set of w
 
 Red Envelope is a common life tool. Define a secure asset SHIBA through Move smart contract, and design an interesting red envelope logic for SHIBA. Published to the Starcoin chain to provide a red envelope function for on-chain hand spinning.
 
-\- Project Direction: Tools
-\- Experience the portal: https://github.com/reilost/meteor
-\- View source code: https://meteor.wormhole.studio/
+* Project Direction: Tools
+* Experience the portal: https://github.com/reilost/meteor
+* View source code: https://meteor.wormhole.studio/
 
 
 
@@ -109,8 +112,8 @@ Red Envelope is a common life tool. Define a secure asset SHIBA through Move sma
 
 Buy and sell transaction by a pledge under the non-trust situation.
 
-\- Project Direction: Trading
-\- View source code: https://gitlab.com/mingzhena/Purchase.git
+* Project Direction: Trading
+* View source code: https://gitlab.com/mingzhena/Purchase.git
 
 
 
@@ -118,8 +121,8 @@ Buy and sell transaction by a pledge under the non-trust situation.
 
 Decentralized auction scenario, with an auctioneer and a buyer. The auctioneer creates an auction and pledges the subject matter, and waits for the auction to start. If someone participates in the auction and reaches the starting price and the auction time is up, the auction is successful, otherwise, the auction fails.
 
-\- Project Direction: Auction
-\- View source code: https://github.com/starcoinorg/starauction-core
+* Project Direction: Auction
+* View source code: https://github.com/starcoinorg/starauction-core
 
 
 
@@ -127,9 +130,9 @@ Decentralized auction scenario, with an auctioneer and a buyer. The auctioneer c
 
 A block browser based on the Starcoin chain.
 
-\- Project direction: Browser
-\- Experience the portal: https://staratlas.vercel.app/
-\- View source code: https://github.com/renzholy/staratlas
+* Project direction: Browser
+* Experience the portal: https://staratlas.vercel.app/
+* View source code: https://github.com/renzholy/staratlas
 
 
 
@@ -137,8 +140,8 @@ A block browser based on the Starcoin chain.
 
 A simple and secure stablecoin model was implemented with Move.
 
-\- Project Direction: StableCoins
-\- View the code: https://github.com/wh-antares/mai 
+* Project Direction: StableCoins
+* View the code: https://github.com/wh-antares/mai 
 
 
 
@@ -146,8 +149,8 @@ A simple and secure stablecoin model was implemented with Move.
 
 A project is similar to GitStar, which screens and ranks outstanding projects on the public chain through the function of likes.
 
-\- Project Direction: Tools
-\- View code: https://gitlab.com/www.joae/CrowdFunding
+* Project Direction: Tools
+* View code: https://gitlab.com/www.joae/CrowdFunding
 
 
 
@@ -155,8 +158,8 @@ A project is similar to GitStar, which screens and ranks outstanding projects on
 
 Invite to get Token, and provide a mechanism to burn Token.
 
-\- Project Direction: Tools
-\- View code: https://github.com/lanbin/blackhole
+* Project Direction: Tools
+* View code: https://github.com/lanbin/blackhole
 
 
 
