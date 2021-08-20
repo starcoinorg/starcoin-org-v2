@@ -1,6 +1,6 @@
 +++
 title = "首届Starcoin Move线上黑客松获奖名单揭晓"
-date = "2021-08-18"
+date = "2021-08-20"
 summary = "Starcoin是第一个支持Move智能合约的无许可公链，主网已于2021年5月18日正式启动。为了加速生态展开，充分发挥Move在DeFi等场景下的优势，Starcoin成功举办了首届Move线上黑客马客松..."
 author = "Starcoin"
 tags = [

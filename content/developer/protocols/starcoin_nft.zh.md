@@ -3,7 +3,7 @@ title = "NFT 协议"
 date = "2021-08-20"
 summary = "Starcoin标准NFT协议... "
 archives="2020"
-author = "邓启明"
+author = "Starcoin"
 
 +++
 
