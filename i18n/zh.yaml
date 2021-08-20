@@ -99,6 +99,10 @@
   translation: 矿池接入指南
 - id: navDeveloperStratumPoolStratumMiningProtocol
   translation: 矿池协议
+- id: navDeveloperProtocol
+  translation: 协议
+- id: navDeveloperNFTProtocol
+  translation: NFT 协议
 - id: navCommunityWestar
   translation: Westar 实验室
 - id: navCommunityTwitter

@@ -93,6 +93,10 @@
   translation: Stratum Pool Guide
 - id: navDeveloperStratumPoolStratumMiningProtocol
   translation: Stratum mining protocol
+- id: navDeveloperProtocol
+  translation: Protocols
+- id: navDeveloperNFTProtocol
+  translation: NFT Protocol
 - id: navCommunityWestar
   translation: Westar Labs
 - id: navCommunityTwitter
