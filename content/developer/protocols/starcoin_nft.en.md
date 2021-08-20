@@ -3,7 +3,7 @@ title = "NFT Protocol"
 date = "2021-08-20"
 summary = "Starcoin' s Standard NFT Protocol... "
 archives="2020"
-author = "dengqiming"
+author = "Starcoin"
 
 +++
 
