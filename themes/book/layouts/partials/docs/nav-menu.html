@@ -2,6 +2,8 @@
         <span class="i18n" href="/{{ .Site.Language.Lang }}/">{{ i18n "navOverview" }}</span>
         <div class="more_nav">
                 <div class="box">
+                        <div class="li "><a class="i18n" href="/downloads/Starcoin_{{ .Site.Language.Lang }}.pdf"
+                                        target="_blank">Starcoin & Move</a></div>
                         <div class="li "><a class="i18n"
                                         href="/{{ .Site.Language.Lang }}/overview/technology_whitepaper/">{{ i18n
                                         "navOverviewTechnologyWhitepaper" }}</a></div>
@@ -33,16 +35,19 @@
 <div class="item Developer allSelect "><span class="i18n" name="">{{ i18n "navDeveloper" }}</span>
         <div class="more_nav">
                 <div class="box">
-                        <div class="li "><span class="i18n" name="">{{ i18n "navDeveloperFaucet" }}</span>
+                        <div class="li "><span class="i18n" name="">{{ i18n "navDeveloperGetStarted" }}</span>
                                 <div class="second_nav">
-                                        <div class="li "><a class="i18n" href="http://barnard.faucet.starcoin.org:8000/"
-                                                        target="_blank">Barnard</a>
+                                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/setup/install"
+                                                        target="_blank">{{ i18n "navDeveloperStartInstall" }}</a>
                                         </div>
-                                        <div class="li "><a class="i18n" href="http://proxima.faucet.starcoin.org:8000/"
-                                                        target="_blank">Proxima</a>
+                                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/setup/build"
+                                                        target="_blank">{{ i18n "navDeveloperStartBuild" }}</a>
                                         </div>
-                                        <div class="li "><a class="i18n" href="http://halley.faucet.starcoin.org:8000/"
-                                                        target="_blank">Halley</a>
+                                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/setup/run_by_docker"
+                                                        target="_blank">{{ i18n "navDeveloperStartDocker" }}</a>
+                                        </div>
+                                        <div class="li "><a class="i18n" href="/{{ .Site.Language.Lang }}/developer/setup/runnetwork"
+                                                        target="_blank">{{ i18n "navDeveloperStartNetwork" }}</a>
                                         </div>
                                 </div>
                         </div>

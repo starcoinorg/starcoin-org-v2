@@ -53,11 +53,12 @@ module Hello {
         any_word_events: Event::EventHandle<AnyWordEvent>,
     }
 
-    public(script) fun hello(account: &signer) acquires EventHolder {
-        let addr = Signer::address_of(account);
+    public(script) fun hello(account: signer) acquires EventHolder {
+        let _account = &account;
+        let addr = Signer::address_of(_account);
         if (!exists<EventHolder>(copy addr)){
-            move_to(account, EventHolder {
-                any_word_events: Event::new_event_handle<AnyWordEvent>(account),
+            move_to(_account, EventHolder {
+                any_word_events: Event::new_event_handle<AnyWordEvent>(_account),
             });
         };
         let hello_world = x"68656c6c6f20776f726c64";//hello world
@@ -269,14 +270,16 @@ module MyToken {
 
      struct MyToken has copy, drop, store { }
 
-     public(script) fun init(account: &signer) {
-         Token::register_token<MyToken>(account, 3);
-         Account::do_accept_token<MyToken>(account);
+     public(script) fun init(account: signer) {
+         let _account = &account;
+         Token::register_token<MyToken>(_account, 3);
+         Account::do_accept_token<MyToken>(_account);
      }
 
-     public(script) fun mint(account: &signer, amount: u128) {
-        let token = Token::mint<MyToken>(account, amount);
-        Account::deposit_to_self<MyToken>(account, token)
+     public(script) fun mint(account: signer, amount: u128) {
+        let _account = &account;
+        let token = Token::mint<MyToken>(_account, amount);
+        Account::deposit_to_self<MyToken>(_account, token)
      }
 }
 ```
@@ -312,15 +315,17 @@ module MyToken {
 
      struct MyToken has copy, drop, store { }
 
-     public(script) fun init(account: &signer) {
-         Token::register_token<MyToken>(account, 3);
-         Account::do_accept_token<MyToken>(account);
-         Dao::plugin<MyToken>(account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
+     public(script) fun init(account: signer) {
+         let _account = &account;
+         Token::register_token<MyToken>(_account, 3);
+         Account::do_accept_token<MyToken>(_account);
+         Dao::plugin<MyToken>(_account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
      }
 
-     public(script) fun mint(account: &signer, amount: u128) {
-        let token = Token::mint<MyToken>(account, amount);
-        Account::deposit_to_self<MyToken>(account, token)
+     public(script) fun mint(account: signer, amount: u128) {
+        let _account = &account;
+        let token = Token::mint<MyToken>(_account, amount);
+        Account::deposit_to_self<MyToken>(_account, token)
      }
 }
 ~~~

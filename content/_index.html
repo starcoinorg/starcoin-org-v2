@@ -260,134 +260,136 @@ title: Homepage
                         </div>
                         -->
                         <div class="code_body">
-                            <div class="code_page_0 code_page_item" style="display: none;">
-                                <pre>
-    1   module Hello {
-    2       use 0x1::Signer;
-    3       use 0x1::Event;
-    4
-    5       struct AnyWordEvent has drop, store {
-    6           words: vector<u8>,
-    7       }
-    8
-    9       struct EventHolder has key {
-    10          any_word_events: Event::EventHandle<AnyWordEvent>,
-    11      }
-    12
-    13      public(script) fun hello(account: &signer) acquires EventHolder {
-    14          let addr = Signer::address_of(account);
-    15          if (!exists<EventHolder>(copy addr)){
-    16              move_to(account, EventHolder {
-    17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-    18              });
-    19          };
-    20          let hello_world = x"68656c6c6f20776f726c64";//hello world
-    21          let holder = borrow_global_mut<EventHolder>(addr);
-    22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-    23      }
-    24  }
-    </pre>
-                            </div>
-                            <div class="code_page_1 code_page_item">
-                                <pre>
-    1   module MyToken {
-    2       use 0x1::Token;
-    3       use 0x1::Account;
-    4
-    5       struct MyToken has copy, drop, store { }
-    6
-    7       public(script) fun init(account: &signer) {
-    8           Token::register_token<MyToken>(account, 3);
-    9           Account::do_accept_token<MyToken>(account);
-    10      }
-    11
-    12      public(script) fun mint(account: &signer, amount: u128) {
-    13         let token = Token::mint<MyToken>(account, amount);
-    14         Account::deposit_to_self<MyToken>(account, token)
-    15      }
-    16  }
-    </pre>
-                            </div>
-                            <div class="code_page_2 code_page_item" style="display: none;">
-                                <pre>
-    1   module NFTExample {
-    2       use 0x1::Signer;
-    3       struct NFT has key, store { name: vector<u8> }
-    4   
-    5       struct UniqIdList has key, store {
-    6           data: vector<vector<u8>>
-    7       }
-    8       public fun initialize(account: &signer) {
-    9           move_to(account, UniqIdList {data: Vector::empty<vector<u8>>()});
-    10      }
-    11      public fun new(account: &signer, name: vector<u8>): NFT acquires UniqIdList {
-    12          let account_address = Signer::address_of(account);
-    13          let exist = Vector::contains<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
-    14          assert(!exist, 1);
-    15          let id_list = borrow_global_mut<UniqIdList>(account_address);
-    16          Vector::push_back<vector<u8>>(&mut id_list.data, copy name);
-    17          NFT { name }
-    18      }
-    19      public fun destroy(account_address: address, nft: NFT) acquires UniqIdList {
-    20          let NFT { name } = nft;
-    21          let (exist, index) = Vector::index_of<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
-    22          assert(!exist, 2);
-    23          let id_list = borrow_global_mut<UniqIdList>(account_address);
-    24          Vector::remove<vector<u8>>(&mut id_list.data, index);
-    25      }
-    26  }
-    </pre>
-                            </div>
-                            <div class="code_page_3 code_page_item" style="display: none;">
-                                <pre>
-    1   module ResourceExample {
-    2       use 0x1::Signer;
-    3   
-    4       struct R has key, store { x: bool }
-    5   
-    6       public fun new(): R {
-    7           R { x: true }
-    8       }
-    9   
-    10      public fun destroy(r: R) {
-    11          R { x: _ } = r;
-    12      }
-    13  
-    14      public fun save(account: &signer, r: R){
-    15          move_to(account, r);
-    16      }
-    17  
-    18      public fun get_x(account: &signer): bool acquires R {
-    19          let sender = Signer::address_of(account);
-    20          assert(exists<R>(sender), 1);
-    21          let r = borrow_global<R>(sender);
-    22          r.x
-    23      }
-    24  }
-    </pre>
-                            </div>
-                            <div class="code_page_4 code_page_item" style="display: none;">
-                                <pre>
-    1   script {
-    2       use 0x1::Dao;
-    3       use {{coder}}::MyToken::MyToken;
-    4       use 0x1::Config;
-    5
-    6       fun set_dao_config(signer: signer) {
-    7           let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
-    8               &signer
-    9           );
-    10
-    11          Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
-    12          Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
-    13          Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
-    14          Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
-    15
-    16          Config::restore_modify_config_capability(cap);
-    17      }
-    18  }
-    </pre>
-                            </div>
+                        <div class="code_page_0 code_page_item" style="display: none;">
+                            <pre>
+1   module Hello {
+2       use 0x1::Signer;
+3       use 0x1::Event;
+4
+5       struct AnyWordEvent has drop, store {
+6           words: vector<u8>,
+7       }
+8
+9       struct EventHolder has key {
+10          any_word_events: Event::EventHandle<AnyWordEvent>,
+11      }
+12
+13      public(script) fun hello(account: signer) acquires EventHolder {
+14          let _account = &account;
+15          let addr = Signer::address_of(_account);
+16          if (!exists<EventHolder>(copy addr)){
+17              move_to(_account, EventHolder {
+18                  any_word_events: Event::new_event_handle<AnyWordEvent>(_account),
+19              });
+20          };
+21          let hello_world = x"68656c6c6f20776f726c64";//hello world
+22          let holder = borrow_global_mut<EventHolder>(addr);
+23          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+24      }
+25  }
+</pre>
+                        </div>
+                        <div class="code_page_1 code_page_item">
+                            <pre>
+1   module MyToken {
+2       use 0x1::Token;
+3       use 0x1::Account;
+4
+5       struct MyToken has copy, drop, store { }
+6
+7       public(script) fun init(account: signer) {
+8           let _account = &account;
+9           Token::register_token<MyToken>(_account, 3);
+10          Account::do_accept_token<MyToken>(_account);
+11      }
+12
+13      public(script) fun mint(account: signer, amount: u128) {
+14          let _account = &account;
+15          let token = Token::mint<MyToken>(_account, amount);
+16          Account::deposit_to_self<MyToken>(_account, token)
+17      }
+18  }
+</pre>
+                        </div>
+                        <div class="code_page_2 code_page_item" style="display: none;">
+                            <pre>
+1   module NFTExample {
+2       use 0x1::Signer;
+3       struct NFT has key, store { name: vector<u8> }
+4   
+5       struct UniqIdList has key, store {
+6           data: vector<vector<u8>>
+7       }
+8       public fun initialize(account: &signer) {
+9           move_to(account, UniqIdList {data: Vector::empty<vector<u8>>()});
+10      }
+11      public fun new(account: &signer, name: vector<u8>): NFT acquires UniqIdList {
+12          let account_address = Signer::address_of(account);
+13          let exist = Vector::contains<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
+14          assert(!exist, 1);
+15          let id_list = borrow_global_mut<UniqIdList>(account_address);
+16          Vector::push_back<vector<u8>>(&mut id_list.data, copy name);
+17          NFT { name }
+18      }
+19      public fun destroy(account_address: address, nft: NFT) acquires UniqIdList {
+20          let NFT { name } = nft;
+21          let (exist, index) = Vector::index_of<vector<u8>>(&borrow_global<UniqIdList>(account_address).data, &name);
+22          assert(!exist, 2);
+23          let id_list = borrow_global_mut<UniqIdList>(account_address);
+24          Vector::remove<vector<u8>>(&mut id_list.data, index);
+25      }
+26  }
+</pre>
+                        </div>
+                        <div class="code_page_3 code_page_item" style="display: none;">
+                            <pre>
+1   module ResourceExample {
+2       use 0x1::Signer;
+3   
+4       struct R has key, store { x: bool }
+5   
+6       public fun new(): R {
+7           R { x: true }
+8       }
+9   
+10      public fun destroy(r: R) {
+11          R { x: _ } = r;
+12      }
+13  
+14      public fun save(account: &signer, r: R){
+15          move_to(account, r);
+16      }
+17  
+18      public fun get_x(account: &signer): bool acquires R {
+19          let sender = Signer::address_of(account);
+20          assert(exists<R>(sender), 1);
+21          let r = borrow_global<R>(sender);
+22          r.x
+23      }
+24  }
+</pre>
+                        </div>
+                        <div class="code_page_4 code_page_item" style="display: none;">
+                            <pre>
+1   script {
+2       use 0x1::Dao;
+3       use {{coder}}::MyToken::MyToken;
+4       use 0x1::Config;
+5
+6       fun set_dao_config(signer: signer) {
+7           let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
+8               &signer
+9           );
+10
+11          Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
+12          Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
+13          Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
+14          Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
+15
+16          Config::restore_modify_config_capability(cap);
+17      }
+18  }
+</pre>
                         </div>
                     </div>
                 </div>
@@ -464,18 +466,19 @@ title: Homepage
 10          any_word_events: Event::EventHandle<AnyWordEvent>,
 11      }
 12  
-13      public(script) fun hello(account: &signer) acquires EventHolder {
-14          let addr = Signer::address_of(account);
-15          if (!exists<EventHolder>(copy addr)){
-16              move_to(account, EventHolder {
-17                  any_word_events: Event::new_event_handle<AnyWordEvent>(account),
-18              });
-19          };
-20          let hello_world = x"68656c6c6f20776f726c64";//hello world
-21          let holder = borrow_global_mut<EventHolder>(addr);
-22          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-23      }
-24  }
+13      public(script) fun hello(account: signer) acquires EventHolder {
+14          let _account = &account;
+15          let addr = Signer::address_of(_account);
+16          if (!exists<EventHolder>(copy addr)){
+17              move_to(_account, EventHolder {
+18                  any_word_events: Event::new_event_handle<AnyWordEvent>(_account),
+19              });
+20          };
+21          let hello_world = x"68656c6c6f20776f726c64";//hello world
+22          let holder = borrow_global_mut<EventHolder>(addr);
+23          Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+24      }
+25  }
 </pre>
             </div>
             <div class="code_view_page_1 code_view_page_item" style="display: none;">
@@ -483,19 +486,21 @@ title: Homepage
 1   module MyToken {
 2       use 0x1::Token;
 3       use 0x1::Account;
-4   
+4
 5       struct MyToken has copy, drop, store { }
-6   
-7       public(script) fun init(account: &signer) {
-8           Token::register_token<MyToken>(account, 3);
-9           Account::do_accept_token<MyToken>(account);
-10      }
-11  
-12      public(script) fun mint(account: &signer, amount: u128) {
-13         let token = Token::mint<MyToken>(account, amount);
-14         Account::deposit_to_self<MyToken>(account, token)
-15      }
-16  }
+6
+7       public(script) fun init(account: signer) {
+8           let _account = &account;
+9           Token::register_token<MyToken>(_account, 3);
+10          Account::do_accept_token<MyToken>(_account);
+11      }
+12
+13      public(script) fun mint(account: signer, amount: u128) {
+14          let _account = &account;
+15          let token = Token::mint<MyToken>(_account, amount);
+16          Account::deposit_to_self<MyToken>(_account, token)
+17      }
+18  }
 </pre>
             </div>
             <div class="code_view_page_2 code_view_page_item" style="display: none;">

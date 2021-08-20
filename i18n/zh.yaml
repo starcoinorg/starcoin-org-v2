@@ -57,6 +57,16 @@
   translation: STC挖矿
 - id: navGuideNodeCommand
   translation: 节点命令行
+- id: navDeveloperGetStarted
+  translation: 开始
+- id: navDeveloperStartInstall
+  translation: 安装
+- id: navDeveloperStartBuild
+  translation: 从源码编译
+- id: navDeveloperStartDocker
+  translation: 从 Docker 运行
+- id: navDeveloperStartNetwork
+  translation: 运行和加入网络
 - id: navDeveloperNode
   translation: 节点
 - id: navDeveloperNodeKeyConcept
