@@ -13,10 +13,10 @@
 }
 
 .home-nav {
-  background: -webkit-gradient(linear, left top, right top, from(#1b1c28), to(#1b1c28));
+  /* background: -webkit-gradient(linear, left top, right top, from(#1b1c28), to(#1b1c28));
   background: -webkit-linear-gradient(left, #1b1c28 0%, #1b1c28 100%);
   background: -o-linear-gradient(left, #1b1c28 0%, #1b1c28 100%);
-  background: linear-gradient(90deg, #1b1c28 0%, #1b1c28 100%);
+  background: linear-gradient(90deg, #1b1c28 0%, #1b1c28 100%); */
   /*
   -webkit-box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13);
           box-shadow: 0px 0px 11px 0px rgba(97, 105, 130, 0.13); }
@@ -413,7 +413,7 @@ body {
   height: 100%;
   /*background: #FFFFFF;*/
   /* background-image: url("../img/square_bg.png"); */
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
   margin-bottom: 30px;
   /* cursor: pointer;
@@ -427,23 +427,11 @@ body {
   border: 1px solid #1C4BDE;
 } */
 
-.Advantages .container .col-md-6 .item {
-  background-image: url("../img/square_bg_long.png");
-  height: 212px;
-}
-
-.Advantages .container .col-md-6 .item .col-md-10 {
-  margin-top: 20px;
-}
-
-.Advantages .container .col-md-6 .item .col-md-10 .title {
-  margin-bottom: 20px;
-}
-
 .Advantages .container .item .ad_icon {
   width: 60px;
   height: 60px;
-  margin: 0 auto 16px 20px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .Advantages .container .item .ad_icon img {
@@ -451,33 +439,60 @@ body {
 }
 
 .Advantages .container .item .title {
-  font-size: 20px;
+  font-size: 24px;
   font-family: PingFangSC-Medium, PingFang SC;
   font-weight: 500;
   color: #FFFFFF;
   line-height: 24px;
   text-align: left;
   letter-spacing: 3px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin-top: 56px;
+  margin-left: 15px;
 }
 
 .Advantages .container .item .desc {
   font-size: 14px;
-  padding: 0 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 1px;
   font-family: PingFangSC-Medium, PingFang SC;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
+.Advantages .container .col-md-6 .item {
+  background-image: url("../img/square_bg_long.png");
+  height: 212px;
+}
+
+.Advantages .container .col-md-6 .item .ad_icon {
+  width: 90px;
+  height: 90px;
+}
+
+.Advantages .container .col-md-6 .item .col-md-10 {
+  margin-top: 20px;
+}
+
+.Advantages .container .col-md-6 .item .col-md-10 .title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.Advantages .container .col-md-6 .item .col-md-10 .desc {
+  margin-right: 40px;
+}
+
 .example_container{
   background: url("/img/example_top_bg.png") no-repeat center top;
+  background-repeat: no-repeat;
+  background-size: 100% 524px;
 }
 .Example{
   margin-bottom: 100px;
@@ -500,16 +515,16 @@ body {
 }
 
 .Example .container .Advantages_title .Example_h3 {
-  font-size: 50px;
+  font-size: 18px;
   font-weight: 600;
-  color: #1C4BDE;
+  color: #FFFFFF;
   letter-spacing: 1px;
 }
 
 .Example .container .Advantages_title .Example_h3 img {
-  width: 34px;
-  height: 34px;
-  margin-right: 30px;
+  width: 8px;
+  height: 4px;
+  margin-left: 10px;
 }
 
 .Example .container .m-code_head {
@@ -1111,7 +1126,16 @@ body {
     margin-right: 10px;
   }
 
-  .Example {}
+  .example_container{
+    background: url("/img/example_top_bg_m.png") no-repeat center top;
+    background-repeat: no-repeat;
+    background-size: 100% 102px;
+    margin-top: 100px;
+  }
+
+  .Example{
+    margin-bottom: 0;
+  }
 
   .Example .container .Advantages_title {
     padding-top: 40px;
@@ -1119,22 +1143,36 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    opacity: 1;
   }
 
   .Example .container .Advantages_title .Example_h3 {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   .Example .container .Advantages_title .Example_h3 img {
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
+    width: 8px;
+    height: 4px;
+    margin-left: 10px;
   }
 
-  .Example .container .code_view {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: block;
+  .Example .container .code_view{
+    margin-bottom: 0;
+  }
+
+  .Example .container .code_view .code_right {
+    width: 100%;
+    height: auto;
+    background-image: url("/img/code_bg_m.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+  }
+
+  .Example .container .code_view .code_right .code_body {
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 10px;
   }
 
   .Advantages {
@@ -1148,17 +1186,35 @@ body {
   }
 
   .Advantages .container .item .ad_icon {
-    width: 50px;
-    height: 50px;
-    margin-left: -8px;
+    width: 44px;
+    height: 44px;
   }
 
   .Advantages .container .item .title {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 24px;
+    margin-left: 30px;
   }
 
   .Advantages .container .item .desc {
-    font-size: 14px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 22px;
+    margin-left: 30px;
+  }
+
+  .Advantages .container .col-md-6 .item .ad_icon {
+    width: 44px;
+    height: 44px;
+  }
+  .Advantages .container .col-md-6 .item .col-xs-10{
+    width: 91.66666667%;
+  }
+  .Advantages .container .col-md-6 .item .col-md-10 .desc {
+    margin-right: 15px;
   }
 
   .Advantages .container .Advantages_title {
@@ -1171,6 +1227,7 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 40px;
+    opacity: 1;
   }
 
   .Advantages .container .Advantages_title .Advantages_h3 {
@@ -1192,6 +1249,7 @@ body {
     line-height: 20px;
     text-align: right;
     margin-bottom: 16px;
+    margin-right: 10px;
   }
 
   .more img {
@@ -1213,7 +1271,9 @@ body {
     background-size: cover;
     background-image: url("../img/mobile_square_bg.png");
   } */
-
+  .Advantages .container .col-md-6 .item{
+    height: auto;
+  }
   .Advantages .container .col-md-6 .item .col-xs-10 {
     margin-top: 8px;
   }

@@ -86,7 +86,7 @@ title: Homepage
                         <div class="col-xs-1 col-md-12">
                             <div class="ad_icon"><img src="/img/features/1.png" /></div>
                         </div>
-                        <div class="col-xs-10 col-md-12">
+                        <div class="col-xs-11 col-md-12">
                             <div class="title">Security</div>
                             <div class="desc">
                                 Starcoin guarantees its security in five layers: the base layer, consensus layer, protocol
@@ -110,7 +110,7 @@ title: Homepage
                         <div class="col-xs-1 col-md-12">
                             <div class="ad_icon"><img src="/img/features/2.png" /></div>
                         </div>
-                        <div class="col-xs-10 col-md-12">
+                        <div class="col-xs-11 col-md-12">
                             <div class="title">Move Programming Language</div>
                             <div class="desc">
                                 Move is a programming language created for expressing digital assets, which first appeared in
@@ -132,7 +132,7 @@ title: Homepage
                         <div class="col-xs-1 col-md-12">
                            <div class="ad_icon"><img src="/img/features/3.png" /></div>
                         </div>
-                        <div class="col-xs-10 col-md-12">
+                        <div class="col-xs-11 col-md-12">
                             <div class="title">On-Chain Governance</div>
                             <div class="desc">
                                 The governance of the blockchain encompasses decision-making and communication processes that
@@ -153,7 +153,7 @@ title: Homepage
                         <div class="col-xs-1 col-md-12">
                            <div class="ad_icon"><img src="/img/features/4.png" /></div>
                         </div>
-                        <div class="col-xs-10 col-md-12">
+                        <div class="col-xs-11 col-md-12">
                             <div class="title">Layered Network</div>
                             <div class="desc">
                                 Layered networks are one of the features that Starcoin has been designed for. Starcoin considers
@@ -223,9 +223,13 @@ title: Homepage
     <div class="Example">
         <div class="container wrapper">
             <div class="Advantages_title">
-                <!--
-                <div class="Example_h3"><img src="/img/whatwedo@2x.png" />Code Example</div>
-                -->
+                <!--  手机端显示  -->
+				<div class="visible-xs visible-sm visible-md">
+					<div class="Example_h3">
+						<span class="Example_head">Hello World</span>
+						<img src="/img/arrow_down3.png" alt="">
+					</div>
+				</div>
                 <a class="more " href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
             </div>
             <div class="visible-lg">
@@ -401,79 +405,25 @@ title: Homepage
                     </div>
                 </div>
             </div>
-            <!--  手机端显示  -->
-            <div class="visible-xs visible-sm visible-md">
-
-                <div class="m-code_head">
-                    <div class="code_img">
-                        <div class="garden red"></div>
-                        <div class="garden yellow"></div>
-                        <div class="garden green"></div>
-                    </div>
-                </div>
-                <div class="m-code-view">
-
-
-                    <div class="m-code-left">
-                        <div class="list index_code_view_tab">
-                            <ul>
-                                <li class="select">
-                                    <div class="title"> Hello World </div>
-                                    <div class="desc"></div>
-                                </li>
-                                <li>
-                                    <div class="title">Token </div>
-                                    <div class="desc"></div>
-                                </li>
-                                <li>
-                                    <div class="title"> NFT </div>
-                                    <div class="desc"></div>
-                                </li>
-                                <li>
-                                    <div class="title"> Resource </div>
-                                    <div class="desc"></div>
-                                </li>
-                                <li>
-                                    <div class="title"> Deploy Smart Contract </div>
-                                    <div class="desc"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-</div>
-</div>
-
-<div id="footer"></div>
-
-<div id="code_fixed_back" class="code_fixed_back">
-    <div class="code_model">
-        <div class="head">
-            <div id="popup_close" class="popup_close"><img src="/img/close.png" /></div>
-            <div class="head_top">
-                You own currency
-            </div>
-        </div>
-
-
-        <div class="code_view">
-            <div class="code_view_page_0 code_view_page_item">
-                <pre>
+		<!--  手机端显示  -->
+		<div class="visible-xs visible-sm visible-md">
+			<div class="code_view m_code_view">
+				<div class="code_right">
+				<div class="code_body">
+				<div class="code_page_0 code_page_item">
+					<pre>
 1   module Hello {
 2       use 0x1::Signer;
 3       use 0x1::Event;
-4   
+4
 5       struct AnyWordEvent has drop, store {
 6           words: vector<u8>,
 7       }
-8   
+8
 9       struct EventHolder has key {
 10          any_word_events: Event::EventHandle<AnyWordEvent>,
 11      }
-12  
 13      public(script) fun hello(account: signer) acquires EventHolder {
 14          let _account = &account;
 15          let addr = Signer::address_of(_account);
@@ -488,9 +438,9 @@ title: Homepage
 24      }
 25  }
 </pre>
-            </div>
-            <div class="code_view_page_1 code_view_page_item" style="display: none;">
-                <pre>
+				</div>
+				<div class="code_page_1 code_page_item" style="display: none;">
+					<pre>
 1   module MyToken {
 2       use 0x1::Token;
 3       use 0x1::Account;
@@ -510,13 +460,13 @@ title: Homepage
 17      }
 18  }
 </pre>
-            </div>
-            <div class="code_view_page_2 code_view_page_item" style="display: none;">
-                <pre>
+				</div>
+				<div class="code_page_2 code_page_item" style="display: none;">
+					<pre>
 1   module NFTExample {
 2       use 0x1::Signer;
 3       struct NFT has key, store { name: vector<u8> }
-4   
+4  
 5       struct UniqIdList has key, store {
 6           data: vector<vector<u8>>
 7       }
@@ -540,14 +490,14 @@ title: Homepage
 25      }
 26  }
 </pre>
-            </div>
-            <div class="code_view_page_3 code_view_page_item" style="display: none;">
-                <pre>
+				</div>
+				<div class="code_page_3 code_page_item" style="display: none;">
+					<pre>
 1   module ResourceExample {
 2       use 0x1::Signer;
 3   
 4       struct R has key, store { x: bool }
-5   
+5  
 6       public fun new(): R {
 7           R { x: true }
 8       }
@@ -568,30 +518,66 @@ title: Homepage
 23      }
 24  }
 </pre>
-            </div>
-            <div class="code_view_page_4 code_view_page_item" style="display: none;">
-                <pre>
+				</div>
+				<div class="code_page_4 code_page_item" style="display: none;">
+					<pre>
 1   script {
 2       use 0x1::Dao;
 3       use {{coder}}::MyToken::MyToken;
 4       use 0x1::Config;
-5   
+5
 6       fun set_dao_config(signer: signer) {
 7           let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
 8               &signer
 9           );
-10  
 11          Dao::set_voting_delay<MyToken>(&mut cap, 30 * 1000);
 12          Dao::set_voting_period<MyToken>(&mut cap, 30 * 30 * 1000);
 13          Dao::set_voting_quorum_rate<MyToken>(&mut cap, 50);
 14          Dao::set_min_action_delay<MyToken>(&mut cap, 30 * 30 * 1000);
-15  
 16          Config::restore_modify_config_capability(cap);
 17      }
 18  }
 </pre>
-            </div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+    </div>
+</div>
+</div>
+
+<div id="footer"></div>
+
+<div id="code_fixed_back" class="code_fixed_back">
+    <div class="code_model">
+        <div class="head">
+            <div id="popup_close" class="popup_close"><img src="/img/close.png" /></div>
         </div>
+		<div class="list m_index_code_view_tab">
+			<ul>
+				<li class="select">
+					<div class="title"> Hello World </div>
+					<div class="desc"></div>
+				</li>
+				<li>
+					<div class="title">Token </div>
+					<div class="desc"></div>
+				</li>
+				<li>
+					<div class="title"> NFT </div>
+					<div class="desc"></div>
+				</li>
+				<li>
+					<div class="title"> Resource </div>
+					<div class="desc"></div>
+				</li>
+				<li>
+					<div class="title"> Deploy Smart Contract </div>
+					<div class="desc"></div>
+				</li>
+			</ul>
+		</div>
     </div>
 </div>
 <script>
@@ -599,6 +585,10 @@ title: Homepage
         $("#popup_close").click(function () {
             $("#code_fixed_back").hide()
         })
+
+		$(".Example_h3").click(function () {
+            $("#code_fixed_back").show()
+        });
 
         var swiper = new Swiper('.swiper-container', {
             speed: 1000,
@@ -640,6 +630,19 @@ title: Homepage
             })
             $(`.code_view_page_${index}`)[0].style.display = 'block'
         })
+
+		// 手机端点击
+		$(".m_index_code_view_tab li").click(function () {
+			$(".Example_h3 .Example_head")[0].innerText = $(this)[0].innerText
+
+			$("#code_fixed_back").hide()
+            let index = $(this).index()
+            let codePageItem = [...$('.m_code_view .code_body .code_page_item')]
+            codePageItem.forEach(item => {
+                item.style.display = 'none'
+            })
+            $(`.m_code_view .code_page_${index}`)[0].style.display = 'block'
+        });
     })
 </script>
 <script src="/js/script.js"> </script>
