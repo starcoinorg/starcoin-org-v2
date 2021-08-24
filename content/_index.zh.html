@@ -2,26 +2,31 @@
 title: 首页
 ---
 <link rel="stylesheet" type="text/css" href="/css/index.css" />
-<div class="container">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="banner-text chinese">
-                    <br /><a href="/zh/news/post/move_hackathon_intro/">首届Starcoin Move<br />
-                        <span>线上黑客松参赛说明</span></a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner-text chinese">
-                    <br />新一代分层的智能合约<br />
-                    <span>和分布式金融网络</span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
-        <div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div>
-        <div class="swiper-pagination visible-xs"></div>
-    </div>
+
+<div class="swiper-container-bg">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="banner-text chinese">
+					<br /><a href="/zh/news/post/move_hackathon_intro/">
+						首届Starcoin Move线上黑客松参赛说明
+						<div class="banner-more">阅读更多
+							<img src="/img/arrow_down2.png" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner-text chinese">
+					<br />新一代分层的智能合约<br />
+					<span>和分布式金融网络</span>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
+		<div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div> -->
+		<div class="swiper-pagination"></div>
+	</div>
 </div>
 <div class="container">
     <div class="About-us wrapper visible-lg">
@@ -39,24 +44,24 @@ title: 首页
                     Starcoin受比特币，以太坊启发，通过改进PoW算法和引入分层网络架构，致力于成为普通用户亦能简单使用的金融基础设施。
                 </div>
                 <div class="button btn-8" style="margin-top:-30px">
-                    <a style="color: white" href="/zh/overview/technology_whitepaper">
+                    <a style="color: white; text-decoration: none;" href="/zh/overview/technology_whitepaper">
                         <span>Starcoin 白皮书</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="m-about-us wrapper visible-xs visible-sm visible-md">
-        <div class="m-about-h3"><img src="/img/whatwedo@2x.png" />What we do</div>
-        <div class="m-title">受比特币，以太坊启发，新一代分层的智能合约和分布式金融网络</div>
-        <div class="m-about-pic"><img src="/img/VCG211311175330@2x.png" /></div>
+<div class="container container-about">
+	<div class="m-about-us wrapper visible-xs visible-sm visible-md">
+        <div class="m-about-pic"><img src="/img/about_us_image@2x.png" /></div>
+		<div class="m-about-h3">STARCOIN</div>
+        <div class="m-title">新一代的分层智能合约和分布式金融网络</div>
         <div class="m-desc">
-            <p>Starcoin 的灵感来自于比特币，并对其安全性和性能进行了增强。</p>
-
-            <p>我们继承了比特币卓越的安全机制，并提供了高额的交易吞吐量的能力，通过改进 PoW 算法和引入多层网络。</p>
-
-            <p>此外，我们创建了分层智能合约模型，可以保证安全和稳定的。基础设施加密货币，并能满足 DeFi 的性能要求。</p>
+            Starcoin是一个为分布式金融而设计的区块链项目，灵感来自于Facebook 2019年发布的Libra，并使用了其专门为分布式金融网络设计的智能合约语言Move。
+			<br />
+			Starcoin受比特币，以太坊启发，通过改进PoW算法和引入分层网络架构，致力于成为普通用户亦能简单使用的金融基础设施。
         </div>
         <div class="m-button">
             <a style="color: white" href="/zh/overview/technology_whitepaper">
@@ -70,7 +75,7 @@ title: 首页
     <div class="Advantages">
         <div class="container wrapper">
             <div class="Advantages_title">
-                <a class="more btn-8" href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
+                <a class="more" href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
             </div>
             <div class="row">
                 <div class="col-md-3 col-xs-12">
@@ -173,11 +178,12 @@ title: 首页
     </div>
 </div>
 
+<div class="example_container">
 <div class="container">
     <div class="Example">
         <div class="container wrapper">
             <div class="Advantages_title">
-                <a class="more btn-8" href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
+                <a class="more " href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
             </div>
             <div class="visible-lg">
                 <div class="code_view row">
@@ -392,6 +398,7 @@ title: 首页
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <div id="code_fixed_back" class="code_fixed_back">

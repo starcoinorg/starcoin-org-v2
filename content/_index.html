@@ -2,28 +2,32 @@
 title: Homepage
 ---
 <link rel="stylesheet" type="text/css" href="/css/index.css" />
-<div class="container">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="banner-text">
-                    <br /><a href="/en/news/post/move_hackathon_intro/">First Starcoin Move Online
-                        <br><span>Hackathon Introduction</span></a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner-text">
-                    A LAYERED <br> SMART CONTRACT
-                    <br><span>AND DISTRBUTED FINANCIAL NETWORK</span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
-        <div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div>
-        <div class="swiper-pagination visible-xs"></div>
-    </div>
-</div>
 
+<div class="swiper-container-bg">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="banner-text">
+					<br /><a href="/en/news/post/move_hackathon_intro/">
+						First Starcoin Move Online Hackathon Introduction
+						<div class="banner-more">Read more
+							<img src="/img/arrow_down2.png" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner-text">
+					A LAYERED <br> SMART CONTRACT
+					<br><span>AND DISTRBUTED FINANCIAL NETWORK</span>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="swiper-button-next button-next visible-lg-inline"><img src="/img/banner_left_arrow.png" /></div>
+		<div class="swiper-button-prev button-prev visible-lg-inline"><img src="/img/banner_right_arrow.png" /></div> -->
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
 <div class="container">
     <div class="About-us wrapper visible-lg">
         <div class="content">
@@ -39,7 +43,7 @@ title: Homepage
                     Inspired by Bitcoin and Ethereum, Starcoin aims to be an easy-to-use financial infrastructure for all users by improving the PoW algorithm and introducing a layered network architecture.
                 </div>
                 <div class="button btn-8">
-                    <a style="color: white" href="/en/overview/technology_whitepaper/">
+                    <a style="color: white; text-decoration: none;" href="/en/overview/technology_whitepaper/">
                         <span>Starcoin Whitepaper</span>
                     </a>
                 </div>
@@ -47,7 +51,10 @@ title: Homepage
         </div>
     </div>
 
-    <div class="m-about-us wrapper visible-xs visible-sm visible-md">
+</div>
+
+<div class="container container-about">
+	<div class="m-about-us wrapper visible-xs visible-sm visible-md">
         <div class="m-about-pic"><img src="/img/about_us_image@2x.png" /></div>
         <div class="m-about-h3">STARCOIN</div>
         <div class="m-title">A Layered Smart Contract and Distributed Financial Network</div>
@@ -68,11 +75,10 @@ title: Homepage
     <div class="Advantages">
         <div class="container wrapper">
             <div class="Advantages_title">
-                <!--
-                <div class="Advantages_h3"><img src="/img/whatwedo@2x.png" />Key Features</div>
+                <!-- <div class="Advantages_h3"><img src="/img/whatwedo@2x.png" />Key Features</div>
                 <a class="more btn-8" href="/en/developer/key_concepts/"><span>MORE +</span></a>
                 -->
-                <a class="more btn-8" href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
+                <a class="more " href="/en/developer/key_concepts/"><img src='/img/more_plus@2x.png'/></a>
             </div>
             <div class="row">
                 <div class="col-md-3 col-xs-12">
@@ -212,6 +218,7 @@ title: Homepage
     </div>
 </div>
 
+<div class="example_container">
 <div class="container">
     <div class="Example">
         <div class="container wrapper">
@@ -219,7 +226,7 @@ title: Homepage
                 <!--
                 <div class="Example_h3"><img src="/img/whatwedo@2x.png" />Code Example</div>
                 -->
-                <a class="more btn-8" href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
+                <a class="more " href="/en/developer/move/example/"><img src='/img/more_plus@2x.png'/></a>
             </div>
             <div class="visible-lg">
                 <div class="code_view row">
@@ -437,6 +444,7 @@ title: Homepage
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <div id="footer"></div>
