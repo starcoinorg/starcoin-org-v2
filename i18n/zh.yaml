@@ -117,6 +117,8 @@
   translation: Starcoin 浏览器
 - id: navCommunityPoll
   translation: Starcoin 投票
+- id: navCommunityAirdrop
+  translation: 空投 Dapp
 - id: navQAGitHub
   translation: GitHub 讨论区
 - id: navQAFAQ

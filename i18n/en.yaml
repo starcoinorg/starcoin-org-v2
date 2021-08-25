@@ -111,6 +111,8 @@
   translation: Starcoin Explorer
 - id: navCommunityPoll
   translation: Starcoin Polls
+- id: navCommunityAirdrop
+  translation: Airdrop Dapp
 - id: navQAGitHub
   translation: GitHub Discussion
 - id: navQAFAQ
