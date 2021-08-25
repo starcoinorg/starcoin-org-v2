@@ -147,7 +147,7 @@ A simple and secure stablecoin model was implemented with Move.
 A project is similar to GitStar, which screens and ranks outstanding projects on the public chain through the function of likes.
 
 \- Project Direction: Tools
-\- View code: https://gitlab.com/www.joae/CrowdFunding
+\- View code: https://github.com/muzixinly/starstar-core
 
 
 
@@ -157,6 +157,15 @@ Invite to get Token, and provide a mechanism to burn Token.
 
 \- Project Direction: Tools
 \- View code: https://github.com/lanbin/blackhole
+
+
+
+### MG's 『CrowdFunding』
+
+CrowdFunding realized with Move.
+
+- Project direction: CrowdFunding
+- View code: https://gitlab.com/www.joae/CrowdFunding
 
 
 
