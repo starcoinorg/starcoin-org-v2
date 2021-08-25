@@ -339,22 +339,26 @@ body {
   }
 
   .about_us .lsh_list {
-    padding-top: 15px;
+    margin-top: 10px;
   }
 
   .about_us .lsh_list li {
     width: 100%;
-    margin-bottom: 70px;
   }
 
   .about_us .lsh_list li .lsh_portrait {
     display: inline-flex;
-    width: 130px;
-    height: 130px;
+    width: 60px;
+    height: 60px;
   }
 
   .about_us .lsh_list li .post_title {
-    font-size: 20px;
+    margin-top: 18px;
+    font-size: 14px;
+  }
+  .about_us .lsh_list li .post_title p a {
+    margin-top: 10px;
+    font-size: 13px;
   }
 
   .about_us .m-mt20 {
@@ -365,17 +369,25 @@ body {
     margin-top: 40px;
   }
 
+  .about_us .m-mb100 {
+    margin-bottom: 100px;
+  }
+
+  .about_us .m-pb30 {
+    padding-bottom: 30px;
+  }
+
   .about_us .m-team-introduce {
     background: #F9F9F9;
     padding-top: 30px;
   }
 
-  .about_us .team_introduce .about_hs_back {
-    display: none;
+  .about_us .team_introduce {
+    padding: 0 18px;
   }
 
   .about_us .team_introduce .team_h3 {
-    font-size: 22px;
+    font-size: 16px;
     line-height: normal;
   }
 
@@ -390,36 +402,89 @@ body {
   }
 
   .about_us .team_introduce .team_desc {
-    padding: 0 15px;
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 80px;
+  }
+
+  .about_us .team_top{
+    margin-top: 34px;
+    margin-left: 16px;
+    width: 5px;
+    border-bottom: solid 1px #113EC5;
+  }
+  .about_us .team_bottom{
+    margin-left: 16px;
+    width: 5px;
+    border-top: solid 1px #113EC5;
+  }
+  .about_us .team_dashiji .team_line {
+    margin-left: 18px;
+    border-radius: 1px;
+    border-left: solid 1px #113EC5;
+  }
+  .about_us .team_dashiji .team_line .item{
+    padding-top: 36px;
+    padding-bottom: 0;
+  }
+  .about_us .team_dashiji .team_line .item .item_row1 .item_col1{
+    width: 24px;
+  }
+  .about_us .team_dashiji .team_line .item .item_row1 .item_col2{
+    width: 10px;
+    height: 10px;
+    background: #446CE3;
+    border: 3px solid #113EC5;
+    border-radius: 10px;
+  }
+  .about_us .team_dashiji .team_line .item .item_row1 .item_col3{
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .about_us .team_dashiji .team_line .item .item_row2{
+    margin-left: 44px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    margin-right: 18px;
   }
 
   .about_us .jinrong_list {
-    padding: 0 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 0 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_us .jinrong_list .item{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .about_us .jinrong_list .item .jinrong_img {
-    width: 75px;
-    height: 63px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
   }
 
   .about_us .jinrong_list .item .jinrong_title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .about_us .jinrong_list .item .jinrong_desc {
-    font-size: 12px;
-    line-height: 20px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 13px;
   }
 
   .about_us .westr_title {
-    font-size: 20px;
-    line-height: normal;
-    margin-top: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 10px;
+    padding: 0 18px;
   }
 
   .about_us .about_content_all{

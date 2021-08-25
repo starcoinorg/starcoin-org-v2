@@ -467,7 +467,7 @@ body {
 }
 
 .Advantages .container .col-md-6 .item {
-  background-image: url("../img/square_bg_long.png");
+  /* background-image: url("../img/square_bg_long.png"); */
   height: 212px;
 }
 
