@@ -51,6 +51,8 @@
   translation: Mining STC
 - id: navGuideNodeCommand
   translation: Node Command
+- id: navDeveloperHowToDapp
+  translation: How To Dapp
 - id: navDeveloperGetStarted
   translation: Get Started
 - id: navDeveloperStartInstall
