@@ -191,7 +191,9 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
    Move支持多种测试方案
 
    * Unit Test：[指南](https://github.com/diem/diem/blob/main/language/changes/4-unit-testing.md)
-   * Functional Test：语法跟UT差不多，主要区别是FT会预先初始化链，[参考例子](https://github.com/starcoinorg/starcoin/tree/master/vm/functional-tests/tests/testsuite)。
+   * Functional Test：语法跟UT差不多，主要区别是FT会预先初始化链
+     * [使用指南](https://starcoin.org/zh/developer/functional_test/functional_test/)
+     * [参考例子](https://github.com/starcoinorg/starcoin/tree/master/vm/functional-tests/tests/testsuite)
 
 4. 编译&部署
 
@@ -219,9 +221,10 @@ Starcoin在Stdlib中定义了多种常用协议，如下图所示（更多协议
    * [协议介绍](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
    * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
    * 源代码
-  * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
+     * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
      * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
-2. Stdlib常用类库//TODO
+
+2. Stdlib[使用指南](https://starcoin.org/zh/developer/stdlib/stdlib/)
 
 
 
