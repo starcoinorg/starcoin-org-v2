@@ -202,6 +202,27 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
    * Move-cli：[publish操作指南](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
 
    这里需要注意的是，选择合适的网络进行部署。
+   
+5. Move[入门例子](https://starcoin.org/zh/developer/move/example/)
+
+
+
+## Stdlib & 协议
+
+Starcoin有Stdlib特性，完全使用Move语言开发，感兴趣的朋友可以[查看源代码](https://github.com/starcoinorg/starcoin/tree/master/vm/stdlib/modules)。
+
+Starcoin在Stdlib中定义了多种常用协议，如下图所示（更多协议在陆续制定中）：
+
+![dapp_1](/img/dapp/pb.jpg)
+
+1. NFT协议
+   * [协议介绍](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
+   * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
+   * 源代码
+  * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
+     * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
+2. Stdlib常用类库//TODO
+
 
 
 
