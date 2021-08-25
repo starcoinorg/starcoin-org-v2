@@ -387,9 +387,9 @@ button:hover {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 22px;
-  width: 500px;
-  margin-left: 80px;
+  padding-top: 18px;
+  /* width: 500px;
+  margin-left: 80px; */
 }
 
 .top .container .nav .navActive {
@@ -400,37 +400,43 @@ button:hover {
 .top .container .nav .item {
   font-size: 14px;
   cursor: pointer;
-
   line-height: 56px;
   position: relative;
-  width: 120px;
+  /* width: 120px; */
   text-align: center;
-}
-
-.top .container .nav .item:hover {
-  font-size: 16px;
+  padding: 0 20px;
 }
 
 .top .container .nav .item a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   display: block;
   text-decoration: none;
 }
 
+.top .container .nav .item span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.top .container .nav .item span:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
 .top .container .nav .item .language-box{
   margin-left: 10px;
-  text-align: center;
-  line-height: 57px;
 }
 .top .container .nav .item .language-box span{
+  height: 26px;
   padding: 5px 10px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 2px;
-  border: 1px solid #666666;
-  font-size: 18px;
+  border: 1px solid #4E4E4E;
+  font-size: 12px;
+  /* display: flex;
+  align-items: center; */
 }
 
 .top .container .nav .item .language-box img{
+  margin-top: -4px;
   width: 16px;
   height: 16px;
   margin-right: 5px;
@@ -463,7 +469,7 @@ button:hover {
 .top .container .nav .item .more_nav .box .li {
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   height: 56px;
   line-height: 56px;
   text-align: center;
@@ -494,18 +500,11 @@ button:hover {
 } */
 
 .top .container .nav .item .more_nav .box .li:hover {
-  color: #ffffff;
-  font-size: 16px;
-  /* background: -webkit-gradient(linear, left top, right top, from(#113B69), to(#052E5D));
-                background: -webkit-linear-gradient(left, #113B69 0%, #052E5D 100%);
-                background: -o-linear-gradient(left, #113B69 0%, #052E5D 100%);
-                background: linear-gradient(90deg, #113B69 0%, #052E5D 100%);  */
-  /* background: #f5f7fa;
-  border-radius: 8px; */
+  color: rgba(255, 255, 255, 1);
 }
 
-.top .container .nav .item .more_nav .box .li:hover a {
-  color: #ffffff;
+.top .container .nav .item .more_nav .box .li a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .top .container .nav .item .more_nav .box .li a {
@@ -513,7 +512,7 @@ button:hover {
   height: 56px;
   line-height: 56px;
   display: block;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .top .container .nav .item .more_nav .box .active {
