@@ -155,7 +155,7 @@ button:hover {
 }
 
 @font-face {
-  font-family: 'font-PingFangMedium';
+  font-family: 'PingFangSC-Medium';
   src: url("../font/PingFangMedium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;

@@ -4,6 +4,10 @@
 {{ partial "news/inject/head" . }}
 <div class="container">
     <div class="news">
+		<div class="news_list_back">
+			<img src="/img/icon_back.png" alt="">
+			{{ i18n "back" }}
+		</div>
         <div class="news_list">
             <div class="tile is-child box">
                 <div class="content">
@@ -24,11 +28,11 @@
                 </div>
             </div>
         </div>
-        <div class="news_right">
+        <!-- <div class="news_right">
             {{ partial "news/widget-tags.html" . }}
             {{ partial "news/widget-recent.html" . }}
             {{ partial "news/widget-archives.html" . }}
-        </div>
+        </div> -->
     </div>
 </div>
 {{ end }}

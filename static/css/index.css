@@ -636,8 +636,8 @@ body {
 
 .Example .container .code_view .code_left .list li .title {
   font-size: 24px;
-  font-family: PingFangSC-Medium, PingFang SC;
-  font-weight: 500;
+  /* font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500; */
   color: rgba(255, 255, 255, 0.7);
   line-height: 24px;
   margin-bottom: 5px;

@@ -177,8 +177,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 42px;
+  margin-bottom: 18px;
 }
 
 .m-footer .container .go-contact-us a {
@@ -197,7 +197,6 @@
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 .m-footer .container .row-li .item {
@@ -205,7 +204,7 @@
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: #898E9A;
-  line-height: 13px;
+  line-height: 37px;
   margin-right: 24px;
 }
 

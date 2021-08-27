@@ -154,3 +154,10 @@
   translation: 'GitHub 讨论区'
 - id: footerAllRightsReserved
   translation: 保留一切权利
+
+- id: next
+  translation: 下一页
+- id: previous
+  translation: 上一页
+- id: back
+  translation: 返回

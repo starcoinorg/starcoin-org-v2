@@ -54,7 +54,7 @@ body {
   padding-right: 140px;
   text-align: center;
   line-height: 96px;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
 
 .swiper-slide .banner-text a {

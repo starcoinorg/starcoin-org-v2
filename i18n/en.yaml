@@ -150,3 +150,10 @@
   translation: 'GitHub Discussion'
 - id: footerAllRightsReserved
   translation: All Rights Reserved
+
+- id: next
+  translation: Next
+- id: previous
+  translation: Previous
+- id: back
+  translation: Back
