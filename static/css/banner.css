@@ -33,15 +33,19 @@ body {
   /* Center slide text vertically */
 }
 
+.swiper-pagination-bullets{
+  bottom: 60px !important;
+}
+
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.5);
   width: 36px;
   height: 4px;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
-.swiper-pagination-active {
-  background-color: rgba(255, 255, 255, 1);
+.swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1);
 }
 
 .swiper-slide .banner-text {
@@ -49,11 +53,11 @@ body {
   font-size: 48px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 220px;
+  padding-top: 385px;
   padding-left: 140px;
   padding-right: 140px;
   text-align: center;
-  line-height: 96px;
+  line-height: 66px;
   /* letter-spacing: 3px; */
 }
 
@@ -250,6 +254,9 @@ body {
     margin-top: 15px;
     width: 5px;
     height: 3px;
+  }
+  .swiper-pagination-bullets{
+    bottom: 30px !important;
   }
   .swiper-pagination-bullet {
     width: 16px;

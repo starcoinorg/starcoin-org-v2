@@ -4,7 +4,7 @@
 {{ partial "news/inject/head" . }}
 <div class="container">
     <div class="news">
-		<div class="news_list_back">
+		<div class="news_list_back" onclick="javascript:history.back(-1);">
 			<img src="/img/icon_back.png" alt="">
 			{{ i18n "back" }}
 		</div>
@@ -12,7 +12,7 @@
             <div class="tile is-child box">
                 <div class="content">
                     <div class="content-title">
-                        <h1 class="title is-size-1">
+                        <h1 class="title">
                             {{ if eq .Type "tags" }}
                             #{{ .Title }}
                             {{ else if eq .Type "archives" }}
@@ -21,10 +21,14 @@
                             {{ .Title }}
                             {{ end }}
                         </h1>
+						<span class="time">
+							Published at {{ .Date.Format "January 2, 2006" }} By {{ $.Param "author" }}.
+						</span>
                     </div>
-                    Published at {{ .Date.Format "January 2, 2006" }} By {{ $.Param "author" }}.
-                    <hr style="margin: 5px 0px 10px 0px;" />
-                    {{ .Content }}
+                    <!-- <hr style="margin: 60px 0px 10px 0px;" /> -->
+					<div class="content-text">
+						{{ .Content }}
+					</div>
                 </div>
             </div>
         </div>

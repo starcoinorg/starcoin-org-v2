@@ -25,7 +25,7 @@
 
 .About-us {
   margin-top: 228px;
-  margin-bottom: 110px;
+  margin-bottom: 200px;
 }
 
 .About-us .content {
@@ -42,11 +42,7 @@
 }
 
 .About-us .content .right {
-
   width: 470px;
-
-  /* width: 50%; */
-  text-align: justify;
 }
 
 .About-us .content .right .About_h3 {
@@ -79,8 +75,6 @@
 
 .About-us .content .right .desc {
   font-size: 16px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
   color: #FFFFFF80;
   line-height: 32px;
   overflow: hidden;
@@ -220,16 +214,15 @@
 }
 
 .About-us .content .left {
-  width: 720px;
-  /* width: 60%;  */
-  height: 528px;
+  width: 760px;
+  height: 548px;
   margin-left: -110px;
-  margin-right: 60px;
-  /* margin-top: 50px; */
+  margin-right: 83px;
 }
 
 .About-us .content .left img {
   width: 100%;
+  height: 100%;
 }
 
 .container-about{
@@ -249,7 +242,6 @@
   color: #FFFFFF;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 1px;
 }
 
 .m-about-us .m-about-pic {
@@ -293,7 +285,6 @@
   cursor: pointer;
   margin: 0 auto;
   margin-top: 30px;
-  letter-spacing: 1px;
   position: relative;
 }
 
@@ -340,7 +331,7 @@
   /* background-image: url("../img/advantages_back.png");
   background-color: #1B1C28;
   background-size: 100% 100%; */
-  margin-bottom: 200px;
+  margin-bottom: 330px;
 }
 
 .Advantages .row {
@@ -349,6 +340,8 @@
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px;
 }
 
 .Advantages .row>[class*='col-'] {
@@ -379,7 +372,6 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 20px;
   margin-bottom: 40px;
   opacity: 0.8;
 }
@@ -392,7 +384,6 @@ body {
   font-size: 50px;
   font-weight: 600;
   color: #1C4BDE;
-  letter-spacing: 1px;
 }
 
 .Advantages .container .Advantages_title .Advantages_h3 img {
@@ -431,7 +422,7 @@ body {
   width: 60px;
   height: 60px;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .Advantages .container .item .ad_icon img {
@@ -440,12 +431,9 @@ body {
 
 .Advantages .container .item .title {
   font-size: 24px;
-  font-family: PingFangSC-Medium, PingFang SC;
-  font-weight: 500;
   color: #FFFFFF;
   line-height: 24px;
   text-align: left;
-  letter-spacing: 3px;
   margin-top: 56px;
   margin-left: 15px;
 }
@@ -457,7 +445,6 @@ body {
   margin-right: 15px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 1px;
   font-family: PingFangSC-Medium, PingFang SC;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
@@ -518,7 +505,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: #FFFFFF;
-  letter-spacing: 1px;
 }
 
 .Example .container .Advantages_title .Example_h3 img {
@@ -613,7 +599,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .Example .container .code_view .code_left {
@@ -695,7 +681,7 @@ body {
 .Example .container .code_view .code_right {
   background-image: url("/img/code_bg@2x.png");
   background-repeat: no-repeat;
-  background-size: 100% 120%;
+  background-size: 100% 110%;
   background-position: top right;
 }
 
@@ -749,7 +735,6 @@ body {
   margin-top: 48px;
   overflow: auto;
   line-height: 2.3;
-  letter-spacing: 0.5px;
 }
 
 .Example .container .code_view .code_right .code_body .code_page_item pre {
@@ -1055,12 +1040,9 @@ body {
 
 .more {
   width: 120px;
-  height: 40px;
-  line-height: 40px;
+  height: 20px;
+  line-height: 20px;
   text-align: right;
-  /*
-  background: #1C4BDE;
-  */
   border-radius: 4px;
   font-size: 20px;
   margin-left: auto;
@@ -1076,8 +1058,8 @@ body {
 }
 
 .more img {
+  width: 59px;
   height: 18px;
-  margin: 8px;
 }
 /* 
 .Advantages .wrapper,
@@ -1126,59 +1108,18 @@ body {
     margin-right: 10px;
   }
 
-  .example_container{
-    background: url("/img/example_top_bg_m.png") no-repeat center top;
-    background-repeat: no-repeat;
-    background-size: 100% 102px;
-    margin-top: 100px;
-  }
-
-  .Example{
-    margin-bottom: 0;
-  }
-
-  .Example .container .Advantages_title {
-    padding-top: 40px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    opacity: 1;
-  }
-
-  .Example .container .Advantages_title .Example_h3 {
-    font-size: 18px;
-  }
-
-  .Example .container .Advantages_title .Example_h3 img {
-    width: 8px;
-    height: 4px;
-    margin-left: 10px;
-  }
-
-  .Example .container .code_view{
-    margin-bottom: 0;
-  }
-
-  .Example .container .code_view .code_right {
-    width: 100%;
-    height: auto;
-    background-image: url("/img/code_bg_m.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top center;
-  }
-
-  .Example .container .code_view .code_right .code_body {
-    margin-top: 30px;
-    margin-left: 0;
-    margin-right: 10px;
-  }
-
   .Advantages {
     padding-bottom: 0px;
     margin-bottom: 20px;
     background-image: none;
+  }
+
+  .Advantages .row{
+    margin: 0 8px;
+  }
+
+  .Advantages .container .item {
+    margin-bottom: 18px;
   }
 
   .Advantages .container .ad_top {
@@ -1188,6 +1129,8 @@ body {
   .Advantages .container .item .ad_icon {
     width: 44px;
     height: 44px;
+    margin-top: 15px;
+    margin-left: 5px;
   }
 
   .Advantages .container .item .title {
@@ -1204,6 +1147,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
     line-height: 22px;
     margin-left: 30px;
+    margin-top: 14px;
   }
 
   .Advantages .container .col-md-6 .item .ad_icon {
@@ -1221,13 +1165,16 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 40px;
+    justify-content: space-between; */
+    /* padding-top: 40px; */
     opacity: 1;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    padding-right: 18px;
   }
 
   .Advantages .container .Advantages_title .Advantages_h3 {
@@ -1244,20 +1191,15 @@ body {
   }
 
   .more {
-    width: 55px;
+    width: 46px;
     height: 20px;
-    line-height: 20px;
+    line-height: 18px;
     text-align: right;
-    margin-bottom: 16px;
-    margin-right: 10px;
   }
 
   .more img {
+    width: 46px;
     height: 14px;
-  }
-
-  .Advantages .container .Advantages_title {
-    margin-bottom: 16px;
   }
 
   .Advantages .wrapper,
@@ -1282,10 +1224,6 @@ body {
     margin-top: 8px;
   }
 
-  .Example .container .m-code-view .m-code-left .list li .title {
-    color: #909095;
-  }
-
   .more span {
     font-size: 10px;
     font-weight: 400;
@@ -1293,9 +1231,67 @@ body {
   }
 }
 
-@media (min-width: 1204px) {
+@media (max-width: 992px) {
+
+  .example_container{
+    background: url("/img/example_top_bg_m.png") no-repeat center top;
+    background-repeat: no-repeat;
+    background-size: 100% 102px;
+    margin-top: 120px;
+  }
+
+  .Example{
+    margin-bottom: 0;
+    padding: 0 18px;
+  }
+
+  .Example .container .Advantages_title {
+    padding-top: 50px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .Example .container .Advantages_title .Example_h3 {
+    font-size: 18px;
+  }
+
+  .Example .container .Advantages_title .Example_h3 img {
+    width: 8px;
+    height: 4px;
+    margin-left: 10px;
+  }
+
+  .Example .container .code_view{
+    margin-bottom: 0;
+  }
+
+  .Example .container .code_view .code_right {
+    width: 100%;
+    height: auto;
+    background-image: url("/img/code_bg_m.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+  }
+
+  .Example .container .code_view .code_right .code_body {
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .Example .container .m-code-view .m-code-left .list li .title {
+    color: #909095;
+  }
+}
+
+@media (min-width: 1200px) {
   .Advantages .container .col-md-3 .item {
-    width: 280px;
+    width: 285px;
     height: 318px;
   }
   .Advantages .container .col-md-6 .item {

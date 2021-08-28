@@ -1,5 +1,5 @@
 .footer {
-  height: 475px;
+  height: 404px;
   background: #151620;
   margin-top: 100px;
 }
@@ -8,16 +8,16 @@
   width: 1200px;
   margin: 0 auto;
   color: #FFFFFF;
-  padding-top: 113px;
+  padding-top: 100px;
 }
 
 .footer .container .hr {
-  font-size: 18px;
-  font-family: PingFangSC-Medium, PingFang SC;
-  font-weight: 500;
+  font-size: 16px;
+  /* font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500; */
   color: #FFFFFF;
-  line-height: 18px;
-  padding-bottom: 33px;
+  line-height: 16px;
+  padding-bottom: 42px;
 }
 
 .footer .container .hr a {
@@ -25,15 +25,15 @@
 }
 
 .footer .container .td {
-  font-size: 16px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
+  font-size: 14px;
+  /* font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400; */
   color: #898E9A;
-  line-height: 16px;
+  line-height: 14px;
 }
 
 .footer .container .td .item {
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .footer .container .td .item a:hover{
@@ -82,9 +82,10 @@
 }
 
 .footer .contact-container img {
-  height: 24px;
+  width: 22px;
+  height: 20px;
   margin-right: 16px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .footer .contact-container img:hover{
@@ -113,16 +114,14 @@
 }
 
 .m-footer .container .crt {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.6);
+  color: #898E9A;
   text-align: center;
-  border-top: 1px solid #898E9A;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.2);
   background: #151620;
   padding-top: 28px;
   padding-bottom: 4px;
-  margin-left: -15px;
-  margin-right: -15px;
   margin-top: 50px;
 }
 
@@ -179,6 +178,7 @@
   align-items: center;
   margin-top: 42px;
   margin-bottom: 18px;
+  margin-left: 18px;
 }
 
 .m-footer .container .go-contact-us a {
@@ -197,6 +197,7 @@
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 18px;
 }
 
 .m-footer .container .row-li .item {
@@ -211,4 +212,8 @@
 .m-footer .container .row-li .item a,
 .m-footer .container .row-li .item {
   color: #898E9A;
+}
+
+.m-footer .font-white{
+  color: #FFFFFF;
 }
