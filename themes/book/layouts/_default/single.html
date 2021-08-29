@@ -4,10 +4,10 @@
 {{ partial "news/inject/head" . }}
 <div class="container">
     <div class="news">
-		<div class="news_list_back" onclick="javascript:history.back(-1);">
+		<a class="news_list_back" href="/{{ .Site.Language.Lang }}/news/">
 			<img src="/img/icon_back.png" alt="">
 			{{ i18n "back" }}
-		</div>
+		</a>
         <div class="news_list">
             <div class="tile is-child box">
                 <div class="content">

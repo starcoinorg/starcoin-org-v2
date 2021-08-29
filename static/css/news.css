@@ -27,9 +27,13 @@
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   line-height: 14px;
   text-align: left;
+  opacity: 0.8;
+}
+.news .news_list_back:hover{
+  opacity: 1;
 }
 .news .news_list_back img{
   width: 18px;
@@ -336,6 +340,7 @@
 
 .tile .content .content-text{
   margin-top: 30px;
+  word-wrap:break-word;
 }
 
 .tile .content h2 {
@@ -476,6 +481,8 @@ pre {
     background-image: url("../img/m_news_bg.png");
     background-size: 100% 140px;
     padding: 0 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 	}
 
   .news .news_list_title{
@@ -485,7 +492,6 @@ pre {
   }
 
   .news .news_list_back{
-    margin-top: 50px;
     font-size: 12px;
     line-height: 12px;
   }

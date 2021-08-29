@@ -1,175 +1,316 @@
 .container .term_xieyi {
-  padding: 0 55px;
   position: relative;
-  background: #ffffff;
   padding-bottom: 40px;
-  border-radius: 4px; }
-  .container .term_xieyi .info {
-    font-size: 16px;
-    font-weight: 400;
-    color: #272B3E;
-    line-height: 32px;
-    margin-bottom: 16px; }
+  background-image: url("../img/about@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 320px;
+  background-position: top center;
+  z-index: -2;
+}
+.container .term_xieyi .whitepaper{
+  padding-top: 120px;
+  font-size: 42px;
+  color: #FFFFFF;
+  line-height: 42px;
+}
+.container .term_xieyi .content{
+  margin-top: 80px;
+  padding: 60px 40px;
+  background: #262734;
+  border-radius: 10px;
+  z-index: 1;
+}
 
-  .container .term_xieyi .info img {
-    display: block; 
-    margin: 0 auto; }
-  .container .term_xieyi .info a {
-    color: #1c95e0;
-  }
-  .container .term_xieyi .code_info {
-    height: 60px;
-    line-height: 60px;
-    background: #1B1C28;
-    border-radius: 4px;
-    color: #ffffff;
-    padding-left: 50px; }
-    .container .term_xieyi .code_info span {
-      color: red; }
-  .container .term_xieyi .code_all_info {
-    font-size: 16px;
-    font-weight: 500;
-    color: #FFFFFF;
-    line-height: 35px;
-    background: #021429;
-    border-radius: 4px;
-    padding-left: 50px; }
-    .container .term_xieyi .code_all_info span {
-      color: red; }
-  .container .term_xieyi .table {
-    border: 1px solid #DDDDDD;
-    border-radius: 1px; }
-    .container .term_xieyi .table .head {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      border-bottom: 1px solid #DDDDDD; }
-      .container .term_xieyi .table .head .td {
-        width: 50%;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        color: #272B3E;
-        line-height: 22px;
-        height: 60px;
-        line-height: 60px; }
-        .container .term_xieyi .table .head .td:first-child {
-          border-right: 1px solid #DDDDDD; }
-      .container .term_xieyi .table .head .td_first {
-        width: 30%; }
-      .container .term_xieyi .table .head .td_last {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-            -ms-flex: 1;
-                flex: 1; }
-    .container .term_xieyi .table .body .tr {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      border-bottom: 1px solid #DDDDDD; }
-      .container .term_xieyi .table .body .tr .td {
-        width: 50%;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        color: #272B3E; }
-        .container .term_xieyi .table .body .tr .td:first-child {
-          border-right: 1px solid #DDDDDD; }
-      .container .term_xieyi .table .body .tr:nth-child(even) {
-        background: #F9F9FB; }
-      .container .term_xieyi .table .body .tr .td_first {
-        width: 30%; }
-      .container .term_xieyi .table .body .tr .td_last {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-            -ms-flex: 1;
-                flex: 1; }
-  .container .term_xieyi .h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #272B3E;
-    line-height: 30px; }
-    .container .term_xieyi .h3 span {
-      color: #1C4BDE; }
-  .container .term_xieyi .padding_text_index {
-    padding-left: 34px; }
-  .container .term_xieyi .term_icon {
-    width: 369px;
-    height: 369px;
-    position: absolute;
-    top: 13px;
-    right: 99px; }
-  .container .term_xieyi .title_h3 {
-    /* 
-    width: 755px;
-    */
-    width: 85%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 42px;
-    padding-top: 120px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 80px; }
-    .container .term_xieyi .title_h3 img {
-      width: 34px;
-      height: 34px; }
-    .container .term_xieyi .title_h3 span {
-      font-size: 64px;
-      font-weight: 500;
-      color: #1C4BDE;
-      line-height: 90px;
-      letter-spacing: 1px;
-      margin-left: 26px; }
+.container .term_xieyi .info {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 32px;
+  word-wrap:break-word;
+}
+
+.container .term_xieyi .info img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .term_xieyi .info a {
+  color: #1c95e0;
+}
+
+.container .term_xieyi .info code {
+  background: transparent;
+  color: #FF0000;
+}
+
+.container .term_xieyi .code_info {
+  height: 60px;
+  line-height: 60px;
+  background: #393A4C;
+  border-radius: 4px;
+  color: #ffffff;
+  padding-left: 40px;
+}
+
+.container .term_xieyi .code_info span {
+  color: #FF0000;
+}
+
+.container .term_xieyi .code_all_info {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 35px;
+  background: #393A4C;
+  border-radius: 4px;
+  padding: 9px 10px 9px 40px;
+}
+
+.container .term_xieyi .code_all_info span {
+  color: #FF0000;
+}
+
+.container .term_xieyi .table {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+}
+
+.container .term_xieyi .table .head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .term_xieyi .table .head .td {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  height: 60px;
+  line-height: 60px;
+}
+
+.container .term_xieyi .table .head .td:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .term_xieyi .table .head .td_first {
+  width: 30%;
+}
+
+.container .term_xieyi .table .head .td_last {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.container .term_xieyi .table .body .tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .term_xieyi .table .body .tr .td {
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.container .term_xieyi .table .body .tr .td:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container .term_xieyi .table .body .tr .td_first {
+  width: 30%;
+}
+
+.container .term_xieyi .table .body .tr .td_last {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.container .term_xieyi .h2{
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+.container .term_xieyi .h3 {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.container .term_xieyi .padding_text_index {
+  padding-left: 34px;
+}
+
+.container .term_xieyi .term_icon {
+  width: 451px;
+  height: 307px;
+  position: absolute;
+  background-image: url("../img/bianzu_icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 100px;
+  right: -37px;
+  z-index: -1;
+}
+.container .term_xieyi .term_icon img{
+  width: 100%;
+  height: 100%;
+}
+
+.container .term_xieyi .title_h3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.container .term_xieyi .title_h3 img {
+  width: 34px;
+  height: 34px;
+}
+
+.container .term_xieyi .title_h3 span {
+  font-size: 30px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 42px;
+}
 
 @media (max-width: 768px) {
   .container .term_xieyi {
-    padding: 0 15px;
-    padding-bottom: 20px; }
-    .container .term_xieyi img {
-      max-width: 100%; }
-    .container .term_xieyi .table .head .td_first {
-      width: 43%; }
-    .container .term_xieyi .table .body .tr .td {
-      line-height: 25px;
-      text-align: left;
-      height: auto;
-      padding: 10px; }
-    .container .term_xieyi .table .body .tr .td_first {
-      width: 43%; }
-    .container .term_xieyi .info {
-      font-size: 14px;
-      text-align: justify;
-      line-height: 25px; }
-    .container .term_xieyi .padding_text_index {
-      padding-left: 20px; }
-    .container .term_xieyi .title_h3 {
-      padding-top: 0px;
-      margin-bottom: 10px;
-      padding-left: 0px;
-      height: 102px;
-      width: 260px; }
-      .container .term_xieyi .title_h3 span {
-        font-size: 18px;
-        margin-left: 16px;
-        line-height: 25px;
-        font-weight: 700; }
-      .container .term_xieyi .title_h3 img {
-        width: 16px;
-        height: 16px; }
-    .container .term_xieyi .term_icon {
-      width: 102px;
-      height: 102px;
-      top: 0px;
-      right: 0px; } }
+    padding: 0 18px;
+    padding-bottom: 20px;
+  }
+
+  .container .term_xieyi .whitepaper{
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .container .term_xieyi .content{
+    margin-top: 39px;
+    padding: 30px 18px;
+  }
+
+  .container .term_xieyi img {
+    max-width: 100%;
+  }
+
+  .container .term_xieyi .table .head .td {
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .container .term_xieyi .table .head .td_first {
+    width: 43%;
+  }
+
+  .container .term_xieyi .table .body .tr .td {
+    line-height: 20px;
+    text-align: left;
+    height: auto;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .container .term_xieyi .table .body .tr .td_first {
+    width: 43%;
+  }
+
+  .container .term_xieyi .info {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .container .term_xieyi .padding_text_index {
+    padding-left: 20px;
+  }
+
+  .container .term_xieyi .h2{
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+
+  .container .term_xieyi .h3 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+  .container .term_xieyi .title_h3 {
+    padding-top: 0px;
+    margin-bottom: 50px;
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  .container .term_xieyi .title_h3 span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .container .term_xieyi .title_h3 img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .container .term_xieyi .term_icon {
+    width: 150px;
+    height: 102px;
+    background-image: url("../img/bianzu_icon_m.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50px;
+    right: 18px;
+  }
+
+  .container .term_xieyi .code_info {
+    height: auto;
+    line-height: 20px;
+    background: #393A4C;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .container .term_xieyi .code_all_info {
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 20px;
+    background: #393A4C;
+    border-radius: 4px;
+    padding: 9px 10px 9px 20px;
+  }
+
+}
