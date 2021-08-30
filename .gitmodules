@@ -1,3 +1,7 @@
 [submodule "content/developer/SIPs"]
 	path = content/developer/SIPs
 	url = https://github.com/starcoinorg/SIPs
+
+[submodule "content/developer/sdk/javascript"]
+	path = content/developer/sdk/javascript
+	url = https://github.com/starcoinorg/starcoin.js/docs
