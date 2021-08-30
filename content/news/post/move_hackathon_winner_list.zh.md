@@ -100,9 +100,9 @@ P(A) #1–#100 是100组随机生成的图像集合，每组作品作为单独�
 红包是常用的生活工具。通过Move智能合约定义一个安全的资产SHIBA，并针对SHIBA设计了有意思的红包逻辑。发布到Starcoin链上，为大家提供一个链上拼手气的红包功能。
 
 * 项目方向：工具
-* 体验入口：https://github.com/reilost/meteor
+* 体验入口：https://meteor.wormhole.studio/
 
-* 查看源代码：https://meteor.wormhole.studio/
+* 查看源代码：https://github.com/reilost/meteor
 
 
 

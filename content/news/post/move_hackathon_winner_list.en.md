@@ -100,8 +100,8 @@ P(A) #1-#100 is a collection of 100 randomly generated images, and each set of w
 Red Envelope is a common life tool. Define a secure asset SHIBA through Move smart contract, and design an interesting red envelope logic for SHIBA. Published to the Starcoin chain to provide a red envelope function for on-chain hand spinning.
 
 \- Project Direction: Tools
-\- Experience the portal: https://github.com/reilost/meteor
-\- View source code: https://meteor.wormhole.studio/
+\- Experience the portal: https://meteor.wormhole.studio/
+\- View source code: https://github.com/reilost/meteor
 
 
 
