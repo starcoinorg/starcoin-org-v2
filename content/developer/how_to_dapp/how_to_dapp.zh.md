@@ -58,7 +58,7 @@ Starcoin 是一个去中心化分层智能合约网络，它旨在提供一种�
 
 StarMask是Starcoin官方发布的浏览器插件钱包，不仅是用户管理链上数字资产的一种方式，也是Dapp跟链上进行交互的一种选择。例如，用户对Dapp的交易进行签名，并将签名后的交易提交到远程节点的Txpool中。这里带您深入了解一下StarMask：
 
-* 安装指南：// TODO
+* 安装指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md
 
 * 使用指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md
 
@@ -183,7 +183,7 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 
 2. IDE：
 
-* Starcoin IDE：https://marketplace.visualstudio.com/items?itemName=starcoinorg.starcoin-ide
+* Starcoin IDE：https://github.com/starcoinorg/starcoin-ide
 * Move-cli：这是一个非常轻量级的测试、发布Move合约的工具，[下载链接和操作指南](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
 
 3. 测试
@@ -211,20 +211,25 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 
 ## Stdlib & 协议
 
-Starcoin有Stdlib特性，完全使用Move语言开发，感兴趣的朋友可以[查看源代码](https://github.com/starcoinorg/starcoin/tree/master/vm/stdlib/modules)。
+Starcoin有 Stdlib 特性，完全使用 Move语言开发，感兴趣的朋友可以[查看源代码](https://github.com/starcoinorg/starcoin/tree/master/vm/stdlib/modules)。
 
-Starcoin在Stdlib中定义了多种常用协议，如下图所示（更多协议在陆续制定中）：
+Starcoin在 Stdlib 中定义了多种常用协议，如下图所示（更多协议在陆续制定中）：
 
 ![dapp_1](/img/dapp/pb.jpg)
 
-1. NFT协议
+1. DAO协议
+
+   DAO协议是Stdlib中一个基础的协议，通过DAO协议能够很好的进行链上治理。这里是通过[链上治理进行代码升级](https://github.com/WGB5445/WGB5445.github.io/blob/vue-blog-src/docs/blockchain/StarCoin/_blog/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86.md)的例子。
+
+2. NFT协议
+
    * [协议介绍](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
    * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
    * 源代码
      * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
      * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
 
-2. Stdlib[使用指南](https://starcoin.org/zh/developer/stdlib/stdlib/)
+3. Stdlib[使用指南](https://starcoin.org/zh/developer/stdlib/stdlib/)
 
 
 
