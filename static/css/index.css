@@ -642,12 +642,12 @@ body {
         border-radius: 10px 0 0 10px;
         background: #5B76F1;
         */
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #FFFFFF;
 }
 
 .Example .container .code_view .code_left .list li:hover .title {
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #FFFFFF;
 }
 

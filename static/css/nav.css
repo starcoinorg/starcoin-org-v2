@@ -322,7 +322,7 @@ button:hover {
   width: 100%;
   margin: 0 auto;
   z-index: 100;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -666,6 +666,7 @@ button:hover {
   color: #ffffff;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.13);
+  background: #15171E;
 }
 
 .m_nav_model .m-language .item {
@@ -691,6 +692,9 @@ button:hover {
 
 .m_nav_model .nav {
   padding-top: 100px;
+  padding-bottom: 60px;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .m_nav_model .nav .item {

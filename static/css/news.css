@@ -12,7 +12,7 @@
 }
 
 .news .news_list_title{
-  width: 90%;
+  width: 100%;
   margin-top: 124px;
   font-size: 42px;
   color: #FFFFFF;
@@ -21,7 +21,7 @@
 }
 
 .news .news_list_back{
-  width: 90%;
+  width: 100%;
   margin-top: 124px;
   height: 14px;
   font-size: 14px;
@@ -43,7 +43,7 @@
 
 .news .news_list {
   margin-top: 80px;
-	width: 90%;
+	width: 100%;
 	background: #262734;
   border-radius: 10px;
 }
@@ -344,12 +344,12 @@
 }
 
 .tile .content h2 {
-	font-size: 1.75em;
+	font-size: 1.5em;
 	margin-bottom: .5714em;
 }
 
 .tile strong {
-	color: #363636;
+	color: #FFFFFF;
 	font-weight: 700;
 }
 
