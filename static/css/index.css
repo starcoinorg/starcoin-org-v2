@@ -681,7 +681,7 @@ body {
 .Example .container .code_view .code_right {
   background-image: url("/img/code_bg@2x.png");
   background-repeat: no-repeat;
-  background-size: 100% 110%;
+  background-size: 780px 645px;
   background-position: top right;
 }
 
@@ -731,7 +731,7 @@ body {
     padding: 9px 0 9px 30px;
     */
   height: 540px;
-  margin-left: 150px;
+  margin-left: 250px;
   margin-top: 48px;
   overflow: auto;
   line-height: 2.3;

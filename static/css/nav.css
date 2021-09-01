@@ -464,7 +464,7 @@ button:hover {
 
 .top .top-container .nav .item .more_nav .box {
   background: #2F3446;
-  border: 1px solid #666666;
+  border: 0.5px solid #666666;
   border-radius: 8px;
   padding: 0 !important;
   /* 
