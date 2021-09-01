@@ -4,4 +4,3 @@ resources/
 .vscode/
 hugo
 content/developer/SIPs
-content/developer/sdk/javascript
