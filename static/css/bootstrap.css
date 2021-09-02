@@ -1438,7 +1438,7 @@ dl {
 }
 dt,
 dd {
-  line-height: 1.42857143;
+  /* line-height: 1.42857143; */
 }
 dt {
   font-weight: 700;

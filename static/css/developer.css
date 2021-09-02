@@ -433,6 +433,7 @@
 
   .container .developer .developer_right {
     margin: 63px 18px 100px 18px;
+    border-radius: 10px;
   }
 
   .container .developer .developer_right .column_title{
