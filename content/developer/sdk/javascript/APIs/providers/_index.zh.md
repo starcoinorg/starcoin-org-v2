@@ -375,3 +375,19 @@ Result:
 ```js
 15
 ```
+
+---
+
+### getNowSeconds(): `Promise<number>`
+
+Return current time in seconds on Starcoin blockchain.
+
+```js
+const nowSeconds = await provider.getNowSeconds();
+console.log(nowSeconds);
+```
+
+Result:
+```js
+1630566397
+```
