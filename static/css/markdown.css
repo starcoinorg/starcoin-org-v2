@@ -1,6 +1,6 @@
 
 .markdown {
-    line-height: 1.6
+    /* line-height: 1.6 */
 }
 
 .markdown>:first-child {
@@ -64,9 +64,9 @@
     color: #3273DC;
 }
 
-.markdown a:hover {
+/* .markdown a:hover {
     text-decoration: underline
-}
+} */
 
 .markdown a:visited {
     /* color: #8440f1 */
