@@ -607,16 +607,9 @@ body {
 }
 
 .Example .container .code_view .code_left .list li {
-  /*
-      width: 519px;
-      border-radius: 10px;
-      -webkit-box-shadow: 2px 2px 17px 0px #E5E9F0;
-              box-shadow: 2px 2px 17px 0px #E5E9F0;
-      margin-bottom: 36px;
-      */
   border-left: 4px solid rgba(255, 255, 255, 0.7);
   background: unset;
-  padding: 15px 0 15px 17px;
+  padding: 15px 0 15px 30px;
   cursor: pointer;
 }
 
@@ -1058,8 +1051,8 @@ body {
 }
 
 .more img {
-  width: 59px;
-  height: 18px;
+  width: 57px;
+  height: 15px;
 }
 /* 
 .Advantages .wrapper,
