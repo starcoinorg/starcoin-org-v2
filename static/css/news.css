@@ -309,7 +309,7 @@
 	margin: 0 !important
 }
 
-.box {
+.news .box {
 	background: #262734;
   border-radius: 10px;
 	color: rgba(255, 255, 255, 0.8);
@@ -545,7 +545,7 @@ pre {
     font-size: 12px;
   }
 
-  .box{
+  .news .box{
     padding: 10px 18px 0 18px;
     font-size: 13px;
     line-height: 28px;
