@@ -12,4 +12,13 @@ $(document).ready(function () {
         // $(".introduce_content").hide()
         // $(".introduce_content").eq($(this).index()).show()
     })
+    $.event.add(window, "scroll", function () {
+		if($(window).scrollTop()>120){
+			$(".tab").css("position", 'fixed')
+			$(".tab").css("top", '-40px')
+		} else {
+			$(".tab").css("position", 'absolute')
+			$(".tab").css("top", '0')
+		}
+	})
 });

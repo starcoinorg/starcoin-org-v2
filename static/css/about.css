@@ -14,8 +14,7 @@ body {
   display: flex;
 }
 .about_us .tab{
-  position: fixed;
-  top: 80px;
+  position: absolute;
 }
 .about_us .tab ul{
   margin-top: 80px;
