@@ -590,21 +590,14 @@ title: Homepage
         });
 
         var swiper = new Swiper('.swiper-container', {
-            speed: 1000,
-            direction: 'horizontal',
-            autoplay:
-            {
-                delay: 5000,
-            },
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.button-next',
-                prevEl: '.button-prev',
-            },
-        });
+			speed: 1000,
+			direction: 'horizontal',
+			autoplay: 5000,
+			loop: true,
+			pagination: '.swiper-pagination',
+			slidesPerView: 'auto',
+			paginationClickable: true
+		});
 
         $(".index_code_view_tab li").click(function () {
             $(".index_code_view_tab li").removeClass("select")
