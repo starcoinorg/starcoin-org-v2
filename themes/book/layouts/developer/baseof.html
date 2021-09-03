@@ -52,6 +52,11 @@
 			$("#dev_fixed_back").show()
 		});
 
+		$(".developer_right a").each(function(index, element) {
+			if($(this).attr('href').indexOf('http') != -1){
+				$(this).attr('target', '_blank')
+			}
+		})
 	})
 </script>
 

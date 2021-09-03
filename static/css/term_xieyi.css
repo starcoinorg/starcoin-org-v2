@@ -206,8 +206,9 @@
 
 @media (max-width: 768px) {
   .container .term_xieyi {
-    padding: 0 18px;
+    padding: 50px 18px;
     padding-bottom: 20px;
+    background-size: 100% 70px;
   }
 
   .container .term_xieyi .whitepaper{
@@ -217,7 +218,7 @@
   }
 
   .container .term_xieyi .content{
-    margin-top: 39px;
+    /* margin-top: 39px; */
     padding: 30px 18px;
   }
 
