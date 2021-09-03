@@ -57,6 +57,8 @@
   translation: STC挖矿
 - id: navGuideNodeCommand
   translation: 节点命令行
+- id: navDeveloperHowToDapp
+  translation: Dapp 开发指南
 - id: navDeveloperGetStarted
   translation: 开始
 - id: navDeveloperStartInstall
@@ -99,6 +101,10 @@
   translation: 矿池接入指南
 - id: navDeveloperStratumPoolStratumMiningProtocol
   translation: 矿池协议
+- id: navDeveloperProtocol
+  translation: 协议
+- id: navDeveloperNFTProtocol
+  translation: NFT 协议
 - id: navCommunityWestar
   translation: Westar 实验室
 - id: navCommunityTwitter
@@ -111,6 +117,8 @@
   translation: Starcoin 浏览器
 - id: navCommunityPoll
   translation: Starcoin 投票
+- id: navCommunityAirdrop
+  translation: 空投 Dapp
 - id: navQAGitHub
   translation: GitHub 讨论区
 - id: navQAFAQ

@@ -3,9 +3,13 @@ title = "NFT 协议"
 date = "2021-08-20"
 summary = "Starcoin标准NFT协议... "
 archives="2020"
-author = "邓启明"
+author = "Starcoin"
 
 +++
+
+Starcoin标准NFT协议
+
+<!--more-->
 
 NFT全称为Non-Fungible Token，作为区块链的前沿领域，它的价值正在被逐步发掘出来。尤其最近两年，越来越多的力量加入到NFT生态，越来越多的NFT场景被落地并流行起来。Starcoin是新一代的公链基础设施，使用了专门为DeFi场景定制的、线性逻辑的Move作为智能合约语言。作为首个使用Move智能合约语言的公链，在独一无二且不可分割的NFT场景下，Starcoin具有天生的、独特的优势，能够帮助开发者轻松地构建安全可靠的NFT应用。
 

@@ -3,9 +3,13 @@ title = "NFT Protocol"
 date = "2021-08-20"
 summary = "Starcoin' s Standard NFT Protocol... "
 archives="2020"
-author = "dengqiming"
+author = "Starcoin"
 
 +++
+
+Starcoin' s Standard NFT Protocol
+
+<!--more-->
 
 NFT, fully known as Non-Fungible Token, is being gradually explored as a frontier area of blockchain. Especially in the last two years, more and more forces have joined the NFT ecosystem, and more and more NFT scenarios are being landed and popularized. starcoin is a new generation of public chain infrastructure that uses Move as a smart contract language tailored specifically for DeFi scenarios and linear logic. As the first public chain using the Move smart contract language, Starcoin has inherent and unique advantages in the unique and indivisible NFT scenario, helping developers to easily build secure and reliable NFT applications.
 
