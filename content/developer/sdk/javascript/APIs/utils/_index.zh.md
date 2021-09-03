@@ -3,6 +3,7 @@ title: utils
 weight: 9
 ---
 
+<!--more-->
 ### utils.tx.encodeScriptFunctionArgs(argsType, args) => bytes[]
 
 | Param | Type | Desc |

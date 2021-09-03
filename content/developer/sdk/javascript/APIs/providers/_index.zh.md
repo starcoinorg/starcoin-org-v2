@@ -3,6 +3,8 @@ title: providers
 weight: 8
 ---
 
+<!--more-->
+
 ## JsonRpcProvider
 
 `JsonRpcProvider` provides interface to the Starcoin node.
