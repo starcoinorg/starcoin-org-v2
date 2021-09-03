@@ -143,7 +143,7 @@
       background: #FFFFFF;
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid #021429; }
+      border: 1px solid #1B1C28; }
       .container .term_bzk .info_detail .code_list ul li {
         font-size: 18px;
         font-weight: 600;
@@ -168,7 +168,7 @@
           color: #ffffff; }
       .container .term_bzk .info_detail .code_list .head {
         height: 80px;
-        background: #021429;
+        background: #1B1C28;
         text-align: center;
         position: relative;
         line-height: 80px;
@@ -211,7 +211,7 @@
       width: 1134px;
       margin: 0 auto;
       height: 4px;
-      background: #021429;
+      background: #1B1C28;
       position: relative;
       margin-bottom: 38px;
       margin-top: 50px; }
@@ -256,7 +256,7 @@
             color: #272B3E;
             line-height: 25px; }
         .container .term_bzk .info_detail .info_tab .tab_tap .active {
-          background: #021429; }
+          background: #1B1C28; }
           .container .term_bzk .info_detail .info_tab .tab_tap .active span {
             color: #FFFFFF; }
       .container .term_bzk .info_detail .info_tab .tab_ul {
@@ -278,7 +278,7 @@
           width: 12px;
           height: 12px;
           border-radius: 50%;
-          background: #021429;
+          background: #1B1C28;
           border: 2px solid #FFFFFF; }
   .container .term_bzk .term_icon {
     width: 369px;
@@ -301,7 +301,7 @@
   .container .term_bzk .code_info {
     height: 60px;
     line-height: 60px;
-    background: #021429;
+    background: #1B1C28;
     border-radius: 4px;
     color: #ffffff;
     padding-left: 50px; }
@@ -474,7 +474,7 @@
         width: auto; }
         .container .term_bzk .info_detail .code_list .head {
           height: 40px;
-          background: #021429;
+          background: #1B1C28;
           text-align: center;
           position: relative;
           line-height: 40px;

@@ -1,17 +1,17 @@
 <div class="hidden-xs">
     <div class="header_top"></div>
     <div class="top scrollTop-nav">
-        <div class="container">
+        <div class="top-container">
             <a href="/{{ .Site.Language.Lang }}">
-                <div class="logo">
-                    <img src="/img/logo.png" />
-                </div>
+                <img class="logo" src="/img/logo.png" />
             </a>
-            <div class="nav navClick">
-                {{ partial "docs/nav-menu" . }}
-            </div>
-            <div class="language p-language">
-                <span language="en">English</span>｜<span language="zh">中文</span>
+            <div class="top-right">
+				<div class="nav navClick">
+					{{ partial "docs/nav-menu" . }}
+				</div>
+				<!-- <div class="language p-language">
+					<span language="en">English</span>｜<span language="zh">中文</span>
+				</div> -->
             </div>
         </div>
     </div>
