@@ -3,6 +3,10 @@ title: Function Test使用指南
 weight: 20
 ---
 
+Functional Test使用指南
+
+<!--more-->
+
 ## Funtional Test
 
 Functional Test是一个Move的测试工具。

@@ -3,6 +3,10 @@ title: Dapp开发指南
 weight: 1
 ---
 
+Dapp开发指南
+
+<!--more-->
+
 Starcoin 是一个去中心化分层智能合约网络，它旨在提供一种安全的数字资产及去中心化金融运行平台，让区块链能够更低门槛地应用到更多领域。Starcoin 使用 Move 语言作为智能合约语言。Move 语言的设计理念是让针对数字资产的编程更加安全和简单，是目前唯一真正做到不影响货币功能的智能合约语言。
 
 本文档通过介绍Dapp的整体开发流程，讲解开发过程中涉及的相关知识以及工具链，帮助您基于Starcoin快速构建属于自己的Dapp。
@@ -62,7 +66,6 @@ StarMask是Starcoin官方发布的浏览器插件钱包，不仅是用户管理�
 
 * 使用指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md
 
-* StarMask API：//TODO
 
 
 
@@ -82,12 +85,12 @@ StarMask是Starcoin官方发布的浏览器插件钱包，不仅是用户管理�
 
 3. Python SDK
 
-	* 开发者文档：//TODO
+	* 开发者文档：https://starcoin-sdk-python.readthedocs.io
 	* 源代码：https://github.com/starcoinorg/starcoin-sdk-python
 
 4. Go SDK
 
-	* 开发者文档：//TODO
+	* 开发者文档：https://github.com/starcoinorg/starcoin-go/blob/main/README.md
 	* 源代码：https://github.com/starcoinorg/starcoin-go
 
 5. Dart SDK
