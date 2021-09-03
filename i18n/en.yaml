@@ -51,6 +51,8 @@
   translation: Mining STC
 - id: navGuideNodeCommand
   translation: Node Command
+- id: navDeveloperHowToDapp
+  translation: How To Dapp
 - id: navDeveloperGetStarted
   translation: Get Started
 - id: navDeveloperStartInstall
@@ -93,6 +95,10 @@
   translation: Stratum Pool Guide
 - id: navDeveloperStratumPoolStratumMiningProtocol
   translation: Stratum mining protocol
+- id: navDeveloperProtocol
+  translation: Protocols
+- id: navDeveloperNFTProtocol
+  translation: NFT Protocol
 - id: navCommunityWestar
   translation: Westar Labs
 - id: navCommunityTwitter
@@ -105,6 +111,8 @@
   translation: Starcoin Explorer
 - id: navCommunityPoll
   translation: Starcoin Polls
+- id: navCommunityAirdrop
+  translation: Airdrop Dapp
 - id: navQAGitHub
   translation: GitHub Discussion
 - id: navQAFAQ
