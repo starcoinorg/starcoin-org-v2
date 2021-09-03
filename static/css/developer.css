@@ -98,6 +98,7 @@
   text-decoration: none;
   display: block;
   border-left: 2px solid transparent;
+  overflow: hidden;
 }
 
 .container .developer .developer_left .developer_column_list li ul a{
@@ -432,6 +433,7 @@
   }
 
   .container .developer .developer_right {
+    min-width: 300px;
     margin: 63px 18px 100px 18px;
     border-radius: 10px;
   }
@@ -448,6 +450,7 @@
     line-height: 23px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    word-wrap: break-word;
   }
 
   .container .developer .developer_right .content .textIndex {
