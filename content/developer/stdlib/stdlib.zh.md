@@ -3,6 +3,10 @@ title: Stdlib使用指南
 weight: 21
 ---
 
+Stdlib使用指南
+
+<!--more-->
+
 # Stdlib指南
 
 Stdlib是Starcoin非常重要的一个特性，包含了一些基本模块、常用模块、区块和共识相关的模块。

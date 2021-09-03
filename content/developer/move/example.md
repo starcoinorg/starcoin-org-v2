@@ -1,13 +1,18 @@
 +++
-title = "Move example"
+title = "Move examples"
 date = "2020-04-09"
 image = 'read.jpg'
 summary = " "
 archives="2020"
 author = "Tim"
+
 +++
 
 <br />
+
+Move examples
+
+<!--more-->
 
 
 ## HelloWorld
@@ -36,7 +41,7 @@ words: vector,
 
 
 
-~~~move
+​~~~move
 
 struct EventHolder has key {
 
@@ -52,7 +57,7 @@ any_word_events: Event::EventHandle,
 
 
 
-~~~move
+​~~~move
 
 let hello_world = x"68656c6c6f20776f726c64"; //hello world
 
@@ -70,7 +75,7 @@ The complete code
 
 
 
-~~~move
+​~~~move
 
 module Hello {
 
@@ -206,7 +211,7 @@ let account_address = Account::create_account(auth_key);
 
 
 
-~~~move
+​~~~move
 
 let auth_key = Account::authentication_key(account_address);
 
@@ -386,7 +391,7 @@ TransferScripts::peer_to_peer_with_metadata(account, payee, payee_auth_key, amou
 
 
 
-~~~move
+​~~~move
 
 TransferScripts::batch_peer_to_peer(account, payeees, payee_auth_keys, amounts);
 
@@ -396,7 +401,7 @@ TransferScripts::batch_peer_to_peer(account, payeees, payee_auth_keys, amounts);
 
 4. Transfer the same amount in batches
 
-~~~move
+​~~~move
 
 TransferScripts::peer_to_peer_batch(account, payeees, payee_auth_keys, amount);
 
@@ -598,7 +603,7 @@ Account::deposit_to_self(_account, token)
 
 
 
-~~~move
+​~~~move
 
 module MyToken {
 
@@ -648,7 +653,7 @@ Account::deposit_to_self(_account, token)
 
 
 
-~~~move
+​~~~move
 
 script {
 
@@ -695,3 +700,5 @@ Config::restore_modify_config_capability(cap);
 
 
 ! [DAO](https://tva1.sinaimg.cn/large/008i3skNgy1gqxxyln2yxj30p10g5myz.jpg)
+
+~~~
