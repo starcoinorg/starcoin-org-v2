@@ -166,15 +166,19 @@ curl --location --request POST 'https://main-seed.starcoin.org' \
 
 ### 如何执行一个需要签名的合约函数?
 
-1. 调用 `utils.tx.encodeScriptFunctionByResolve`， 生成 `ScriptFunction`
+1. 先在Postman里面调用 contract.dry_run 或者 contract.dry_run_raw，确认 type_args 和 args 的参数都正确，而且执行成功。
 
-2. 生成 `ScriptFunction` 的 二进制的Hex: payloadInHex
+2. 在js里面集成，调用 `contract.call_v2` 时，需要注意：
 
-3. 构造一个只有 `data` 属性的 txParams 对象。(data=payloadInHex)
+    i. 调用 `utils.tx.encodeScriptFunctionByResolve`， 生成 `ScriptFunction`
 
-4. 调用 `starcoinProvider.getSigner().sendUncheckedTransaction`， 唤起 Starmask 钱包, 自动计算gas费， 当前选中帐号点击 确认 后，会生成rawUserTransaction的hex，然后再提交到链上执行，返回transacition hash。
+    ii. 生成 `ScriptFunction` 的 二进制的Hex: payloadInHex
 
-下面是领取空投的合约函数`0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributorScript::claim_script`的例子:
+    iii. 构造一个只有 `data` 属性的 txParams 对象。(data=payloadInHex)
+
+    iv. 调用 `starcoinProvider.getSigner().sendUncheckedTransaction`， 唤起 Starmask 钱包, 自动计算gas费， 当前选中帐号点击 确认 后，会生成rawUserTransaction的hex，然后再提交到链上执行，返回transacition hash。
+
+3. 下面是领取空投的合约函数`0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributorScript::claim_script`的例子:
 
 ```js
 const functionId = '0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributorScript::claim_script'
@@ -183,9 +187,9 @@ const record = {
     airDropId: 2,
     ownerAddress: '0x7842a425898c512b7ab3db052b643227',
     root: '0x00dd4138ba37ab9004bfd6292978410be672267ec89f6b2c741219474ee0b382',
-    address: '0x3f19d5422824f47e6c021978cee98f35',
-    idx: 47,
-    amount: 63287,
+    address: '0x5A2cd40212ad13A1efFAB6B07cF31f06',
+    idx: 84,
+    amount: 115068,
     proof: [
         "0x9d01ca5f8d0596c6a1a4a424a97b95d505d473db7ebbc2e3330629abdd9f693a","0xc9415cab404581c2736103625bab9bdb506f52ce7c769c928cf8bf48c9ae17e0","0xc8a9f155c42cae3694964f2e292bfc22cfbdcd6a81fc47b1ee0e80eb6bdeca09","0x9ba5298c895d94bee1899191b63b8a715bf65fd4cd2766f907d971d449549b7c","0x2498c2a8c11eb3394c6c043ee54d292a40a8d46c61acf964ccc68da795164e34","0x7f23e148cfeffc1d4a916b3a6e139d8d6643a48c7d0299a6a9a77b87f37d02b5","0xc057fe32ef239b6152c7bc42e456459caa9e4d2d6898f4b49a292f6e6f5541fc","0xe90316d09087827d50ed99baaa28db266b176c9b70ed1f57d44ffa72a90208bc"
     ]
@@ -212,20 +216,23 @@ console.log({ transactionHash })
 
 ### 如何执行一个不需要签名的合约函数?
 
+1. 先在Postman里面调用 contract.call_v2，确认 type_args 和 args 的参数都正确，而且执行成功。
+    ![](/images/sdk/call_v2.jpg)
 
-1. 调用链的API: contract.call_v2
+2. 在js里面集成，调用 `contract.call_v2` 时，需要注意：
 
-2. args数组的每一个参数都需要是字符串
+        i. args数组的每一个参数都需要是字符串
 
-3. 如果args数组里面某一个参数的type_tag是`{ "Vector": "U8" }`, 说明这个参数需要的是一个字符串的二进制的hex.
+        ii. 如果args数组里面某一个参数的type_tag是`{ "Vector": "U8" }`, 说明这个参数需要的是一个字符串的二进制的hex.
 
-        - 如何将一个js的字符串，转换成二进制的hex? 可以参考 encoding 里面的 `Encode & Decode String` 
-    
-        - 不要前面的0x
-    
-        - 前面需要加转义字符x.
-
-下面是检查是否已经领取空投的合约函数`0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributor2::is_claimd`的例子:
+            - 如何将一个js的字符串，转换成二进制的hex? 可以参考 encoding 里面的 `Encode & Decode String` 
+        
+            - 不要前面的0x
+        
+            - 前面需要加转义字符x.
+        
+        iii. 如果args数组里面某一个参数的type_tag是U64或者U128等，那么需要在数字后面加上小写的u64或者u128等。
+3. 下面是检查是否已经领取空投的合约函数`0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributor2::is_claimd`的例子:
 
 ```js
 const record = {
@@ -233,20 +240,15 @@ const record = {
     ownerAddress: '0x7842a425898c512b7ab3db052b643227',
     //注意: record.root已经是字符串的二进制的hex，不需要再转换
     root: '0x00dd4138ba37ab9004bfd6292978410be672267ec89f6b2c741219474ee0b382',
-    address: '0x3f19d5422824f47e6c021978cee98f35',
     idx: 47,
-    amount: 63287,
-    proof: [
-        "0x9d01ca5f8d0596c6a1a4a424a97b95d505d473db7ebbc2e3330629abdd9f693a","0xc9415cab404581c2736103625bab9bdb506f52ce7c769c928cf8bf48c9ae17e0","0xc8a9f155c42cae3694964f2e292bfc22cfbdcd6a81fc47b1ee0e80eb6bdeca09","0x9ba5298c895d94bee1899191b63b8a715bf65fd4cd2766f907d971d449549b7c","0x2498c2a8c11eb3394c6c043ee54d292a40a8d46c61acf964ccc68da795164e34","0x7f23e148cfeffc1d4a916b3a6e139d8d6643a48c7d0299a6a9a77b87f37d02b5","0xc057fe32ef239b6152c7bc42e456459caa9e4d2d6898f4b49a292f6e6f5541fc","0xe90316d09087827d50ed99baaa28db266b176c9b70ed1f57d44ffa72a90208bc"
-    ]
 }
 const functionId = '0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributor2::is_claimd'
 const tyArgs = ['0x00000000000000000000000000000001::STC::STC']
 const args = [
-    data.OwnerAddress, // "type_tag": "Address",
-    `${ data.AirdropId }`, // "type_tag": "U64",
-    `x\"${ data.Root.slice(2) }\"`, //"type_tag": { "Vector": "U8" }
-    `${ data.Idx }`, // "type_tag": "U64",
+    record.ownerAddress, // "type_tag": "Address",
+    `${ record.airdropId }u64`, // "type_tag": "U64",
+    `x\"${ record.root.slice(2) }\"`, //"type_tag": { "Vector": "U8" }
+    `${ record.idx }u64`, // "type_tag": "U64",
 ]
 const isClaimed = await new Promise((resolve, reject) => {
     return starcoinProvider.send(
