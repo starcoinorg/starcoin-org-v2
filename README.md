@@ -22,7 +22,9 @@ git submodule update --init
 ```
 hugo server --port 8004
 ```
-open http://localhost:8004/ in browser
+open `http://localhost:8004/` in browser
+
+Note: if the site does not update with changes, try to open the Chrome/Safari console, and press Ctrl+R to forcibly reload the static files.
 
 
 ### Test publishing in localhost
