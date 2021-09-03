@@ -29,7 +29,7 @@
 
 {{ define "book-page-link" }}{{/* (dict "Page" .Page "CurrentPage" .CurrentPage) */}}
 {{ if .Page.Content }}
-<a href="{{ .Page.RelPermalink }}" class="
+<a href="{{ .Page.RelPermalink }}" target="_blank" class="
         {{- if and .Page.Params.bookCollapseSection .Page.IsSection }}arrow {{ end }}
         {{- if eq .CurrentPage .Page }}active{{ end }}">
   {{- partial "docs/title" .Page -}}

@@ -11,9 +11,9 @@
   justify-content: center;
   background-image: url("../img/developer_bg.png");
   background-repeat: no-repeat;
-  background-size: 120% 280px;
+  background-size: 120% 130px;
   background-position: top center;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 
 .container .developer .developer_left {

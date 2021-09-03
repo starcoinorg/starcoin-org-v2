@@ -2,7 +2,7 @@
 {{ $paginator := .Paginate (where .Site.RegularPages "Section" "news").ByPublishDate.Reverse }}
 
 <div class="news">
-    <div class="news_list_title">{{ i18n "navNews" }}</div>
+    <!-- <div class="news_list_title">{{ i18n "navNews" }}</div> -->
     <div class="news_list">
         <ul>
             {{ range $paginator.Pages }}
