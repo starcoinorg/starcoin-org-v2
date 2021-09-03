@@ -145,11 +145,11 @@
 - id: footerNews
   translation: 新闻
 - id: footerTwitter
-  translation: '推特: '
+  translation: '推特: StarcoinSTC'
 - id: footerWestarLab
   translation: Westar 实验室
 - id: footerWechatGroup
-  translation: '微信群请加: '
+  translation: '微信群请加: starcoinorg'
 - id: footerDeveloperDocs
   translation: 开发者文档
 - id: footerSDK
@@ -157,8 +157,15 @@
 - id: footerMoveChineseCommunity
   translation: Move 中文社区
 - id: footerDiscord
-  translation: 'Discord 群: '
+  translation: 'Discord 群: Discord Spaceship'
 - id: footerGitHubDiscussion
   translation: 'GitHub 讨论区'
 - id: footerAllRightsReserved
   translation: 保留一切权利
+
+- id: next
+  translation: 下一页
+- id: previous
+  translation: 上一页
+- id: back
+  translation: 返回

@@ -16,7 +16,7 @@
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/swiper-bundle.min.js"> </script>
+<script src="/js/swiper.min.js"> </script>
 <script>
     (function (doc, win) {
         const baseSize = 196
@@ -37,16 +37,20 @@
         $(window).resize(function () {
             isMobile()
         });
+        $(function () {
+            $('.footer [data-toggle="tooltip"]').tooltip({
+            })
+        })
         function isMobile() {
-            if (window.innerWidth <= 768) {
-                $(".m-d-title").css("width", document.body.clientWidth - 30 + 'px');
-                $(".m-d-content").css("width", document.body.clientWidth - 30 + 'px');
-                $(".developer").css("marginLeft", "-221px");
-            } else {
-                $(".m-d-title").css("width", "auto");
-                $(".m-d-content").css("width", "auto");
-                $(".developer").css("marginLeft", "auto");
-            }
+            // if (window.innerWidth <= 768) {
+            //     $(".m-d-title").css("width", document.body.clientWidth - 30 + 'px');
+            //     $(".m-d-content").css("width", document.body.clientWidth - 30 + 'px');
+            //     $(".developer").css("marginLeft", "-221px");
+            // } else {
+            //     $(".m-d-title").css("width", "auto");
+            //     $(".m-d-content").css("width", "auto");
+            //     $(".developer").css("marginLeft", "auto");
+            // }
         }
         $("#developer_open_move").click(function () {
             if ($(this).parent().attr("class").indexOf("active") > -1) {
@@ -57,23 +61,23 @@
                 $(this).parent().addClass("active")
             }
         })
-        $(".m_left_nav_click").click(function () {
-            if ($(this).attr("state") == 0) {
-                $(this).attr("state", 1);
-                $(".m_mask").show();
-                $(".m-column-drawer").animate({ marginLeft: "100px" });
-            } else {
-                $(this).attr("state", 0);
-                $(".m_mask").hide();
-                $(".m-column-drawer").animate({ marginLeft: "-212px" });
-            }
+        // $(".m_left_nav_click").click(function () {
+        //     if ($(this).attr("state") == 0) {
+        //         $(this).attr("state", 1);
+        //         $(".m_mask").show();
+        //         $(".m-column-drawer").animate({ marginLeft: "100px" });
+        //     } else {
+        //         $(this).attr("state", 0);
+        //         $(".m_mask").hide();
+        //         $(".m-column-drawer").animate({ marginLeft: "-212px" });
+        //     }
 
-        })
-        $(".m_mask").click(function () {
-            $(this).hide()
-            $(".m_left_nav_click").attr("state", 0);
-            $(".m-column-drawer").animate({ marginLeft: "-212px" });
-        })
+        // })
+        // $(".m_mask").click(function () {
+        //     $(this).hide()
+        //     $(".m_left_nav_click").attr("state", 0);
+        //     $(".m-column-drawer").animate({ marginLeft: "-212px" });
+        // })
     })
 </script>
 <title>{{ partial "docs/title" . }} | {{ .Site.Title -}}</title>

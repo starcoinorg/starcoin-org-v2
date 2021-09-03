@@ -13,8 +13,8 @@ Let's say you've run up a starcoin dev node locally.
 
 ## A few steps to submit a transaction
 
-- Start the CLI console and connect to the starcoin node，detail document at [Use starcoin console](./console).
-- Create two accounts: Alice,Bob，detail step see [Account manager](./account_manager).
+- Start the CLI console and connect to the starcoin node，detail document at [Use starcoin console](../console).
+- Create two accounts: Alice,Bob，detail step see [Account manager](../account_manager).
 - Mint money into Alice's account.
 - Submit transfer transaction: Alice send money to Bob.
 

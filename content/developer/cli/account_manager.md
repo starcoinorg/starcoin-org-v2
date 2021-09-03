@@ -7,7 +7,7 @@ The Starcoin node has a built-in decentralized wallet that allows users to manag
 
 <!--more-->
 
-When the node starts, a default account is automatically created with an empty password. The default can be changed via account commands. The following commands require a connection to the console, see [Using the starcoin console](./console). 1.
+When the node starts, a default account is automatically created with an empty password. The default can be changed via account commands. The following commands require a connection to the console, see [Using the starcoin console](../console). 1.
 
 
 1. Create account 

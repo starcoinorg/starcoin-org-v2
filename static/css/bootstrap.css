@@ -1081,7 +1081,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 input,
 button,
@@ -1438,7 +1438,7 @@ dl {
 }
 dt,
 dd {
-  line-height: 1.42857143;
+  /* line-height: 1.42857143; */
 }
 dt {
   font-weight: 700;
@@ -1531,8 +1531,8 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #FF0000;
+  /* background-color: #f9f2f4; */
   border-radius: 4px;
 }
 kbd {
@@ -1577,8 +1577,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -1599,7 +1599,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1300px;
+    width: 1200px;
   }
 }
 .container-fluid {
@@ -1670,8 +1670,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .col-xs-1,
 .col-xs-2,

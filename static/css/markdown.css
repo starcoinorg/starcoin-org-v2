@@ -1,6 +1,6 @@
 
 .markdown {
-    line-height: 1.6
+    /* line-height: 1.6 */
 }
 
 .markdown>:first-child {
@@ -10,6 +10,7 @@
 .markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6 {
     font-weight: 400;
     line-height: 1;
+	color: #FFFFFF;
     /* margin-top: 1.5em; */
     /* margin-bottom: 1em */
 }
@@ -33,7 +34,9 @@
 }
 
 .markdown h2 {
-    font-size: 2em
+    font-size: 1.7em;
+	margin-top: 2.5em;
+	margin-bottom: 1em;
 }
 
 .markdown h3 {
@@ -58,33 +61,39 @@
 
 .markdown a {
     text-decoration: none;
-    color: #337ab7;
+    color: #3273DC;
 }
 
-.markdown a:hover {
+/* .markdown a:hover {
     text-decoration: underline
-}
+} */
 
 .markdown a:visited {
-    color: #8440f1
+    /* color: #8440f1 */
 }
 
 .markdown img {
-    max-width: 100%
+    max-width: 100%;
+	display: block;
+	margin: 16px auto;
 }
 
 .markdown code {
     padding: 0 .25em;
-    background: #e9ecef;
+    background: transparent;
     border-radius: .25em;
-    font-size: .875em
+    font-size: 1em;
+	line-height: 2em;
 }
 
 .markdown pre {
+	margin-top: 1em;
     padding: 1em;
-    background: #f8f9fa;
-    border-radius: .25em;
-    overflow-x: auto
+    background: #393A4C !important;
+    border-radius: 4px;
+	border: none;
+    overflow-x: auto;
+	color: #FFFFFF;
 }
 
 .markdown pre code {
@@ -130,19 +139,26 @@
     background: #e9ecef
 }
 
-.markdown ul,.markdown ol {
-    padding-inline-start:2em
+.markdown ol {
+    padding-inline-start:1em;
+	margin-top: 22px;
+}
+.markdown ul{
+	margin-top: 15px;
+	margin-bottom: 30px !important;
 }
 .markdown ol li {
   list-style-type:decimal;
 }
 .markdown dl dt {
-    font-weight: bolder;
-    margin-top: 1em
+	font-size: 18px;
+	line-height: 50px;
+    margin-top: 2em
 }
 
 .markdown dl dd {
-    margin-inline-start:1em;margin-bottom: 1em
+    /* margin-inline-start:1em; */
+    margin-bottom: 1em
 }
 
 .markdown .highlight table tr td:nth-child(1) pre {
