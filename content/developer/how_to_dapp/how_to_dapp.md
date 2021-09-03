@@ -75,7 +75,7 @@ StarMask是Starcoin官方发布的浏览器插件钱包，不仅是用户管理�
 
 1. JS SDK
 
-	* 开发者文档：//TODO
+	* 开发者文档：https://starcoin.org/zh/developer/sdk/javascript/
 	* 源代码：https://github.com/starcoinorg/starcoin.js
 
 2. Java SDK
