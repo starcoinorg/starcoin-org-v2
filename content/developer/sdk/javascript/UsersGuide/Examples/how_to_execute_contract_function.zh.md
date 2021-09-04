@@ -1,5 +1,5 @@
 ---
-title: 如何执行一个合约函数
+title: Web Dapp执行一个合约函数
 weight: 1
 ---
 
@@ -7,21 +7,21 @@ weight: 1
 
 合约的函数分成两种：
 
-一种是需要签名的，需要先在dapp里面生成Transaction，然后唤起Starmask，当前选中帐号确认签名，生成rawUserTransaction的hex，然后再提交到链上执行。
+一种是需要签名的，需要先在dapp里面生成Transaction，然后唤起Starmask钱包，由当前选中帐号点击确认，生成签名后的rawUserTransaction的hex，然后再提交到链上执行，同时扣除gas费。
 
 另一种是不需要签名的，可以直接调用链的API(contract.call_v2)，得到返回结果。
 
-### 如何判断一个合约函数是否需要签名？
+## 如何判断一个合约函数是否需要签名？
 
 args参数的数组，第一个参数的类型， 如果是 Singer，就需要签名，否则就不需要。
 
 有两种确认方法:
 
-第一种是直接去查看源码，
+第一种是直接去查看源码，不在本文的介绍范围内。
 
-第二种是调用链的API: contract.resolve_function，查看函数定义。
+第二种是调用链的API: contract.resolve_function，查看函数定义的解析。
 
-以 [Starcoin空投](https://github.com/starcoinorg/starcoin-airdrop) 项目为例:
+以 [Starcoin空投](https://github.com/starcoinorg/starcoin-airdrop) 项目为例，里面用到了两个合约函数:
 
 1. 领取空投的合约函数 `0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributorScript::claim_script`，就需要签名。
 
@@ -102,7 +102,7 @@ curl --location --request POST 'https://main-seed.starcoin.org' \
 ```
 
 
-2. 而检查是否已经领取空投的合约函数`0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributor2::is_claimd`，就不需要签名。
+2. 而检查是否已经领取空投的合约函数 `0xb987F1aB0D7879b2aB421b98f96eFb44::MerkleDistributor2::is_claimd`，就不需要签名。
 
 
 ```bash
@@ -162,7 +162,7 @@ curl --location --request POST 'https://main-seed.starcoin.org' \
 }
 ```
 
-### 如何执行一个不需要签名的合约函数?
+## 如何执行一个不需要签名的合约函数?
 
 1. 通过Postman或者curl命令调用 contract.call_v2，确认 type_args 和 args 的参数都正确，而且执行成功。
     ![](/images/sdk/call_v2.png)
@@ -221,7 +221,7 @@ const isClaimed = await new Promise((resolve, reject) => {
 const isClaimed =  (Array.isArray(result) && result.length) ? result[0] : undefined
 ```
 
-### 如何通过dry run来模拟执行一个需要签名的合约函数?
+## 如何通过dry run来模拟执行一个需要签名的合约函数?
 
 在dapp里面执行一个需要签名的合约函数的时候，必须先通过dry run来模拟执行该合约函数，确保type_args和 args两个数组的参数的类型和value都正确。
 
@@ -408,7 +408,7 @@ curl --location --request POST 'https://main-seed.starcoin.org' \
 }'
 ```
 
-### 如何执行一个需要签名的合约函数?
+## 如何执行一个需要签名的合约函数?
 
 1. 通过Postman或者curl命令调用 contract.dry_run 或者 contract.dry_run_raw，确认 type_args 和 args 的参数都正确，而且执行成功。
 
