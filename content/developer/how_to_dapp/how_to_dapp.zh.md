@@ -259,3 +259,6 @@ Starcoin在 Stdlib 中定义了多种常用协议，如下图所示（更多协�
 
    投票Dapp也是常用的开发者工具，是Starcoin链上治理的入口。开发者可以通过这个Dapp发起自己的提案，社区会进行通过这个Dapp进行公开、公平、公正地投票，只有投票通过才能在链上执行。
 
+5. Starcoin logos && icons
+
+   下载地址: https://starcoin.org/downloads/logo.zip⁣
