@@ -1,7 +1,8 @@
 ---
-title: Web Dapp执行一个合约函数
+title: Web Dapp执行Move合约函数
 weight: 1
 ---
+如何在 Web Dapp 里面执行一个 Move 合约函数?
 
 <!--more-->
 
