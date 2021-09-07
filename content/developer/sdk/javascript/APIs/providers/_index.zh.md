@@ -287,7 +287,7 @@ Result:
 ---
 
 
-### getResources(` address: AccountAddress | Promise<AccountAddress>, blockTag?: BlockTag | Promise<BlockTag>)`): `Promise<{ [k: string]: MoveStruct } | undefined>` {
+### getResources(` address: AccountAddress | Promise<AccountAddress>, blockTag?: BlockTag | Promise<BlockTag>)`): `Promise<{ [k: string]: MoveStruct } | undefined>`
 
 Return an account's all resources.
 
