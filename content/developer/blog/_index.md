@@ -4,9 +4,6 @@ weight: 10
 bookCollapseSection: true
 ---
 
-Starcoin & Move Technical Blog
-
-<!--more-->
-
-1. MyLegacy
+1. Starcoin & Move Technical Blog
+   * MyLegacy
 
