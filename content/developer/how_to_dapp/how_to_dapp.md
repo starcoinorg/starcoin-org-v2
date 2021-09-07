@@ -3,10 +3,6 @@ title: Dapp开发指南
 weight: 1
 ---
 
-Dapp开发指南
-
-<!--more-->
-
 Starcoin 是一个去中心化分层智能合约网络，它旨在提供一种安全的数字资产及去中心化金融运行平台，让区块链能够更低门槛地应用到更多领域。Starcoin 使用 Move 语言作为智能合约语言。Move 语言的设计理念是让针对数字资产的编程更加安全和简单，是目前唯一真正做到不影响货币功能的智能合约语言。
 
 本文档通过介绍Dapp的整体开发流程，讲解开发过程中涉及的相关知识以及工具链，帮助您基于Starcoin快速构建属于自己的Dapp。
@@ -186,7 +182,7 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 
 2. IDE：
 
-* Starcoin IDE：https://github.com/starcoinorg/starcoin-ide
+* Starcoin IDE：https://marketplace.visualstudio.com/items?itemName=starcoinorg.starcoin-ide
 * Move-cli：这是一个非常轻量级的测试、发布Move合约的工具，[下载链接和操作指南](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
 
 3. 测试
