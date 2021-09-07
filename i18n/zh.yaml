@@ -125,6 +125,8 @@
   translation: Starcoin 常见问题
 - id: navQAAMA
   translation: AMA
+- id: navBlog
+  translation: 博客
 - id: navAbout
   translation: 关于
 - id: navAboutStarcoin

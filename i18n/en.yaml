@@ -119,6 +119,8 @@
   translation: Starcoin FAQ
 - id: navQAAMA
   translation: AMA
+- id: navBlog
+  translation: Blog
 - id: navAbout
   translation: About
 - id: navAboutStarcoin
