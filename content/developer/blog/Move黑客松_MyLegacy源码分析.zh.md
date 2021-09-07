@@ -2,12 +2,16 @@
 title: 黑客松MyLegacy源码分析
 weight: 11
 ---
+
+#### * 由Starcoin社区原创
+
 ## MyLegacy
 
 MyLegacy是一个构建在Starcoin公链上的Asset-Management项目，实现了资产的安全存储、分批线性解锁等能力。整个业务模型除了财产继承，其实在很多其他常见的场景都很适合，例如分期结算项目资金、支付季度奖或者年终奖等等。尤其是在缺乏信任支撑的分布式场景，通过链上公开透明地逐步分期支付或者结算，是一个非常具有想象力的方向。
 
 这里我们通过对合约源码进行分析，来学习一下如何使用Move安全地实现资产的管理。我们先来看一下MyLegacy项目的整体设计图：
-![BlockHeader](/img/move_hackathon_1/hks_ mylegacy.png)
+
+![MyLegacy](/img/move_hackathon_1/hks_ mylegacy.png)
 
 从上图可以看出，整个合约有 2 个核心的Struct：
 
@@ -121,4 +125,3 @@ public(script) fun redeem(account: signer, payer: address) acquires Legacy
 MyLegacy是Starcoin公链上的一个安全可靠的Asset-Management项目，虽然叫MyLegacy，但是可以想象的场景很广泛，比如分期结算项目资金等等。
 
 合约总共100多行，既实现了复杂业务逻辑，又有了很好的安全性，这里查看[完整代码](https://github.com/WestXu/mylegacy/blob/master/module/MyLegacy.move)。
-
