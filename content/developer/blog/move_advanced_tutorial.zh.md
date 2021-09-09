@@ -14,14 +14,14 @@ Starcoin 选择面向数字资产的智能编程语言Move，以及虚拟机，�
 Move 编程语言最早出现在 Facebook 的 Diem 区块链项目中，作为一种面向数字资产的智能合约编程语言，Move 具有 Resource 作为一等公民、灵活、安全、可验证等特性。这些特性和 Starcoin 的智能合约编程语言设计理念极为契合，因此 Starcoin 选择 Move 做为其智能合约的首选编程语言。  
 Move语言具有其他区块链语言不具备的特点，利用这些特点可以简单、高效、安全的生成合约代码，快速有效的开发全新的区块链应用。  
 
-![区块链](./img/move_course/1/区块链图2.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadlsbymlj60dw08ct9702.jpg" alt="区块链图2" style="zoom:50%;" />
 
 2. NFT
 >NFT的全称是Non-Fungible Tokens，中文常被翻译成`"不可同质化代币/不可替代代币"`，它定义了一种生态中不可分割的、具有唯一性的代币交互和流通的接口规范。对于同质化货币Fungible Token 就是常见的各种Token，例如：BTC、ETH、STC等等，同质化货币的每一个币都可以被拆分，每个币没有他的编号，像是日常生活中的钢镚1元、5毛等，上面没有固定的编号只有通用的面值。而NFT一般来说是不可拆分的，每个NFT都有它的固定编号来标识它，可以理解为纸币，上面有编号，虽然面值相同但是编号不会相同。
 
 例如：下面这个gif就是价值50万美元的Nyan Cat  
 
-![50万美元的《 Nyan Cat（彩虹猫）》](./img/move_course/1/NFT1.gif)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadm872ehg60d807s3z802.gif" alt="NFT1" style="zoom:50%;" />
 
 3. Starcoin 与 NFT
 >Starcoin所使用的智能合约编程语言是专为数字资产而生的Move，数字资产以BTC为起点，中间经历了漫长的发展过程，到现在中间从产生了以太坊，波场等多条公链。由此也诞生出许多优秀的项目，如:CryptoKitties、Decentraland等，其中CryptoKitties在上线过后一度堵死以太坊网络，由此可以窥探到NFT的市场需求。Starcoin 正是为数字资产而来，使用Move的特性可以让NFT等数字资产在Starcoin这条公链中简单、安全、快速的转移或保存。Move语言的三大特性Struct、Ability和 Generic 可以帮助NFT在Starcoin 部署，可以方便的自定义NFT的类型、定义NFT的唯一性和编写通用的NFT的代码。
@@ -109,7 +109,7 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 #### Struct、Function和Module的关系
 >&emsp;&emsp;Struct和Function相辅相成，如果缺少了一个,另一个的存在也毫无意义， Module像是整个的工厂，可以创建修改销毁内部的Struct，Struct 像是原料，Function是操作原料的工具，可以在工厂(Module)中使用工具(function)来对原料(Struct)进行操控，最后生成可用的instance。
 
-![关系图](./img/st_Fun_Mod.png)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadmq8s09j615z0e5gnh02.jpg" alt="st_Fun_Mod" style="zoom:30%;" />
 
 ### 2. Ability  
 >&emsp;&emsp;Move语言实现了与rust类似的语法功能，是可靠的强类型区块链编程语言，在类型的权限控制上可以使用Ability特性的限制符，来控制不同类型的功能可以对资产的权限进行细致的控制：
@@ -118,7 +118,7 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 >- Key  :表示该值是否可以作为键值对全局状态进行访问
 >- Store  :表示该值是否可以被存储到全局状态   
 
-![Ability能力](./img/move_course/1/ability.png)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadnapfjyj611e0brmy502.jpg" alt="ability" style="zoom:30%;" />
 
 >&emsp;&emsp;通过在合约中对自定义类型的能力通过Ability进行限制，可以使程序变得简洁又不失安全性，例如定义一个NFT的类型，如果不赋予它Copy的能力，那么就可以保证NFT不能被随意的复制，提升了安全性。相同的概念还可以用钱的概念理解，在钱包中的钱如果可以随便复制、丢弃，就会让钱变得的毫无价值，所以通过对自定义类型的能力赋予，就可以一定程度上防止不安全的情况出现，当然，安全性最重要的影响因素是程序的制作者。
 #### (1)Copy 的演示
@@ -233,7 +233,7 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 64    }
 ```
 
-![区块链图](./img/move_course/1/区块链图5.jpeg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guado2qvtxj60m609qjsl02.jpg" alt="区块链图5" style="zoom:33%;" />
 
 ### 3. Generic
 >&emsp;&emsp;编写其他合约语言代码时，对于不同的NFT类型可能进行相同的处理时需要大量编写类似的代码，做了许多重复性工作，又例如为创建一个NFT通用的框架时，需要处理不同的类型，又需要大量重复类似的代码。Move语言在设计时通过Generic特性处理大量重复性工作，Generic类似其他编程语言中的泛型编程，可以实现通过单个函数的编写，应用于多种类型的功能，可以大幅度减少代码的重复性，提高编码效率，同时减少代码逻辑清晰更容易检查到错误的出现，避免上线后的损失。
@@ -366,7 +366,7 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 |assert(false,1000)|第一个参数判断为真时可以执行后续，为假则退出并发送错误码|
 |abort(10000)|直接退出，并发送错误码|
 
-![NFT图](./img/move_course/1/NFT图.jpeg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadolwl2hj60u00f0aae02.jpg" alt="NFT图" style="zoom:33%;" />
 
 ## 三、NFT协议的实现
 >通过Move语言的三大特性和常用的合约module进行配合，可以非常轻松地创建NFT协议，我们可以以渐进式的方式进行NFT协议的编写。
@@ -494,8 +494,6 @@ address 0x2 {
     }
 }
 ```
-
-![区块链](./img/move_course/1/区块链图4.jpeg)
 
 ## 四、问答环节
 >在Starcoin的社区中有许多的开发者或关注者也在提出各种各样的问题，对于这些问题也有可靠的回答。
