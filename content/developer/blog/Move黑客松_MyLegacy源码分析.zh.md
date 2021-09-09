@@ -1,6 +1,6 @@
 ---
-title: 黑客松MyLegacy源码分析
-weight: 11
+title: MyLegacy源码分析
+weight: 1
 ---
 
 ## MyLegacy
