@@ -13,4 +13,5 @@ bookCollapseSection: true
 
 ## 手把手教Move
 
-1. Move精髓
+1. 手把手：[Move进阶](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
+
