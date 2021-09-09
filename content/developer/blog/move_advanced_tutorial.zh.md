@@ -3,35 +3,35 @@ title: Move精髓&动手设计NFT协议
 weight: 3
 ---
 
-# Move精髓&动手设计NFT协议
+## Move精髓&动手设计NFT协议
 
 ```
-* 本文由Starcoin社区原创 作者:WGB
+* 本文由Starcoin社区原创 作者:WGB 根据Starcoin & Move直播课《轻松掌握Move精髓》整理
 ```
-1. Starcoin
->智能合约编程语言，虚拟机，以及合约标准库是去中心化金融基础设施的核心部分，如何安全、便捷的在智能合约中表达资产，是区块链智能合约领域一直在研究的方向。   
+
+### Starcoin介绍
+智能合约编程语言，虚拟机，以及合约标准库是去中心化金融基础设施的核心部分，如何安全、便捷的在智能合约中表达资产，是区块链智能合约领域一直在研究的方向。   
 Starcoin 选择面向数字资产的智能编程语言Move，以及虚拟机，并提供了丰富的合约标准库。   
 Move 编程语言最早出现在 Facebook 的 Diem 区块链项目中，作为一种面向数字资产的智能合约编程语言，Move 具有 Resource 作为一等公民、灵活、安全、可验证等特性。这些特性和 Starcoin 的智能合约编程语言设计理念极为契合，因此 Starcoin 选择 Move 做为其智能合约的首选编程语言。  
 Move语言具有其他区块链语言不具备的特点，利用这些特点可以简单、高效、安全的生成合约代码，快速有效的开发全新的区块链应用。  
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1guadlsbymlj60dw08ct9702.jpg" alt="区块链图2" style="zoom:50%;" />
-
-2. NFT
->NFT的全称是Non-Fungible Tokens，中文常被翻译成`"不可同质化代币/不可替代代币"`，它定义了一种生态中不可分割的、具有唯一性的代币交互和流通的接口规范。对于同质化货币Fungible Token 就是常见的各种Token，例如：BTC、ETH、STC等等，同质化货币的每一个币都可以被拆分，每个币没有他的编号，像是日常生活中的钢镚1元、5毛等，上面没有固定的编号只有通用的面值。而NFT一般来说是不可拆分的，每个NFT都有它的固定编号来标识它，可以理解为纸币，上面有编号，虽然面值相同但是编号不会相同。
+### NFT简介
+NFT的全称是Non-Fungible Tokens，中文常被翻译成`"不可同质化代币/不可替代代币"`，它定义了一种生态中不可分割的、具有唯一性的代币交互和流通的接口规范。对于同质化货币Fungible Token 就是常见的各种Token，例如：BTC、ETH、STC等等，同质化货币的每一个币都可以被拆分，每个币没有他的编号，像是日常生活中的钢镚1元、5毛等，上面没有固定的编号只有通用的面值。而NFT一般来说是不可拆分的，每个NFT都有它的固定编号来标识它，可以理解为纸币，上面有编号，虽然面值相同但是编号不会相同。
 
 例如：下面这个gif就是价值50万美元的Nyan Cat  
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1guadm872ehg60d807s3z802.gif" alt="NFT1" style="zoom:50%;" />
 
-3. Starcoin 与 NFT
->Starcoin所使用的智能合约编程语言是专为数字资产而生的Move，数字资产以BTC为起点，中间经历了漫长的发展过程，到现在中间从产生了以太坊，波场等多条公链。由此也诞生出许多优秀的项目，如:CryptoKitties、Decentraland等，其中CryptoKitties在上线过后一度堵死以太坊网络，由此可以窥探到NFT的市场需求。Starcoin 正是为数字资产而来，使用Move的特性可以让NFT等数字资产在Starcoin这条公链中简单、安全、快速的转移或保存。Move语言的三大特性Struct、Ability和 Generic 可以帮助NFT在Starcoin 部署，可以方便的自定义NFT的类型、定义NFT的唯一性和编写通用的NFT的代码。
+### Starcoin 与 NFT
+Starcoin所使用的智能合约编程语言是专为数字资产而生的Move，数字资产以BTC为起点，中间经历了漫长的发展过程，到现在中间从产生了以太坊，波场等多条公链。由此也诞生出许多优秀的项目，如:CryptoKitties、Decentraland等，其中CryptoKitties在上线过后一度堵死以太坊网络，由此可以窥探到NFT的市场需求。Starcoin 正是为数字资产而来，使用Move的特性可以让NFT等数字资产在Starcoin这条公链中简单、安全、快速的转移或保存。Move语言的三大特性Struct、Ability和 Generic 可以帮助NFT在Starcoin 部署，可以方便的自定义NFT的类型、定义NFT的唯一性和编写通用的NFT的代码。
 
 
 ## 一、Move语言的三大精髓
 ### 1. Struct
->&emsp;&emsp;Move语言在语法上简洁明了，在内置支持的类型上比较精简，但不因此失去灵活性，可以通过Struct 的特性，创建自定义的类型，它既可以可以包含复杂的数据，也可以不包含任何数据。Struct类似其他编程语言中的结构体，可以通过key-value的形式定义字段并存储内容。由此我们可以方便的通过Struct创建自己的NFT、Token以及其他的数据类型。  
-#### (1)Struct 演示
->&emsp;&emsp;可以用一段代码来演示Struct，分别创建两个Struct：Empty和MyStruct，Empty为空，MyStruct包含多个基本类型和几个自定义的Struct类型：STC、Empty。
+&emsp;&emsp;Move语言在语法上简洁明了，在内置支持的类型上比较精简，但不因此失去灵活性，可以通过Struct 的特性，创建自定义的类型，它既可以可以包含复杂的数据，也可以不包含任何数据。Struct类似其他编程语言中的结构体，可以通过key-value的形式定义字段并存储内容。由此我们可以方便的通过Struct创建自己的NFT、Token以及其他的数据类型。  
+
+#### (1) Struct 演示
+&emsp;&emsp;可以用一段代码来演示Struct，分别创建两个Struct：Empty和MyStruct，Empty为空，MyStruct包含多个基本类型和几个自定义的Struct类型：STC、Empty。
 
 ```move
 1    address 0x2 {
@@ -51,8 +51,9 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 15        }
 16    }
 ```
-#### (2)Struct与Function的配合
->&emsp;&emsp;在自定义类型的时候，大多使用的情况是做存储的单元，这时就需要使用有效的手段来操作Struct，在Move中可以使用Function对Struct进行操作，比如创建一个NFT的Struct后，通过函数来打造、转移、销毁NFT等等。可以使用代码来展示如何操作Struct的创建与销毁。在这段代码里两个Strcut都有各自的创建和销毁函数，对于Struct中的自定义类型的创建与销毁需要遵循自定义类型的设计进行操作。
+
+#### (2) Struct与Function的配合
+&emsp;&emsp;在自定义类型的时候，大多使用的情况是做存储的单元，这时就需要使用有效的手段来操作Struct，在Move中可以使用Function对Struct进行操作，比如创建一个NFT的Struct后，通过函数来打造、转移、销毁NFT等等。可以使用代码来展示如何操作Struct的创建与销毁。在这段代码里两个Strcut都有各自的创建和销毁函数，对于Struct中的自定义类型的创建与销毁需要遵循自定义类型的设计进行操作。
 ```move
 1    address 0x2 {
 2        module StructExample2 {
@@ -106,25 +107,27 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 50        }
 51    }
 ```
-#### Struct、Function和Module的关系
->&emsp;&emsp;Struct和Function相辅相成，如果缺少了一个,另一个的存在也毫无意义， Module像是整个的工厂，可以创建修改销毁内部的Struct，Struct 像是原料，Function是操作原料的工具，可以在工厂(Module)中使用工具(function)来对原料(Struct)进行操控，最后生成可用的instance。
+
+#### (3) Struct、Function和Module的关系
+&emsp;&emsp;Struct和Function相辅相成，如果缺少了一个,另一个的存在也毫无意义， Module像是整个的工厂，可以创建修改销毁内部的Struct，Struct 像是原料，Function是操作原料的工具，可以在工厂(Module)中使用工具(function)来对原料(Struct)进行操控，最后生成可用的instance。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1guadmq8s09j615z0e5gnh02.jpg" alt="st_Fun_Mod" style="zoom:30%;" />
 
 ### 2. Ability  
->&emsp;&emsp;Move语言实现了与rust类似的语法功能，是可靠的强类型区块链编程语言，在类型的权限控制上可以使用Ability特性的限制符，来控制不同类型的功能可以对资产的权限进行细致的控制：
->- Copy :表示该值是否可以被复制
->- Drop :表示该值是否可以在作用域结束时可以被丢弃
->- Key  :表示该值是否可以作为键值对全局状态进行访问
->- Store  :表示该值是否可以被存储到全局状态   
+&emsp;&emsp;Move语言实现了与rust类似的语法功能，是可靠的强类型区块链编程语言，在类型的权限控制上可以使用Ability特性的限制符，来控制不同类型的功能可以对资产的权限进行细致的控制：
+- Copy :表示该值是否可以被复制
+- Drop :表示该值是否可以在作用域结束时可以被丢弃
+- Key  :表示该值是否可以作为键值对全局状态进行访问
+- Store  :表示该值是否可以被存储到全局状态   
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1guadnapfjyj611e0brmy502.jpg" alt="ability" style="zoom:30%;" />
 
->&emsp;&emsp;通过在合约中对自定义类型的能力通过Ability进行限制，可以使程序变得简洁又不失安全性，例如定义一个NFT的类型，如果不赋予它Copy的能力，那么就可以保证NFT不能被随意的复制，提升了安全性。相同的概念还可以用钱的概念理解，在钱包中的钱如果可以随便复制、丢弃，就会让钱变得的毫无价值，所以通过对自定义类型的能力赋予，就可以一定程度上防止不安全的情况出现，当然，安全性最重要的影响因素是程序的制作者。
-#### (1)Copy 的演示
->虽然有一些例子中的Struct不应该被赋予Copy的能力，但是仍然有一部分的Struct需要Copy的能力，例如需要保存通讯录信息的应用就需要通信人的信息需要复制多份进行分发。通过代码可以直观的看到有Copy能力的Struct和没有Copy能力的Struct在功能上的区别。
->- 定义两个Struct，其中CopyStruct带有Copy能力
->- 在销毁创建的两个Struct时，由于MoveStruct没有Copy的能力所以被销毁了本体，而CopyStruct在销毁了复制体后，本体依然存在
+&emsp;&emsp;通过在合约中对自定义类型的能力通过Ability进行限制，可以使程序变得简洁又不失安全性，例如定义一个NFT的类型，如果不赋予它Copy的能力，那么就可以保证NFT不能被随意的复制，提升了安全性。相同的概念还可以用钱的概念理解，在钱包中的钱如果可以随便复制、丢弃，就会让钱变得的毫无价值，所以通过对自定义类型的能力赋予，就可以一定程度上防止不安全的情况出现，当然，安全性最重要的影响因素是程序的制作者。
+
+#### (1) Copy 的演示
+虽然有一些例子中的Struct不应该被赋予Copy的能力，但是仍然有一部分的Struct需要Copy的能力，例如需要保存通讯录信息的应用就需要通信人的信息需要复制多份进行分发。通过代码可以直观的看到有Copy能力的Struct和没有Copy能力的Struct在功能上的区别。
+- 定义两个Struct，其中CopyStruct带有Copy能力
+- 在销毁创建的两个Struct时，由于MoveStruct没有Copy的能力所以被销毁了本体，而CopyStruct在销毁了复制体后，本体依然存在
 ```move
 1    address 0x2 {
 2        module AbilityExample2 {
@@ -162,10 +165,11 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 34        }
 35    }
 ```
-#### (2)Drop 的演示
->&emsp;&emsp;对于普通的类型销毁时可以通过 `"_"` 的方式进行销毁，但是自定义的类型变量在销毁时需要通过销毁函数来进行销毁，Move中的Ability提供了Drop以便自定义类型在销毁时也可以通过 `"_"` 进行销毁。通过代码可以清晰地了解此项能力。
->
->- 在销毁MyStruct时，内部的Empty已经被赋予了Drop的能力，在第51行的销毁函数中直接使用`"_"` 对Empty类型的变量进行销毁，而无需调用Empty的销毁函数
+
+#### (2) Drop 的演示
+&emsp;&emsp;对于普通的类型销毁时可以通过 `"_"` 的方式进行销毁，但是自定义的类型变量在销毁时需要通过销毁函数来进行销毁，Move中的Ability提供了Drop以便自定义类型在销毁时也可以通过 `"_"` 进行销毁。通过代码可以清晰地了解此项能力。
+
+- 在销毁MyStruct时，内部的Empty已经被赋予了Drop的能力，在第51行的销毁函数中直接使用`"_"` 对Empty类型的变量进行销毁，而无需调用Empty的销毁函数
 ```move
 1    address 0x2 {
 2        module AbilityExample1 {
@@ -233,14 +237,12 @@ Move语言具有其他区块链语言不具备的特点，利用这些特点可�
 64    }
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1guado2qvtxj60m609qjsl02.jpg" alt="区块链图5" style="zoom:33%;" />
-
 ### 3. Generic
->&emsp;&emsp;编写其他合约语言代码时，对于不同的NFT类型可能进行相同的处理时需要大量编写类似的代码，做了许多重复性工作，又例如为创建一个NFT通用的框架时，需要处理不同的类型，又需要大量重复类似的代码。Move语言在设计时通过Generic特性处理大量重复性工作，Generic类似其他编程语言中的泛型编程，可以实现通过单个函数的编写，应用于多种类型的功能，可以大幅度减少代码的重复性，提高编码效率，同时减少代码逻辑清晰更容易检查到错误的出现，避免上线后的损失。
+&emsp;&emsp;编写其他合约语言代码时，对于不同的NFT类型可能进行相同的处理时需要大量编写类似的代码，做了许多重复性工作，又例如为创建一个NFT通用的框架时，需要处理不同的类型，又需要大量重复类似的代码。Move语言在设计时通过Generic特性处理大量重复性工作，Generic类似其他编程语言中的泛型编程，可以实现通过单个函数的编写，应用于多种类型的功能，可以大幅度减少代码的重复性，提高编码效率，同时减少代码逻辑清晰更容易检查到错误的出现，避免上线后的损失。
 
-#### (1)Struct 泛型的演示
+#### (1) Struct 泛型的演示
 
->&emsp;&emsp;通过Struct创建泛型可以让一个Struct同时支持多种的内部类型，当需要使用u8、u64等类型时就不需要重复Struct。  
+&emsp;&emsp;通过Struct创建泛型可以让一个Struct同时支持多种的内部类型，当需要使用u8、u64等类型时就不需要重复Struct。  
 
 比如定义一个Box里面存有u64类型的变量：
 ```move
@@ -261,10 +263,11 @@ struct Box<T>{
     value:T
 }
 ```
-#### (2)Struct泛型+Ability
->如果使用了泛型，也可以同时使用Ability，使在使用泛型的后仍旧不失去安全性。
 
->这段代码展示了使用泛型的Box的定义，可以传入泛型生成实际的Struct ，传入的类型也可以加上Ability进行限制，以便精准的操控各个数据类型的能力，大大提升了灵活性，这也是Move语言适合新时代区块链NFT的重要特性。
+#### (2) Struct泛型 + Ability
+如果使用了泛型，也可以同时使用Ability，使在使用泛型的后仍旧不失去安全性。
+
+这段代码展示了使用泛型的Box的定义，可以传入泛型生成实际的Struct ，传入的类型也可以加上Ability进行限制，以便精准的操控各个数据类型的能力，大大提升了灵活性，这也是Move语言适合新时代区块链NFT的重要特性。
 **代码示例:**
 ```move
 struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
@@ -272,10 +275,11 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
     contents_2: T2,
 }
 ```
-#### (3)Struct泛型+Ability+Function
->通过Struct、泛型和Ability的结合，再通过Function就可以实现通过这两个特性的结合，编写NFT通用框架，可以实现不可随意复制的，自定义任意类型的NFT铸造交易销毁等功能。
 
->在这段代码中通过函数创建Box时需要指定泛型，可以在函数中直接指定，也可以通过传参方式传入泛型，有多个泛型参数时也可以传入单个泛型，剩余在函数中指定。通过Struct泛型+Ability+Function的有机结合，可以让Move语言的合约有着极为强大的灵活性与安全性，借助这些功能可以轻松地移植其他区块链项目，实现快速上线、安全上线。
+#### (3) Struct泛型 + Ability + Function
+通过Struct、泛型和Ability的结合，再通过Function就可以实现通过这两个特性的结合，编写NFT通用框架，可以实现不可随意复制的，自定义任意类型的NFT铸造交易销毁等功能。
+
+在这段代码中通过函数创建Box时需要指定泛型，可以在函数中直接指定，也可以通过传参方式传入泛型，有多个泛型参数时也可以传入单个泛型，剩余在函数中指定。通过Struct泛型+Ability+Function的有机结合，可以让Move语言的合约有着极为强大的灵活性与安全性，借助这些功能可以轻松地移植其他区块链项目，实现快速上线、安全上线。
 **代码示例:**
 ```move
 1    address 0x2{
@@ -301,11 +305,12 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 21        }
 22    }
 ```
-## 使用Move语言特性的 helloWorld 代码示例
->&emsp;&emsp;Move语言的三大精髓通过代码可以更为直观的展现出来，这段代码可以打印hello world字符串，但是在Move没有String类型，所以第15行通过hello world的16进制来输出字符。在这段代码中使用了Move的三个特性分别为：
->- 第5行和第9行通过Strcut定义了自定义类型的AnyWordEvent和EventHolder  
->- 第5行和第9行通过Ability修饰了两个自定义类型  
->- 在第16行使用Generic传入EventHolder类型来调用borrow_global_mut函数
+
+### 4. 使用Move语言特性的 helloWorld 代码示例
+&emsp;&emsp;Move语言的三大精髓通过代码可以更为直观的展现出来，这段代码可以打印hello world字符串，但是在Move没有String类型，所以第15行通过hello world的16进制来输出字符。在这段代码中使用了Move的三个特性分别为：
+- 第5行和第9行通过Strcut定义了自定义类型的AnyWordEvent和EventHolder  
+- 第5行和第9行通过Ability修饰了两个自定义类型  
+- 在第16行使用Generic传入EventHolder类型来调用borrow_global_mut函数
 ```move
 1    address 0x2{
 2        module HelloWorld{
@@ -328,11 +333,10 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 19        }
 20    }
 ```
-![区块链](./img/move_course/1/区块链图3.jpeg)
 
 ## 二、常用合约
 ### 1. Vector
->Vector是在标准库中的一个Module,作用可以理解为C++中的Vector，可以使用Vector来实现NFT陈列室功能，保存所有的NFT在自己的账户下，可以方便的进行查看和管理，也可以使用它存入自定义的其他类型的Struct。
+Vector是在标准库中的一个Module,作用可以理解为C++中的Vector，可以使用Vector来实现NFT陈列室功能，保存所有的NFT在自己的账户下，可以方便的进行查看和管理，也可以使用它存入自定义的其他类型的Struct。
 
 **常用函数：** 
 
@@ -348,7 +352,7 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 |public fun remove\<Element\>(v: &mut vector\<Element\>,i:u64):Element;|删除vector中指定位置的元素|
 
 ### 2. Event
->Event 是标准库中的一个Module，作用是可以通知钱包，使钱包可以通知用户或在前端做其他的一些应用，例如NFT交易时，可以通知购买者已经收到NFT等等。  
+Event 是标准库中的一个Module，作用是可以通知钱包，使钱包可以通知用户或在前端做其他的一些应用，例如NFT交易时，可以通知购买者已经收到NFT等等。  
 
 **常用函数:**
 
@@ -358,7 +362,7 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 |public fun emit_event\<T: drop + store\>(handle_ref: &mut EventHandle\<T\>,msg: T):{} |发送Event|
 
 ### 3. Error
->当区块链执行判断出错时中断合约，在编码过程中如果数值不符合预期可以通过这种方式进行判断，并返回错误代码，错误代码可以展示在区块链的回复消息中，以便前端进行判断并反馈用户。例如：购买NFT时，输入的金额小于NFT的价格时可以通过assert判断大小并退出程序，来保证交易安全可靠。
+当区块链执行判断出错时中断合约，在编码过程中如果数值不符合预期可以通过这种方式进行判断，并返回错误代码，错误代码可以展示在区块链的回复消息中，以便前端进行判断并反馈用户。例如：购买NFT时，输入的金额小于NFT的价格时可以通过assert判断大小并退出程序，来保证交易安全可靠。
 
 **常用:**
 |函数|描述|
@@ -369,9 +373,10 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1guadolwl2hj60u00f0aae02.jpg" alt="NFT图" style="zoom:33%;" />
 
 ## 三、NFT协议的实现
->通过Move语言的三大特性和常用的合约module进行配合，可以非常轻松地创建NFT协议，我们可以以渐进式的方式进行NFT协议的编写。
-### 1.NFT协议 V1
->在这段代码中实现了NFT的初始化和铸造，在第6行和第8行分别创建自己的NFT和NFT列表用来存放NFT，在第12行初始化NFT的列表以便可以接收和保存NFT，在第16行的铸造NFT函数中先判断是否可以接收NFT，如果不能则通过assert的判断直接退出并返回错误代码，保证NFT不会被不可接收的账户接收。这段代码实现了非常简单的NFT协议，可以通过其他的特性和功能进行完善。
+通过Move语言的三大特性和常用的合约module进行配合，可以非常轻松地创建NFT协议，我们可以以渐进式的方式进行NFT协议的编写。
+
+### 1. NFT协议 V1
+在这段代码中实现了NFT的初始化和铸造，在第6行和第8行分别创建自己的NFT和NFT列表用来存放NFT，在第12行初始化NFT的列表以便可以接收和保存NFT，在第16行的铸造NFT函数中先判断是否可以接收NFT，如果不能则通过assert的判断直接退出并返回错误代码，保证NFT不会被不可接收的账户接收。这段代码实现了非常简单的NFT协议，可以通过其他的特性和功能进行完善。
 ```move
 1    address 0x2 {
 2        module NFTExample1 {
@@ -401,7 +406,7 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 ```
 
 ### 2. NFT协议 V2
->通过Strcut可创建自己的NFT，但是如果需要创建其他类型的NFT就需要重新写代码，所以可以使用泛型编程的思想来重新构建NFT代码，在6行和8行定义带有泛型的NFT和NFT列表，在第12行定义初始化vector`<u8>`类型的NFT列表，在16行的函数的返回值和内部调用函数时使用的都是带有泛型的struct和函数，现在这个代码可以称作不完全的NFT框架，可以适合小范围测试的多个NFT。
+通过Strcut可创建自己的NFT，但是如果需要创建其他类型的NFT就需要重新写代码，所以可以使用泛型编程的思想来重新构建NFT代码，在6行和8行定义带有泛型的NFT和NFT列表，在第12行定义初始化vector`<u8>`类型的NFT列表，在16行的函数的返回值和内部调用函数时使用的都是带有泛型的struct和函数，现在这个代码可以称作不完全的NFT框架，可以适合小范围测试的多个NFT。
 ```move
 1    address 0x2 {
 2        module NFTExample2 {
@@ -430,8 +435,8 @@ struct Box<T1:copy + drop ,T2:copy + drop + store> has copy,drop{
 25    }
 ```
 
-### 3.NFT协议V3
->在上段代码中的new函数和initialize函数没有使用泛型参数，如果需要完成NFT的框架，就需要对这两个函数进行修改，在以下代码中把new函数和initialize函数也使用泛型进行修饰，使该NFT协议的灵活性大大提升，可以试用于多种不同的NFT测试。
+### 3. NFT协议V3
+在上段代码中的new函数和initialize函数没有使用泛型参数，如果需要完成NFT的框架，就需要对这两个函数进行修改，在以下代码中把new函数和initialize函数也使用泛型进行修饰，使该NFT协议的灵活性大大提升，可以试用于多种不同的NFT测试。
 ```move
 address 0x2 {
     module NFTExample3 {
@@ -459,8 +464,9 @@ address 0x2 {
     }
 }
 ```
-### 4.NFT协议V4
->通过对NFT协议的完善，可以在协议中增加Event，用来增加通知的功能可以在钱包中通知NFT的铸造通知。这段代码可以说是比较完整的简单NFT协议，可以再增加移动、销毁等功能，并增加图片显示等，配合前端应用可以制作出精美的NFT。
+
+### 4. NFT协议V4
+通过对NFT协议的完善，可以在协议中增加Event，用来增加通知的功能可以在钱包中通知NFT的铸造通知。这段代码可以说是比较完整的简单NFT协议，可以再增加移动、销毁等功能，并增加图片显示等，配合前端应用可以制作出精美的NFT。
 ```move
 address 0x2 {
     module NFTExample4 {
@@ -496,7 +502,7 @@ address 0x2 {
 ```
 
 ## 四、问答环节
->在Starcoin的社区中有许多的开发者或关注者也在提出各种各样的问题，对于这些问题也有可靠的回答。
+在Starcoin的社区中有许多的开发者或关注者也在提出各种各样的问题，对于这些问题也有可靠的回答。
 1. 投票时候币只有WithdrawEvent但是没有DepositEvent，这和老师刚讲的钱只能move有什么区别呢？ 是move到vote合约的意思吗？
 - 答：对，Move的语义就是转移，在投票时所投的Token就是通过Move转移到投票合约中
 2. move上有类似ERC20这样的标准吗
