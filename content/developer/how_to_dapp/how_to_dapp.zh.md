@@ -241,11 +241,9 @@ Starcoin在 Stdlib 中定义了多种常用协议，如下图所示（更多协�
 
 2. 水龙头
 
-   在测试过程中免不了需要测试网的STC，比如支付gas。开发者可以通过Starcoin提供的不同网络（包括Halley、Proxima、Barnad）的水龙头申请STC：
-
-   * Halley：http://halley.faucet.starcoin.org:8000/ 
-   * Proxima：http://proxima.faucet.starcoin.org:8000/ 
-   * Barnard：http://barnard.faucet.starcoin.org:8000/
+   在测试过程中免不了需要测试网的STC，比如支付gas。开发者可以通过Starcoin提供的不同网络（暂时只开放Barnad）的水龙头申请STC：
+   
+   * Barnard：https://faucet.starcoin.org/barnard
 
 3. 浏览器
 
