@@ -365,6 +365,7 @@ Event 是标准库中的一个Module，作用是可以通知钱包，使钱包�
 当区块链执行判断出错时中断合约，在编码过程中如果数值不符合预期可以通过这种方式进行判断，并返回错误代码，错误代码可以展示在区块链的回复消息中，以便前端进行判断并反馈用户。例如：购买NFT时，输入的金额小于NFT的价格时可以通过assert判断大小并退出程序，来保证交易安全可靠。
 
 **常用:**
+
 |函数|描述|
 |----|----|
 |assert(false,1000)|第一个参数判断为真时可以执行后续，为假则退出并发送错误码|
@@ -438,67 +439,67 @@ Event 是标准库中的一个Module，作用是可以通知钱包，使钱包�
 ### 3. NFT协议V3
 在上段代码中的new函数和initialize函数没有使用泛型参数，如果需要完成NFT的框架，就需要对这两个函数进行修改，在以下代码中把new函数和initialize函数也使用泛型进行修饰，使该NFT协议的灵活性大大提升，可以试用于多种不同的NFT测试。
 ```move
-address 0x2 {
-    module NFTExample3 {
-        use 0x1::Signer;
-        use 0x1::Vector;
-
-        struct NFT<T: store> has key, store { name: T }
-
-        struct UniqIdList<T: store> has key, store {
-            data: vector<T>
-        }
-
-        public fun initialize<T: store>(account: &signer) {
-            move_to(account, UniqIdList {data: Vector::empty<T>()});
-        }
-
-        public fun new<T: store + copy>(account: &signer, name: T): NFT<T> acquires UniqIdList {
-            let account_address = Signer::address_of(account);
-            let exist = Vector::contains<T>(&borrow_global<UniqIdList<T>>(account_address).data, &name);
-            assert(!exist, 1);
-            let id_list = borrow_global_mut<UniqIdList<T>>(account_address);
-            Vector::push_back<T>(&mut id_list.data, copy name);
-            NFT { name }
-        }
-    }
-}
+1    address 0x2 {
+2        module NFTExample3 {
+3            use 0x1::Signer;
+4            use 0x1::Vector;
+5
+6            struct NFT<T: store> has key, store { name: T }
+7
+8            struct UniqIdList<T: store> has key, store {
+9                data: vector<T>
+10           }
+11
+12           public fun initialize<T: store>(account: &signer) {
+13               move_to(account, UniqIdList {data: Vector::empty<T>()});
+14           }
+15
+16           public fun new<T: store + copy>(account: &signer, name: T): NFT<T> acquires UniqIdList {
+17               let account_address = Signer::address_of(account);
+18               let exist = Vector::contains<T>(&borrow_global<UniqIdList<T>>(account_address).data, &name);
+19               assert(!exist, 1);
+20               let id_list = borrow_global_mut<UniqIdList<T>>(account_address);
+21            Vector::push_back<T>(&mut id_list.data, copy name);
+22               NFT { name }
+23           }
+24       }
+25   }
 ```
 
 ### 4. NFT协议V4
 通过对NFT协议的完善，可以在协议中增加Event，用来增加通知的功能可以在钱包中通知NFT的铸造通知。这段代码可以说是比较完整的简单NFT协议，可以再增加移动、销毁等功能，并增加图片显示等，配合前端应用可以制作出精美的NFT。
 ```move
-address 0x2 {
-    module NFTExample4 {
-        use 0x1::Vector;
-        use 0x1::Event;
-
-        struct NFT<T: store> has key, store { name: T }
-
-        struct UniqIdList<T: store + drop> has key, store {
-            data: vector<T>,
-            nft_events: Event::EventHandle<NFTEvent<T>>,
-        }
-
-        struct NFTEvent<T: store + drop> has drop, store {
-            name: T,
-        }
-
-        public fun initialize<T: store + drop>(account: &signer) {
-            move_to(account, UniqIdList {data: Vector::empty<T>(), nft_events: Event::new_event_handle<NFTEvent<T>>(account)});
-        }
-
-        public fun new<T: store + copy + drop>(_account: &signer, account_address:address, name: T): NFT<T> acquires UniqIdList {
-            let exist = Vector::contains<T>(&borrow_global<UniqIdList<T>>(account_address).data, &name);
-            assert(!exist, 1);
-            let id_list = borrow_global_mut<UniqIdList<T>>(account_address);
-            Vector::push_back<T>(&mut id_list.data, copy name);
-            let new_name = copy name;
-            Event::emit_event(&mut id_list.nft_events, NFTEvent { name:new_name });
-            NFT { name }
-        }
-    }
-}
+1    address 0x2 {
+2        module NFTExample4 {
+3            use 0x1::Vector;
+4            use 0x1::Event;
+5
+6            struct NFT<T: store> has key, store { name: T }
+7
+8            struct UniqIdList<T: store + drop> has key, store {
+9                data: vector<T>,
+10               nft_events: Event::EventHandle<NFTEvent<T>>,
+11           }
+12
+13           struct NFTEvent<T: store + drop> has drop, store {
+14               name: T,
+15           }
+16
+17           public fun initialize<T: store + drop>(account: &signer) {
+18               move_to(account, UniqIdList {data: Vector::empty<T>(), nft_events: Event::new_event_handle<NFTEvent<T>>(account)});
+19           }
+20
+21           public fun new<T: store + copy + drop>(_account: &signer, account_address:address, name: T): NFT<T> acquires UniqIdList {
+22               let exist = Vector::contains<T>(&borrow_global<UniqIdList<T>>(account_address).data, &name);
+23               assert(!exist, 1);
+24               let id_list = borrow_global_mut<UniqIdList<T>>(account_address);
+25               Vector::push_back<T>(&mut id_list.data, copy name);
+26               let new_name = copy name;
+27               Event::emit_event(&mut id_list.nft_events, NFTEvent { name:new_name });
+28               NFT { name }
+29           }
+30       }
+31   }
 ```
 
 ## 四、问答环节
