@@ -143,11 +143,19 @@
     padding-inline-start:1em;
 	margin-top: 22px;
 }
-.markdown ul{
+.markdown ul {
 	margin-top: 15px;
-	margin-bottom: 30px !important;
+    margin-bottom: 30px !important;
 }
-.markdown ol li {
+.markdown ul > li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color:rgba(255, 255, 255, 0.8) ; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em; /* Also needed for space (tweak if needed) */
+  }
+.markdown ol > li {
   list-style-type:decimal;
 }
 .markdown dl dt {
