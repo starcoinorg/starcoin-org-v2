@@ -6,7 +6,7 @@ weight: 3
 ## Move精髓&动手设计NFT协议
 
 ```
-* 本文由Starcoin社区原创 作者:WGB 根据Starcoin & Move直播课《轻松掌握Move精髓》整理
+* 本文由Starcoin社区原创 作者:WGB 根据Starcoin & Move直播课《轻松掌握Move精髓》整理。
 ```
 
 ### Starcoin介绍

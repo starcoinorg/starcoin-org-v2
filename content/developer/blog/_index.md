@@ -15,3 +15,5 @@ bookCollapseSection: true
 ## Move course
 
 1. [Move Ability & Generic](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
+
+2. [Move development](https://starcoin.org/zh/developer/blog/move_development/)

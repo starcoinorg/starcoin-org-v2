@@ -16,3 +16,5 @@ bookCollapseSection: true
 
 1. 手把手：[Move进阶](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
 
+2. 手把手：[Move开发实战](https://starcoin.org/zh/developer/blog/move_development/)
+
