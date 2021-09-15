@@ -8,4 +8,4 @@ Starcoin 版本记录
 
 <!--more-->
 
-{{< section >}}
+[release-notes](https://github.com/starcoinorg/starcoin/tree/master/release-notes)
