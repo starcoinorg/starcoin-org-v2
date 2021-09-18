@@ -105,6 +105,8 @@
   translation: 协议
 - id: navDeveloperNFTProtocol
   translation: NFT 协议
+- id: navDeveloperOracleProtocol
+  translation: Oracle 协议
 - id: navCommunityWestar
   translation: Westar 实验室
 - id: navCommunityTwitter

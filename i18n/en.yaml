@@ -99,6 +99,8 @@
   translation: Protocols
 - id: navDeveloperNFTProtocol
   translation: NFT Protocol
+- id: navDeveloperOracleProtocol
+  translation: Oracle Protocol
 - id: navCommunityWestar
   translation: Westar Labs
 - id: navCommunityTwitter
