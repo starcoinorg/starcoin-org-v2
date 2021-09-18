@@ -7,7 +7,7 @@ author = "Starcoin"
 
 +++
 
-## Starcoin标准NFT协议
+## Starcoin标准Oracle协议
 
 预言机（Oracle）是打通链上智能合约与链下环境的桥梁，是公链生态中必备的一个基础组件。拥有一套设计良好的Oracle协议为链上用户提供可靠的链下数据，能给智能合约增加很多更丰富的场景。Starcoin是新一代的公链基础设施，专注于分层的智能合约和分布式金融网络。为了让智能合约更自由，Starcoin在Stdlib中定义了一套标准的Oracle协议。标准的Oracle协议使用安全可靠的智能合约Move编写，既保持了Starcoin去中心化等特点，也继承了Move的安全性。
 
