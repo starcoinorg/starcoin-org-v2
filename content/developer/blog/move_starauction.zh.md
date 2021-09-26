@@ -5,7 +5,11 @@ weight: 7
 
 ## starauction
 
-starauction是首届Starcoin & Move黑客松的一个参数项目，由Mars&Earth团队提交。starauction是一个去中心化竞拍项目，使用Move开发，包括「拍卖人」和「买受人」两种角色。拍卖人创建拍卖并抵押标的物，并等待开拍。有人参与竞拍并达到起拍价且拍卖时间到则拍卖成功，否则拍卖失败。
+~~~
+* 本文由Starcoin社区原创
+~~~
+
+starauction是首届Starcoin & Move黑客松的一个参赛项目，由Mars&Earth团队提交。starauction是一个去中心化竞拍项目，使用Move开发，包括「拍卖人」和「买受人」两种角色。拍卖人创建拍卖并抵押标的物，并等待开拍。有人参与竞拍并达到起拍价且拍卖时间到则拍卖成功，否则拍卖失败。
 
 starauction是一个通用的竞拍协议。这里我们通过对合约源码进行分析，来学习一下如何使用Move实现一个通用的竞拍协议。下图是starauction的一个整体设计：
 
