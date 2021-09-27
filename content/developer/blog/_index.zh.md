@@ -7,6 +7,7 @@ bookCollapseSection: true
 ## I. Starcoin & Move
 
 1. [Starcoin 为何使用 Move 语言?](https://starcoin.org/zh/developer/blog/starcoin_move_resource)
+2. [Starcoin & Move赋能元宇宙](https://starcoin.org/zh/developer/blog/starcoin_metaverse)
 
 
 
