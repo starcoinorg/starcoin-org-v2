@@ -13,11 +13,11 @@ weight: 5
 
 多签交易涉及到多个参与者。这里我们用 alice, bob, tom 三个参与者来说明多签交易的流程。
 
-1. 首先你需要在本地启动三个 starcoin dev 节点，分别对应到 alice,bob,tom。并同时连接到 console 中。
+1. 首先你需要在本地启动三个 starcoin halley 节点，分别对应到 alice,bob,tom。并同时连接到 console 中。
 ```
-% starcoin -n dev -d alice -o json console
-% starcoin -n dev -d bob -o json console
-% starcoin -n dev -d tom -o json console
+% starcoin -n halley -d alice -o json console
+% starcoin -n halley -d bob --http-port 19850 --tcp-port 19860 --websocket-port 19870 --stratum-port 19880 --listen /ip4/0.0.0.0/tcp/19840 --metrics-port 19101 console
+% starcoin -n halley -d tom --http-port 29850 --tcp-port 29860 --websocket-port 29870 --stratum-port 29880 --listen /ip4/0.0.0.0/tcp/29840 --metrics-port 29101 console
 ```
 
 2. 通过以下命令各自生成一个公私钥对
@@ -29,25 +29,21 @@ weight: 5
 
 - alice:
   - address: 0x662275a33c99a1e3f4d1dd3bf712470f
-  - pubkey: 0x6cbe3fb3639a98fc5b8637b8280a8d5bb927b50fa2e2cdfa53a5de9395c03034    
+  - pubkey: 0x6cbe3fb3639a98fc5b8637b8280a8d5bb927b50fa2e2cdfa53a5de9395c03034
   - prikey: 0x48d097cb7dafea94c0310c6c02bba075955913bf2d356faffbf9adc6fc6d8e1a
 - bob:
   - address: 0x51888ec9961c09db913bfe2bfacd8ec1
   - authkey: 0x951d6a3008eec3b0add413a622514d5c51888ec9961c09db913bfe2bfacd8ec1
-  - pubkey: 0x2ffe29f29064bf839c3194bf852b00f35fd9351afb602832ae64a754e8c2b584    
+  - pubkey: 0x2ffe29f29064bf839c3194bf852b00f35fd9351afb602832ae64a754e8c2b584
   - prikey: 0x744dcfb091bce98d5aeec1e28471251a526d1b4a6240db1ec50655a285703bac
-  
-- tom: 
+
+- tom:
   - address: 0x49ea9eb68253cde31bf4cda26d640a21
   - pubkey: 0x3db1b2a0172f8fb857afc5abebd98ecf969a2fcf2ba90e4b759ebc3da7064066
   - prikey: 0x74f6c2f05a7b369351a21af3afd05d94aed5b254269c5f149a23a4a600a202c0
-  
 
-3. 最后在 tom 的 starcoin console 用 `dev get_coin` 给 tom 账户充钱。
 
-```
-starcoin% dev get_coin
-```
+3. 最后在 [Starcoin faucet](https://faucet.starcoin.org/halley) 分别给 alice, bob, tom 账户充钱。
 
 
 做完上述准备后，下面开始我们的多签交易流程。主要步骤如下：
@@ -152,14 +148,14 @@ starcoin% account sign-multisig-txn -s 0xdec266f6749fa0b193f3a7f89d3cd9f2 --func
 mutlisig txn(address: 0xdec266f6749fa0b193f3a7f89d3cd9f2, threshold: 2): 1 signatures collected
 still require 1 signatures
 {
-  "ok": "/Users/caojiafeng/projects/starcoinorg/starcoin/5e764f83.multisig-txn"
+  "ok": "/Users/starcoin/projects/starcoinorg/starcoin/5e764f83.multisig-txn"
 }
 ```
 
 其中 `peer_to_peer` 脚本参数：
 - `0x51888ec9961c09db913bfe2bfacd8ec1` 是 bob 地址。
 - `x"951d6a3008eec3b0add413a622514d5c51888ec9961c09db913bfe2bfacd8ec1"` 是 bob 的 auth_key。
-- `1000000000u128` 是要发送的 token 数量。 
+- `1000000000u128` 是要发送的 token 数量。
 
 该命令会生成原始交易，并用 alice 的私钥签名，生成的 txn 会以文件形式保存在当前目录下，文件名是 txn 的 short hash。
 
@@ -172,11 +168,11 @@ alice 拿到上述的交易文件后，在自己的 starcoin cosole 中签名：
 
 
 ```bash
-starcoin% account sign-multisig-txn /Users/caojiafeng/projects/starcoinorg/starcoin/5e764f83.multisig-txn
+starcoin% account sign-multisig-txn /Users/starcoin/projects/starcoinorg/starcoin/5e764f83.multisig-txn
 mutlisig txn(address: 0xdec266f6749fa0b193f3a7f89d3cd9f2, threshold: 2): 2 signatures collected
 enough signatures collected for the multisig txn, txn can be submitted now
 {
-  "ok": "/Users/caojiafeng/projects/starcoinorg/starcoin/194d547f.multisig-txn"
+  "ok": "/Users/starcoin/projects/starcoinorg/starcoin/194d547f.multisig-txn"
 }
 ```
 
@@ -190,7 +186,7 @@ enough signatures collected for the multisig txn, txn can be submitted now
 这里我们从 alice 的 starcoin console 中提交该多签交易。
 
 ```bash
-starcoin% account submit-multisig-txn /Users/caojiafeng/projects/starcoinorg/starcoin/194d547f.multisig-txn
+starcoin% account submit-multisig-txn /Users/starcoin/projects/starcoinorg/starcoin/194d547f.multisig-txn
 {
   "ok": "0x194d547f06018c0bad6312db0dae75ce4dd26afd302410a9647e5720e395878a"
 }
