@@ -13,11 +13,11 @@ weight: 5
 
 多签交易涉及到多个参与者。这里我们用 alice, bob, tom 三个参与者来说明多签交易的流程。
 
-1. 首先你需要在本地启动三个 starcoin halley 节点，分别对应到 alice,bob,tom。并同时连接到 console 中。
+1. 首先你需要在本地启动三个 starcoin dev 节点，分别对应到 alice,bob,tom。并同时连接到 console 中。`--discover-local` 参数可以让节点发现本地局域网内的其他节点，然后连接成一个网络。 
 ```
-% starcoin -n halley -d alice -o json console
-% starcoin -n halley -d bob --http-port 19850 --tcp-port 19860 --websocket-port 19870 --stratum-port 19880 --listen /ip4/0.0.0.0/tcp/19840 --metrics-port 19101 console
-% starcoin -n halley -d tom --http-port 29850 --tcp-port 29860 --websocket-port 29870 --stratum-port 29880 --listen /ip4/0.0.0.0/tcp/29840 --metrics-port 29101 console
+% starcoin -n dev -d alice --discover-local true console
+% starcoin -n dev -d bob --discover-local true console
+% starcoin -n dev -d tom --discover-local true console
 ```
 
 2. 通过以下命令各自生成一个公私钥对
