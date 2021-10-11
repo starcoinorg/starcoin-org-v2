@@ -4,6 +4,10 @@ weight: 10
 bookCollapseSection: true
 ---
 
+新闻，公告，技术指南，技术细节分析等文章
+
+<!--more-->
+
 ## I. Starcoin & Move
 
 1. [Starcoin 为何使用 Move 语言?](https://starcoin.org/zh/developer/blog/starcoin_move_resource)

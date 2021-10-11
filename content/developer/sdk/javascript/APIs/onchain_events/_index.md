@@ -3,6 +3,8 @@ title: onchain_events
 weight: 7
 ---
 
+<!--more-->
+
 ##  Decode Event Key and Data
 
 Decode the key and data of an event on the Starcoin blockchain.

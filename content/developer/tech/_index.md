@@ -4,7 +4,7 @@ weight: 998
 bookCollapseSection: true
 ---
 
-Some technical documentation about starcoin.
+Some technical documentation about starcoin
 
 <!--more-->
 

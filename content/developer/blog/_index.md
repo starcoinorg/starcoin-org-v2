@@ -4,6 +4,10 @@ weight: 10
 bookCollapseSection: true
 ---
 
+News, anouncements, tutorials, technical details about Starcoin 
+
+<!--more-->
+
 ## I. Starcoin & Move
 
 1. [Why Move?](https://starcoin.org/zh/developer/blog/starcoin_move_resource)

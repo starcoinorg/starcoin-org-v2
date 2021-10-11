@@ -3,6 +3,8 @@ title: bcs
 weight: 2
 ---
 
+<!--more-->
+
 ## BcsSerializer
 
 ### Example 1

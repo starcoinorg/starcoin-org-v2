@@ -3,6 +3,8 @@ title: crypto_hash
 weight: 5
 ---
 
+<!--more-->
+
 ## crypto_hash
 
 `crypto_hash` can create hash from data with the sha3_256 algorithm.

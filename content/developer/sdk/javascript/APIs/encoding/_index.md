@@ -3,6 +3,8 @@ title: encoding
 weight: 6
 ---
 
+<!--more-->
+
 ## Encoding
 
 This part provide exampels of encoding functions.

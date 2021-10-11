@@ -3,6 +3,8 @@ title: serde
 weight: 1
 ---
 
+<!--more-->
+
 `serde` module provides `Deserializer` and `Serializer`.
 
 ### Serializer

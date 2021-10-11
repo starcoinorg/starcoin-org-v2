@@ -3,11 +3,13 @@ title: How to Dapp
 weight: 1
 ---
 
-Starcoin is a decentralized, permissionless public blockchain with smart contract functionality, and its used smart contract language is Move. Currently, Move is designed to be a safe and reliable programming language used for implementing smart contracts. All these features make Starcoin an ideal platform for using blockchain technology in various fields. 
-
 We’ll show you how to build your first decentralized application, or Dapps in this document. We’ll also guide you through Dapp development process instructions.
 
+<!--more-->
 
+<!--
+Starcoin is a decentralized, permissionless public blockchain with smart contract functionality, and its used smart contract language is Move. Currently, Move is designed to be a safe and reliable programming language used for implementing smart contracts. All these features make Starcoin an ideal platform for using blockchain technology in various fields. 
+-->
 
 ## Dapp Development Process Instructions
 Any Dapp on public blockchain from frontend to smart contracts, has mian steps as we show in figure 1. 
