@@ -169,7 +169,6 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 1. Move教程：
 
 * 《[Move book](https://move-book.com/cn/index.html)》中文版
-
 * Move基础篇：https://weibo.com/l/wblive/p/show/1022:2321324653445776015474
 * Move进阶篇：https://weibo.com/l/wblive/p/show/1022:2321324655638159687840
 * Move & Dapp实战：https://weibo.com/l/wblive/p/show/1022:2321324658455788257683
