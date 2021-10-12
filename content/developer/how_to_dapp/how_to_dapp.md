@@ -149,7 +149,7 @@ There are multiple ways to compile and deploy Move smart contracts on Starcoin b
 Starcoin has been created using Move language, it also has Stdlib features. Please check our [source code](https://github.com/starcoinorg/starcoin/tree/master/vm/stdlib/modules).Starcoin has defined variety protocols in Stdlib, some protocols will be shown in figure 3.
 ![dapp_1](/img/dapp/pb.jpg)
 1. DAO protocolDAO 
-protocol is a basic protocol in Stdlib, you can govern blockchain well via DAO protocol. Here is a [governable contract upgrade](https://github.com/WGB5445/WGB5445.github.io/blob/vue-blog-src/docs/blockchain/StarCoin/_blog/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86.md) example.
+protocol is a basic protocol in Stdlib, you can govern blockchain well via DAO protocol. Here is a [governable contract upgrade](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade) example.
 2. NFT Protocol
 * [NFT protocol introduction](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
 * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
