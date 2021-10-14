@@ -18,9 +18,9 @@ News, anouncements, tutorials, technical details about Starcoin
 
 ## II. Starcoin & Move Technical Blog
 
-1. [MyLegacy](https://starcoin.org/zh/developer/blog/move%E9%BB%91%E5%AE%A2%E6%9D%BE_mylegacy%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
-2. [P(A)](https://starcoin.org/zh/developer/blog/move%E9%BB%91%E5%AE%A2%E6%9D%BE_pa%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
-3. [Atlaspad](https://starcoin.org/zh/developer/blog/move_ido_atlaspad/)
+1. [MyLegacy](https://starcoin.org/en/developer/blog/move%E9%BB%91%E5%AE%A2%E6%9D%BE_mylegacy%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
+2. [P(A)](https://starcoin.org/en/developer/blog/move%E9%BB%91%E5%AE%A2%E6%9D%BE_pa%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
+3. [Atlaspad](https://starcoin.org/en/developer/blog/move_ido_atlaspad/)
 4. [starauction](https://starcoin.org/zh/developer/blog/move_starauction/)
 5. [RedPackage](https://starcoin.org/zh/developer/blog/move_redpackage/)
 

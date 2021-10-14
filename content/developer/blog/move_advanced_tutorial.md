@@ -9,7 +9,7 @@ weight: 3
 * This article was created by the Starcoin community. Author:WGB
 ```
 
-### Starcoin介绍
+### Starcoin
 TODO
 
 ### NFT
