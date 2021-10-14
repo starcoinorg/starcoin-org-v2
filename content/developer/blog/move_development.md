@@ -5,7 +5,7 @@ weight: 5
 
 # Move In Action
 ```
-* This article was created by the Starcoin community.
+* By Starcoin community.
 ```
 Move’s first appearance is in the Diem project of Facebook, it’s next-generation programming language for smart contract, specially for digital assets and blockchain implementation, there are some unique features that are related to security, development efficiency in Move.
 

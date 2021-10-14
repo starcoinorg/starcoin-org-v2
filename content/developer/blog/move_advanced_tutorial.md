@@ -6,7 +6,7 @@ weight: 3
 ## Advanced Move & NFT Protocol
 
 ```
-* This article was created by the Starcoin community. Author:WGB
+* By Starcoin community. Author:WGB
 ```
 
 ### Starcoin
