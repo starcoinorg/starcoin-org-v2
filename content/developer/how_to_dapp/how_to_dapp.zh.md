@@ -220,7 +220,7 @@ Starcoin在 Stdlib 中定义了多种常用协议，如下图所示（更多协�
 
 1. DAO协议
 
-   DAO协议是Stdlib中一个基础的协议，通过DAO协议能够很好的进行链上治理。这里是通过[链上治理进行代码升级](https://github.com/WGB5445/WGB5445.github.io/blob/vue-blog-src/docs/blockchain/StarCoin/_blog/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86/Starcoin%E7%9A%84stdlib%E5%8D%87%E7%BA%A7%E5%92%8CDao%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86.md)的例子。
+   DAO协议是Stdlib中一个基础的协议，通过DAO协议能够很好的进行链上治理。这里是通过[链上治理进行代码升级](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade)的例子。
 
 2. NFT协议
 

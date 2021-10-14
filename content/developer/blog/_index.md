@@ -12,6 +12,7 @@ News, anouncements, tutorials, technical details about Starcoin
 
 1. [Why Move?](https://starcoin.org/zh/developer/blog/starcoin_move_resource)
 2. [Starcoin & Move & Metaverse](https://starcoin.org/zh/developer/blog/starcoin_metaverse)
+3. [Upgrade Starcoin Stdlib](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade)
 
 
 
@@ -27,6 +28,6 @@ News, anouncements, tutorials, technical details about Starcoin
 
 ## III. Move course
 
-1. [Move Ability & Generic](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
+1. [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
 
-2. [Move development](https://starcoin.org/zh/developer/blog/move_development/)
+2. [Move development](https://starcoin.org/en/developer/blog/move_development/)
