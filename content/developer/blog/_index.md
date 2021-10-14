@@ -10,7 +10,7 @@ News, anouncements, tutorials, technical details about Starcoin
 
 ## I. Starcoin & Move
 
-1. [Why Move?](https://starcoin.org/zh/developer/blog/starcoin_move_resource)
+1. [Why Move?](https://starcoin.org/en/developer/blog/starcoin_move_resource)
 2. [Starcoin & Move & Metaverse](https://starcoin.org/zh/developer/blog/starcoin_metaverse)
 3. [Upgrade Starcoin Stdlib](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade)
 
