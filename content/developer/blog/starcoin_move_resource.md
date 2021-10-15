@@ -1,5 +1,5 @@
 ---
-title: Why You Should Use Move in Starcoin
+title: Why Use Move in Starcoin
 weight: 6
 ---
 
@@ -59,7 +59,7 @@ This is a brilliant question.
 
 First,we need to realise one fact: everything is moving forward, from binary to  assembly language to high-level programming language. The same is true for smart contracts, from Bitcoin Script to Ethereum Solidity, this is an advance. But, is Solidity the best one? In fact, endless security issues have been bothering us and restricted the growth of the entire industry, Poly Network attack is notorious,a hacker has stolen more than $611 million in funds from the cross-chain Poly Network. In a financial sense,security is more important than ever. We cannot ignore these issues if we hope that blockchain is sustainable, we need more powerful smart contract language. Move is designed to meet all the requirements.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1guic3a5bx0j60oc0bmq3a02.jpg" alt="info_vs_resource" style="zoom:50%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gvfrutdahkj60my0c23yw02.jpg" alt="1634263794276" style="zoom:50%;" />
 
 We have said above, common programming is information-oriented, you can copy and change the information any time, just like a twitter post. In a centralized scenario, much detailed information cannot be exposed, we have many methods to solve these issues. But In the decentralized era,to implement DeFi and Opensource, even subtle errors will be magnified to be a big problem. For example, simple addition and subtraction operation could have significant security hazards, some real bugs such as: fake deposit attack,over money creation,overflow,ect. All these bugs are caused by the subtle errors.This is a big challenge to developers.
 
