@@ -23,6 +23,7 @@ News, anouncements, tutorials, technical details about Starcoin
 3. [Atlaspad](https://starcoin.org/en/developer/blog/move_ido_atlaspad/)
 4. [starauction](https://starcoin.org/zh/developer/blog/move_starauction/)
 5. [RedPackage](https://starcoin.org/zh/developer/blog/move_redpackage/)
+6. [Purchase](https://starcoin.org/zh/developer/blog/move_purchase/)
 
 
 
