@@ -61,7 +61,7 @@
   translation: Dapp 开发指南
 - id: navDeveloperOracleGuide
   translation: Oracle 开发指南
-  - id: navDeveloperGetStarted
+- id: navDeveloperGetStarted
   translation: 开始
 - id: navDeveloperStartInstall
   translation: 安装
