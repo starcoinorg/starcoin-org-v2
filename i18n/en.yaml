@@ -53,6 +53,8 @@
   translation: Node Command
 - id: navDeveloperHowToDapp
   translation: How To Dapp
+- id: navDeveloperOracleGuide
+  translation: Oracle Guide
 - id: navDeveloperGetStarted
   translation: Get Started
 - id: navDeveloperStartInstall

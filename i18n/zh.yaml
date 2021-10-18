@@ -59,7 +59,9 @@
   translation: 节点命令行
 - id: navDeveloperHowToDapp
   translation: Dapp 开发指南
-- id: navDeveloperGetStarted
+- id: navDeveloperOracleGuide
+  translation: Oracle 开发指南
+  - id: navDeveloperGetStarted
   translation: 开始
 - id: navDeveloperStartInstall
   translation: 安装
