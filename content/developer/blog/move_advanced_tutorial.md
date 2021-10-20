@@ -10,7 +10,10 @@ weight: 3
 ```
 
 ### Starcoin
-TODO
+Smart contract programming language, virtual machine and contract standard library are core infrastructure in decentralized finance systems, how to represent assets securely and conveniently in smart contract is always research direction in blockchain smart contract field.
+Starcoin has chosen smart programming language Move and virtual machine, Move is designed for digital assets, Starcoin also provides various contract standard libraries.
+Move was used in Diem blockchain project of Facebook at first, as a smart contract programming language for digital assets, Move has some features, such as, to define a custom resource type, flexibility, security, verifiability. All these features fit in with Starcoin’s design concept, this is the main reason why Starcoin chooses Move as smart contract language.
+Move has some key features which other smart contract programming languages do not have, with these features to simply,efficiently and securely write smart contract code, we can develop new blockchain applications.
 
 ### NFT
 NFT stands for non-fungible token, it defines one kind of interface regulation in which interaction and transaction of cryptocurrency are unsplittable and unique. To fungible tokens,such as BTC,ETH,STC,etc. Each fungible token does not have its own code,and can be splitted, such as a one-dollar coin, there is no unique code on it, only generic value. But NFT is unsplittable, one NFT one unique cod, same value but different code. Example: Nyan Cat, $500000
