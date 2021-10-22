@@ -146,6 +146,8 @@
   translation: News
 - id: footerTwitter
   translation: 'Twitter: StarcoinSTC'
+- id: footerTelegram
+  translation: 'Telegram: Starcoin_STC'
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWestarLab

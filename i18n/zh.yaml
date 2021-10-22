@@ -152,6 +152,8 @@
   translation: 新闻
 - id: footerTwitter
   translation: '推特: StarcoinSTC'
+- id: footerTelegram
+  translation: '电报: Starcoin_STC'
 - id: footerWestarLab
   translation: Westar 实验室
 - id: footerWechatGroup
