@@ -51,21 +51,29 @@
         </div>
         <div class="td">
             <div class="col-md-6 item contact-container" style="width: 60%;">
-                <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerWechatPublicAccount"}}>
-                    <img src="/img/footer/wechat@2x.png" />
-                </span>
                 <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerTwitter"}}>
                     <a href="https://twitter.com/starcoinstc" target="_blank">
                         <img src="/img/footer/twitter@2x.png" />
                     </a>
                 </span>
+                <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerDiscord"}}>
+                    <a href="https://discord.gg/96tKt5exaE" target="_blank">
+                      <img src="/img/footer/discord@2x.png" />
+                    </a>
+                </span>
+                <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerTelegram"}}>
+                    <a href="https://t.me/Starcoin_STC" target="_blank">
+                      <img src="/img/footer/telegram_logo.png" />
+                    </a>
+                </span>
+                <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerWechatPublicAccount"}}>
+                    <img src="/img/footer/wechat@2x.png" />
+                </span>
+                <!--
                 <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerWechatGroup"}}>
                     <img src="/img/footer/wechat_group@2x.png" />
                 </span>
-                <span data-toggle="tooltip" data-placement="bottom" title={{ i18n "footerDiscord"}}>
-                    <a href="https://discord.gg/96tKt5exaE" target="_blank">
-                    <img src="/img/footer/discord@2x.png" />
-                </span>
+                -->
             </div>
             <div class="col-md-3 item" style="width: 25%;">
                 <a target="_blank" href="https://starcoin.org/{{ .Site.Language.Lang }}/developer/sdk/">{{ i18n "footerSDK" }}</a>
@@ -124,14 +132,6 @@
         <div class="go-contact-us"> {{ i18n "footerContactUs" }}</div>
         <div class="row-li">
             <div class="item">
-                {{ i18n "footerWechatPublicAccount"}}
-            </div>
-            <div class="item">
-                {{ i18n "footerWechatGroup" }}
-            </div>
-        </div>
-        <div class="row-li">
-            <div class="item">
                 <a target="_blank" href="https://twitter.com/starcoinstc">
                    {{ i18n "footerTwitter" }}
                 </a>
@@ -140,6 +140,16 @@
                 <a target="_blank" href="https://discord.gg/96tKt5exaE">
                     {{ i18n "footerDiscord" }}
                 </a>
+            </div>
+        </div>
+        <div class="row-li">
+            <div class="item">
+                <a target="_blank" href="https://t.me/Starcoin_STC">
+                    {{ i18n "footerTelegram" }}
+                </a>
+            </div>
+            <div class="item">
+                {{ i18n "footerWechatPublicAccount"}}
             </div>
         </div>
         <div class="crt">© 2018-2021 Starcoin.org</div>
