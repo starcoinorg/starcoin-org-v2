@@ -15,6 +15,7 @@ News, anouncements, tutorials, technical details about Starcoin
 3. [Upgrade Starcoin Stdlib](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade)
 4. [Code is law](https://starcoin.org/zh/developer/blog/starcoin_code_is_law)
 5. [Starcoin & Dapp](https://starcoin.org/zh/developer/blog/starcoin_dapp)
+6. [Starcoin & Oracle](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
 
 
 
