@@ -15,6 +15,7 @@ bookCollapseSection: true
 3. [Starcoin升级Stdlib详解](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade)
 4. [Starcoin完美实现「代码即法律」](https://starcoin.org/zh/developer/blog/starcoin_code_is_law)
 5. [Starcoin & Dapp实战](https://starcoin.org/zh/developer/blog/starcoin_dapp)
+6. [Starcoin标准Oracle协议讲解](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
 
 
 
