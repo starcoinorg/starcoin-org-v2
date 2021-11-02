@@ -148,6 +148,10 @@
   translation: 'Twitter: StarcoinSTC'
 - id: footerTelegram
   translation: 'Telegram: Starcoin_STC'
+- id: footerTwitterChinese
+  translation: 'Twitter中文: StarcoinMove'
+- id: footerMedium
+  translation: 'Medium: StarcoinMove'
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWestarLab
