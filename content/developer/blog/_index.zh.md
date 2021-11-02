@@ -26,6 +26,7 @@ Move学习指南、源码分析、设计思想等文章
 4. [Starcoin完美实现「代码即法律」](https://starcoin.org/zh/developer/blog/starcoin_code_is_law)
 5. [Starcoin & Dapp实战](https://starcoin.org/zh/developer/blog/starcoin_dapp)
 6. [Starcoin标准Oracle协议讲解](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
+7. [Starcoin合约账户详解](https://starcoin.org/zh/developer/blog/starcoin_contract_accouont)
 
 
 
