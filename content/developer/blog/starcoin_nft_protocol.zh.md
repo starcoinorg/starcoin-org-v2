@@ -73,6 +73,7 @@ Starcoin的标准NFT协议使用Move实现，包括了以太坊的NFT协议的�
 4. 官方实现：Starcoin在定义NFT协议的同时，对协议进行了代码实现，开箱即用；
 5. 协议可复用：针对不同类型的NFT，以太坊需要做不同的实现，Starcoin的标准协议通过泛型让协议可复用；
 6. 合理的权限：拆分NFT的管理权限，方便NFT的管理；
+7. 自由跨合约：NFT可以移动到任何其他合约中，作为其他合约的数据进行存储，参与逻辑计算（以太坊只能保存在NFT定义的合约中）；
 
 可以说，Starcoin的标准NFT协议与以太坊的NFT协议有更丰富的特性，代码简洁高效，并且具备良好的扩展性。
 
@@ -178,7 +179,7 @@ Starcoin的IdentifierNFT是NFT的一个典型应用，除了能做Name Service�
     public fun revoke<NFTMeta: copy + store + drop, NFTBody: store>(_cap: &mut BurnCapability<NFTMeta>, owner: address): NFT<NFTMeta, NFTBody>  acquires IdentifierNFT 
 ~~~
 
-IdentifierNFT的作用是把一批任意类型的NFT设置成当前账号的标识，上面是对IdentifierNFT结构体的授权和撤销操作。Name Service只是IdentifierNFT的一个典型应用，还可以做更多的事情，比如把加密朋克的NFT当成标识、把博客地址当成标识等等。
+IdentifierNFT的作用是把一批任意类型的NFT设置成当前账号的标识，上面是对IdentifierNFT结构体的授权和撤销操作。这里把NFT转移到IdentifierNFT合约中，作为业务逻辑的核心数据，最后保存到每个用户自己的账号下。Name Service只是IdentifierNFT的一个典型应用，还可以做更多的事情，比如把加密朋克的NFT当成标识、把博客地址当成标识等等。
 
 Starcoin的IdentifierNFT模块实现了一个非常有意思的NFT应用场景，感兴趣的朋友可以使用IdentifierNFT注册Starcoin Name Service，也可以参考IdentifierNFT基于Starcoin的标准NFT实现其他的NFT应用。
 
@@ -188,7 +189,7 @@ Starcoin的IdentifierNFT模块实现了一个非常有意思的NFT应用场景�
 
 Move是面向资源和面向泛型编程的智能合约语言。Starcoin是首个使用Move作为智能合约语言的无许可公链。Starcoin巧妙地运用了Move在NFT场景的优势，使用极其简洁的代码量，设计出一套完整、功能丰富的标准NFT协议。
 
-Starcoin的标准NFT协议不仅仅实现了ERC-721、ERC-875、ERC-998、ERC-1155等以太坊NFT协议的功能，而且有更丰富的特性，比如良好的安全性、可自定义逻辑、合理的权限、使用简单等等，相信会给NFT领域带来非常大的促进作用。
+Starcoin的标准NFT协议不仅仅实现了ERC-721、ERC-875、ERC-998、ERC-1155等以太坊NFT协议的功能，而且有更丰富的特性，比如良好的安全性、可自定义逻辑、合理的权限、使用简单、跨合约等等，相信会给NFT领域带来非常大的促进作用。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gvlv4tisr3j612i0cydgc02.jpg" alt="starcoin_nft_3" style="zoom:33%;" />
 
