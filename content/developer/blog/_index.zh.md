@@ -27,6 +27,7 @@ Move学习指南、源码分析、设计思想等文章
 5. [Starcoin & Dapp实战](https://starcoin.org/zh/developer/blog/starcoin_dapp)
 6. [Starcoin标准Oracle协议讲解](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
 7. [Starcoin合约账户详解](https://starcoin.org/zh/developer/blog/starcoin_contract_account)
+8. [对比以太坊，Starcoin标准NFT协议有哪些亮点？](https://starcoin.org/zh/developer/blog/starcoin_nft_protocol)
 
 
 
