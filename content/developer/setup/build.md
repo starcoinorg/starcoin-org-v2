@@ -26,7 +26,7 @@ Build starcoin from source.
     yum install centos-release-scl
     yum install devtoolset-7
     . /opt/rh/devtoolset-7/enable
-    ```shell
+    ```
 
 3. Run debug build
 
