@@ -11,11 +11,11 @@ weight: 7
 
 `starcoin` -n chain_name:chain_id --genesis-config genesis_config_name_or_path
 
-运行自定义区块链网络的时候，-n,--net 参数的值由三个参数通过 `:` 符号拼接而成。
+运行自定义区块链网络的时候，-n,--net 参数的值由两个参数通过 `:` 符号拼接而成。
 
 * chain_name: 例如 `my_chain`, 这个名字会用作数据文件夹的名称。
 * chain_id: u8 类型的数字，比如 `123`。
-* genesis_config_name_or_path: 可以是一个内置的区块链网络的名称，表示复用改网络配置，比如 `halley`, 也可以是一个 genesis 配置文件的地址。后面会介绍如何生成 genesis 配置文件。
+* genesis_config_name_or_path: 可以是一个内置的区块链网络的名称，表示复用该网络配置，比如 `halley`, 也可以是一个 genesis 配置文件的地址。后面会介绍如何生成 genesis 配置文件。
 
 
 ## 生成 genesis 配置文件
