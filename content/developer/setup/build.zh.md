@@ -25,15 +25,14 @@ weight: 5
     ```shell
     yum install -y openssl-devel					# 安装openssl
 	yum install -y centos-release-scl 				# 安装centos-release-scl
-	yum install -y devtoolset-7						# 安装开发工具
+	yum install -y devtoolset-7					# 安装开发工具
 	scl enable devtoolset-7 bash					# 激活开发工具
 
 	# 下面的这两步，会删除错误链接的 llvm-private 包，但同样会导致GUI登录不了，如果使用命令行，则不影响
 	# 慎重，如果要使用 GUI 系统，则这步操作很危险
 	rpm -qa | grep "llvm-private" 					# 查找包含 llvm-private 的包
 	rpm -e --nodeps llvm-private-6.0.1-2.el7.x86_64 # 卸载查找到的包，实际找到的可能和示例不同
-
-    ```shell
+    ```
 
 3. Run debug build
 
