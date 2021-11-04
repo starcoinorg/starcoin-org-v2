@@ -27,6 +27,7 @@ Move, Code, Architecture, technical details about Starcoin
 5. [Starcoin & Dapp](https://starcoin.org/zh/developer/blog/starcoin_dapp)
 6. [Starcoin & Oracle](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
 7. [Starcoin Contract Account](https://starcoin.org/zh/developer/blog/starcoin_contract_account)
+8. [Starcoin & NFT](https://starcoin.org/zh/developer/blog/starcoin_nft_protocol)
 
 
 
