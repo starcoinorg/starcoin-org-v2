@@ -157,6 +157,8 @@
 - id: footerTwitterChinese
   translation: 'Twitter中文: StarcoinMove'
 - id: footerMedium
+  translation: 'Medium: Starcoin'
+- id: footerMediumChinese
   translation: 'Medium博客: StarcoinMove'
 - id: footerWestarLab
   translation: Westar 实验室

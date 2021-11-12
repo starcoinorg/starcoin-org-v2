@@ -146,12 +146,16 @@
   translation: News
 - id: footerTwitter
   translation: 'Twitter: StarcoinSTC'
-- id: footerTelegram
-  translation: 'Telegram: Starcoin_STC'
 - id: footerTwitterChinese
   translation: 'Twitter中文: StarcoinMove'
+- id: footerTelegram
+  translation: 'Telegram: Starcoin_STC'
+- id: footerTelegramChinese
+  translation: 'Telegram中文社群: StarcoinZH'
 - id: footerMedium
-  translation: 'Medium: StarcoinMove'
+  translation: 'Medium: Starcoin'
+- id: footerMediumChinese
+  translation: 'Medium博客: StarcoinMove'
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWestarLab
