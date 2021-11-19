@@ -45,6 +45,8 @@
   translation: Node Command
 - id: navLearnStarmask
   translation: StarMask Chrome Wallet
+- id: navLearnYoutube
+  translation: Youtube Videos
 - id: navLearnYoutubeStcscan
   translation: Starcoin StcScan Guide
 - id: navLearnYoutubeStarmask

@@ -51,6 +51,8 @@
   translation: 节点挖矿
 - id: navLearnNodeCommand
   translation: 节点命令
+- id: navLearnYoutube
+  translation: Youtube教程
 - id: navLearnYoutubeStcscan
   translation: Starcoin浏览器使用教程
 - id: navLearnYoutubeStarmask
