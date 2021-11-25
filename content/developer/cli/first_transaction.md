@@ -31,10 +31,10 @@ receipt_identifier is stc1pz9u7e95gzh0dn3vhw5n5g34dfsxum2pt .
  Let's do it!.
 
  ``` bash
-starcoin% dev get_coin -v 100000000000
+starcoin% dev get-coin -v 100STC
 ```
 
-`dev get_coin` will mint some coins the default account, and if the account does not exist on the chain, it will creates the account first and then transfers a specified (with `-v`) number of coins to the account.
+`dev get-coin` will mint some coins the default account, and if the account does not exist on the chain, it will creates the account first and then transfers a specified (with `-v`) number of coins to the account.
 The output of the command is the transaction data  issued by the FAUCET account (address `0000000000000000000000000A550C18`).
 
 Wait a few seconds and then check your account information again.
