@@ -19,19 +19,20 @@ Move 的形式化验证工具 Move Prover 可以对 Move 程序进行形式化�
   
 ## 安装
 
-如果开发者曾经使用scripts/dev_setup.sh安装了Starcoin开发环境，那么他实际上已经安装了Move Prover。
-如果之前没有安装过，则可以运行（在Starcoin根目录中）：
+运行（在Starcoin根目录中）：
 
 ```shell script
-bash scripts/move_prover.sh
+bash scripts/dev_setup.sh -t -y -p
 ```
 
-目前仅支持在MacOS和Linux版本（如Ubuntu或CentOS）上运行。
-注意，安装完成后必须在shell中添加以下环境变量。例如在MacOS上，添加到`〜/.bashrc`（或其他shell配置）：
+目前仅支持在MacOS和Linux版本（如Ubuntu或CentOS）上运行。 `-p` 参数表示让 setup 脚本自动更新 .profile 文件，添加环境变量，也可以选择手动设置以下环境变量。
 
 ```
-export BOOGIE_EXE=/Users/$(whoami)/.dotnet/tools/boogie
-export Z3_EXE=/usr/local/bin/z3
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$HOME/.dotnet/tools:$PATH
+export Z3_EXE=$HOME/bin/z3
+export CVC4_EXE=$HOME/bin/cvc4
+export BOOGIE_EXE=$HOME/.dotnet/tools/boogie
 ```
 
 ## 运行

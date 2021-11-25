@@ -21,21 +21,22 @@ It's purpose is to make contracts more *trustworthy*, specifically:
   
 ## Installation
 
-If you ever installed Starcoin development environment with scripts/dev_setup.sh, then you already have move prover installed. 
-If you want to install move prover standalone, run (in the Starcoin root directory):
+run (in the Starcoin root directory):
 
 ```shell script
-bash scripts/move_prover.sh
+bash scripts/dev_setup.sh -t -y -p
 ```
 
 This command should work on MacOS and Linux flavors like Ubuntu or CentOS. (Windows is currently not supported).
 
-Notice that you have to add below environment variable into your shell. For example on MacOS, add them 
-to your `~/.bashrc` (or other shell configuration):
+Notice the `-p` flag means that the setup script will automatically update the .profile file to add environment variables, or you can choose to set the following environment variables manually.
 
 ```
-export BOOGIE_EXE=/Users/$(whoami)/.dotnet/tools/boogie
-export Z3_EXE=/usr/local/bin/z3
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$HOME/.dotnet/tools:$PATH
+export Z3_EXE=$HOME/bin/z3
+export CVC4_EXE=$HOME/bin/cvc4
+export BOOGIE_EXE=$HOME/.dotnet/tools/boogie
 ```
 
 ## Running the Prover
