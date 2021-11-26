@@ -127,6 +127,8 @@
   translation: Starcoin Polls
 - id: navCommunityAirdrop
   translation: Airdrop Dapp
+- id: navCommunityDownloadLogo
+  translation: Download logo.zip
 - id: navQAGitHub
   translation: GitHub Discussion
 - id: navQAFAQ

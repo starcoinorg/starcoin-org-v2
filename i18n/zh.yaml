@@ -133,6 +133,8 @@
   translation: Starcoin 投票
 - id: navCommunityAirdrop
   translation: 空投 Dapp
+- id: navCommunityDownloadLogo
+  translation: 下载 logo.zip
 - id: navQAGitHub
   translation: GitHub 讨论区
 - id: navQAFAQ
