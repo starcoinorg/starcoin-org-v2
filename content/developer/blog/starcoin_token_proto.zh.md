@@ -1,4 +1,15 @@
-## 以太坊的ETH和ERC20
+---
+title: 深度对比|ERC20与Starcoin的Token协议
+weight: 19
+---
+
+```
+* 本文由Starcoin社区原创
+```
+
+
+
+## Ethereum的ETH和ERC20
 
 Ethereum开创性地使用了Account模型，并且设计了两种类型的账户：外部账户EOA(Externally Owned Account)和合约账户CA(Contract Account)。这两种类型的账户区别很大，最重要的区别是：能不能存储合约代码。
 
@@ -10,7 +21,7 @@ Ethereum开创性地使用了Account模型，并且设计了两种类型的账�
 
 从上面的对比，我们看到一些问题：
 
-* 以太坊将Token分成地位不对等的两类Token，功能特性有差别
+* Ethereum将Token分成地位不对等的两类Token，功能特性有差别
 * ETH是一等公民，而ERC20的Token只是普通数据
 * 用户持有ERC20的Token其实并不在用户自己的账户下，而是在别人的合约账户下
 * ERC20的Token被“囚禁”在实现的合约里，不能跨合约使用
@@ -19,11 +30,11 @@ Ethereum开创性地使用了Account模型，并且设计了两种类型的账�
 
 ## Starcoin的Token协议
 
-Starcoin虽然使用了Account模型，并且也区分外部账户EOA(Externally Owned Account)和合约账户CA(Contract Account)，但是跟以太坊的账户不同。Starcoin的两种账户相对统一，唯一的区别是，合约账户没有签名权SignerCapability，其他的特性完全一样，比如都能够存储数据和合约代码，等等。
+Starcoin虽然使用了Account模型，并且也区分外部账户EOA(Externally Owned Account)和合约账户CA(Contract Account)，但是跟Ethereum的账户不同。Starcoin的两种账户相对统一，唯一的区别是，合约账户没有签名权SignerCapability，其他的特性完全一样，比如都能够存储数据和合约代码，等等。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gw43q501eij30bz08z3yq.jpg" alt="starcoin_account_token" style="zoom:70%;" />
 
-Starcoin的Token跟以太坊的Token也不一样：
+Starcoin的Token跟Ethereum的Token也不一样：
 
 * Starcoin有一套统一的Token协议，所有的Token都通过协议定义，包括Starcoin经济模型的STC
 * Starcoin只有一种类型的Token，所有的Token在功能特性上完全对等
@@ -41,7 +52,7 @@ Starcoin的Token跟以太坊的Token也不一样：
 
 ## Token协议源码解析
 
-Starcoin的Token协议弥补了以太坊的ETH和ERC20的不足。我们深入到源码，了解一下Token协议的实现。
+Starcoin的Token协议弥补Ethereum的ETH和ERC20的不足。我们深入到源码，了解一下Token协议的实现。
 
 ~~~
     /// The token has a `TokenType` color that tells us what token the
