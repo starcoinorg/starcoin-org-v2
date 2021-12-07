@@ -31,6 +31,7 @@ Move, Code, Architecture, technical details about Starcoin
 9. [MerkleNFT](https://starcoin.org/zh/developer/blog/starcoin_merkle_nft)
 10. [Starcoin NFT in action](https://starcoin.org/zh/developer/blog/starcoin_nft_application)
 11. [Starcoin architecture](http://westar.io/blog/starcoin_arch/)
+12. [Starcoin Token](http://westar.io/blog/starcoin_token_proto/)
 
 
 
