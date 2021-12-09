@@ -37,12 +37,13 @@
                                                         href="https://www.youtube.com/watch?v=tyQlmIIOV3g"
                                                         target="_blank">{{ i18n "navLearnYoutubeStcscan" }}</a>
                                         </div> -->
-                                        <div class="li "><a class="i18n"
-                                                        href="https://www.youtube.com/watch?v=VA1uVLmzuhQ"
+                                        <div class="li "
+                                                style='display: {{ cond (eq .Site.Language.Lang "en") "none" "block" }};'>
+                                                <a class="i18n" href='https://www.youtube.com/watch?v=VA1uVLmzuhQ'
                                                         target="_blank">{{ i18n "navLearnYoutubeStarmask" }}</a>
                                         </div>
                                         <div class="li "><a class="i18n"
-                                                        href="https://www.youtube.com/watch?v=ut4WjdPDHrs"
+                                                        href='https://www.youtube.com/watch?v={{ cond (eq .Site.Language.Lang "en") "XMSPOs-Sens" "ut4WjdPDHrs" }}'
                                                         target="_blank">{{ i18n "navLearnYoutubePoll" }}</a>
                                         </div>
                                         <div class="li "><a class="i18n"
