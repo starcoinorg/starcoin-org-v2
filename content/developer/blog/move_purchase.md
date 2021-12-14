@@ -1,5 +1,5 @@
 ---
-title: Source Code Analysis: Purchase 
+title: Source Code Analysis, Purchase 
 weight: 11
 ---
 
@@ -121,6 +121,6 @@ Function of the contract is simple. Let's analyze the advantages and disadvantag
 
 - If the transaction is not smooth, a Proof method should be provided to avoid losses
 
-  
+
 
 Purchase is relatively simple and versatile in design, and those interested can view the complete code here.

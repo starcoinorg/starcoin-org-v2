@@ -1,5 +1,5 @@
 ---
-title: Source Code Analysis: Star
+title: Source Code Analysis, Star
 weight: 17
 ---
 
@@ -72,7 +72,7 @@ The main process of Purchase includes 3 core functions:
 
  ~~~Move
    public fun register_item<CategoryT: store+copy+drop>(account: &signer, item_address: address)
-~~~
+ ~~~
 
    Registering a certain type of StarInfo,  can only be called by the owner of the contract.
 
