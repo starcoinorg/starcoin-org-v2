@@ -1,5 +1,5 @@
 ---
-title: Starcoin's Standard NFT Protocol: In Action
+title: Starcoin's Standard NFT Protocol In Action
 weight: 8
 ---
 
