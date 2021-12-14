@@ -3,9 +3,9 @@ title: Starcoin's Standard NFT Protocol: In Action
 weight: 8
 ---
 
-```
+~~~
 * By Starcoin community
-```
+~~~
 
 
 ## Starcoin's Standard NFT Protocol
@@ -48,15 +48,15 @@ MerkleNFT is an interesting application designed based on the Starcoin standard 
 
 We have learned about the core principles and ingenious design of MerkleNFT. We continue to dive into the source code of MerkleNFT to learn about the Move implementation of the MerkleNFT contract.
 
-```Move
+~~~Move
 public fun verify(proof: &vector<vector<u8>>, root: &vector<u8>, leaf: vector<u8>): bool
-```
+~~~
 
 The above is the function "verify" for verifying Proof in the MerkleProof module. The function of MerkleProof is very clear. The main logic is to assemble the proof and leaf nodes submitted by the user, and then determine whether it is equal to the submitted root.
 
 The logic related to NFT is in the MerkleNFTDistributor module.
 
-```Move
+~~~Move
 struct MerkleNFTDistribution<NFTMeta: copy + store + drop> has key {
         merkle_root: vector<u8>,
         claimed_bitmap: vector<u128>,
@@ -66,7 +66,7 @@ struct MerkleNFTDistribution<NFTMeta: copy + store + drop> has key {
     
     public fun mint_with_cap<NFTMeta: copy + store + drop, NFTBody: store, Info: copy + store + drop>(sender: &signer, cap:&mut MintCapability<NFTMeta>, creator: address, index: u64, base_meta: Metadata, type_meta: NFTMeta, body: NFTBody, merkle_proof:vector<vector<u8>>): NFT<NFTMeta, NFTBody>
         acquires MerkleNFTDistribution
-```
+~~~
 
 The logic of MerkleNFTDistributor is concise. It implements NFT registration and mint functions in the standard NFT protocol:
 

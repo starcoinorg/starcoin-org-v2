@@ -36,16 +36,15 @@ Implementation of Purchase,you can buy and sell various Goods in the Market, and
 Let's take a look at the core data structure of Purchase:
 
 1. Market
-
-   ```Move
-   struct Market<Info: copy + drop + store> has key, store {
-       goods_center: vector<Goods<Info>>,//List of Goods
-   }
-   ```
+~~~Move
+struct Market<Info: copy + drop + store> has key, store {
+    goods_center: vector<Goods<Info>>,//List of Goods
+}
+~~~
 
 2. Goods
 
-   ```Move
+~~~Move
    struct Goods<Info: copy + drop + store> has store {
        state: u8,// State
        info: Info,//Goods information
@@ -55,7 +54,7 @@ Let's take a look at the core data structure of Purchase:
        buyer: Option<address>,//Buyer
        b_deposit: Option<Token<STC>>,//Seller pledge and pay
    }
-   ```
+~~~
 
 The definition of Market and Goods has the following advantages:
 
@@ -72,25 +71,25 @@ The main process of Purchase includes 3 core functions:
 
 1. publish function
 
-   ```Move
+~~~Move
    public fun publish<Info: copy + drop + store>(account: &signer, market_address: address, s_deposit: Token<STC>, info:Info): u64 acquires Market
-   ```
+~~~
 
    This function is used to publish goods information, anyone can publish goods.
 
 2. order function
 
-   ```Move
+~~~Move
    public fun order<Info: copy + drop + store>(account: &signer, market_address: address, goods_id: u64, b_deposit: Token<STC>) acquires Market 
-   ```
+~~~
 
    This function is used to place order.
 
 3. done function
 
-   ```Move
+~~~Move
    public fun done<Info: copy + drop + store>(account: &signer, market_address: address, goods_id: u64):Token<STC>  acquires Market 
-   ```
+~~~
 
    After the order is completed, the settlement is carried out. In this step, the Token pledged by both parties will be returned.
 

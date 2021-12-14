@@ -72,7 +72,7 @@ How does Starcoin implement contract accounts
 
 Starcoin's account's code in Stdlib's Account.move, it implements Externally Owned Account and Contract Account . The Move code related to the contract account is very concise and ingenious, making full use of the advantages and features of Move. The following are the main implementations of Starcoin contract accounts:
 
-```Move
+~~~Move
 // SignerDelegated can only be stored under address, not in other structs.
 struct SignerDelegated has key {}
 // SignerCapability can only be stored in other structs, not under address.
@@ -84,7 +84,7 @@ public fun is_signer_delegated(addr: address): bool {
 }
 
 native fun create_signer(addr: address): signer;
-```
+~~~
 
 In the above code, there are two Structs:
 
@@ -128,7 +128,7 @@ The above are the important capabilities of the Starcoin's contract account.
 
    Many examples of contract account applications can also be found in Starcoin's Stdlib, the most typical one is GenesisSignerCapability. GenesisAccount is Starcoin's first contract account. It has no private key and is not managed by anyone. It is an extremely special account. At the same time, GenesisAccount is responsible for storing some global data. It is the registration center of NFT and Oracle. How to implement it? Let's take a look at the core code of the GenesisSignerCapability contract:
 
-   ```Move
+~~~Move
    struct GenesisSignerCapability has key {
            cap: Account::SignerCapability,
        }
@@ -137,7 +137,7 @@ The above are the important capabilities of the Starcoin's contract account.
            let cap = borrow_global<GenesisSignerCapability>(CoreAddresses::GENESIS_ADDRESS());
            Account::create_signer_with_cap(&cap.cap)
        }
-   ```
+~~~
 
    From the above code, we can see:
 
