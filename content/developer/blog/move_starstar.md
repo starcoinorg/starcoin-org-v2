@@ -37,23 +37,23 @@ Let's take a look at the core data structure of StarStar:
 
 1. StarInfo
 
-   ```Move
+~~~Move
    struct StarInfo<CategoryT: copy+store+drop> has key,store,drop {
        item_address: address,//Project's address
        counter: u64,//Total number of votes
        updated_at: u64,//Create Eveent
    }
-   ```
+~~~
 
    Project-related information, such as address, type CategoryT, total number of votes, counter, etc.
 
 2. CategoryAccountCounter
 
-   ```Move
+~~~Move
    struct CategoryAccountCounter<CategoryT: copy+store+drop> has key,store {
    		counter: u64 //Number of votes
    }
-   ```
+~~~
 
 The number of votes that users vote for a CategoryT type. Currently, each CategoryT can only can vote once.
 
@@ -70,25 +70,25 @@ The main process of Purchase includes 3 core functions:
 
 1. register_item function
 
-   ```Move
+ ~~~Move
    public fun register_item<CategoryT: store+copy+drop>(account: &signer, item_address: address)
-   ```
+~~~
 
    Registering a certain type of StarInfo,  can only be called by the owner of the contract.
 
 2. star function
 
-   ```Move
+~~~Move
    public fun star<CategoryT: copy+store+drop>(account: &signer, item_address: address) : bool acquires CategoryAccountCounter
-   ```
+~~~
 
    Give a like function,vote for the StarInfo you are interested in.
 
 3. unstar function
 
-   ```Move
+~~~Move
    public fun unstar<CategoryT: copy+store+drop>(account: &signer, item_address: address) : bool acquires CategoryAccountCounter
-   ```
+~~~
 
    Cancel the like.
 

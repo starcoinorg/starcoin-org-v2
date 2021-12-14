@@ -36,7 +36,7 @@ When discussing the application of NFT, we have to talk about NFT and games. NFT
 
 In the  following, we define 1Card and 2Card in Card module
 
-```Move
+~~~Move
 struct L1CardMeta has copy, store, drop{
         gene: u64,
     }
@@ -55,7 +55,7 @@ struct L1CardMeta has copy, store, drop{
     public fun mint_l1(_sender: &signer): NFT<L1CardMeta, L1Card> acquires L1CardMintCapability
     
     public fun mint_l2(_sender: &signer, first: NFT<L1CardMeta, L1Card>, second: NFT<L1CardMeta, L1Card>): NFT<L2CardMeta,L2Card> acquires L1CardBurnCapability, L2CardMintCapability
-```
+~~~
 
 Here we don't discuss what kind of cards L1Card and L2Card represent, nor discuss the game logic of the cards, but analyze the advantages of the design as NFT cards:
 
@@ -76,7 +76,7 @@ The Starcoin standard NFT protocol design is very simple and efficient, and it c
 
 NFT, as virtual identity, also has a very wide range of applications in social and other fields, such as the very popular cryptopunk and ENS. In fact, on top of the standard NFT protocol, Starcoin specifically encapsulates a set of universal IdentifierNFT protocol for the identity scenario. When we introduced the Starcoin standard NFT protocol, we also introduced the IdentifierNFT module. The IdentifierNFT protocol can be applied to any uniquely identified scenario, including but not limited to the NameService scenario (ENS). Here we introduce another application case of IdentifierNFT as an NFT membership.
 
-```Move
+~~~Move
 struct XMembership has copy, store, drop{
     		join_time: u64,
     		end_time: u64,
@@ -93,7 +93,7 @@ struct XMembership has copy, store, drop{
     public fun quit(sender: &signer) acquires XMembershipBurnCapability
     
     public fun do_membership_action(sender: &signer) acquires XMembershipBurnCapability
-```
+~~~
 
 Here we focus on the logic of NFT as a membership:
 
@@ -115,7 +115,7 @@ The above is an example of using NFT as a member ID, which uses both the standar
 
 NFT is also widely used in e-commerce scenarios, such as blind box, and so on. From another e-commerce perspective, we use NFT as a shopping receipt to introduce the application cases of the Starcoin standard NFT protocol in e-commerce scenarios. Let's think about scenarios such as pre-sales, purchase of e-vouchers, tickets, etc. Users use Tokens to purchase NFTs of goods online, and then use NFTs to consume or exchange real objects.
 
-```Move
+~~~Move
 struct BoxMiner has copy, store, drop{
         price: u128,
     }
@@ -125,7 +125,7 @@ struct BoxMiner has copy, store, drop{
 		public fun init(sender: &signer, total_supply:u64, price: u128)
 		
 		public fun mint(sender: &signer): NFT<BoxMiner, BoxMinerBody> acquires BoxMinerMintCapability, NFTInfo
-```
+~~~
 
 The above code segement is the main logic of the BoxMiner module:
 

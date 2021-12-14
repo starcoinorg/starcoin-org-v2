@@ -79,7 +79,7 @@ In the previous section, we compared the NFT protocol of Ethereum and the standa
 
 Let's first look at the basic definition of NFT. The following is the definition of NFT and the main operating functions in the NFT module:
 
-```Move
+~~~Move
 /// The info of NFT type
     struct NFTTypeInfoV2<NFTMeta: copy + store + drop> has key, store {
         register: address,
@@ -101,7 +101,7 @@ Let's first look at the basic definition of NFT. The following is the definition
     public fun mint_v2<NFTMeta: copy + store + drop, NFTBody: store>(sender: &signer, base_meta: Metadata, type_meta: NFTMeta, body: NFTBody): NFT<NFTMeta, NFTBody> acquires NFTTypeInfoV2, MintCapability
     
     public fun burn<NFTMeta: copy + store + drop, NFTBody: store>(sender: &signer, nft: NFT<NFTMeta, NFTBody>): NFTBody acquires NFTTypeInfoV2, BurnCapability
-```
+~~~
 
 The above contains the core code of the NFT module. The logic is very concise and clear. It is the code related to NFT definition, casting, and destruction:
 
@@ -111,7 +111,7 @@ The above contains the core code of the NFT module. The logic is very concise an
 
 NFT castings can be stored separately or in batches through NFTGallery. Let's take a look at what logic the module of NFTGallery contains.
 
-```Move
+~~~Move
 struct NFTGallery<NFTMeta: copy + store + drop, NFTBody: store> has key, store {
         withdraw_events: Event::EventHandle<WithdrawEvent<NFTMeta>>,
         deposit_events: Event::EventHandle<DepositEvent<NFTMeta>>,
@@ -126,7 +126,7 @@ struct NFTGallery<NFTMeta: copy + store + drop, NFTBody: store> has key, store {
     
     public fun withdraw<NFTMeta: copy + store + drop, NFTBody: store>(sender: &signer, id: u64): Option<NFT<NFTMeta, NFTBody>> acquires NFTGallery
     
-```
+~~~
 
 The above is the core code of the NFTGallery module, the main logic is the operation of receiving, transferring, depositing, and withdrawing NFT.
 
@@ -151,7 +151,7 @@ When discussing the possible application scenarios of Starcoin's NFT, there are 
 
 Starcoin's IdentifierNFT is a typical application of NFT. In addition to same function to Name Service, it can also be applied to other similar scenarios, so it has more functions than Ethereum's ENS and covers a wider range of scenarios. Let's take a closer look at the IdentifierNFT module.
 
-```Move
+~~~Move
 struct IdentifierNFT<NFTMeta: copy + store + drop, NFTBody: store> has key {
         nft: Option<NFT<NFTMeta, NFTBody>>,
     }
@@ -161,7 +161,7 @@ struct IdentifierNFT<NFTMeta: copy + store + drop, NFTBody: store> has key {
     public fun grant<NFTMeta: copy + store + drop, NFTBody: store>(cap: &mut MintCapability<NFTMeta>, sender: &signer, nft: NFT<NFTMeta, NFTBody>) acquires IdentifierNFT
     
     public fun revoke<NFTMeta: copy + store + drop, NFTBody: store>(_cap: &mut BurnCapability<NFTMeta>, owner: address): NFT<NFTMeta, NFTBody>  acquires IdentifierNFT 
-```
+~~~
 
 The function of IdentifierNFT is to set a batch of any type of NFT as the current account's identity. The above is the authorization and revocation operation of the IdentifierNFT structure. Here, the NFT is transferred to the IdentifierNFT contract, as the core data of the business logic, and finally saved to each user's own account. Name Service is just a typical application of IdentifierNFT, and there are more things that can be done, such as using encrypted punk NFT as a logo, blog address as a identifier, and so on.
 

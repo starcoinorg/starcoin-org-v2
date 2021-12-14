@@ -31,7 +31,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
 1. Flexible OracleInfo
 
-   ```Move
+~~~Move
    struct OracleInfo<OracleT: copy+store+drop, Info: copy+store+drop> has key {
        ///The datasource counter
        counter: u64,
@@ -40,7 +40,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
    }
    
    public fun register_oracle<OracleT: copy+store+drop, Info: copy+store+drop>(_sender: &signer, info: Info) acquires GenesisSignerCapability
-   ```
+~~~
 
    - OracleInfo is generic type, supports any type of Info through generic parameters, and has very good extensity.
    - OracleInfo only has key ability, it neither can be copied to a duplicate OracleInfo instance nor be dropped, so it's secure and reliable.
@@ -48,7 +48,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
 2. Plentiful Data Source
 
-   ```Move
+~~~Move
    struct DataSource<OracleT: copy+store+drop, ValueT: copy+store+drop> has key {
        /// the id of data source of ValueT
        id: u64,
@@ -58,14 +58,14 @@ This protocol is fully functional, and its design is perfect, we can take a deep
    }
    
    public fun init_data_source<OracleT:  copy+store+drop, Info: copy+store+drop, ValueT: copy+store+drop>(sender: &signer, init_value: ValueT) acquires OracleInfo
-   ```
+~~~
 
    - Any account can call init_data_source function to become DataSouce.
    - Data such as Update Credentials and Update Capability are stored under the current account and have clear ownership.
 
 3. Reasonable Authority Management
 
-   ```Move
+~~~Move
    struct UpdateCapability<OracleT: copy+store+drop> has store, key {
        account: address,
    }
@@ -73,7 +73,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
    struct GenesisSignerCapability has key{
        cap: Account::SignerCapability,
    }
-   ```
+~~~
 
    - Define two types of authority: To registe OracleInfo GenesisSignerCapability, to update OracleFeed UpdateCapability.
    - Only GENESIS_ADDRESS has GenesisSignerCapability, through the loan way, everyone can register for OracleInfo.
@@ -81,7 +81,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
 4. Secure OracleFeed
 
-   ```Move
+~~~Move
    struct DataRecord<ValueT: copy+store+drop> has copy, store, drop {
        ///The data version
        version: u64,
@@ -98,7 +98,7 @@ This protocol is fully functional, and its design is perfect, we can take a deep
    public fun update<OracleT: copy+store+drop, ValueT: copy+store+drop>(sender: &signer, value: ValueT) acquires UpdateCapability, DataSource, OracleFeed
    
    public fun update_with_cap<OracleT: copy+store+drop, ValueT: copy+store+drop>(cap: &mut UpdateCapability<OracleT>, value: ValueT) acquires DataSource,OracleFeed
-   ```
+~~~
 
    - DataRecord stores real data, has strict version control and a timestamp updated_at  on the chain.
    - DataRecord only has key ability, cannot be dropped and copied, secure and reliable.
@@ -147,11 +147,11 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
       PriceOracle is built based on standard Oracle protocol and is a general contract implemented for price scenarios. In other words, any data in the form of Price can be uploaded to the chain through PriceOracle.
 
-      ```Move
+~~~Move
       struct PriceOracleInfo has copy,store,drop{
           scaling_factor: u128,
       }
-      ```
+~~~
 
       In the standard Oracle protocol, OracleInfo has a generic parameter Info: copy+store+drop. In PriceOracle, the specific implementation corresponding to Info is PriceOracleInfo, which only contains the calculation factor scaling_factor, so PriceOracleInfo must have cthree abilities of copy, store, and drop, which are the requirements of the generic parameter of Info.
 
@@ -163,9 +163,9 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
       If PriceOracle is a general price contract, then the STCUSDTOracle contract is a specific product implemented in the price scenario.
 
-      ```Move
+~~~Move
       struct STCUSD has copy,store,drop {}
-      ```
+~~~
 
       We have seen that in the standard Oracle protocol, in OracleInfo, apart from Info, OracleInfo has another generic parameter OracleT: copy+store+drop, OracleT represents a pair of currency combinations, and Info represents information. PriceOracle only implements PriceOracleInfo, OracleT is also a generic parameter in PriceOracle, and the biggest role of the STCUSDTOracle contract is to determine the type of OracleT as STCUSD. Of course, anyone can implement their own pair of currency combination contracts and define their own products.
 
