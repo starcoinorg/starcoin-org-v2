@@ -23,13 +23,13 @@ Move, Code, Architecture, technical details about Starcoin
 1. [Why Move?](https://starcoin.org/en/developer/blog/starcoin_move_resource)
 2. [Starcoin & Move & Metaverse](https://starcoin.org/en/developer/blog/starcoin_metaverse)
 3. [Upgrade Starcoin Stdlib](https://starcoin.org/en/developer/blog/starcoin_stdlib_upgrade)
-4. [Code is law](https://starcoin.org/zh/developer/blog/starcoin_code_is_law)
-5. [Starcoin & Dapp](https://starcoin.org/zh/developer/blog/starcoin_dapp)
-6. [Starcoin & Oracle](https://starcoin.org/zh/developer/blog/starcoin_oracle_protocol)
-7. [Starcoin Contract Account](https://starcoin.org/zh/developer/blog/starcoin_contract_account)
-8. [Starcoin & NFT](https://starcoin.org/zh/developer/blog/starcoin_nft_protocol)
-9. [MerkleNFT](https://starcoin.org/zh/developer/blog/starcoin_merkle_nft)
-10. [Starcoin NFT in action](https://starcoin.org/zh/developer/blog/starcoin_nft_application)
+4. [Code is law](https://starcoin.org/en/developer/blog/starcoin_code_is_law)
+5. [Starcoin & Dapp](https://starcoin.org/en/developer/blog/starcoin_dapp)
+6. [Starcoin & Oracle](https://starcoin.org/en/developer/blog/starcoin_oracle_protocol)
+7. [Starcoin Contract Account](https://starcoin.org/en/developer/blog/starcoin_contract_account)
+8. [Starcoin & NFT](https://starcoin.org/en/developer/blog/starcoin_nft_protocol)
+9. [MerkleNFT](https://starcoin.org/en/developer/blog/starcoin_merkle_nft)
+10. [Starcoin NFT in action](https://starcoin.org/en/developer/blog/starcoin_nft_application)
 11. [Starcoin architecture](http://westar.io/blog/starcoin_arch/)
 12. [Starcoin Token](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
 
@@ -42,8 +42,8 @@ Move, Code, Architecture, technical details about Starcoin
 3. [Atlaspad](https://starcoin.org/en/developer/blog/move_ido_atlaspad/)
 4. [starauction](https://starcoin.org/en/developer/blog/move_starauction/)
 5. [RedPackage](https://starcoin.org/en/developer/blog/move_redpackage/)
-6. [Purchase](https://starcoin.org/zh/developer/blog/move_purchase/)
-7. [Star](https://starcoin.org/zh/developer/blog/move_starstar/)
+6. [Purchase](https://starcoin.org/en/developer/blog/move_purchase/)
+7. [Star](https://starcoin.org/en/developer/blog/move_starstar/)
 
 
 
