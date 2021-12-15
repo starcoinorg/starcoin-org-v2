@@ -32,7 +32,7 @@ Move学习指南、源码分析、设计思想等文章
 10. [Starcoin标准NFT协议的场景分析及落地实践](https://starcoin.org/zh/developer/blog/starcoin_nft_application)
 11. [深入浅出分析 Starcoin 架构设计](http://westar.io/blog/starcoin_arch/)
 12. [Starcoin之Token协议详解](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
-13. [判断 Starcoin 十大亮点](http://westar.io/blog/starcoin_features/)
+13. [盘点 Starcoin 十大亮点](http://westar.io/blog/starcoin_features/)
 
 
 
