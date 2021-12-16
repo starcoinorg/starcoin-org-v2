@@ -33,6 +33,7 @@ Move, Code, Architecture, technical details about Starcoin
 11. [Starcoin architecture](http://westar.io/blog/starcoin_arch/)
 12. [Starcoin Token](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
 13. [Starcoin introduce](http://westar.io/blog/starcoin_features/)
+14. [Starcoin Config](https://starcoin.org/zh/developer/blog/starcoin_stdlib_config/)
 
 
 
