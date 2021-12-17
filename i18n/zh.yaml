@@ -167,11 +167,11 @@
 - id: footerTelegram
   translation: '电报: Starcoin_STC'
 - id: footerTwitterChinese
-  translation: 'Twitter中文: StarcoinMove'
+  translation: 'Twitter中文: StarcoinZH'
 - id: footerMedium
   translation: 'Medium: Starcoin'
 - id: footerMediumChinese
-  translation: 'Medium博客: StarcoinMove'
+  translation: 'Medium博客: StarcoinZH'
 - id: footerWestarLab
   translation: Westar 实验室
 - id: footerWechatGroup
