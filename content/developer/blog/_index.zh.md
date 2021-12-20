@@ -34,6 +34,7 @@ Move学习指南、源码分析、设计思想等文章
 12. [Starcoin之Token协议详解](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
 13. [盘点 Starcoin 十大亮点](http://westar.io/blog/starcoin_features/)
 14. [Starcoin的Stdlib介绍之Config模块](https://starcoin.org/zh/developer/blog/starcoin_stdlib_config/)
+15. [Starcoin注重安全的设计理念](https://starcoin.org/zh/developer/blog/starcoin_safty/)
 
 
 
