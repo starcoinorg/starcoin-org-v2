@@ -35,6 +35,7 @@ Move学习指南、源码分析、设计思想等文章
 13. [盘点 Starcoin 十大亮点](http://westar.io/blog/starcoin_features/)
 14. [Starcoin的Stdlib介绍之Config模块](https://starcoin.org/zh/developer/blog/starcoin_stdlib_config/)
 15. [Starcoin注重安全的设计理念](https://starcoin.org/zh/developer/blog/starcoin_safty/)
+15. [Starcoin与DAO时代的碰撞](https://starcoin.org/zh/developer/blog/starcoin_dao_1/)
 
 
 
@@ -47,5 +48,4 @@ Move学习指南、源码分析、设计思想等文章
 5. 首届Starcoin & Move线上黑客松源码分析——[RedPackage](https://starcoin.org/zh/developer/blog/move_redpackage/)
 6. 首届Starcoin & Move线上黑客松源码分析——[Purchase](https://starcoin.org/zh/developer/blog/move_purchase/)
 7. 首届Starcoin & Move线上黑客松源码分析——[Star](https://starcoin.org/zh/developer/blog/move_starstar/)
-
 
