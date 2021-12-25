@@ -63,7 +63,7 @@ StarMask是Starcoin官方发布的浏览器插件钱包，不仅是用户管理�
 
 * 安装指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md
 
-* 使用指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md
+* 使用指南：https://github.com/starcoinorg/starmask-extension/blob/main/docs/zh/how-to-use.md
 
 
 

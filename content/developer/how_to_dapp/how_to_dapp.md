@@ -59,7 +59,7 @@ Next, we’ll explore further about each concept we have learned in figure 2. If
 
  Starmask is not only used to manage your digital assets, but another way to interact with Starcoin blockchain. Here is one example, users create digital signature for each transaction in Dapp, then submit this transaction to Txpool which in remote nodes. 
 *  Installation Link: https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md
-* User Guides Link:https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md
+* User Guides Link:https://github.com/starcoinorg/starmask-extension/blob/main/docs/en/how-to-use.md
 
 
 
