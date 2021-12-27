@@ -36,6 +36,7 @@ Move学习指南、源码分析、设计思想等文章
 14. [Starcoin的Stdlib介绍之Config模块](https://starcoin.org/zh/developer/blog/starcoin_stdlib_config/)
 15. [Starcoin注重安全的设计理念](https://starcoin.org/zh/developer/blog/starcoin_safty/)
 15. [Starcoin与DAO时代的碰撞](https://starcoin.org/zh/developer/blog/starcoin_dao_1/)
+15. [Starcoin & Diem共同打造Move生态](https://starcoin.org/zh/developer/blog/starcoin_diem_move/)
 
 
 
