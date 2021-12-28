@@ -37,6 +37,7 @@ Move学习指南、源码分析、设计思想等文章
 15. [Starcoin注重安全的设计理念](https://starcoin.org/zh/developer/blog/starcoin_safty/)
 15. [Starcoin与DAO时代的碰撞](https://starcoin.org/zh/developer/blog/starcoin_dao_1/)
 15. [Starcoin & Diem共同打造Move生态](https://starcoin.org/zh/developer/blog/starcoin_diem_move/)
+15. [Starcoin，公链之战中闪耀的新星](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
 
 
 
