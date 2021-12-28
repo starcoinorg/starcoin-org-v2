@@ -37,6 +37,7 @@ Move, Code, Architecture, technical details about Starcoin
 15. [Starcoin safty](https://starcoin.org/zh/developer/blog/starcoin_safty/)
 15. [Starcoin & DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_1/)
 15. [Starcoin & Diem & Move](https://starcoin.org/zh/developer/blog/starcoin_diem_move/)
+15. [Starcoin BlockChain](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
 
 
 
