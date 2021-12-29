@@ -433,7 +433,7 @@ button:hover {
   align-items: center;
 }
 .top .top-container .nav .item .language-box span{
-  width: 57px;
+  width: 36px;
   height: 26px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 2px;
@@ -447,7 +447,6 @@ button:hover {
 .top .top-container .nav .item .language-box img{
   width: 16px;
   height: 16px;
-  margin-right: 5px;
 }
 
 .top .top-container .nav .item .more_nav {
@@ -488,7 +487,7 @@ button:hover {
 }
 .top .top-container .nav .item .more_nav .box .nav-language .item img{
   margin-left: 30px;
-  margin-right: 10px;
+  margin-top: -2px;
   width: 16px;
   height: 16px;
 }
