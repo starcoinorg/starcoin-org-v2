@@ -112,7 +112,7 @@ Awarded in the form of Starcoin tokens (STC)
 
 1.Any developer or team (maximum 5) can register through the following ways
 
-2.Entry portal: Click to fill in the information for registration (https://forms.gle/pMUAwXH97vjBWgCc8)
+2.Entry portal: Click to fill in the information for registration (https://forms.gle/51GYUXxdYeQnH1mXA)
 
 3.Enter the official hackathon Discord group (https://discord.gg/AYrCpebf) free team formation, technical exchanges, registration participation.
 
