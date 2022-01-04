@@ -9,7 +9,7 @@ archives="2021"
 
 +++
 
-![move_2_start](https://tva1.sinaimg.cn/large/008i3skNly1gxv02ke5f3j30bj05rdg6.jpg)
+![move_2_start](/images/hackathon/starcoin_hackathon.jpg)
 
 本届Starcoin黑客松大赛主题是：All in Metaverse & DeFi on Starcoin，旨在让参与者与Starcoin一道，在有限的时间内，在Metaverse & DeFi的实践碰撞出新的想法。
 
