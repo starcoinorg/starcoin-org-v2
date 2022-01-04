@@ -19,7 +19,7 @@ weight: 28
 
 从主网上线至今，大概半年的时间，随着Starcoin特性不断丰富，Starcoin经历了快速的发展，一些优质的生态项目在Starcoin落地，并且为未来的生态爆发提供了扎实的基础。本文集中盘点Starcoin生态的优质项目，方便大家快速了解Starcoin。
 
-<img src="/Users/dqm/Desktop/内容/文章/Starcoin生态/img/starcoin_event.jpg" alt="starcoin_event" style="zoom:25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gy1ebipdwhj31i20qajuv.jpg" alt="starcoin_event" style="zoom:25%;" />
 
 
 
@@ -39,7 +39,7 @@ Starcoin使用增强的PoW共识，计算nonce的算法为cryptonight-r。每个
 
 Starcoin生态中也有多个分布在全球范围内的矿池，例如鱼池、币印、可乐等等。对于不想自己搭建节点的Starcoin用户，接入矿池是一种很好的选择。
 
-<img src="/Users/dqm/Desktop/内容/文章/Starcoin生态/img/starcoin_ecology.jpg" alt="starcoin_ecology" style="zoom:60%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gy1ebyvfpzj30sw0f8dha.jpg" alt="starcoin_ecology" style="zoom:50%;" />
 
 
 
