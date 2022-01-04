@@ -10,7 +10,7 @@ archives="2021"
 
 +++
 
-![move_2_start](https://tva1.sinaimg.cn/large/008i3skNly1gxv02ke5f3j30bj05rdg6.jpg)
+![move_2_start](/images/hackathon/starcoin_hackathon.jpg)
 
 The theme of this year's Starcoin Hackathon is “All in Metaverse & Defi on Starcoin”, which aims to bring participants together for a limited period to brainstorm for new ideas in the field of Metaverse & Defi.
 
