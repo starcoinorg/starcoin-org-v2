@@ -20,7 +20,9 @@ Move, Code, Architecture, technical details about Starcoin
 
 ## II. Starcoin
 
-1.[Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
+1. [Starcoin User Guide](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
+
+2. [Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
 
 
 
@@ -36,9 +38,9 @@ Move, Code, Architecture, technical details about Starcoin
 8. [Starcoin & NFT](https://starcoin.org/en/developer/blog/starcoin_nft_protocol)
 9. [MerkleNFT](https://starcoin.org/en/developer/blog/starcoin_merkle_nft)
 10. [Starcoin NFT in action](https://starcoin.org/en/developer/blog/starcoin_nft_application)
-11. [Starcoin architecture](http://westar.io/blog/starcoin_arch/)
-12. [Starcoin Token](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
-13. [Starcoin introduce](http://westar.io/blog/starcoin_features/)
+11. [Starcoin architecture](https://starcoin.org/en/developer/blog/starcoin_arch/)
+12. [Starcoin Token](https://starcoin.org/en/developer/blog/starcoin_token_proto/)
+13. [Starcoin introduce](https://starcoin.org/en/developer/blog/starcoin_features/)
 14. [Starcoin Config](https://starcoin.org/en/developer/blog/starcoin_stdlib_config/)
 15. [Starcoin safty](https://starcoin.org/en/developer/blog/starcoin_safty/)
 16. [Starcoin & DAO](https://starcoin.org/en/developer/blog/starcoin_dao_1/)
