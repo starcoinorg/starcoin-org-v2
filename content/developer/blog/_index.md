@@ -39,12 +39,12 @@ Move, Code, Architecture, technical details about Starcoin
 11. [Starcoin architecture](http://westar.io/blog/starcoin_arch/)
 12. [Starcoin Token](https://starcoin.org/zh/developer/blog/starcoin_token_proto/)
 13. [Starcoin introduce](http://westar.io/blog/starcoin_features/)
-14. [Starcoin Config](https://starcoin.org/zh/developer/blog/starcoin_stdlib_config/)
-15. [Starcoin safty](https://starcoin.org/zh/developer/blog/starcoin_safty/)
-15. [Starcoin & DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_1/)
-15. [Starcoin & Diem & Move](https://starcoin.org/zh/developer/blog/starcoin_diem_move/)
-15. [Starcoin BlockChain](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
-15. [Move safty](https://starcoin.org/zh/developer/blog/move_safty/)
+14. [Starcoin Config](https://starcoin.org/en/developer/blog/starcoin_stdlib_config/)
+15. [Starcoin safty](https://starcoin.org/en/developer/blog/starcoin_safty/)
+16. [Starcoin & DAO](https://starcoin.org/en/developer/blog/starcoin_dao_1/)
+17. [Starcoin & Diem & Move](https://starcoin.org/en/developer/blog/starcoin_diem_move/)
+18. [Starcoin BlockChain](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
+19. [Move safty](https://starcoin.org/zh/developer/blog/move_safty/)
 
 
 
