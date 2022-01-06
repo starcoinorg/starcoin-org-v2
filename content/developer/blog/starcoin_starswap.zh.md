@@ -15,15 +15,15 @@ Starswap包含两个核心的功能：Swap和流动性挖矿。Swap是在链上�
 
 ## 选择正确的网络
 
-先设置Starmask的网络。如果是主网，就选择Starcoin主网。本文是在Barnard测试网进行体验，所以将Starmask的网络设置成Barnard网络。
+先设置StarMask的网络。如果是主网，就选择Starcoin主网。本文是在Barnard测试网进行体验，所以将StarMask的网络设置成Barnard网络。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxybko6rqkj30j40igaaz.jpg" alt="starmask_1" style="zoom:33%;" />
 
 
 
-## 保证Starmask有足够的STC
+## 保证StarMask有足够的STC
 
-Starmask有足够的STC才能进行后面的swap等操作。本文是在Barnard网络进行测试，所以需要通过Starcoin的水龙头申请测试需要的STC。如果是主网，则需要用户自己往钱包账户充钱。
+StarMask有足够的STC才能进行后面的swap等操作。本文是在Barnard网络进行测试，所以需要通过Starcoin的水龙头申请测试需要的STC。如果是主网，则需要用户自己往钱包账户充钱。
 
 
 
@@ -37,7 +37,7 @@ Starmask有足够的STC才能进行后面的swap等操作。本文是在Barnard�
 
 ### 2. 复制账户地址
 
-从Starmask复制自己的账户地址。
+从StarMask复制自己的账户地址。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyd93ve6lj30is09wwet.jpg" alt="barnard_address" style="zoom:33%;" />
 
@@ -59,9 +59,9 @@ Starmask有足够的STC才能进行后面的swap等操作。本文是在Barnard�
 
 
 
-### 1. 连接Starmask钱包
+### 1. 连接StarMask钱包
 
-如图所示，点击连接自己的Starmask钱包。
+如图所示，点击连接自己的StarMask钱包。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxydmw7eloj31g00sqmyj.jpg" alt="starswap_0" style="zoom:25%;" />
 
@@ -87,7 +87,7 @@ FAI是Starcoin生态的第一个stable coin，这以FAI为例。
 
 ### 5. 确认
 
-这步主要是确认数量、滑点等交易细节，确认之后会调用Starmask。
+这步主要是确认数量、滑点等交易细节，确认之后会调用StarMask。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyess0ye3j30u00yc76j.jpg" alt="starswap_4" style="zoom:33%;" />
 
@@ -113,7 +113,7 @@ FAI是Starcoin生态的第一个stable coin，这以FAI为例。
 
 ### 1. 进入流动性页面
 
-按如图①的操作，点击Pool进入流动性页面。如果没有连接Starmask，使用②连接Starmask。然后点击伞按钮添加流动性。
+按如图①的操作，点击Pool进入流动性页面。如果没有连接StarMask，使用②连接StarMask。然后点击伞按钮添加流动性。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyf4ezlv9j31ia0eewfa.jpg" alt="starswap_7" style="zoom:33%;" />
 
@@ -125,7 +125,7 @@ FAI是Starcoin生态的第一个stable coin，这以FAI为例。
 
 ### 3. 确认
 
-这步主要是确认流动性交易细节，确认之后会调用Starmask。
+这步主要是确认流动性交易细节，确认之后会调用StarMask。
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfp1cccej30u016rn0m.jpg" alt="starswap_9" style="zoom:33%;" />
 
