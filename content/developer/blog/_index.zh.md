@@ -51,7 +51,7 @@ Move学习指南、源码分析、设计思想等文章
 
 ## Ⅳ. 生态
 
-1. [Starcoin生态升级，StarSwap初体验](https://starcoin.org/zh/developer/blog/starcoin_starswap)
+1. [Starcoin生态升级，Starswap初体验](https://starcoin.org/zh/developer/blog/starcoin_starswap)
 
 
 

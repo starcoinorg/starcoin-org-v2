@@ -1,5 +1,5 @@
 ---
-title: Starcoin生态升级，StarSwap初体验
+title: Starcoin生态升级，Starswap初体验
 weight: 30
 ---
 
