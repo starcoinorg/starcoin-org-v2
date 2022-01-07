@@ -37,11 +37,11 @@ Starmask有两种安装方式：
 
 2. 第一次使用Starcoin，还没有Starcoin账户，需要使用方式②，创建新账户；
 
-需要特别说明的是，一定要妥善保管好自己的助记词，避免丢失和被盗。点击查看更详细的[Starmask安装和初始化教程](https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-install.md)。
+需要特别说明的是，一定要妥善保管好自己的助记词，避免丢失和被盗。点击查看更详细的[Starmask安装和初始化教程](https://github.com/starcoinorg/starmask-extension/blob/main/docs/zh/how-to-install.md)。
 
 三、使用Starmask
 
-Starmask能非常方便的管理自己在Starcoin的链上数据，例如STC，轻松操作账户。如果你是初次使用Starmask钱包，可以查看更详细的[Starmask教程【文字版】](https://github.com/starcoinorg/starmask-extension/blob/main/docs/how-to-use.md)或者[Starmask教程【视频版】](https://www.youtube.com/watch?v=VA1uVLmzuhQ)，掌握Starmask的转账、网络管理、私钥管理等常用操作。
+Starmask能非常方便的管理自己在Starcoin的链上数据，例如STC，轻松操作账户。如果你是初次使用Starmask钱包，可以查看更详细的[Starmask教程【文字版】](https://github.com/starcoinorg/starmask-extension/blob/main/docs/zh/how-to-use.md)或者[Starmask教程【视频版】](https://www.youtube.com/watch?v=VA1uVLmzuhQ)，掌握Starmask的转账、网络管理、私钥管理等常用操作。
 
 Starmask除了常用的钱包功能之外，还能帮助你参与更多的事情：
 
