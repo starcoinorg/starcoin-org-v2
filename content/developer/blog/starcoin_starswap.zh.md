@@ -153,6 +153,6 @@ FAI是Starcoin生态的第一个stable coin，这以FAI为例。
 
 上面是Starswap进行Swap交易、流动性挖矿的操作教程。
 
-Starswap是Starcoin生态的首个Swap，标志着Starcoin进入全新的DeFi时代。Starswap是Move合约，面向资源编程和面向泛型编程，从安全性和扩展性上来说，比Solidity更胜一筹。
+Starswap定位是Starcoin生态通用的DEX，标志着Starcoin进入全新的DeFi时代。Starswap是Move合约，面向资源编程和面向泛型编程，从安全性和扩展性上来说，比Solidity更胜一筹。
 
 相信会有越来越多的Move合约，Starcoin生态和Move生态都会越来越丰富。
