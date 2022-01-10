@@ -22,6 +22,7 @@ Move学习指南、源码分析、设计思想等文章
 
 1. [轻松玩转Starcoin](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
 1. [一文盘点Starcoin生态](https://starcoin.org/zh/developer/blog/starcoin_ecology)
+1. [盘点Move的重要特性](https://starcoin.org/zh/developer/blog/starcoin_movelang)
 
 
 
