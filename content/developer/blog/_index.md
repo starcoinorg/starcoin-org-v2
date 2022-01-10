@@ -21,8 +21,8 @@ Move, Code, Architecture, technical details about Starcoin
 ## II. Starcoin
 
 1. [Starcoin User Guide](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
-
 2. [Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
+2. [move features](https://starcoin.org/zh/developer/blog/starcoin_movelang)
 
 
 
@@ -45,8 +45,8 @@ Move, Code, Architecture, technical details about Starcoin
 15. [Starcoin safty](https://starcoin.org/en/developer/blog/starcoin_safty/)
 16. [Starcoin & DAO](https://starcoin.org/en/developer/blog/starcoin_dao_1/)
 17. [Starcoin & Diem & Move](https://starcoin.org/en/developer/blog/starcoin_diem_move/)
-18. [Starcoin BlockChain](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
-19. [Move safty](https://starcoin.org/zh/developer/blog/move_safty/)
+18. [Starcoin BlockChain](https://starcoin.org/en/developer/blog/starcoin_new_blockchain/)
+19. [Move safty](https://starcoin.org/en/developer/blog/move_safty/)
 
 
 
