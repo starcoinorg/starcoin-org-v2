@@ -26,7 +26,7 @@ Detail information about this year's Starcoin Hackathon are as follows:
 
 **[Event Duration]：**
 
-The registration starts on December 22, 2021,  and ends on February, 2022
+The registration starts on December, 2021,  and ends on February, 2022
 
 
 
@@ -68,7 +68,7 @@ Awarded in the form of Starcoin tokens (STC)
 - All submitted projects must be deployed on the Starcoin Halley or Starcoin Barnard test network
 - Must submit a full project demo video and a link to the Github repository
 - MMust submit a demo video (5-10 minutes) explaining the project and how it will be used
-- Projects must be submitted by January 22, 2022, 15:59 (23:59 UTC)
+- Projects must be submitted in February, 2022
 
 
 
@@ -83,7 +83,7 @@ Awarded in the form of Starcoin tokens (STC)
 
 **[Results Announcement]：**
 
-- Finalists will be invited to present their projects via Discord on January 25, 2022, and other prizes will be announced by January 26, 2022, at 18:00
+- Finalists will be invited to present their projects via Discord on January 25, 2022, and other prizes will be announced in February 2022
 - All winning projects will receive strong support from the Starcoin project management and community, including funding, technology, and marketing resources, to make the projects into high-quality Starcoin public chain ecological projects.
 
 
