@@ -1,8 +1,13 @@
-# Starcoin's Architecture
+---
+title: Starcoin's Architecture
+weight: 12
+---
+
+~~~
+* By Starcoin community
+~~~
 
 
-
-Monday Nov 15, 2021 By Qiming Deng
 
 ## Starcoin's Architecture
 
