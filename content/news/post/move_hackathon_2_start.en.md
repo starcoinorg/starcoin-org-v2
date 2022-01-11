@@ -26,7 +26,7 @@ Detail information about this year's Starcoin Hackathon are as follows:
 
 **[Event Duration]：**
 
-The registration starts on December 22, 2021, and ends on January 30, 2022
+The registration starts on December 22, 2021,  and ends on February, 2022
 
 
 
