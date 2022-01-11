@@ -110,7 +110,7 @@ starcoin% account show 0xdec266f6749fa0b193f3a7f89d3cd9f2
 在 tom 的 starcoin console 中执行：
 
 ```bash
-starcoin% account execute-function -b --function 0x1::TransferScripts::peer_to_peer  -t 0x1::STC::STC --arg 0xdec266f6749fa0b193f3a7f89d3cd9f2 --arg x"0ed57ae832f34fc5b1a744c7c7f65e5fdec266f6749fa0b193f3a7f89d3cd9f2" --arg 1000000000000u128
+starcoin% account execute-function -b --function 0x1::TransferScripts::peer_to_peer_v2  -t 0x1::STC::STC --arg 0xdec266f6749fa0b193f3a7f89d3cd9f2 --arg 1000000000000u128
 ```
 
 再查看多签账户的信息：
@@ -143,7 +143,7 @@ starcoin% account show 0xdec266f6749fa0b193f3a7f89d3cd9f2
 在 tom 的 starcoin console 中执行：
 
 ```bash
-starcoin% account sign-multisig-txn -s 0xdec266f6749fa0b193f3a7f89d3cd9f2 --function 0x1::TransferScripts::peer_to_peer -t 0x1::STC::STC --arg 0x51888ec9961c09db913bfe2bfacd8ec1 --arg x"951d6a3008eec3b0add413a622514d5c51888ec9961c09db913bfe2bfacd8ec1" --arg 1000000000u128
+starcoin% account sign-multisig-txn -s 0xdec266f6749fa0b193f3a7f89d3cd9f2 --function 0x1::TransferScripts::peer_to_peer_v2 -t 0x1::STC::STC --arg 0x51888ec9961c09db913bfe2bfacd8ec1 --arg 1000000000u128
 
 mutlisig txn(address: 0xdec266f6749fa0b193f3a7f89d3cd9f2, threshold: 2): 1 signatures collected
 still require 1 signatures
@@ -152,9 +152,8 @@ still require 1 signatures
 }
 ```
 
-其中 `peer_to_peer` 脚本参数：
+其中 `peer_to_peer_v2` 脚本参数：
 - `0x51888ec9961c09db913bfe2bfacd8ec1` 是 bob 地址。
-- `x"951d6a3008eec3b0add413a622514d5c51888ec9961c09db913bfe2bfacd8ec1"` 是 bob 的 auth_key。
 - `1000000000u128` 是要发送的 token 数量。
 
 该命令会生成原始交易，并用 alice 的私钥签名，生成的 txn 会以文件形式保存在当前目录下，文件名是 txn 的 short hash。

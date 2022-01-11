@@ -369,7 +369,7 @@ These are two typical examples, and a more descriptive account operation is a: w
 
 ```move
 
-TransferScripts::peer_to_peer(account, payee, payee_auth_key, amount);
+TransferScripts::peer_to_peer_v2(account, payee, amount);
 
 ` ` `
 
@@ -381,7 +381,7 @@ TransferScripts::peer_to_peer(account, payee, payee_auth_key, amount);
 
 ```move
 
-TransferScripts::peer_to_peer_with_metadata(account, payee, payee_auth_key, amount, metadata);
+TransferScripts::peer_to_peer_with_metadata_v2(account, payee, amount, metadata);
 
 ` ` `
 
@@ -393,17 +393,10 @@ TransferScripts::peer_to_peer_with_metadata(account, payee, payee_auth_key, amou
 
 ​~~~move
 
-TransferScripts::batch_peer_to_peer(account, payeees, payee_auth_keys, amounts);
+TransferScripts::batch_peer_to_peer_v2(account, payeees, amounts);
 
 ~ ~ ~
 
-
-
-4. Transfer the same amount in batches
-
-​~~~move
-
-TransferScripts::peer_to_peer_batch(account, payeees, payee_auth_keys, amount);
 
 ~ ~ ~
 
