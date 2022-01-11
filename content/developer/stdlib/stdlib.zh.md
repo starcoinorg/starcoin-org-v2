@@ -128,25 +128,19 @@ Account::restore_withdraw_capability(with_cap);//3. restore capability
 1. peer_to_peer
 
 ```move
-TransferScripts::peer_to_peer<STC>(account, payee, payee_auth_key, amount);
+TransferScripts::peer_to_peer_v2<STC>(account, payee, amount);
 ```
 
 2. peer_to_peer_with_metadata
 
 ```move
-TransferScripts::peer_to_peer_with_metadata<STC>(account, payee, payee_auth_key, amount, metadata);
+TransferScripts::peer_to_peer_with_metadata_v2<STC>(account, payee, amount, metadata);
 ```
 
 3. 批量转账不同amount
 
 ~~~move
-TransferScripts::batch_peer_to_peer<STC>(account, payeees, payee_auth_keys, amounts);
-~~~
-
-4. 批量转账相同amount
-
-~~~move
-TransferScripts::peer_to_peer_batch<STC>(account, payeees, payee_auth_keys, amount);
+TransferScripts::batch_peer_to_peer_v2<STC>(account, payeees, amounts);
 ~~~
 
 
