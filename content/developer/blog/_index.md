@@ -8,22 +8,22 @@ Move, Code, Architecture, technical details about Starcoin
 
 <!--more-->
 
-## I. Move course
+## I. Starcoin
+
+1. [What is Starcoin](https://starcoin.org/zh/developer/blog/what_is_starcoin)
+2. [Starcoin introduce](https://starcoin.org/en/developer/blog/starcoin_features/)
+3. [Starcoin User Guide](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
+4. [move features](https://starcoin.org/zh/developer/blog/starcoin_movelang)
+2. [Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
+
+
+## II. Move course
 
 1. [Move Book](https://move-book.com/)
 
 2.  [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
 
 3. [Move development](https://starcoin.org/en/developer/blog/move_development/)
-
-
-
-## II. Starcoin
-
-1. [Starcoin User Guide](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
-2. [Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
-2. [move features](https://starcoin.org/zh/developer/blog/starcoin_movelang)
-
 
 
 ## III. Starcoin & Move
