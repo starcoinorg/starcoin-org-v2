@@ -8,23 +8,23 @@ Move学习指南、源码分析、设计思想等文章
 
 <!--more-->
 
-## I. 手把手学Move
+
+## I. Starcoin
+
+1. [什么是Starcoin](https://starcoin.org/zh/developer/blog/what_is_starcoin)
+1. [盘点 Starcoin 十大亮点](http://westar.io/blog/starcoin_features/)
+1. [轻松玩转Starcoin](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
+1. [盘点Move的重要特性](https://starcoin.org/zh/developer/blog/starcoin_movelang)
+1. [一文盘点Starcoin生态](https://starcoin.org/zh/developer/blog/starcoin_ecology)
+
+
+## II. 手把手学Move
 
 1. 手把手：[Move基础](https://move-book.com/cn/index.html)
 
 2. 手把手：[Move进阶](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
 
 3. 手把手：[Move开发实战](https://starcoin.org/zh/developer/blog/move_development/)
-
-
-
-## II. Starcoin
-
-1. [轻松玩转Starcoin](https://starcoin.org/zh/developer/blog/starcoin_stc_user)
-1. [一文盘点Starcoin生态](https://starcoin.org/zh/developer/blog/starcoin_ecology)
-1. [盘点Move的重要特性](https://starcoin.org/zh/developer/blog/starcoin_movelang)
-
-
 
 ## III. Starcoin & Move
 
