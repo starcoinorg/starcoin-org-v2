@@ -39,6 +39,8 @@
   translation: 新闻
 - id: navOverviewIntroduction
   translation: 整体介绍
+- id: navOverviewWhatIsStarcoin
+  translation: 什么是Starcoin
 - id: navOverviewTechnologyWhitepaper
   translation: 技术白皮书
 - id: navOverviewEconomyWhitepaper
@@ -155,7 +157,7 @@
 - id: footerCommunity
   translation: 社区
 - id: footerWechatPublicAccount
-  translation: '微信公众号: Starcoin区块链'
+  translation: "微信公众号: Starcoin区块链"
 - id: footerStarMaskWallet
   translation: StarMask 插件钱包
 - id: footerBlockchainExplorer
@@ -163,19 +165,19 @@
 - id: footerNews
   translation: 新闻
 - id: footerTwitter
-  translation: '推特: StarcoinSTC'
+  translation: "推特: StarcoinSTC"
 - id: footerTelegram
-  translation: '电报: Starcoin_STC'
+  translation: "电报: Starcoin_STC"
 - id: footerTwitterChinese
-  translation: 'Twitter中文: StarcoinZH'
+  translation: "Twitter中文: StarcoinZH"
 - id: footerMedium
-  translation: 'Medium: Starcoin'
+  translation: "Medium: Starcoin"
 - id: footerMediumChinese
-  translation: 'Medium博客: StarcoinZH'
+  translation: "Medium博客: StarcoinZH"
 - id: footerWestarLab
   translation: Westar 实验室
 - id: footerWechatGroup
-  translation: '微信群请加: starcoinorg'
+  translation: "微信群请加: starcoinorg"
 - id: footerDeveloperDocs
   translation: 开发者文档
 - id: footerSDK
@@ -183,9 +185,9 @@
 - id: footerMoveChineseCommunity
   translation: Move 中文社区
 - id: footerDiscord
-  translation: 'Discord 群: Discord Spaceship'
+  translation: "Discord 群: Discord Spaceship"
 - id: footerGitHubDiscussion
-  translation: 'GitHub 讨论区'
+  translation: "GitHub 讨论区"
 - id: footerAllRightsReserved
   translation: 保留一切权利
 

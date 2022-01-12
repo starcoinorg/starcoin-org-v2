@@ -14,7 +14,7 @@
   translation: More
 
 - id: bookSearchConfig
-  translation: '{ cache: true }'
+  translation: "{ cache: true }"
 
 - id: check other language version
   translation: The current language version of this document is still under improvement, please check other language versions
@@ -33,6 +33,8 @@
   translation: News
 - id: navOverviewIntroduction
   translation: Introduction
+- id: navOverviewWhatIsStarcoin
+  translation: What is Starcoin
 - id: navOverviewTechnologyWhitepaper
   translation: Technology Whitepaper
 - id: navOverviewEconomyWhitepaper
@@ -149,7 +151,7 @@
 - id: footerCommunity
   translation: Community
 - id: footerWechatPublicAccount
-  translation: 'WeChat Public Account: Starcoin区块链'
+  translation: "WeChat Public Account: Starcoin区块链"
 - id: footerStarMaskWallet
   translation: StarMask Wallet
 - id: footerBlockchainExplorer
@@ -157,23 +159,23 @@
 - id: footerNews
   translation: News
 - id: footerTwitter
-  translation: 'Twitter: StarcoinSTC'
+  translation: "Twitter: StarcoinSTC"
 - id: footerTwitterChinese
-  translation: 'Twitter中文: StarcoinZH'
+  translation: "Twitter中文: StarcoinZH"
 - id: footerTelegram
-  translation: 'Telegram: Starcoin_STC'
+  translation: "Telegram: Starcoin_STC"
 - id: footerTelegramChinese
-  translation: 'Telegram中文社群: StarcoinZH'
+  translation: "Telegram中文社群: StarcoinZH"
 - id: footerMedium
-  translation: 'Medium: Starcoin'
+  translation: "Medium: Starcoin"
 - id: footerMediumChinese
-  translation: 'Medium博客: StarcoinZH'
+  translation: "Medium博客: StarcoinZH"
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWestarLab
   translation: Westar Labs
 - id: footerWechatGroup
-  translation: 'Join WeChat Group: starcoinorg'
+  translation: "Join WeChat Group: starcoinorg"
 - id: footerDeveloperDocs
   translation: Developer Docs
 - id: footerSDK
@@ -181,9 +183,9 @@
 - id: footerMoveChineseCommunity
   translation: Move Chinese Community
 - id: footerDiscord
-  translation: 'Discord: Starcoin Spaceship'
+  translation: "Discord: Starcoin Spaceship"
 - id: footerGitHubDiscussion
-  translation: 'GitHub Discussion'
+  translation: "GitHub Discussion"
 - id: footerAllRightsReserved
   translation: All Rights Reserved
 
