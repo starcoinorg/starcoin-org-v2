@@ -2,11 +2,6 @@
         <span class="i18n" href="/{{ .Site.Language.Lang }}/">{{ i18n "navOverview" }}</span>
         <div class="more_nav">
                 <div class="box">
-                        <div class="li "
-                                style='display: {{ cond (eq .Site.Language.Lang "en") "none" "block" }};'>
-                                <a class="i18n" href='https://starcoin.org/zh/developer/blog/what_is_starcoin/'
-                                        target="_blank">{{ i18n "navOverviewWhatIsStarcoin" }}</a>
-                        </div>
                         <div class="li "><a class="i18n" href="/downloads/Starcoin_{{ .Site.Language.Lang }}.pdf"
                                         target="_blank">Starcoin
                                         & Move</a></div>
@@ -19,6 +14,10 @@
                         </div>
                 </div>
         </div>
+</div>
+<div class="item WhatIsStarcoin allSelect " style='display: {{ cond (eq .Site.Language.Lang "en") "none" "block" }};'>
+        <a class="i18n" href="/{{ .Site.Language.Lang }}/developer/blog/what_is_starcoin/"><span class="i18n" name="">{{ i18n "navOverviewWhatIsStarcoin"
+                        }}</span></a>
 </div>
 <div class="item Learn Developer allSelect ">
         <span class="i18n">{{ i18n "navLearn" }}</span>
