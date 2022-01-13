@@ -18,6 +18,7 @@ Move学习指南、源码分析、设计思想等文章
 1. [一文盘点Starcoin生态](https://starcoin.org/zh/developer/blog/starcoin_ecology)
 
 
+
 ## II. 手把手学Move
 
 1. 手把手：[Move基础](https://move-book.com/cn/index.html)
@@ -25,6 +26,8 @@ Move学习指南、源码分析、设计思想等文章
 2. 手把手：[Move进阶](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
 
 3. 手把手：[Move开发实战](https://starcoin.org/zh/developer/blog/move_development/)
+
+
 
 ## III. Starcoin & Move
 
@@ -47,6 +50,7 @@ Move学习指南、源码分析、设计思想等文章
 15. [Starcoin & Diem共同打造Move生态](https://starcoin.org/zh/developer/blog/starcoin_diem_move/)
 15. [Starcoin，公链之战中闪耀的新星](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
 15. [Move，一场智能合约的安全革命](https://starcoin.org/zh/developer/blog/move_safty/)
+15. [Starcoin投票背后的治理良方——链上治理DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_in_action/)
 
 
 
