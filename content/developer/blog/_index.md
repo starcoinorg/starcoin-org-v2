@@ -17,6 +17,7 @@ Move, Code, Architecture, technical details about Starcoin
 2. [Starcoin ecology](https://starcoin.org/zh/developer/blog/starcoin_ecology)
 
 
+
 ## II. Move course
 
 1. [Move Book](https://move-book.com/)
@@ -24,6 +25,7 @@ Move, Code, Architecture, technical details about Starcoin
 2.  [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
 
 3. [Move development](https://starcoin.org/en/developer/blog/move_development/)
+
 
 
 ## III. Starcoin & Move
@@ -47,6 +49,7 @@ Move, Code, Architecture, technical details about Starcoin
 17. [Starcoin & Diem & Move](https://starcoin.org/en/developer/blog/starcoin_diem_move/)
 18. [Starcoin BlockChain](https://starcoin.org/en/developer/blog/starcoin_new_blockchain/)
 19. [Move safty](https://starcoin.org/en/developer/blog/move_safty/)
+19. [Starcoin vote & DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_in_action/)
 
 
 
