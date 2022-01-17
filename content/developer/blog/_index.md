@@ -44,11 +44,11 @@ Move, Code, Architecture, technical details about Starcoin
 12. [Starcoin Token](https://starcoin.org/en/developer/blog/starcoin_token_proto/)
 13. [Starcoin introduce](https://starcoin.org/en/developer/blog/starcoin_features/)
 14. [Starcoin Config](https://starcoin.org/en/developer/blog/starcoin_stdlib_config/)
-15. [Starcoin safty](https://starcoin.org/en/developer/blog/starcoin_safty/)
+15. [Starcoin security](https://starcoin.org/en/developer/blog/starcoin_safty/)
 16. [Starcoin & DAO](https://starcoin.org/en/developer/blog/starcoin_dao_1/)
 17. [Starcoin & Diem & Move](https://starcoin.org/en/developer/blog/starcoin_diem_move/)
 18. [Starcoin BlockChain](https://starcoin.org/en/developer/blog/starcoin_new_blockchain/)
-19. [Move safty](https://starcoin.org/en/developer/blog/move_safty/)
+19. [Move security](https://starcoin.org/en/developer/blog/move_safty/)
 19. [Starcoin vote & DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_in_action/)
 19. [Move vs Solidity](https://starcoin.org/zh/developer/blog/move_vs_solidity_1/)
 

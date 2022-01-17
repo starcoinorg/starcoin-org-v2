@@ -1,6 +1,11 @@
-# In-Depth Comparison of ERC20 and Starcoin's t Token Protocol
+---
+title: In-Depth Comparison of ERC20 and Starcoin's t Token Protocol
+weight: 19
+---
 
-By 
+```
+* By Starcoin community
+```
 
 ## Ethereum's ETH AND ERC20
 
