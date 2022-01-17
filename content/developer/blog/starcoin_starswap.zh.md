@@ -17,7 +17,7 @@ Starswap包含两个核心的功能：Swap和流动性挖矿。Swap是在链上�
 
 先设置StarMask的网络。如果是主网，就选择Starcoin主网。本文是在Barnard测试网进行体验，所以将StarMask的网络设置成Barnard网络。
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gxybko6rqkj30j40igaaz.jpg" alt="starmask_1" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg" alt="starmask_1" style="zoom:33%;" />
 
 
 
@@ -39,7 +39,7 @@ StarMask有足够的STC才能进行后面的swap等操作。本文是在Barnard�
 
 从StarMask复制自己的账户地址。
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyd93ve6lj30is09wwet.jpg" alt="barnard_address" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg" alt="barnard_address" style="zoom:33%;" />
 
 
 

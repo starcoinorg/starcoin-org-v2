@@ -51,6 +51,7 @@ Move学习指南、源码分析、设计思想等文章
 15. [Starcoin，公链之战中闪耀的新星](https://starcoin.org/zh/developer/blog/starcoin_new_blockchain/)
 15. [Move，一场智能合约的安全革命](https://starcoin.org/zh/developer/blog/move_safty/)
 15. [Starcoin投票背后的治理良方——链上治理DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_in_action/)
+15. [Move与Solidity全方位对比](https://starcoin.org/zh/developer/blog/move_vs_solidity_1/)
 
 
 
