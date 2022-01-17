@@ -1,6 +1,11 @@
-# Ten Highlights of Starcoin
+---
+title: Ten Highlights of Starcoin
+weight: 28
+---
 
-Wed Dec 15,2021 by Hugo
+~~~
+* By Starcoin community
+~~~
 
 On May 18, 2021, Starcoin held a Starcoin main network launch event, inviting a group of crypto industry leaders, builders and innovators to witness the birth of the Starcoin main network. Just a few months after the launch of the Starcoin main network, it has attracted lots of attention in the industry and accumulated a number of loyal fans. Compared with other public chains, what advantages does Starcoin have? This article counts the ten highlights and innovative designs of Starcoin. 
 
