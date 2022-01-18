@@ -57,6 +57,7 @@ Move, Code, Architecture, technical details about Starcoin
 ## Ⅳ. Ecology
 
 1. [Starswap](https://starcoin.org/zh/developer/blog/starcoin_starswap)
+1. [FAI](https://starcoin.org/zh/developer/blog/starcoin_fai)
 
 
 
