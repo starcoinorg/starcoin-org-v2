@@ -83,12 +83,12 @@ body {
 }
 
 .about_us .lsh_list {
-  margin-top: 20px;
   position: relative;
   z-index: 2;
 }
 
 .about_us .lsh_list ul {
+  margin-top: 35px;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -113,8 +113,22 @@ body {
   width: 100%;
 }
 
+.about_us .lsh_list li .lsh_portrait_b {
+    margin: 0 auto;
+    width: 123px;
+    height: 123px;
+    overflow: hidden;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 123px;
+  }
+  
+  .about_us .lsh_list li .lsh_portrait_b img {
+    width: 100%;
+  }
+
 .about_us .lsh_list li .post_title {
-  margin-top: 35px;
+  margin-top: 15px;
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
