@@ -59,14 +59,7 @@ Move provides another implementation based on generics and Resource. Under such 
 
 ## Security: Move and Solidity
 
-|                               | Move                                                         |                           Solidity                           |
-| ----------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------: |
-| Reentrancy                    | <img src="C:\Users\GGPC\Desktop\canvas1.png" alt="canvas" style="zoom:4%;" /> | <img src="C:\Users\GGPC\Desktop\canvas.png" alt="canvas" style="zoom:3%;" /> |
-| Delegate call                 | <img src="C:\Users\GGPC\Desktop\canvas1.png" alt="canvas" style="zoom:4%;" /> | <img src="C:\Users\GGPC\Desktop\canvas.png" alt="canvas" style="zoom:3%;" /> |
-| Formal verification           | <img src="C:\Users\GGPC\Desktop\canvas.png" alt="canvas" style="zoom:3%;" /> | <img src="C:\Users\GGPC\Desktop\canvas1.png" alt="canvas" style="zoom:4%;" /> |
-| Unlimited Additional issuance | <img src="C:\Users\GGPC\Desktop\canvas1.png" alt="canvas" style="zoom:4%;" /> | <img src="C:\Users\GGPC\Desktop\canvas.png" alt="canvas" style="zoom:3%;" /> |
-| Token lost                    | <img src="C:\Users\GGPC\Desktop\canvas1.png" alt="canvas" style="zoom:4%;" /> | <img src="C:\Users\GGPC\Desktop\canvas.png" alt="canvas" style="zoom:3%;" /> |
-| ......                        |                                                              |                                                              |
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyl4xttw7ej314s0ewwfs.jpg" alt="image-20220121113143405" style="zoom:50%;" />
 
 Solidity based on the interface mechanism and dynamic call not only brings strong extensibility , but also brings large security problems, such as unlimited additional issuance, Token loss, Delegatecall vulnerability, etc., and there have been a large number of attack events and vulnerabilities.
 
