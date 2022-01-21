@@ -50,14 +50,15 @@ Move, Code, Architecture, technical details about Starcoin
 18. [Starcoin BlockChain](https://starcoin.org/en/developer/blog/starcoin_new_blockchain/)
 19. [Move security](https://starcoin.org/en/developer/blog/move_safty/)
 19. [Starcoin vote & DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_in_action/)
-19. [Move vs Solidity](https://starcoin.org/zh/developer/blog/move_vs_solidity_1/)
+19. [Move vs Solidity](https://starcoin.org/en/developer/blog/move_vs_solidity_1/)
+19. [Update config by Starcoin DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_update_config/)
 
 
 
 ## Ⅳ. Ecology
 
-1. [Starswap](https://starcoin.org/zh/developer/blog/starcoin_starswap)
-1. [FAI](https://starcoin.org/zh/developer/blog/starcoin_fai)
+1. [Starswap](https://starcoin.org/en/developer/blog/starcoin_starswap)
+1. [FAI](https://starcoin.org/en/developer/blog/starcoin_fai)
 
 
 

@@ -3,8 +3,6 @@ title: Standard Oracle Protocol In Starcoin
 weight: 11
 ---
 
-## Standard Oracle Protocol In Starcoin
-
 ~~~
 * By Starcoin community
 ~~~
@@ -154,9 +152,9 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 ~~~
 
       In the standard Oracle protocol, OracleInfo has a generic parameter Info: copy+store+drop. In PriceOracle, the specific implementation corresponding to Info is PriceOracleInfo, which only contains the calculation factor scaling_factor, so PriceOracleInfo must have cthree abilities of copy, store, and drop, which are the requirements of the generic parameter of Info.
-
+    
       After clarifying the data definition of PriceOracleInfo, you can call the register_oracle function of the Oracle contract to register PriceOracleInfo, and you can also call Oracle's init_data_source and update to upload the data to the chain.
-
+    
       PriceOracle is an application based on the standard Oracle protocol, so it inherits all the features of the Oracle protocol and is very convenient to use.
 
    2. STCUSDTOracle
