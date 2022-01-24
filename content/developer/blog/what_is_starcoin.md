@@ -90,7 +90,7 @@ After the launch of the Starcoin main netwok, a number of well-known ecological 
 
 - Onekey wallet
 - Poolin,f2pool,kele
-- Browser stcscan
+- Explorer stcscan
 - Dapp: such as voting,airdrops,etc.
 
 Soon, Starcoin had a comprehensive ecological upgrade.
