@@ -59,6 +59,7 @@ Move, Code, Architecture, technical details about Starcoin
 
 1. [Starswap](https://starcoin.org/en/developer/blog/starcoin_starswap)
 1. [FAI](https://starcoin.org/en/developer/blog/starcoin_fai)
+1. [WEN](https://starcoin.org/zh/developer/blog/starcoin_wenwen)
 
 
 
