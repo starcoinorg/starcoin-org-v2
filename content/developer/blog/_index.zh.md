@@ -60,6 +60,7 @@ Move学习指南、源码分析、设计思想等文章
 
 1. [Starcoin生态升级，Starswap初体验](https://starcoin.org/zh/developer/blog/starcoin_starswap)
 1. [Starcoin生态迎来StableCoin赛道，FAI指南邀您一起抢鲜玩](https://starcoin.org/zh/developer/blog/starcoin_fai)
+1. [Starcoin生态再提速，StableCoin赛道又添新成员，快来体验WEN吧](https://starcoin.org/zh/developer/blog/starcoin_wenwen)
 
 
 
