@@ -10,7 +10,7 @@ Move, Code, Architecture, technical details about Starcoin
 
 ## I. Starcoin
 
-1. [What is Starcoin](https://starcoin.org/zh/developer/blog/what_is_starcoin)
+1. [What is Starcoin](https://starcoin.org/en/developer/blog/what_is_starcoin)
 2. [Starcoin introduce](https://starcoin.org/en/developer/blog/starcoin_features/)
 3. [Get Started with Starcoin](https://starcoin.org/en/developer/blog/starcoin_stc_user)
 4. [Important Features of Move](https://starcoin.org/en/developer/blog/starcoin_movelang)
