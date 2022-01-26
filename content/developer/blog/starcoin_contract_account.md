@@ -3,8 +3,6 @@ title: Explanation of Starcoin Contract Account
 weight: 15
 ---
 
-# Explanation of Starcoin Contract Account
-
 ~~~
 * By Starcoin community
 ~~~
