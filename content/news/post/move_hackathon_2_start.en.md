@@ -26,7 +26,11 @@ Detail information about this year's Starcoin Hackathon are as follows:
 
 **[Event Duration]：**
 
-The registration starts on December, 2021,  and ends on February, 2022
+The registration starts on December, 2021,  and ends on February 7, 2022  
+
+Submissions begin on February 7, 2022 and end on February 14, 2022  
+
+
 
 
 
@@ -83,7 +87,7 @@ Awarded in the form of Starcoin tokens (STC)
 
 **[Results Announcement]：**
 
-- Finalists will be invited to present their projects via Discord on January 25, 2022, and other prizes will be announced in February 2022
+- Finalists will present their projects on Discord, other awards will be announced at the end of February
 - All winning projects will receive strong support from the Starcoin project management and community, including funding, technology, and marketing resources, to make the projects into high-quality Starcoin public chain ecological projects.
 
 
@@ -112,9 +116,9 @@ Awarded in the form of Starcoin tokens (STC)
 
 1.Any developer or team (maximum 5) can register through the following ways
 
-2.Entry portal: Click to fill in the information for registration (https://forms.gle/51GYUXxdYeQnH1mXA)
+2.Entry portal: Click to fill in the information for registration (https://forms.gle/im6SJKjZJtTssxqM8)
 
-3.Enter the official hackathon Discord group (https://discord.gg/AYrCpebf) free team formation, technical exchanges, registration participation.
+3.Enter the official hackathon Discord group (https://discord.gg/starcoin) free team formation, technical exchanges, registration participation.
 
 
 
