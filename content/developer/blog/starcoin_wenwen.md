@@ -1,5 +1,5 @@
 ---
-title: Starcoin Track: FAI Guide
+title: Starcoin Track, FAI Guide
 weight: 40
 ---
 
