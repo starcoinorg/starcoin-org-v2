@@ -21,10 +21,9 @@ Move, Code, Architecture, technical details about Starcoin
 ## II. Move course
 
 1. [Move Book](https://move-book.com/)
-
-2.  [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
-
+2. [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
 3. [Move development](https://starcoin.org/en/developer/blog/move_development/)
+3. [Move vs Solidity](https://starcoin.org/zh/developer/blog/move_big_vec/)
 
 
 

@@ -22,10 +22,9 @@ Move学习指南、源码分析、设计思想等文章
 ## II. 手把手学Move
 
 1. 手把手：[Move基础](https://move-book.com/cn/index.html)
-
 2. 手把手：[Move进阶](https://starcoin.org/zh/developer/blog/move_advanced_tutorial/)
-
 3. 手把手：[Move开发实战](https://starcoin.org/zh/developer/blog/move_development/)
+3. [Move是如何解决Solidity大数组的安全隐患](https://starcoin.org/zh/developer/blog/move_big_vec/)
 
 
 
