@@ -53,6 +53,7 @@ Move学习指南、源码分析、设计思想等文章
 15. [Move与Solidity全方位对比](https://starcoin.org/zh/developer/blog/move_vs_solidity_1/)
 15. [深度实战，手把手教会您使用Starcoin的DAO更新链上配置](https://starcoin.org/zh/developer/blog/starcoin_dao_update_config/)
 15. [Starcoin对比其它公链有哪些优势?](https://starcoin.org/zh/developer/blog/starcoin_vs_other_blockchain/)
+15. [Starcoin: 冉冉升起](https://starcoin.org/zh/developer/blog/starcoin_rising_star/)
 
 
 
