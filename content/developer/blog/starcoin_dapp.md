@@ -69,7 +69,7 @@ From the structure perspective, Dapp has backend and frontend, Dapp's frontend i
 
       StarMask is official and open source wallet plug-in, it's programming language is JavaScript, below figure show its dependency library
 
-      ![StarMask依赖库](https://tva1.sinaimg.cn/large/008i3skNly1gvlip0csi6j60ql0k1q4m02.jpg)  
+      <img src="/Users/dqm/Library/Application Support/typora-user-images/image-20220201164223357.png" alt="image-20220201164223357" style="zoom:50%;" />  
 
    
 
@@ -349,7 +349,7 @@ From the structure perspective, Dapp has backend and frontend, Dapp's frontend i
 
       In official website, find [Postman guide page](https://starcoin.org/en/developer/rpc/postman_document/),then click Run in Postman button,fork Starcoin's API to your own workspace.
 
-      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gvliqmd4rkj60ru0kcdhr02.jpg" style="zoom:50%;" />
+      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy3scgil9j311t0u0mz8.jpg" alt="1643705035365" style="zoom:33%;" />
 
       Postman 
 
@@ -357,7 +357,7 @@ From the structure perspective, Dapp has backend and frontend, Dapp's frontend i
 
       In official website, find [Postman guide page](https://starcoin.org/en/developer/rpc/postman_document/),scroll down to the bottom of this page, you can find links,copy each link and add to Postman Environment, then you can send request in Postman, and do interaction with contract. Detailed settings you can find in Postman guide page.
 
-      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gvliqyg9foj60jh04zwes02.jpg" style="zoom:70%;" />
+      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy3tacd0vj310y0fw0tq.jpg" alt="1643705087288" style="zoom:33%;" />
 
       
 
