@@ -23,6 +23,8 @@ It has been about half a year since the main network was launched. With the cont
 
 ![starcoin_event](https://tva1.sinaimg.cn/large/008i3skNly1gy1ebipdwhj31i20qajuv.jpg)
 
+
+
 ## Wallet
 
 The wallet is the user's entrance, and Starcoin has paid more attention to the wallet's user experience. For different scenarios, different needs, and different users, Starcoin Ecology has developed a variety of wallets:
@@ -31,6 +33,8 @@ The wallet is the user's entrance, and Starcoin has paid more attention to the w
 -  Onekey wallet is a hardware wallet that supports a variety of main public chains, such as Bitcoin, Ethereum, etc. Starcoin has launched in-depth cooperation with Onekey, and Onekey wallet already supports Starcoin
 -  Nebula wallet, the desktop wallet of the Starcoin ecosystem, such as WIN version, Mac version
 
+
+
 ## Mining Pool
 
 Starcoin uses enhanced PoW consensus, and the algorithm for calculating nonce is cryptonight-r. Everyone can have their own Starcoin node, and everyone can participate in mining block. 
@@ -38,6 +42,8 @@ Starcoin uses enhanced PoW consensus, and the algorithm for calculating nonce is
 There are also many mining pools distributed around the world in the Starcoin ecosystem, such as **f2pool, poolin, kele,** etc. For Starcoin users who do not want to build their own nodes, accessing the mining pool is a good choice.
 
 ![starcoin_ecology](https://tva1.sinaimg.cn/large/008i3skNly1gy1ebyvfpzj30sw0f8dha.jpg)
+
+
 
 ## NFT and Metaverse
 
@@ -49,11 +55,15 @@ After the launch of the standard NFT protocol, a number of NFT projects were qui
 
 ![starcoin_cyberrare](https://tva1.sinaimg.cn/large/008i3skNly1gxr1rpivbrj30qe0hu3zm.jpg)
 
+
+
 ## Oracle
 
 Oracle is the bridge between on-chain and off-chain.
 
 Starcoin has designed an open, unified standard oracle protocol. Anyone can easily implement their own Oracle services based on standard Oracle protocols. There are already mature Oracle projects in the Starcoin ecosystem, which have been running steadily on the main network for a long time, providing continuous data support for the chain.
+
+
 
 ## The Era of DeFi
 
@@ -63,6 +73,8 @@ After Starcoin launched its main network, it tried its best to create its own De
 
 ![starcoin_defi](https://tva1.sinaimg.cn/large/008i3skNly1gxr3g5vyrqj30u80det9l.jpg)
 
+
+
 ## Cross-chain
 
 Cross-chain is a door to open the DeFi ecosystem, an important part of the DeFi ecosystem of all public chains, and a milestone for integrating into the blockchain.
@@ -70,6 +82,8 @@ Cross-chain is a door to open the DeFi ecosystem, an important part of the DeFi 
 There are various schemes for cross-chain, such as semi-centralized scheme, decentralized scheme and so on. There are several great cross-chain projects in the Starcoin ecosystem, such as Poly Network. The cooperation has got Staged achievements.
 
 ![starcoin_poly](https://tva1.sinaimg.cn/large/008i3skNly1gxr6x20zmaj30tk08274k.jpg)
+
+
 
 ## Swap
 
@@ -81,17 +95,23 @@ The Starcoin ecosystem has incubated a variety of Swap project, such as Kikoswap
 
 ![starcoin_starswap](https://tva1.sinaimg.cn/large/008i3skNly1gxr2vuiqhqj30rs0fj0v6.jpg)
 
+
+
 ## Stablecoin
 
 Stablecoin is an interesting track, a product of the DeFi era.
 
 Various types of Stablecoin protocols are about to be launched in the Starcoin ecosystem. In order to meet the needs of various types of users, there are both unsecured Stablecoin protocols and secured Stablecoin protocols. There is always one suitable for you.
 
+
+
 ## Lending
 
 Mortgage and lending are the cornerstone of liquidity, and an indispensable service for forming an ecosystem.
 
 In the Starcoin ecosystem, multiple lending platforms are about to settle in, allowing data on the chain to flow, forming a good circle within the ecosystem.
+
+
 
 ## IDO
 
@@ -101,29 +121,39 @@ The Atlaspad project developed by the Singapore team has been fully prepared and
 
 ![starcoin_atlaspad](https://tva1.sinaimg.cn/large/008i3skNly1gxr7t1r11cj30ze09wt9l.jpg)
 
+
+
 ## On-chain governance DAO
 
 Starcoin is one of the first public chains to fully implement DAO on-chain governance. Anyone can initiate on-chain proposals and anyone can participate in on-chain voting. Starcoin perfectly realizes the security upgrade of contracts through on-chain governance
 
 The first Dapp in the Starcoin ecosystem is the Dapp governed by the chain. Starcoin has securely upgraded Stdlib several times using the Dapp governed on this chain. It can be said that the on-chain governance DAO scheme of the Starcoin ecosystem is quite mature, and the on-chain governance of Starcoin can be quickly experienced through this link, thereby promoting the development of the Starcoin ecosystem.
 
-## Two Layer
 
-Starcoin is a layered network. The first layer focuses on the basic functions on the chain, and the second layer realizes scalability and performance improvement, implment the application scenarios off-chain.
 
-Starcoin's two-layer solutions ZkMove and Stargate are in the process of intensifying iteration, and more details will be disclosed soon. Please continue to pay attention to the dynamics of the Starcoin ecosystem.
+## Layer2
+
+Starcoin is a layered network. The layer1 focuses on the basic functions on the chain, and the layer2 realizes scalability and performance improvement, implment the application scenarios off-chain.
+
+Starcoin's 2-layer solutions ZkMove and Stargate are in the process of intensifying iteration, and more details will be disclosed soon. Please continue to pay attention to the dynamics of the Starcoin ecosystem.
 
 ![starcoin](https://tva1.sinaimg.cn/large/008i3skNly1gxr7gt6gcoj30km092jru.jpg)
+
+
 
 ## Browser Explorer 
 
 The blockchain browser is also an essential basic component in the public chain ecosystem. 
 
-There are also multiple browsers in the Starcoin ecosystem, such as stcscan and staratlas, etc. The most commonly used is stcscan. 
+There are also multiple browsers in the Starcoin ecosystem, such as stcscan and staratlas, etc. The most commonly used is [stcscan](https://stcscan.io/). 
+
+
 
 ## Airdrop
 
- In order to give back to community users, Starcoin often conducts various types of airdrop activities through the Airdrop platform, pay attention to the AirDrop platform, get latest Starcoin's airdrop plan, and receive STC airdrop rewards in time. 
+ In order to give back to community users, Starcoin often conducts various types of airdrop activities through [the Airdrop platform](https://airdrop.starcoin.org/), pay attention to the AirDrop platform, get latest Starcoin's airdrop plan, and receive STC airdrop rewards in time. 
+
+
 
 ## Starcoin Ecosystem Upgrade
 

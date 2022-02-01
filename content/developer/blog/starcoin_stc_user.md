@@ -21,45 +21,35 @@ Get started with Starcoin quickly using Starmask wallet.
 
    1. Download from Github(Recommended)
 
-      Download through the official Github repository to get the latest official version, and access and download anywhere.
+      Download through the official [Github repository](https://github.com/starcoinorg/starmask-extension/releases) to get the latest official version, and access and download anywhere.
 
    2. Download from Chrome web store
 
-      Download from Chrome web store, but you need to ensure that you can use Chrome.
-
-      ![image-20220111171540243](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111171540243.png)
+      Download from [Chrome web store](https://chrome.google.com/webstore/detail/starmask/mfhbebgoclkghebffdldpobeajmbecfk/related), but you need to ensure that you can use Chrome.
 
 2. Initialize Starmask
 
    You need to initialize Starmask after completely installation. As shown in below figure, the Starmask wallet has two initialization methods,choose one that suits you.
 
-   ![image-20220111171953164](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111171953164.png)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxor8ncgjaj30s40hmaam.jpg" alt="starcoin_starmask" style="zoom:33%;" />
 
    - If there is already a wallet then import the already created using the *Import Wallet* button.
 
    - Click the *Create a Wallet* button if this is the first time creating a wallet.
 
-     ![image-20220111172344156](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111172344156.png)
-
-     ![image-20220111172626268](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111172626268.png)
-
-     ![image-20220111172713025](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111172713025.png)
-
-     ![image-20220111172907269](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220111172907269.png)
-
      Tips:
 
-     It is important to note that you must keep your mnemonic properly to avoid loss and theft. Click to view a more detailed Starmask installation and initialization tutorial.
+     It is important to note that you must keep your mnemonic properly to avoid loss and theft. Click to view a [more detailed Starmask](https://github.com/starcoinorg/starmask-extension/blob/main/docs/en/how-to-install.md) installation and initialization tutorial.
 
 3. Use Starmask
 
-   It is easily to manage your own data on the Starcoin, such as STC, and easily operate accounts. If you are using Starmask wallet first time, you can check the more detailed Starmask tutorial[text] or Starmask tutorial [video] to master the common operations of Starmask: transfer, network management, private key management and so on.
+   It is easily to manage your own data on the Starcoin, such as STC, and easily operate accounts. If you are using Starmask wallet first time, you can check [the more detailed Starmask tutorial[text]](https://github.com/starcoinorg/starmask-extension/blob/main/docs/en/how-to-use.md) or [Starmask tutorial [video]](https://www.youtube.com/watch?v=VA1uVLmzuhQ) to master the common operations of Starmask: transfer, network management, private key management and so on.
 
    In addition to the usual wallet functions, Starmask can help you to do  more things:
 
-   1. Participate in Starcoin community governance, tutorial;
+   1. Participate in Starcoin community governance, [tutorial](https://www.youtube.com/watch?v=ut4WjdPDHrs);
    2. Show and view your own NFTs;
-   3. Collect airdrops, tutorials;
+   3. Collect airdrops, [tutorials](https://www.youtube.com/watch?v=6wmABlTyg7E);
    4. Connect to the Starcoin ecosystem, such as kiko, etc.;
 
 ## Onekey Wallet, Another Choice
@@ -68,45 +58,49 @@ After installing Starmask, if you want to properly manage your account, consider
 
 1. Prepare environment
 
-   ![onekey_client](https://tva1.sinaimg.cn/large/008i3skNly1gxotwg1j1kj315h0u0juf.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotwg1j1kj315h0u0juf.jpg" alt="onekey_client" style="zoom:33%;" />
 
    Here you already learned Starmask and got the onekey wallet that supports STC. Then, download and install the client of the onekey wallet from here
 
 2. Open Starmask and click your avatar to enter the account management page
 
-   ![starcoin_onekey_1](https://tva1.sinaimg.cn/large/008i3skNly1gxoticum59j30oa13sab3.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxoticum59j30oa13sab3.jpg" alt="starcoin_onekey_1" style="zoom:33%;" />
 
 3. Click 'Connect Hardware Wallet' to connect with onekey wallet
 
-   ![starcoin_onekey_2](https://tva1.sinaimg.cn/large/008i3skNly1gxotkgka06j30nw14wgns.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotkgka06j30nw14wgns.jpg" alt="starcoin_onekey_2" style="zoom:33%;" />
 
 4. Click 'OneKey',then click 'Connect', start connecting.
 
-   ![starcoin_onekey_3](https://tva1.sinaimg.cn/large/008i3skNly1gxotl3kzjtj312j0u0abl.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotl3kzjtj312j0u0abl.jpg" alt="starcoin_onekey_3" style="zoom:33%;" />
 
    
 
 5. Click  'Authorize'
 
-   ![starcoin_onekey_4](https://tva1.sinaimg.cn/large/008i3skNly1gxotps5yo9j31lx0u0js7.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotps5yo9j31lx0u0js7.jpg" alt="starcoin_onekey_4" style="zoom:33%;" />
 
 6. Set Pin and click confirm
 
-   ![starcoin_onekey_5](https://tva1.sinaimg.cn/large/008i3skNly1gxotollny6j31hy0u0dhb.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotollny6j31hy0u0dhb.jpg" alt="starcoin_onekey_5" style="zoom:33%;" />
 
    
 
 7. Click 'export'
 
-   ![starcoin_onekey_6](https://tva1.sinaimg.cn/large/008i3skNly1gxotpfxt5uj31gi0u075s.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotpfxt5uj31gi0u075s.jpg" alt="starcoin_onekey_6" style="zoom:33%;" />
 
 8. Choose account you want to save, then click 'unlock' to unlock account
 
-    ![starcoin_onekey_7](https://tva1.sinaimg.cn/large/008i3skNly1gxotqctu7wj315u0u0jt5.jpg)
+    <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxotqctu7wj315u0u0jt5.jpg" alt="starcoin_onekey_7" style="zoom:33%;" />
 
 9. Click 'export', onekey wallet has been set completely. 
 
-   ![starcoin_onekey_8](https://tva1.sinaimg.cn/large/008i3skNly1gxots0g6h5j31ho0u0jsg.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxots0g6h5j31ho0u0jsg.jpg" alt="starcoin_onekey_8" style="zoom:33%;" />
+
+
+
+
 
 ## For Users who Has their Own Starcoin Node
 
@@ -120,11 +114,11 @@ So,these users can consider building their own Starcoin node. Next, we will lear
 
 1. Install node
 
-   There are multiple ways to install Starcoin (View more details)
+   There are multiple ways to install Starcoin ([View more details](https://starcoin.org/zh/developer/setup/install/))
 
-   - Depending on different platform, download the corresponding binary code, Starcoin supports Windows, Mac and Linux at the same time, download link.
-   - Compile source code into binary code, tutorial.
-   - Install from Docker,tutorial.
+   - Depending on different platform, download the corresponding binary code, Starcoin supports Windows, Mac and Linux at the same time, [download link](https://github.com/starcoinorg/starcoin/releases).
+   - Compile source code into binary code, [tutorial](https://starcoin.org/zh/developer/setup/build/).
+   - Install from Docker,[tutorial](https://starcoin.org/zh/developer/setup/run_by_docker/).
 
 2. Start node from command line
 
@@ -145,7 +139,9 @@ So,these users can consider building their own Starcoin node. Next, we will lear
 
 3. Console command line tutorial
 
-   During the runtime of the Starcoin node, it is often necessary to connect to the node through the console and view the running status from command line. Starcoin provides a console command for connecting nodes, user guide, check the detailed console command tutorial from here.
+   During the runtime of the Starcoin node, it is often necessary to connect to the node through the console and view the running status from command line. Starcoin provides a console command for connecting nodes, [user guide](https://starcoin.org/zh/developer/cli/console/), check the detailed console command tutorial from [here](https://starcoin.org/zh/developer/cli/).
+
+
 
 ## Senior User, Make contribution to Starcoin Community
 
@@ -153,7 +149,7 @@ As senior users,in addition to general usage,they will also deeply participate i
 
 1. Code
 
-   Starcoin is an open source community. Any developer can initiate an issue, submit a commit, and contribute source code to Starcoin through Starcoin's code repository according to their own advantages. This is the most direct way.
+   Starcoin is an open source community. Any developer can initiate an issue, submit a commit, and contribute source code to Starcoin through [Starcoin's code repository](https://github.com/starcoinorg) according to their own advantages. This is the most direct way.
 
 2. Articles
 

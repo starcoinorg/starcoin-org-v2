@@ -134,7 +134,7 @@ Starcoin has complete on-chain governance DAO:
 
 Starcoin choose the vote way to implement on-chain governance,to reach a general consensus.After the vote is passed, it will enter the final contract upgrade stage. Starcoin encourages users to trust the contract to DAO for management. 
 
-Starcoin's DAO and TwoPhaseUpgrade perfectly illustrate a fair and open community governance process. Starcoin's Stdlib also uses DAO+TwoPhaseUpgrade for governance. The entire Stdlib upgrade process is shown in the figure below. Here you can see how Starcoin upgrades Stdlib.
+Starcoin's DAO and TwoPhaseUpgrade perfectly illustrate a fair and open community governance process. Starcoin's Stdlib also uses DAO+TwoPhaseUpgrade for governance. The entire Stdlib upgrade process is shown in the figure below. Here you can see [how Starcoin upgrades Stdlib](https://starcoin.org/en/developer/blog/starcoin_stdlib_upgrade/).
 
 ![starcoin stdlib upgrade](https://tva1.sinaimg.cn/large/008i3skNgy1gupbnleomtj60mc0tyjt802.jpg)
 

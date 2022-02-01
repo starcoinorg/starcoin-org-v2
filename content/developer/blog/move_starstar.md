@@ -117,4 +117,4 @@ Function of the contract is simple. Let's analyze the advantages and disadvantag
 - Support formal verification and prove the security of the contract through mathematics
 - If it can be combined with DID, OAuth protocol and other technologies, there will be more imagination.
 
-StarStar is relatively simple and universal in design. Those interested can view the complete code here.
+StarStar is relatively simple and universal in design. Those interested can view the complete code [here](https://github.com/muzixinly/starstar-core/blob/main/src/modules/StarStar.move).

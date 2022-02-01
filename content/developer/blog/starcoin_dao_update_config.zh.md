@@ -57,7 +57,7 @@ Starcoin中的DAO治理可以流程可以由以下一张图来概括：
 
 ## 实战
 
-本章主要介绍如何从头使用Move来实现DAO的相关代码，以及自己发布一个测试的治理币来参与DAO的治理投票，并在Starcoin的本地环境来部署和测试合约，关于如何使用DAO进行合约升级，可参考[Starcoin的stdlib升级和Dao链上治理]([https://starcoin.org/zh/developer/blog/starcoin\_stdlib\_upgrade/)。
+本章主要介绍如何从头使用Move来实现DAO的相关代码，以及自己发布一个测试的治理币来参与DAO的治理投票，并在Starcoin的本地环境来部署和测试合约，关于如何使用DAO进行合约升级，可参考[Starcoin的stdlib升级和Dao链上治理](https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade/)。
 
 
 ###  场景假设
@@ -65,7 +65,7 @@ Starcoin中的DAO治理可以流程可以由以下一张图来概括：
 
 ### 环境准备
 
-这里以mac OS 系统为例，下载 Starcoin build package](https://github.com/starcoinorg/starcoin/releases)对应平台最新版本，放在本地任意目录，需要将bin目录下的路径加入到PATH环境变量路径下， 执行命令查看版本号均可正确打印说明安装成功。
+这里以mac OS 系统为例，下载 [Starcoin build package](https://github.com/starcoinorg/starcoin/releases)对应平台最新版本，放在本地任意目录，需要将bin目录下的路径加入到PATH环境变量路径下， 执行命令查看版本号均可正确打印说明安装成功。
 
 ```bash
 % export PATH=$PATH:~/Downloads/starcoin-artifacts

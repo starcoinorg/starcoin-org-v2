@@ -173,3 +173,4 @@ Move is a resource-oriented and generic programming smart contract language. Sta
 
 Starcoin's standard NFT protocol not only implements the functions of the Ethereum NFT protocol such as ERC-721, ERC-875, ERC-998, ERC-1155, but also has richer features, such as good security, customizable logic, reasonable permissions, simple use, cross-contracts, etc., are believed to bring a very large promotion effect to the NFT field.
 
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gvlv4tisr3j612i0cydgc02.jpg" alt="starcoin_nft_3" style="zoom:33%;" />

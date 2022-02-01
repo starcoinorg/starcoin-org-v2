@@ -120,7 +120,7 @@ TokenCode是区别不同Token的唯一方式，只有addr、module_name、name�
 
 上面的函数覆盖了整个Token的生命周期：注册、铸造、销毁、充值、提款。
 
-Starcoin的Token协议重复发挥了Move的优势，设计了安全的Token类型和TokenInfo类型，通过泛型参数的方式，保证Token可自由组合、协议可扩展，点击查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/Token.move)。
+Starcoin的Token协议重复发挥了Move的优势，设计了安全的Token类型和TokenInfo类型，通过泛型参数的方式，保证Token可自由组合、协议可扩展，点击查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Token.move)。
 
 
 

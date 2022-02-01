@@ -43,13 +43,13 @@ Starcoin, A New Generation of Layered Smart Contract And Distrbuted Financial Ne
 4. DeFi
 
    DeFi has attracted huge attention, Starcoin also concentrates on DeFi. With layer 1 technology and Move, selecting value and empowering value have been done. Next, let the value flow to achieve value reinvention, this is the vision of Starcoin.
-Some people who have been paying attention to Starcoin should have noticed that Starcoin's DeFi infrastructure and products have been implemented and be able to launch soon. 
+   Some people who have been paying attention to Starcoin should have noticed that Starcoin's DeFi infrastructure and products have been implemented and be able to launch soon. 
    
 5. New Generation
 
 `Layered`, `Move`, `DeFi`, from value selection to value empowerment, to achieve value reinvention, at the end, on the layer 2, everyone will be connected together. Centering the value,blockchain has made a friendly closed ecological system.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1guic2vy8xvj60m00kuq3w02.jpg" alt="Starcoin" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy16ahfosj30i60iawex.jpg" alt="1643699567397" style="zoom:50%;" />
 
 
 

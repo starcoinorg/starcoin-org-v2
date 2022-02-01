@@ -13,11 +13,15 @@ Recently, Starcoin ecosystem has had comprehensive upgrade. After Oracle, NFT an
 
 The FAI track has been deployed on Starcoin's Barnard network and will be launched on the main network soon. When FAI is about to launch, read FAI operation guide, and let's start together. 
 
+
+
 ## Select the Correct Network
 
 Set up StarMask's network first. If it is the main network, choose the Starcoin main network. In this article, we will use the Barnard test network, so set the StarMask network to the Barnard network.
 
-![starmask_1](https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg" alt="0" style="zoom:33%;" />
+
+
 
 ## Ensure StarMask Has Enough STC
 
@@ -27,7 +31,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    Find Barnard's Faucet on Starcoin official website
 
-   ![starcoin_faucet](https://tva1.sinaimg.cn/large/008i3skNly1gxyd72902zj30u00vemyw.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6glipulj30u00vejt4.jpg" alt="starcoin_faucet" style="zoom:20%;" />
 
    
 
@@ -35,7 +39,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    Copy your own account address from StarMask
 
-   ![barnard_address](https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg" alt="barnard_address_copy" style="zoom:33%;" />
 
    
 
@@ -45,7 +49,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    It should be noted here that, in order to prevent malicious applications, the faucet website needs to bind a Twitter account to apply. 
 
-   ![starcoin_barnard](https://tva1.sinaimg.cn/large/008i3skNly1gxydahuttuj31v40ro0wl.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6gm0bcvj31v40ro0wl.jpg" alt="starcoin_barnard" style="zoom:25%;" />
 
 ## First Time to Use FAI
 
@@ -53,25 +57,29 @@ To FAI new users, you need to do some initialization work before FAI mining.
 
 1. ##### Visit FAI Official Website
 
-   Click this link to visit FAI official website.
+   Click [this link](https://fai-frontend.vercel.app/#/) to visit FAI official website.
 
 1. ##### Connect to StarMask Wallet
 
    Click "Connect" button to connect your own StarMask wallet as shown. 
 
-   ![1](https://tva1.sinaimg.cn/large/008i3skNly1gye6psoe2jj30iq0gm0st.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6psoe2jj30iq0gm0st.jpg" alt="1" style="zoom:33%;" />
 
 3. ##### Create FAI Account
 
    After successful connection of StarMask, you will be prompted to create an FAI account. Click the "Enable Vault" button to create an account.
 
-   ![2](https://tva1.sinaimg.cn/large/008i3skNly1gye6tw8dblj30to0cot9b.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6tw8dblj30to0cot9b.jpg" alt="2" style="zoom:20%;" />
 
    Initiate a transaction created by the FAI account in StarMask wallet, and here is the real on-chain transaction on Starcoin.
 
-   ![3](https://tva1.sinaimg.cn/large/008i3skNly1gye703kdyhj316p0u0n01.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye703kdyhj316p0u0n01.jpg" alt="3" style="zoom:15%;" />
 
    If the FAI account is successfully created, there will be a prompt of "Create Vault Success!" 
+
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy2r9r2gsj31ea0fc3zf.jpg" alt="4" style="zoom:15%;" />
+
+   
 
 4. ##### Deposit Token
 
@@ -85,7 +93,7 @@ To FAI new users, you need to do some initialization work before FAI mining.
 
       3: Click "Supply" button, open StarMask wallet
 
-      ![5](https://tva1.sinaimg.cn/large/008i3skNly1gye72gouavj30u00wcjt5.jpg)
+      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye72gouavj30u00wcjt5.jpg" alt="5" style="zoom:25%;" />
 
       
 
@@ -93,11 +101,11 @@ To FAI new users, you need to do some initialization work before FAI mining.
 
       Click the Confirm button in StarMask wallet to initiate an on-chain transaction. 
 
-      ![6](https://tva1.sinaimg.cn/large/008i3skNly1gye77fjwrgj30u00vzq56.jpg)
+      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye77fjwrgj30u00vzq56.jpg" alt="6" style="zoom:25%;" />
 
       If the transaction is successful, there will be a prompt of "Supply Success!"
 
-      ![7](https://tva1.sinaimg.cn/large/008i3skNly1gye7akshz5j30ca04at8l.jpg)
+      <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye7akshz5j30ca04at8l.jpg" alt="7" style="zoom:60%;" />
 
       
 
@@ -113,7 +121,7 @@ Token has been deposited into the FAI account in previous section, now you can s
 
    3: Click "Mint" button to open StarMask wallet.
 
-   ![8](https://tva1.sinaimg.cn/large/008i3skNly1gye7diu8foj30tg0s8t9z.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye7diu8foj30tg0s8t9z.jpg" alt="8" style="zoom:25%;" />
 
    
 
@@ -121,11 +129,11 @@ Token has been deposited into the FAI account in previous section, now you can s
 
    Click "Confirm" button in the StarMask wallet to initiate an on-chain transaction.
 
-    ![9](https://tva1.sinaimg.cn/large/008i3skNly1gye7imdo18j30xo0u0dhz.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye7imdo18j30xo0u0dhz.jpg" alt="9" style="zoom:20%;" />
 
    If the transaction is successfully created, there will be a prompt of "Mint Success!"
 
-   ![10](https://tva1.sinaimg.cn/large/008i3skNly1gye7j94vb0j30a0048744.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye7j94vb0j30a0048744.jpg" alt="10" style="zoom:67%;" />
 
 ## Repay FAI
 
@@ -139,7 +147,7 @@ Mortgaged token can be used to mint stable coin, and also can be used to repay F
 
    3: Click "Repay" button to open StarMask wallet.
 
-   ![11](https://tva1.sinaimg.cn/large/008i3skNly1gyef5r5ahyj30t60sw75k.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyef5r5ahyj30t60sw75k.jpg" alt="11" style="zoom:20%;" />
 
    
 
@@ -147,11 +155,11 @@ Mortgaged token can be used to mint stable coin, and also can be used to repay F
 
    Click "Confirm" button in the StarMask wallet to initiate an on-chain transaction.
 
-   ![12](https://tva1.sinaimg.cn/large/008i3skNly1gyef8t7bnaj30ww0u0q53.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyef8t7bnaj30ww0u0q53.jpg" alt="12" style="zoom:20%;" />
 
    If the transaction is successful, there will be a prompt of "Repay Success!"
 
-   ![13](https://tva1.sinaimg.cn/large/008i3skNly1gyef9t5au4j30ba03kjr9.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyef9t5au4j30ba03kjr9.jpg" alt="13" style="zoom:60%;" />
 
 ## Withdraw
 
@@ -165,7 +173,7 @@ No matter how many Tokens have been deposited into the FAI account,or the Token 
 
    3: Click "Withdraw" button to open StarMask wallet.
 
-   ![14](https://tva1.sinaimg.cn/large/008i3skNly1gyehcvegt8j30sy0se761.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyehcvegt8j30sy0se761.jpg" alt="14" style="zoom:23%;" />
 
    
 
@@ -173,11 +181,11 @@ No matter how many Tokens have been deposited into the FAI account,or the Token 
 
    Click "Confirm" button in the StarMask wallet to initiate an on-chain transaction.
 
-   ![16](https://tva1.sinaimg.cn/large/008i3skNly1gyehfxhf28j30w40u0wgu.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyehfxhf28j30w40u0wgu.jpg" alt="16" style="zoom:20%;" />
 
    If the transaction is successful, there will be a prompt of "Withdraw Success!"
 
-   ![17](https://tva1.sinaimg.cn/large/008i3skNly1gyehmosl31j30bi040dfq.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyehmosl31j30bi040dfq.jpg" alt="17" style="zoom:60%;" />
 
 ## Starcoin and FAI
 

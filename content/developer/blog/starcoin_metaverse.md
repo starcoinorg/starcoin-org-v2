@@ -41,7 +41,7 @@ Wikipedia:
 
    Metaverse is a super concept, in general,it's a parallel digital world, it's composed of software,hardware,internet,mobile web,IoT,AI,VR,AR,MR,smart wearable device,IPSF,blockchain and other series of technologies. With these and future technologies constitute metaverse, metaverse is not a real universe,it exists in the internet,  to enhance current ecosystem,and could create a new ecosystem.
 
-   <img src="https://tva1.sinaimg.cn/large/008i3skNgy1guuyzuprgoj60d308ejrt02.jpg" alt="元宇宙技术组成" style="zoom:60%;" />
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy1c2dw5mj30o40gm3za.jpg" alt="image-20220201151921364" style="zoom:50%;" />
 
    
 
@@ -49,7 +49,7 @@ Wikipedia:
 
    Roblox Corporation is forerunner of metaverse games, they proposed eight elements of metaverse: identity,friends,immersion,low latency,diversification,anywhere,economic system, and civilization. 
 
-   <img src="https://tva1.sinaimg.cn/large/008i3skNgy1guuz0okvstj60rs0lb40i02.jpg" alt="元宇宙八个要素" style="zoom:33%;" />
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy1fon9f6j30lg0ee74r.jpg" alt="1643700156465" style="zoom:50%;" />
 
    
 
@@ -97,9 +97,7 @@ Wikipedia:
 
    Starcoin support layer concept, in the first layer, Starcoin mainly build "value precipitation" and "value empowerment", this can be reflect in  PoW consensus,on-chain governance DAO, billable state, Move contract language. To popularization and future-oriented universe, Starcoin's second layer hope to integrate all concepts such as state pipeline, rollup and side chain, shield technology details from general users, conveniently and easily enjoy the advantages of blockchain, all these features make Starcoin is suit for metaverse and empower metaverse. With the continuous improvement of Metaverse, Starcoin's on-chain governance can also flexibly make different proposals to upgrade and improve Starcoin, to realize secure new generation layered smart contract and distributed financial networks.
 
-
-
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1guuz1epm0pj60m00kuwfg02.jpg" alt="价值" style="zoom:40%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy1fzgu5oj30i60iawex.jpg" alt="1643699567397" style="zoom:50%;" />
 
 
 
