@@ -9,6 +9,8 @@ weight: 28
 
 On May 18, 2021, Starcoin held a Starcoin main network launch event, inviting a group of crypto industry leaders, builders and innovators to witness the birth of the Starcoin main network. Just a few months after the launch of the Starcoin main network, it has attracted lots of attention in the industry and accumulated a number of loyal fans. Compared with other public chains, what advantages does Starcoin have? This article counts the ten highlights and innovative designs of Starcoin. 
 
+
+
 ## Enhanced PoW
 
 The Starcoin consensus is an enhanced version of the Satoshi Nakamoto consensus. In Bitcoin's Satoshi Nakamoto consensus, there are two methods to increase network throughput,increase the block size or shorten the block interval. All both methods will increase probability of Uncle or Orphan blocks in the network,increasing Uncle or Orphan block will increase congestion of the network,then reducing the difficulty of double-spending attacks,thereby threatening the security of the network. To solve this problem, balance the network throughput and congestion,maximize the usage of  network,Starcoin's consensus has been optimized and enhanced based on Bitcoin's consensus:
@@ -16,6 +18,8 @@ The Starcoin consensus is an enhanced version of the Satoshi Nakamoto consensus.
 - The Starcoin consensus introduces run-time data such as Uncle block rate to detect network congestion, and then automatically and dynamically adjust block generation time, difficulty, and block rewards, find a balance between throughput and network congestion, and reduce network security risks To improve user experience;
 - The Starcoin consensus can more sensitively capture the fluctuations of computing power, adjust the difficulty in time, and reduce the risk of computing power attacks;
 - Consensus-related parameters can be safely upgraded through community governance; 
+
+
 
 ## Bootstrapped Economic Model 
 
@@ -29,11 +33,15 @@ Public chains which use Solidity as the smart contract language, taking ERC20 as
 
 ![starcoin_account](http://westar.io/blog/starcoin_features/images/starcoin_account_example.jpg)
 
+
+
 ## State Billing
 
 State explosion is a problem faced by many public chains. Lots of data is written to the chain. Even these data no longer has any value or meaning, it must be stored for a long time and be synchronized by other nodes. This is actually a waste of resources. In the long run, a distributed system that only increases without decreasing data will be difficult to maintain continuously. This is a problem to be faced sooner or later.
 
 At the beginning of the Starcoin design, Starcoin focused on the problem of state explosion, through this smart design, it has made long-term preparations for state billing and gradually eliminated valuable data. Eliminating non-value data and providing value space for more value data is a benign development law. 
+
+
 
 ## Linear logic smart contract language: Move 
 
@@ -66,6 +74,8 @@ Starcoin uses Stdlib to officially customize and publish some general contracts,
 
 Starcoin's Stdlib is an implemented contract. Because the official implementation has been provided, based on the basic protocol of Stdlib, users can easily design their own applications, such as NFT applications or Oracle applications, without having to implement them according to the protocol, but only need to implement the business logic contract code. 
 
+
+
 ## On-chain Governance: DAO
 
 Starcoin has customized a set of very general on-chain governance DAO contracts in Stdlib, which can be used directly. Anyone can easily use it, and any contract-level decision can be done in the form of on-chain governance. At the same time, anyone in the community can participate in the governance of the community by voting or against.
@@ -73,6 +83,8 @@ Starcoin has customized a set of very general on-chain governance DAO contracts 
 This is a general-purpose DAO that supports any type of Token voting. Voting has a valid time. Voting is valid only after the number of votes reaches the threshold of 4% of the Token circulation within the specified time. If there are more votes for yes than no votes, the vote is passed, otherwise, if there are more votes for no, then the vote is not passed. 
 
 ![starcoin_dao](http://westar.io/blog/starcoin_features/images/starcoin_dao.jpg)
+
+
 
 ## Safe Smart Contract Upgrade Plan 
 
@@ -82,11 +94,15 @@ The Starcoin contract uses the Module name to mark uniqueness, and the Ethereum 
 
 ![starcoin_upgrade](http://westar.io/blog/starcoin_features/images/starcoin_upgrade.jpg)
 
-## Scalable Second Layer 
 
-Starcoin is a layered smart contract and DeFi network, which means that Starcoin not only has one layer of network, but also designs and implements its own second layer. The second layer of Starcoin is committed to connecting everyone securely, infiltrating blockchain technology into daily life scenarios, and allowing users to enjoy the benefits and convenience of blockchain.
 
-The second layer of Starcoin will be a general solution. By looking for a safe algorithm, let the first and second layers be more natively combined, so that data can travel safely, arbitrarily and conveniently between the two layers.
+## Scalable Layer2 
+
+Starcoin is a layered smart contract and DeFi network, which means that Starcoin not only has layer1 of network, but also designs and implements its own layer2. The 2-layer of Starcoin is committed to connecting everyone securely, infiltrating blockchain technology into daily life scenarios, and allowing users to enjoy the benefits and convenience of blockchain.
+
+The 2-layer of Starcoin will be a general solution. By looking for a safe algorithm, let the laye1 and layer2 be more natively combined, so that data can travel safely, arbitrarily and conveniently between the two layers.
+
+
 
 ## More Features of Starcoin
 
