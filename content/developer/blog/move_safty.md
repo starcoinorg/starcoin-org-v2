@@ -11,6 +11,8 @@ In the age of discovery of blockchain, all main public chains have carried out a
 
 Starcoin is a new generation of layed smart contracts and distributed financial networks. From the beginning of the design, the issue of security has been the most important concern. On the one hand, Starcoin hopes to solve common security problems, on the other hand, Starcoin hopes to lower the security threshold for developers. In the end, Starcoin chose Move as the smart contract language. Move has many advantages, and the biggest highlight is security. Move introduces many security features for smart contract scenarios without increasing the burden on developers. This article will analyze the real security vulnerabilities in history, and take an inventory of the out-of-the-box security features of Move. 
 
+
+
 ## Resource-oriented Programming 
 
 Resource-oriented programming is one of Move's biggest innovations. So, what exactly is resource-oriented programming? What is the relationship between resource-oriented programming and security?
@@ -28,35 +30,15 @@ Move introduces a resource type, and guarantees that the resource type follows t
 
 Move's resource-oriented programming is a brand-new programming model that can easily avoid many common security problems and lower the development threshold. 
 
-![starcoin_move_resource](https://tva1.sinaimg.cn/large/008i3skNly1gxd3n3nrzzj318e0dmjst.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy46ri517j31520ecjse.jpg" alt="1643697424087" style="zoom:33%;" />
 
 
-
-资源：resources
-
-经济学名词：Economic terms
-
-资源是指任何一种有形或者无形、可利用性有限的物体，或者是任何有助于维持生计的事物： Resource refers to any tangible or intangible object with limited availability, or anything that helps to improve livelihoods.
-
-The resources have these three characteristics: Practicality,Quantity(Usually depend on its practicality), and in the production of other resources
-
-有价值： Valuable
-
-有限：Limited
 
 ## Ability
 
 Ability guarantees Move's implementation of resource-oriented programming, making resource-oriented programming very simple and easy to understand. 
 
-![starcoin_move_ability](https://tva1.sinaimg.cn/large/008i3skNly1gxd6ah8k47j311m0g8q3o.jpg)
-
-Copy: Copyable
-
-Drop: Dropabl(Arbitrarily/Garbage Collection)
-
-Key: Indexable
-
-Store: Storable
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy47afte2j30t40fa0t1.jpg" alt="1643697550185" style="zoom:33%;" />
 
 Move has 4 type abilities: Copy, Drop, Key, Store, which can be used in any combination. For resource-type structures, ability without Copy and Drop is enough. It is easy to use, safe and reliable, and can avoid asset loss and unlimited issuance, which can secure assets on the chain. 
 
@@ -82,25 +64,9 @@ In the DeFi era, many well-known security vulnerabilities are related to the dyn
 
  In the special field of blockchain, dynamic calls have led to a lot of security vulnerabilities. Move has learned lessons from experience and adopts pure static calls, which can greatly avoid security risks. 
 
-![thedao](https://tva1.sinaimg.cn/large/008i3skNly1gxd7mnaw5nj30rq0f4wfl.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy47pk8z9j319y0qymyw.jpg" alt="1643698072074" style="zoom:33%;" />
 
-Submit split proposal
 
-函数：function
-
-向HC发送以太第一次：send HC ehter first time
-
-黑客的dao余额和dao总量此时没变：Hacker's dao balance and total amount do not change at this time
-
-HC的fallback函数：HC's fallback function
-
- 如果递归未达到预设深度：调用split DAO 函数：Call split DAO function, if recursion does not reach the preset depth
-
-向HC发送以太第二次：send HC ehter second time
-
-黑客的dao余额等仍然没变：Hacker's dao balance and total amount still do not change
-
-继续递归：continue recursion
 
 ## More Reasonable Fault Tolerance Mechanism 
 
@@ -110,9 +76,13 @@ In the case of overflow, Move will directly throw an exception and roll back the
 
 For function visibility, in addition to private and public visibility, Move also adds script and friend visibility. At the same time, the default is private visibility to avoid function leaks due to negligence. Move has a more reasonable mechanism in many details, which can avoid some low-level vulnerabilities caused by negligence. 
 
+
+
 ## Complete Testing System to Guarantee Security
 
 In order to better guarantee security, Move has designed a complete test system, including Unit Test and Functional Test. Unit Test is usually used for unit testing of a single function, and Functional Test is used for functional testing. Make good use of Unit Test and Functional Test, discover possible security risks before launching, and better guarantee the security and reliability of assets on the chain.
+
+
 
 ## Formal Verification 
 
