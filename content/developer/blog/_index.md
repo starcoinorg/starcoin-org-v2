@@ -53,6 +53,7 @@ Move, Code, Architecture, technical details about Starcoin
 19. [Update config by Starcoin DAO](https://starcoin.org/en/developer/blog/starcoin_dao_update_config/)
 19. [Starcoin vs Others](https://starcoin.org/zh/developer/blog/starcoin_vs_other_blockchain/)
 19. [Starcoin: The new public blockchain rising star](https://starcoin.org/en/developer/blog/starcoin_rising_star/)
+19. [Starcoin & Web3 & DNS](https://starcoin.org/en/developer/blog/starcoin_web3_dns/)
 
 
 
