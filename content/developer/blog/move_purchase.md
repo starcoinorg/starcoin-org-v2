@@ -123,4 +123,4 @@ Function of the contract is simple. Let's analyze the advantages and disadvantag
 
 
 
-Purchase is relatively simple and versatile in design, and those interested can view the complete code here.
+Purchase is relatively simple and versatile in design, and those interested can view the complete code [here](https://gitlab.com/mingzhena/Purchase/-/tree/main/public/src/modules).

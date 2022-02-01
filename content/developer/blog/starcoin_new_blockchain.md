@@ -61,27 +61,16 @@ Learn more about Starcoin
 
   ![starcoin](https://starcoin.org/img/stc.svg)
 
-- Twitter: StarcoinSTC
+- Twitter:  [![img](https://tva1.sinaimg.cn/large/008i3skNly1gyxzxkm33bj305c05c3yc.jpg)StarcoinSTC](https://twitter.com/StarcoinSTC) 
 
   
 
-  ![image-20220101153423684](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220101153423684.png)
+- Telegram Community: [![img](https://tva1.sinaimg.cn/large/008i3skNly1gyxzy1i8g2j300w00w0ma.jpg)Starcoin](https://t.me/StarcoinZH) 
 
   
 
-- Telegram Chinese Community: Starcoin Chinese Community
+- Discord: [Join the Starcoin spaceship Discord Server!](https://t.co/dwCc6WfBtk) 
 
-  
-
-  ![image-20220101153640931](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220101153640931.png)
-
-  
-
-- Discord: Join the Starcoin spaceship Discord Serve!
-
-  
-
-  ![image-20220101153202036](C:\Users\GGPC\AppData\Roaming\Typora\typora-user-images\image-20220101153202036.png)
 
 
 

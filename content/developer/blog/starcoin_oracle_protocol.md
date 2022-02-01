@@ -105,35 +105,39 @@ This protocol is fully functional, and its design is perfect, we can take a deep
 
    Starcoin's standard Oracle protocol maintains a simple and efficient structure, with the advantages of Move, and and has excellent security and extensibility.
 
-5. Discussion about Starcoin's Oracle scenario
 
-   Above we focused on the implementation details of the standard Oracle protocol. Next, we will discuss the possible application scenarios of Starcoin's Oracle.
 
-   1. Real-time Price
+## Discussion about Starcoin's Oracle scenario
 
-      Users can collect time and price data of encrypted currencies from different data sources, and submit them to the chain in a near real-time manner through Oracle. Other contracts can use these data directly by filtering data sources, or use these data after aggregation processing, which is very convenient and flexible.
+Above we focused on the implementation details of the standard Oracle protocol. Next, we will discuss the possible application scenarios of Starcoin's Oracle.
 
-   2. Random number and Chain
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gv971q1kzjj60po0degm702.jpg" alt="oracle2" style="zoom:33%;" />
 
-      If the input is certain,in this circumstances, the smart contract must ensure that everyone's execution results are consistent, so it is difficult to provide a random number on the chain. However,through Oracle, users can submit VRF random data to the chain, which can not only verify the correctness of the random number, but also allow the contract to have random capabilities and add richer scenarios.
+1. Real-time Price
 
-      Taking games as an example, unpredictability is one of the important features that make games attractive. The game obtains random numbers through Oracle, which can guarantee the unpredictability of the game.
+   Users can collect time and price data of encrypted currencies from different data sources, and submit them to the chain in a near real-time manner through Oracle. Other contracts can use these data directly by filtering data sources, or use these data after aggregation processing, which is very convenient and flexible.
 
-      No doubt, there are more application scenarios for random numbers, such as red envelopes, simulating uncertain environments, and so on.
+2. Random number and Chain
 
-   3. Complex computation off-chain
+   If the input is certain,in this circumstances, the smart contract must ensure that everyone's execution results are consistent, so it is difficult to provide a random number on the chain. However,through Oracle, users can submit VRF random data to the chain, which can not only verify the correctness of the random number, but also allow the contract to have random capabilities and add richer scenarios.
 
-      Due to limitation of gas and single thread, smart contracts cannot have complex calculation algorithm, which will limit the usage of smart contracts. If a solution similar to Proof is used to execute complex calculations off-chain, and then submit the results and Proof to the Oracle on the chain for use in other contracts, this will significantly reduce the difficulty of  design of smart contract , and at the same time, it can enrich application scenarios of smart contracts.
+   Taking games as an example, unpredictability is one of the important features that make games attractive. The game obtains random numbers through Oracle, which can guarantee the unpredictability of the game.
 
-   4. Insurance and Claim 
+   No doubt, there are more application scenarios for random numbers, such as red envelopes, simulating uncertain environments, and so on.
 
-      Insurance is an important financial scenario, but there have always been various inappropriate phenomena, such as insurance fraud and so on. Smart contract is the law in blockchain ecosystem,if you use Oracle to put events on the chain, and then authenticate and execute them through the contract, it will be a good combination. For example, common flight delay insurance, education fund insurance, etc., can regulate the market and improve efficiency in this way.
+3. Complex computation off-chain
 
-   5. To predict Market
+   Due to limitation of gas and single thread, smart contracts cannot have complex calculation algorithm, which will limit the usage of smart contracts. If a solution similar to Proof is used to execute complex calculations off-chain, and then submit the results and Proof to the Oracle on the chain for use in other contracts, this will significantly reduce the difficulty of  design of smart contract , and at the same time, it can enrich application scenarios of smart contracts.
 
-      The market is changing rapidly, and any off-chain event can be quickly mapped to the chain through Oracle. The smart contract triggers operations such as settlement in the prediction market by obtaining data provided by Oracle. For example, sports competition results, gold price changes, game, etc.
+4. Insurance and Claim 
 
-6. How to implement PriceOracle in Starcoin
+   Insurance is an important financial scenario, but there have always been various inappropriate phenomena, such as insurance fraud and so on. Smart contract is the law in blockchain ecosystem,if you use Oracle to put events on the chain, and then authenticate and execute them through the contract, it will be a good combination. For example, common flight delay insurance, education fund insurance, etc., can regulate the market and improve efficiency in this way.
+
+5. To predict Market
+
+   The market is changing rapidly, and any off-chain event can be quickly mapped to the chain through Oracle. The smart contract triggers operations such as settlement in the prediction market by obtaining data provided by Oracle. For example, sports competition results, gold price changes, game, etc.
+
+5. How to implement PriceOracle in Starcoin
 
    We have learned design of Starcoin's standard Oracle protocol,  then explored its rich application.Next, we take the market price scenario as an example to learn how to add the business logic of a specific scenario to the current Oracle protocol to implement a complete Oracle application.
 

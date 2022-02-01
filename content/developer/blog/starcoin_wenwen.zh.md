@@ -101,7 +101,7 @@ StarMask有足够的STC才能进行后面的FAI操作。本文是在Barnard网�
 
 这步是StarMask内的操作，对交易进行签名确认，然后将交易上链。
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhz8sfonsj31ae0u0goi.jpg" alt="wen_7" style="zoom:25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy36ckgwoj31ae0u0goi.jpg" alt="wen_7" style="zoom:33%;" />
 
 ### 3. Balance变更
 

@@ -13,11 +13,15 @@ The Starcoin ecosystem has several high-quality StableCoin protocols implemented
 
 The WEN protocol is completely implemented through Move. The token's Chinese name is Stablecoin, which has been deployed to Starcoin's Barnard test network. 
 
+
+
 ## Select the Correct Network
 
 Set up StarMask's network first. If it is the main network, choose the Starcoin main network. In this article, we will use the Barnard test network, so set the StarMask network to the Barnard network.
 
-![starmask_1](https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg" alt="0" style="zoom:33%;" />
+
+
 
 ## Ensure StarMask Has Enough STC
 
@@ -27,7 +31,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    Find Barnard's Faucet on Starcoin official website
 
-   ![starcoin_faucet](https://tva1.sinaimg.cn/large/008i3skNly1gxyd72902zj30u00vemyw.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6glipulj30u00vejt4.jpg" alt="starcoin_faucet" style="zoom:20%;" />
 
    
 
@@ -35,7 +39,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    Copy your own account address from StarMask
 
-   ![barnard_address](https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg" alt="barnard_address_copy" style="zoom:33%;" />
 
    
 
@@ -45,7 +49,7 @@ StarMask must have enough STC to perform subsequent operations FAI. Run test on 
 
    It should be noted here that, in order to prevent malicious applications, the faucet website needs to bind a Twitter account to apply. 
 
-   ![starcoin_barnard](https://tva1.sinaimg.cn/large/008i3skNly1gxydahuttuj31v40ro0wl.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6gm0bcvj31v40ro0wl.jpg" alt="starcoin_barnard" style="zoom:25%;" />
 
 ## First Time to Use WEN
 
@@ -53,9 +57,9 @@ When first time using WEN, there is some simple initialization work.
 
 1. ##### Visit WEN Official Website
 
-   Click this link to visit WEN official website, the red arrows mark there are two experience entrances.
+   Click [this link](https://wenwen.money/) to visit WEN official website, the red arrows mark there are two experience entrances.
 
-   ![wen_1](https://tva1.sinaimg.cn/large/008i3skNly1gyhxfspbdij321d0u0426.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhxfspbdij321d0u0426.jpg" alt="wen_1" style="zoom:25%;" />
 
    
 
@@ -63,7 +67,7 @@ When first time using WEN, there is some simple initialization work.
 
    Click "Connect Wallet" button on the right corner to connect your own StarMask wallet as shown. 
 
-   ![wen_2](https://tva1.sinaimg.cn/large/008i3skNly1gyhxxw1gn6j320w0jy406.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhxxw1gn6j320w0jy406.jpg" alt="wen_2" style="zoom:25%;" />
 
    
 
@@ -71,32 +75,36 @@ When first time using WEN, there is some simple initialization work.
 
    Select the corresponding explore plug-in wallet in the pop-up box, here select StarMask.
 
-   ![wen_3](https://tva1.sinaimg.cn/large/008i3skNly1gyhyaumzwrj30wk0modgm.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhyaumzwrj30wk0modgm.jpg" alt="wen_3" style="zoom:25%;" />
 
    
 
-## Mortgage and Loan
 
-After connecting to the wallet, enter the loan page to perform mortgage and loan operations.
 
-1. ##### Mortgage and Loan
+## Stake and Lending
+
+After connecting to the wallet, enter the lending page to perform Stake and Lending operations.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhyu9rulqj321g0lajt3.jpg" alt="wen_4" style="zoom:25%;" />
+
+1. ##### Stake and Lending
 
    In stablecoins, these two steps can be completed in one transaction or separated into two transactions.
 
-   1: Click "Borrow" button, go to loan function.
+   1: Click "Borrow" button, go to lending function.
 
-   2: Enter the amount of STC mortgaged in the input box, or click the "Max" button to mortgage all STC in the current account.
+   2: Enter the amount of STC Staked in the input box, or click the "Max" button to stake all STC in the current account.
 
-   3: Enter the amount of STC needed to loan in the input box, it should be noted here:
+   3: Enter the amount of STC needed to lending in the input box, it should be noted here:
 
    - Maximum amount of WEN that can be borrowed
    - Different quantities result in different Position Health and risk of liquidation. 
 
    4: Open StarMask wallet, initiate transaction.
 
-   Steps 2 and 3 are not necessary, which means splitting the mortgage and loan into two different transactions.
+   Steps 2 and 3 are not necessary, which means splitting the stake and lending into two different transactions.
 
-   ![starcoin_wen_6](https://tva1.sinaimg.cn/large/008i3skNly1gyoj2p2f28j310u0qowg5.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyoj2p2f28j310u0qowg5.jpg" alt="starcoin_wen_6" style="zoom:45%;" />
 
    
 
@@ -104,15 +112,17 @@ After connecting to the wallet, enter the loan page to perform mortgage and loan
 
 2. ##### Initiate on-chain transactions
 
-   This step is an operation in StarMask, sign the transaction,then to confirm the transaction, and then submit the transaction on the chain. 
+   This step is an operation in StarMask, sign the transaction,then to confirm the transaction, and then submit the transaction on the chain.
 
-    ![wen_7](https://tva1.sinaimg.cn/large/008i3skNly1gyhz8sfonsj31ae0u0goi.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy36ckgwoj31ae0u0goi.jpg" alt="wen_7" style="zoom:33%;" />
 
 3. ##### Update Balance
 
    After the transaction is on the chain, the balance of the WEN account will change.
 
-   ![wen_8](https://tva1.sinaimg.cn/large/008i3skNly1gyhzb84chzj313w0kqdg7.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhzb84chzj313w0kqdg7.jpg" alt="wen_8" style="zoom:50%;" />
+
+
 
 ## Repay and Withdraw
 
@@ -134,7 +144,7 @@ After borrowing WEN, it can also be returned at some point in the future, and th
 
    
 
-   ![wen_9](https://tva1.sinaimg.cn/large/008i3skNly1gyhzg5t6hzj31aj0u0q5a.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyhzg5t6hzj31aj0u0q5a.jpg" alt="wen_9" style="zoom:40%;" />
 
    
 
@@ -142,7 +152,7 @@ After borrowing WEN, it can also be returned at some point in the future, and th
 
    This step is an operation in StarMask, sign the transaction,then to confirm the transaction, and then submit the transaction on the chain. 
 
-   ![wen_10](https://tva1.sinaimg.cn/large/008i3skNly1gyisshxykkj31710u0goe.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyisshxykkj31710u0goe.jpg" alt="wen_10" style="zoom:45%;" />
 
    
 
@@ -150,7 +160,7 @@ After borrowing WEN, it can also be returned at some point in the future, and th
 
    After the transaction is on the chain, the balance of the WEN account will change.
 
-   ![wen_11](https://tva1.sinaimg.cn/large/008i3skNly1gyit0ubnqjj313m0lijrr.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gyit0ubnqjj313m0lijrr.jpg" alt="wen_11" style="zoom:50%;" />
 
    
 

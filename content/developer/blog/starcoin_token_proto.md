@@ -24,6 +24,8 @@ From above comparison, we notice some problems:
 - The ERC20 Token owned by a user actually does not store in the user’s own account, but was stored in someone else’s contract account     
 - ERC20 Token is "imprisoned" in the implemented contract and cannot be used across contracts 
 
+
+
 ## Starcoin's Token Protocol
 
 Even Starcoin uses the Account model and also distinguishes external accounts EOA (Externally Owned Account) between contract accounts CA (Contract Account), but it is different from Ethereum accounts. The two accounts of Starcoin are relatively unified, the only difference is that the contract account does not have SignerCapability authority, and other features are exactly the same, such as the ability to store data and contract code, and so on. 
@@ -45,6 +47,8 @@ Even Starcoin uses the Account model and also distinguishes external accounts EO
 - Official implementation, code can be reused 
 
 ![starcoin_account_example](https://tva1.sinaimg.cn/large/008i3skNly1gw4413mziqj30n60c9gmc.jpg)
+
+
 
 ## Token's Protocol Source Code Analysis
 
@@ -116,11 +120,13 @@ TokenCode is the only way to distinguish between different Tokens.  Same value o
 
 The above function covers the whole Token life cycle: registration, minting, destruction, recharge, and withdrawal.
 
-Starcoin's Token protocol takes advantage of Move, and has designed a secure Token type and TokenInfo type. By passing generic parameters, it is guaranteed that Token can be arbitrarily combined and the protocol can be expanded. Click to view the complete code. 
+Starcoin's Token protocol takes advantage of Move, and has designed a secure Token type and TokenInfo type. By passing generic parameters, it is guaranteed that Token can be arbitrarily combined and the protocol can be expanded. Click to view [the complete code](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Token.move). 
+
+
 
 ## STC Source Code Analysis
 
-The first application of the Token protocol is Starcoin's STC. STC is the native token of the Starcoin network, and the issuing account is the first account 0x1. In Starcoin's economic model, STC, as a block reward, plays an important role in protecting network security. It is also used to pay for transaction gas, on-chain governance, and state payment. For more information, see Starcoin's economic white paper. 
+The first application of the Token protocol is Starcoin's STC. STC is the native token of the Starcoin network, and the issuing account is the first account 0x1. In Starcoin's economic model, STC, as a block reward, plays an important role in protecting network security. It is also used to pay for transaction gas, on-chain governance, and state payment. For more information, see [Starcoin's economic white paper](https://starcoin.org/en/overview/economy_whitepaper/). 
 
 ![starcoin_ecosystem](https://tva1.sinaimg.cn/large/008i3skNly1gw49l596tnj30dt077gm1.jpg)
 
@@ -144,6 +150,8 @@ STC's complete TokenCode is 0x1::STC::STC,which corresponds to three attributes:
 - Shared destruction right: Store BurnCapability in SharedBurnCapability, it can be used by anyone
 
 STC is a token defined by Starcoin's Token protocol. Like other tokens, it inherits all the functions of the Token protocol. View the complete code. 
+
+
 
 ## Customize one MyToken
 
@@ -171,6 +179,8 @@ As the Token protocol is an officially implemented contract,so it's easy to defi
 ```
 
 The above is a simple and implemented example, if you consider to set a certain value to MyToken, it still need to implement your own business logic.
+
+
 
 ## Conclusion
 

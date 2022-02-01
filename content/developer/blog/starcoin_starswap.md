@@ -13,11 +13,15 @@ With the development of blockchain, DeFi is essential part of  the public chain 
 
 Starswap contains two core functions: Swap and liquidity mining. Swap is to exchange one kind of Token for another kind of Token on the chain. The role of liquidity mining is to provide liquidity for a certain trading pair in a decentralized trading pool. This article will explain to you how to try Starswap early. 
 
+
+
 ## Select the Correct Network
 
 Set up StarMask's network first. If it is the main network, choose the Starcoin main network. In this article, we will use the Barnard test network, so set the StarMask network to the Barnard network.
 
-![starmask_1](https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg)
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gye61nfu86j30jg0q0abf.jpg" alt="starmask_1" style="zoom:33%;" />
+
+
 
 ## Ensure StarMask Has Enough STC
 
@@ -27,7 +31,7 @@ StarMask has enough STC to perform subsequent operations such as swap. Run test 
 
    Find Barnard's Faucet on Starcoin official website
 
-   ![starcoin_faucet](https://tva1.sinaimg.cn/large/008i3skNly1gxyd72902zj30u00vemyw.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyd72902zj30u00vemyw.jpg" alt="starcoin_faucet" style="zoom:33%;" />
 
    
 
@@ -35,7 +39,7 @@ StarMask has enough STC to perform subsequent operations such as swap. Run test 
 
    Copy your own account address from StarMask
 
-   ![barnard_address](https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gye6hknah3j30j409kaad.jpg" alt="barnard_address" style="zoom:33%;" />
 
    
 
@@ -45,23 +49,23 @@ StarMask has enough STC to perform subsequent operations such as swap. Run test 
 
    It should be noted here that, in order to prevent malicious applications, the faucet website needs to bind a Twitter account to apply. 
 
-   ![starcoin_barnard](https://tva1.sinaimg.cn/large/008i3skNly1gxydahuttuj31v40ro0wl.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxydahuttuj31v40ro0wl.jpg" alt="starcoin_barnard" style="zoom:25%;" />
 
 ## Swap Transaction
 
-The previous section is preparation work, and here is the official introduction to Starswap. Click on the Starswap experience entry to enter home page.
+The previous section is preparation work, and here is the official introduction to Starswap. Click on the [Starswap experience entry](https://starswap.xyz) to enter home page.
 
 1. ##### Connect to StarMask Wallet
 
    Click to connect your own StarMask wallet as shown. 
 
-   ![starswap_0](https://tva1.sinaimg.cn/large/008i3skNly1gxydmw7eloj31g00sqmyj.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxydmw7eloj31g00sqmyj.jpg" alt="starswap_0" style="zoom:25%;" />
 
 2. ##### Select a Token
 
    Select one token you want to swap.
 
-   ![starswap_1](https://tva1.sinaimg.cn/large/008i3skNly1gxye5mmodpj313n0u0400.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxye5mmodpj313n0u0400.jpg" alt="starswap_1" style="zoom:33%;" />
 
    
 
@@ -69,7 +73,7 @@ The previous section is preparation work, and here is the official introduction 
 
    FAI is the first stable coin in the Starcoin ecosystem. Take FAI as an example.
 
-   ![starswap_2](https://tva1.sinaimg.cn/large/008i3skNly1gxye90xl6wj30u017m40l.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxye90xl6wj30u017m40l.jpg" alt="starswap_2" style="zoom:33%;" />
 
    
 
@@ -77,7 +81,7 @@ The previous section is preparation work, and here is the official introduction 
 
    This step is to actually use STC to exchange FAI. First, enter the number of STC, which will be converted into the number of FAI according to the exchange price on the chain. Then click the Swap button.
 
-   ![starswap_3](https://tva1.sinaimg.cn/large/008i3skNly1gxyecd586tj313n0u0wgg.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyecd586tj313n0u0wgg.jpg" alt="starswap_3" style="zoom:33%;" />
 
    
 
@@ -85,7 +89,7 @@ The previous section is preparation work, and here is the official introduction 
 
    In this step, mainly to confirm the transaction details such as quntity and slippage, StarMask will be called after confirmation.
 
-   ![starswap_4](https://tva1.sinaimg.cn/large/008i3skNly1gxyess0ye3j30u00yc76j.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyess0ye3j30u00yc76j.jpg" alt="starswap_4" style="zoom:33%;" />
 
    
 
@@ -93,7 +97,7 @@ The previous section is preparation work, and here is the official introduction 
 
    In this step, we will actually initiate an on-chain transaction, so wallet confirmation, signature, and transaction are required. 
 
-   ![starswap_5](https://tva1.sinaimg.cn/large/008i3skNly1gxyewhwro0j30zs0u0tao.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyewhwro0j30zs0u0tao.jpg" alt="starswap_5" style="zoom:33%;" />
 
    
 
@@ -101,7 +105,7 @@ The previous section is preparation work, and here is the official introduction 
 
    After the transaction is submitted on the chain, close the pop-up window. At this point, the Swap is finished, and the account has the FAI Token at this time.
 
-   ![starswap_6](https://tva1.sinaimg.cn/large/008i3skNly1gxyezz8shvj30u00v4abb.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyezz8shvj30u00v4abb.jpg" alt="starswap_6" style="zoom:33%;" />
 
    
 
@@ -113,7 +117,7 @@ After the previous swap transaction, the account now has STC and FAI.
 
    As shown in Figure ①, click 'Pool' to enter the liquidity page. If StarMask is not connected, click 'connect to a wallet' to connect StarMask. Then click 'Add Liquidity' button to add liquidity.
 
-   ![starswap_7](https://tva1.sinaimg.cn/large/008i3skNly1gxyf4ezlv9j31ia0eewfa.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyf4ezlv9j31ia0eewfa.jpg" alt="starswap_7" style="zoom:33%;" />
 
    
 
@@ -121,7 +125,7 @@ After the previous swap transaction, the account now has STC and FAI.
 
    First select the LP pair, here STC and FAI are used as examples. Click ① adding the number of STC and FAI, try to add them proportionally. Then click the 'Supply' button to add liquidity. 
 
-   ![starswap_8](https://tva1.sinaimg.cn/large/008i3skNly1gxyfl5jnobj30kr0rsgne.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfl5jnobj30kr0rsgne.jpg" alt="starswap_8" style="zoom:33%;" />
 
    
 
@@ -129,7 +133,7 @@ After the previous swap transaction, the account now has STC and FAI.
 
    In this step, it is mainly to confirm the details of liquidity transactions, and StarMask will be called after confirmation. 
 
-   ![starswap_9](https://tva1.sinaimg.cn/large/008i3skNly1gxyfp1cccej30u016rn0m.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfp1cccej30u016rn0m.jpg" alt="starswap_9" style="zoom:33%;" />
 
    
 
@@ -137,7 +141,7 @@ After the previous swap transaction, the account now has STC and FAI.
 
    In this step, we will actually initiate an on-chain transaction, so wallet confirmation, signature, and transaction are required. 
 
-   ![starswap_10](https://tva1.sinaimg.cn/large/008i3skNly1gxyfunsayoj30r20rstaq.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfunsayoj30r20rstaq.jpg" alt="starswap_10" style="zoom:33%;" />
 
    
 
@@ -145,7 +149,7 @@ After the previous swap transaction, the account now has STC and FAI.
 
    After the transaction confirmation, and close the pop-up window after the transaction is on the chain.
 
-   ![starswap_11](https://tva1.sinaimg.cn/large/008i3skNly1gxyfwnhs4vj30u016uwh2.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfwnhs4vj30u016uwh2.jpg" alt="starswap_11" style="zoom:33%;" />
 
    
 
@@ -153,7 +157,9 @@ After the previous swap transaction, the account now has STC and FAI.
 
    After adding liquidity successfully, you can see the addition result on the list page.
 
-   ![starswap_12](https://tva1.sinaimg.cn/large/008i3skNly1gxyfymkbh2j31w60j8dhd.jpg)
+   <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxyfymkbh2j31w60j8dhd.jpg" alt="starswap_12" style="zoom:33%;" />
+
+
 
 ## Starcoin and Starswap
 

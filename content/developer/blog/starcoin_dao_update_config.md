@@ -7,21 +7,27 @@ weight: 39
 * By Starcoin community 
 ```
 
-This article is appropriate for users who have a certain understanding of Move and Starcoin, and have a basic knowledge of DeFi development. If you are new to Starcoin and Move, please read Move in Action first. This article mainly introduces how Starcoin be used to implement distributed and decentralized voting for on-chain governance. After reading this article, you can:
+This article is appropriate for users who have a certain understanding of Move and Starcoin, and have a basic knowledge of DeFi development. If you are new to Starcoin and Move, please read [Move in Action](https://starcoin.org/en/developer/blog/move_development/) first. This article mainly introduces how Starcoin be used to implement distributed and decentralized voting for on-chain governance. After reading this article, you can:
 
 1. Learn how to implement decentralized voting on Starcoin
 2. Learn how to implement decentralized voting on Starcoin to reach consensus using Starcoin's native Layer 2 and Move, to implement some custom definition.
 3. Learn how to implment DAO with Move Promgramming language on Starcoin.
 
+
+
 ## Background
 
 DAO is a decentralized autonomous organization. Its abstract expression is that a person in a group of people proposes a consensus, this consensus is usually decentralized, transparent, not affected by any centralized organization, and verified by blockchain, this consensus is used to implement to perform the intended behavior after getting unified by everyone. The concrete expression is a type of smart contract in DeFi. This type of smart contract can manage the behavior modes of other smart contracts (such as configuration, upgrade, etc.), usually a proposal is proposed by an account, and some stakeholders participate in voting. 
+
+
 
 ## Starcoin DAO Process
 
 The DAO governance process in Starcoin can be summarized by the following diagram: 
 
 ![f5e8e3fb015a4a7c40d10193f1e3080d.png](https://tva1.sinaimg.cn/large/008i3skNly1gyl1t29buhj31bf0u0gpa.jpg)
+
+
 
 ### Role
 
@@ -31,6 +37,8 @@ There are the following roles in this process: the DAO project initiator (Coder)
 - Everyone: Project participants, voting participants of the proposal, if it exceeds X% (X is a configured value), the proposal is approved and enters the execution process, otherwise it will be rejected by the system;
 - Miner: The miner that executes the contract.
 - Anyone: Here specifically refers to all users on the chain
+
+
 
 ### Proposal
 
@@ -43,9 +51,11 @@ In addition, there is a concept of proposal (Proposal), a proposal represents th
 - EXECUTEABLE, the executable stage. At this stage, the actions of the contract can be executed. Due to the passive nature of the blockchain contract, a person is required to drive the proposal execution, and this person can be anyone.
 - EXCTRACTED, the executed stage, this state is mainly used to distinguish whether the proposal has been executed. Since DAO is abstracted into a Proposal at the Move contract code layer, the action that needs to be executed will be put into the contract as a structure for process management during the proposal, and the structure will be extracted when it needs to be executed to do the corresponding Action, the state after this execution is EXCTRACTED, which will be discussed in detail in the code analysis chapter.
 
+
+
 ## In Action
 
-This section mainly introduces how to use Move to implement the relevant code of DAO, and how to release a test governance token to participate in the DAO governance voting, and deploy and test the contract in the local environment of Starcoin. About how to use DAO to upgrade the contract, you can Refer to Starcoin's stdlib upgrade and Dao on-chain governance. 
+This section mainly introduces how to use Move to implement the relevant code of DAO, and how to release a test governance token to participate in the DAO governance voting, and deploy and test the contract in the local environment of Starcoin. About how to use DAO to upgrade the contract, you can Refer to [Starcoin's stdlib upgrade and Dao on-chain governance](https://starcoin.org/en/developer/blog/starcoin_stdlib_upgrade/). 
 
 ### Scenario Assumption
 
@@ -53,7 +63,7 @@ For example, we have released a project in Starcoin. There is a specific value i
 
 ### Environment Preparation
 
-Take the mac OS system as an example here, download the latest version of the corresponding platform of the Starcoin build package](https://github.com/starcoinorg/starcoin/releases), save in any local directory, you need to add the bin directory to the PATH environment variable, if you execute the command to check the version number, it can be printed correctly, indicating that the installation is successful. 
+Take the mac OS system as an example here, download the latest version of the corresponding platform of the [Starcoin build package](https://github.com/starcoinorg/starcoin/releases), save in any local directory, you need to add the bin directory to the PATH environment variable, if you execute the command to check the version number, it can be printed correctly, indicating that the installation is successful. 
 
 ```bash
 % export PATH=$PATH:~/Downloads/starcoin-artifacts
@@ -66,7 +76,7 @@ move 1.9.0-rc.2
 
 ### Code
 
-Use the 'move scaffold' command to create a new project mock-swap-config (code reference star-dao-mock)
+Use the 'move scaffold' command to create a new project mock-swap-config ([code reference star-dao-mock](https://github.com/9191stc/star-dao-mock))
 
 ```shell
 % move scaffold mock-swap-config
@@ -619,7 +629,7 @@ starcoin% dev call --function 0xcccf61268df4d021405ef5d4041cb6d3::MockModuleDaoP
 
 In the previous section, we mainly implement a deployable and practical project, and used the DAO.move module in Starcoin stdlib to implement on-chain governance and modify the configuration. This section briefly discusses some of the code implementations in the previous section, as well as some implementation logic of DAOs that rely on Starcoin.
 
-We know that Starcoin is different from Ethereum, and its storage model is the account Resource mode, that is, deprecated contract account and storing all data under the path of the account (refer to the Starcoin white paper, Starcoin contract account details). Since the contract account has been removed, reviewing the process described in the second section of this article, we need to consider the following issues: 
+We know that Starcoin is different from Ethereum, and its storage model is the account Resource mode, that is, deprecated contract account and storing all data under the path of the account (refer to [the Starcoin white paper](https://starcoin.org/zh/developer/sips/sip-2/), [Starcoin contract account details](https://starcoin.org/en/developer/blog/starcoin_contract_account/)). Since the contract account has been removed, reviewing the process described in the second section of this article, we need to consider the following issues: 
 
 1. Where should the process of proposals and related status data be stored? How to make sure it is not modified?
 2. Where should each voter's staked tokens be stored? Are the mortgaged funds safe?
@@ -825,14 +835,18 @@ The contract provides a total of 4 functions: plugin, submit_proposal, proposal_
 
 submit_proposal calls Dao's to initiate a proposal, and passes our defined MockModuleDaoProposalAction as the template parameter of the action to be executed. Let's look at execute_proposal. At the beginning, we need to get the current proposal action through Dao. If the proposal is not in the correct state, it will report an error and exit. When we correctly extract the value in the action of the proposal, we can get the modification permission of the MockModuleConfig contract hosted under the MockModuleDaoProposalCapWrap structure of the current contract to modify the value to achieve the purpose of modifying the configuration. Of course, when performing this action on-chain, the identity of any signer is not required.
 
+
+
 ## Summarize
 
 In the first section, this article discusses the core process and status of Starcoin's Dao to give readers an overall impression. The second part discusses how to write and deploy a custom Dao project, deploy it to the local test environment and demonstrate the process. In the last part, we focused on the code implementation of the core logic of Dao.move, and then discussed the most important upper-layer application contract in the project, MockModuleDaoProposal.move. There is also a part of the upgrade code and configuration modification voting code in stdlib, which is also an upper-level application based on Dao.move. Readers can read on their own. 
 
+
+
 ## References
 
-https://starcoin.org/zh/developer/blog/starcoin_dao_1/  The Collision of Starcoin and the DAO
+https://starcoin.org/en/developer/blog/starcoin_dao_1/  The Collision of Starcoin and the DAO
 
-https://starcoin.org/zh/developer/blog/starcoin_stdlib_upgrade/  Starcoin's stdlib upgrade and DAO on-chain governance
+https://starcoin.org/en/developer/blog/starcoin_stdlib_upgrade/  Starcoin's stdlib upgrade and DAO on-chain governance
 
-https://starcoin.org/zh/developer/blog/starcoin_contract_account/  Explanation of Starcoin Contract Account
+https://starcoin.org/en/developer/blog/starcoin_contract_account/  Explanation of Starcoin Contract Account

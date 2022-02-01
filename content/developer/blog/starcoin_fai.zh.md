@@ -77,7 +77,7 @@ StarMask连接成功之后，会提示创建FAI账户。点击`Enable Vault`按�
 
 如果FAI账户创建成功，会有`Create Vault Success!`的提示。
 
-<img src="/Users/dqm/Desktop/内容/文章/FAI使用指南/fai/4.jpg" alt="4" style="zoom:15%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gyy2r9r2gsj31ea0fc3zf.jpg" alt="4" style="zoom:15%;" />
 
 
 
