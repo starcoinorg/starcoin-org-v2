@@ -55,6 +55,7 @@ Move学习指南、源码分析、设计思想等文章
 15. [Starcoin对比其它公链有哪些优势?](https://starcoin.org/zh/developer/blog/starcoin_vs_other_blockchain/)
 15. [Starcoin: 冉冉升起](https://starcoin.org/en/developer/blog/starcoin_rising_star/)
 15. [探讨基于Starcoin的Web3生态基础设施——去中心化域名系统](https://starcoin.org/zh/developer/blog/starcoin_web3_dns/)
+15. [盘点多个DAO项目，Starcoin DAO最成熟](https://starcoin.org/zh/developer/blog/starcoin_dao_2/)
 
 
 
