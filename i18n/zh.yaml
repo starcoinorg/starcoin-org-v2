@@ -59,6 +59,8 @@
   translation: Starcoin浏览器使用教程
 - id: navLearnYoutubeStarmask
   translation: StarMask使用教程
+- id: navLearnYoutubeStarmaskInstall
+  translation: 如何安装StarMask钱包
 - id: navLearnYoutubePoll
   translation: 如何参与Starcoin投票
 - id: navLearnYoutubeAirdrop

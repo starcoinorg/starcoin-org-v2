@@ -53,6 +53,8 @@
   translation: Starcoin StcScan Guide
 - id: navLearnYoutubeStarmask
   translation: StarMask Guide
+- id: navLearnYoutubeStarmaskInstall
+  translation: How To Install StarMask
 - id: navLearnYoutubePoll
   translation: Starcoin Poll Guide
 - id: navLearnYoutubeAirdrop
