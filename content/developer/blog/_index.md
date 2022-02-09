@@ -25,6 +25,7 @@ Move, Code, Architecture, technical details about Starcoin
 3. [Move development](https://starcoin.org/en/developer/blog/move_development/)
 3. [Move vs Solidity I](https://starcoin.org/zh/developer/blog/move_big_vec/)
 3. [Move vs Solidity II](https://starcoin.org/zh/developer/blog/move_static/)
+3. [Move vs Solidity III](https://starcoin.org/zh/developer/blog/move_safty_vs_solidity/)
 
 
 

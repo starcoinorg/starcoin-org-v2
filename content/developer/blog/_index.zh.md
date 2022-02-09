@@ -26,6 +26,7 @@ Move学习指南、源码分析、设计思想等文章
 3. 手把手：[Move开发实战](https://starcoin.org/zh/developer/blog/move_development/)
 3. [Move是如何解决Solidity大数组的安全隐患](https://starcoin.org/zh/developer/blog/move_big_vec/)
 3. [Solidity动态调用可导致严重的安全漏洞，Move走纯静态之路](https://starcoin.org/zh/developer/blog/move_static/)
+3. [Move轻松避免Solidity无限增发的漏洞，让DeFi更安全](https://starcoin.org/zh/developer/blog/move_safty_vs_solidity/)
 
 
 
