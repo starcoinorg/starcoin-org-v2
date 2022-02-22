@@ -1,5 +1,5 @@
 ---
-title: Make an Inventory of DAO Projects: Starcoin is the most muture one
+title: Make an Inventory of DAO Projects, Starcoin is the most muture one
 weight: 44
 ---
 
