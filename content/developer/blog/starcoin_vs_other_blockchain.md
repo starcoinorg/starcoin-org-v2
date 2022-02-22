@@ -7,9 +7,6 @@ weight: 41
 * By Starcoin community 
 ```
 
-
-By Starcoin community 
-
 In the past two years, with the large market of DeFi, the blockchain industry has been extremely hot. The public chain track has also experienced rapid development, in addition to the known public chains such as Bitcoin and Ethereum, some new and characteristic public chains are also sought after by many people. It is against this background that Starcoin launched main network in 2021. It has many interesting designs and has attracted the attention of many people. You can further understand Starcoin from a number of different dimensions through a horizontal comparison with some well-known public chains in this article.
 
 ![starcoin_blockchain_comparison](https://tva1.sinaimg.cn/large/008i3skNly1gxusakr2jrj31c80oo43w.jpg)
