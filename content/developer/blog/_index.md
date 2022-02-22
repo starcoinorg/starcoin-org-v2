@@ -23,7 +23,7 @@ Move, Code, Architecture, technical details about Starcoin
 1. [Move Book](https://move-book.com/)
 2. [Move Ability & Generic](https://starcoin.org/en/developer/blog/move_advanced_tutorial/)
 3. [Move development](https://starcoin.org/en/developer/blog/move_development/)
-3. [Move vs Solidity I](https://starcoin.org/zh/developer/blog/move_big_vec/)
+3. [Move vs Solidity I](https://starcoin.org/en/developer/blog/move_big_vec/)
 3. [Move vs Solidity II](https://starcoin.org/zh/developer/blog/move_static/)
 3. [Move vs Solidity III](https://starcoin.org/zh/developer/blog/move_safty_vs_solidity/)
 
@@ -53,10 +53,10 @@ Move, Code, Architecture, technical details about Starcoin
 19. [Starcoin vote & DAO](https://starcoin.org/en/developer/blog/starcoin_dao_in_action/)
 19. [Move vs Solidity](https://starcoin.org/en/developer/blog/move_vs_solidity_1/)
 19. [Update config by Starcoin DAO](https://starcoin.org/en/developer/blog/starcoin_dao_update_config/)
-19. [Starcoin vs Others](https://starcoin.org/zh/developer/blog/starcoin_vs_other_blockchain/)
+19. [Starcoin vs Others](https://starcoin.org/en/developer/blog/starcoin_vs_other_blockchain/)
 19. [Starcoin: The new public blockchain rising star](https://starcoin.org/en/developer/blog/starcoin_rising_star/)
-19. [Starcoin & Web3 & DNS](https://starcoin.org/zh/developer/blog/starcoin_web3_dns/)
-19. [Starcoin DAO](https://starcoin.org/zh/developer/blog/starcoin_dao_2/)
+19. [Starcoin & Web3 & DNS](https://starcoin.org/en/developer/blog/starcoin_web3_dns/)
+19. [Starcoin DAO](https://starcoin.org/en/developer/blog/starcoin_dao_2/)
 
 
 

@@ -3,10 +3,10 @@ title: Move In Action
 weight: 5
 ---
 
-# Move In Action
 ```
 * By Starcoin community.
 ```
+
 Move’s first appearance is in the Diem project of Facebook, it’s next-generation programming language for smart contract, specially for digital assets and blockchain implementation, there are some unique features that are related to security, development efficiency in Move.
 
 You need to know the Move applications development process if you want to build one Move application. Compared to Move to other project programming languages, there is no big difference, Move also has implementation, unit tests, integration tests,local development and call, on-chain development and call. Development tools and each process are not the same as different programming languages. For now, we recommend using MacOS or ubuntu20.04 to develop a Move application. You also can use ubuntu in Move VM to do development. In this document, we will guide you to do one Move application step by step.
