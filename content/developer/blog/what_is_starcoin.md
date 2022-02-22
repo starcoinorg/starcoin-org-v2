@@ -26,11 +26,11 @@ With the above questions, Let's walk into the world of Starcoin in this article.
 > Starcoin is a decentralized layered smart contract network that aims to provide a secure digital asset and decentralized financial operation platform.
 > We have taken security as the prime objective from the beginning of the design, and we will do our best to ensure the security of your main chain and digital assets.
 
-Starcoin is a smart contract blockchain network that realizes infinite expansion through layers. The layer 1 ensures security and no entry, and the second layer implements application-oriented extension, thus build the infrastructure of Web3 and the Metaverse. 
+Starcoin is a smart contract blockchain network that realizes infinite expansion through layers. The layer 1 ensures security and permissionless, and the second layer implements application-oriented extension, thus build the infrastructure of Web3 and the Metaverse. 
 
 The layer 1 of Starcoin is based on enhanced PoW, providing a series of rich, freely combinable, out-of-the-box general underlying standards including Token, DAO, NFT, Oracle, etc., a decentralized network for digital asset. 
 
-Through the resource-oriented smart contract programming language Move, Starcoin makes all resources on the chain first-class citizens, splits and clarifies the ownership of the smart contract state, and provides the ability to formalize verification and mathematically prove the program security, so as to ensure the security and freedom of users' on-chain property as much as possible. 
+Through the resource-oriented smart contract programming language Move, Starcoin makes all resources on the chain first-class citizens, splits and clarifies the ownership of the smart contract state, and provides the ability to Formal Verification and mathematically prove the program security, so as to ensure the security and freedom of users' on-chain property as much as possible. 
 
 The layer 2 of Starcoin abstracts different layer 2 schemes through a unified architecture, and different applications can choose different layer 2 schemes according to their own needs, so as to achieve unlimited expansion. 
 
