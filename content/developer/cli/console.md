@@ -59,6 +59,14 @@ Then execute the following command to access console.
 starcoin --connect ws://127.0.0.1:9870 console
 ```
 
+- To connect via websocket，attach to local accounts.
+``` shell
+starcoin --connect ws://127.0.0.1:9870 --local-account-dir ./my_wallet console
+```
+The optional argument `--local-account-dir` can setting a local account dir path for account
+operation. Such as account import or account transfer, etc.
+
+
 ``9870`` is the default websocket port for starcoin, if you have modified it, please replace it with your own modified value. 
 
 You can view the websocket port through the node config file, the default config file is `~/.starcoin/barnard/config.yml`.

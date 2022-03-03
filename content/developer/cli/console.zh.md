@@ -59,6 +59,13 @@ starcoin.exe --connect \\.\pipe\starcoin.ipc console
 starcoin --connect ws://127.0.0.1:9870 console
 ```
 
+- 通过 websocket 连接，并利用本地账号进行操作。
+``` shell
+starcoin --connect ws://127.0.0.1:9870 --local-account-dir ./my_wallet console
+```
+通过设置参数 --local-account-dir 指定本地的账号目录。此时 console 中的 account 命令将利用
+本地账号执行各种账号操作，如 import, sign, transfer 等。
+
 `9870` 是 starcoin 的默认 websocket 端口，如果你修改了它，请替换成自己修改后的值。 
 
 可以通过节点 config 文件查看 websocket 端口，默认的 config 文件在 `~/.starcoin/barnard/config.yml`
