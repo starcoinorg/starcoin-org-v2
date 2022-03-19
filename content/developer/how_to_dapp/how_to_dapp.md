@@ -128,18 +128,18 @@ Currently, Starcoin is the first one public blockchain that can run Move smart c
 1. [Move Book](https://move-book.com/).Check [Move introduction](https://developers.diem.com/docs/move/move-start-here/move-introduction) to learn more about Move.
 2. IDE
 * Starcoin IDE: https://marketplace.visualstudio.com/items?itemName=starcoinorg.starcoin-ide
-* Move-cli: It’s a lightweight tool to test, deploy Move smart contracts.[Download](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
+* Move-Package-Manager: It’s a lightweight tool to test, deploy Move smart contracts.[Download](https://github.com/starcoinorg/guide-to-move-package-manager)
 3. Test
 You can test your Move smart contracts with different test types.
 * Unit test:  [Guides](https://github.com/diem/diem/blob/main/language/changes/4-unit-testing.md)
 * Functional Test: To run a functional test, make sure to initialize Starcoin first. 
-	* [Guides](https://starcoin.org/zh/developer/functional_test/functional_test/) 
+* [Guides](https://starcoin.org/zh/developer/functional_test/functional_test/) 
   * [Examples](https://github.com/starcoinorg/starcoin/tree/master/vm/functional-tests/tests/testsuite)
 4. Compile and Deploy 
 There are multiple ways to compile and deploy Move smart contracts on Starcoin blockchain. Make sure that you have chosen appropriate networks!
 * Console: [Guides](https://starcoin.org/en/developer/tutorials/deploy_move_contract/)
 * Starmask-test-dapp: Contract blob hex functionality. [Guides](https://starmask-test-dapp.starcoin.org/)
-* Move-cli: [Guides](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
+* Move-Package-Manager: [Guides](https://github.com/starcoinorg/guide-to-move-package-manager)
 5. More [example](https://starcoin.org/zh/developer/move/example/) about Move
 
 
@@ -154,8 +154,8 @@ protocol is a basic protocol in Stdlib, you can govern blockchain well via DAO p
 * [NFT protocol introduction](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
 * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
 * Source Code
-	* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
-	* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
+	* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move
+	* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move
 	3: Stdlib [Guides](https://starcoin.org/zh/developer/stdlib/stdlib/)
 
 

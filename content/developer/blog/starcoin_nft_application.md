@@ -68,7 +68,7 @@ Here we don't discuss what kind of cards L1Card and L2Card represent, nor discus
 - The function "init" calls the NFT::register_v2 function in the Starcoin standard NFT protocol to register the two types of NFTs, L1Card and L2Card.
 - The mint_l1 function and mint_l2 function both call the NFT::mint_with_cap_v2 function in the Starcoin standard NFT protocol mint real NFT
 
-The Starcoin standard NFT protocol design is very simple and efficient, and it can be used directly. In the example, the NFT card game only calls the two functions of the protocol, NFT::register_v2 and NFT::mint_with_cap_v2, which combines NFT with the game very easily. The entire contract is less than 100 lines of code. On the basis of ensuring the security of NFT, it implements the flexible combination of NFT. Those who interested can view [the complete code](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/nft_card.move).
+The Starcoin standard NFT protocol design is very simple and efficient, and it can be used directly. In the example, the NFT card game only calls the two functions of the protocol, NFT::register_v2 and NFT::mint_with_cap_v2, which combines NFT with the game very easily. The entire contract is less than 100 lines of code. On the basis of ensuring the security of NFT, it implements the flexible combination of NFT. Those who interested can view [the complete code](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/nft_card.move).
 
 
 
@@ -105,7 +105,7 @@ Here we focus on the logic of NFT as a membership:
 - The quit function calls IdentifierNFT::revoke to recover the member’s NFT credentials, and destroys the NFT through NFT::burn_with_cap
 - do_membership_action calls IdentifierNFT::is_owns to determine the user's membership
 
-The above is an example of using NFT as a member ID, which uses both the standard NFT protocol of Starcoin and the IdentifierNFT module. Although there are only about 100 lines of code, from initializing the NFT to casting, using and destroying the NFT, it covers the entire NFT's life cycle. The contract logic is simple and clear. More importantly, it guarantees the security of NFT and Token. If you are interested, you can view [the complete contract code](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/identifier_nft.move).
+The above is an example of using NFT as a member ID, which uses both the standard NFT protocol of Starcoin and the IdentifierNFT module. Although there are only about 100 lines of code, from initializing the NFT to casting, using and destroying the NFT, it covers the entire NFT's life cycle. The contract logic is simple and clear. More importantly, it guarantees the security of NFT and Token. If you are interested, you can view [the complete contract code](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/identifier_nft.move).
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNly1gwb9k9ju6lj30ma0diq3i.jpg" alt="starcoin_nft_vip" style="zoom:30%;" />
 
@@ -134,7 +134,7 @@ The above code segement is the main logic of the BoxMiner module:
 - The init function is the initialization function, calling NFT::register_v2 to register the NFT type of BoxMiner
 - The mint function is used for users to purchase NFT, call NFT::mint_with_cap_v2 to cast NFT
 
-The entire contract is about 50 lines, which not only implements the complete business logic, but also guarantees the safety and reliability of the NFT. If you are interested, you can view [the complete contract code](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/nft_boxminer.move).
+The entire contract is about 50 lines, which not only implements the complete business logic, but also guarantees the safety and reliability of the NFT. If you are interested, you can view [the complete contract code](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/nft_boxminer.move).
 
 
 

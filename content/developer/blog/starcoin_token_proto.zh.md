@@ -120,7 +120,7 @@ TokenCode是区别不同Token的唯一方式，只有addr、module_name、name�
 
 上面的函数覆盖了整个Token的生命周期：注册、铸造、销毁、充值、提款。
 
-Starcoin的Token协议重复发挥了Move的优势，设计了安全的Token类型和TokenInfo类型，通过泛型参数的方式，保证Token可自由组合、协议可扩展，点击查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Token.move)。
+Starcoin的Token协议重复发挥了Move的优势，设计了安全的Token类型和TokenInfo类型，通过泛型参数的方式，保证Token可自由组合、协议可扩展，点击查看[完整代码](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/Token.move)。
 
 
 
@@ -150,7 +150,7 @@ STC的完整TokenCode是0x1::STC::STC，分别对应addr、module_name、name这
 * 铸造STC：Token::mint，在创世交易中铸造，同时把所有STC托管到Treasury中锁定
 * 共享销毁权：把BurnCapability存放在SharedBurnCapability中，任何人可以使用
 
-STC是一种通过Starcoin的Token协议定义的Token，跟其他Token一样，继承了Token协议的所有功能，查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/STC.move)。
+STC是一种通过Starcoin的Token协议定义的Token，跟其他Token一样，继承了Token协议的所有功能，查看[完整代码](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/STC.move)。
 
 
 

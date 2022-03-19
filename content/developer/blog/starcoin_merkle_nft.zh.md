@@ -82,7 +82,7 @@ MerkleNFTDistributor逻辑也比较简洁，在标准NFT协议实现NFT注册和
 * register函数调用了NFT协议的register注册NFT的元数据；
 * mint_with_cap函数的作用是mint用户需要的NFT，也是调用了NFT协议的函数，这里需要格外注意的是，用户需要传递merkle_proof等MerkleTree相关的参数，会调用MerkleProof模块的verify进行校验，只有校验通过，才能mint成功；
 
-MerkleProof模块和MerkleNFTDistributor模块是MerkleNFT的核心实现，整个逻辑很清晰、简洁，设计上巧用了MerkleTree，降低了逻辑复杂度，是NFT协议很有意思的一个应用场景。感兴趣的可以查看[完整源码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/MerkleNFT.move)。
+MerkleProof模块和MerkleNFTDistributor模块是MerkleNFT的核心实现，整个逻辑很清晰、简洁，设计上巧用了MerkleTree，降低了逻辑复杂度，是NFT协议很有意思的一个应用场景。感兴趣的可以查看[完整源码](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move)。
 
 
 
@@ -96,7 +96,7 @@ GenesisNFT模块是Starcoin反馈主网上线前在Proxima挖矿的老用户而�
 public(script) fun mint(sender: signer, index: u64, merkle_proof:vector<vector<u8>>)
 ~~~
 
-以上是GenesisNFTScripts模块中的mint函数，是script可见性，任何用户都可以发起这个交易，但是只有MerkleProof合法的用户才能拿到属于自己的纪念版NFT。感兴趣的可以查看[完整源码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/GenesisNFT.move)。
+以上是GenesisNFTScripts模块中的mint函数，是script可见性，任何用户都可以发起这个交易，但是只有MerkleProof合法的用户才能拿到属于自己的纪念版NFT。感兴趣的可以查看[完整源码](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/GenesisNFT.move)。
 
 
 

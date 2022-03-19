@@ -85,8 +85,8 @@ For NFT scenarios, Starcoin will consider providing richer NFT-related protocols
 
 Standard NFT Protocol
 
-* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
+* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move
 
-* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
+* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move
 
 [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)

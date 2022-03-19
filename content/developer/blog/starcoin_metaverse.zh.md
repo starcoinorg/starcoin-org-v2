@@ -100,4 +100,4 @@ NFT 的实现和扩展协议 SIP22:
 &emsp;&emsp;[https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)  
 
 NFT的实现代码:  
-&emsp;&emsp;[https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move)
+&emsp;&emsp;[https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move)

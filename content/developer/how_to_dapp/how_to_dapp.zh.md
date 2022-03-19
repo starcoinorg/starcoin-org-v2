@@ -185,16 +185,16 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 2. IDE：
 
 * Starcoin IDE：https://marketplace.visualstudio.com/items?itemName=starcoinorg.starcoin-ide
-* Move-cli：这是一个非常轻量级的测试、发布Move合约的工具，[下载链接和操作指南](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
+* Move-Package-Manager：这是一个非常轻量级的测试、发布Move合约的工具，[下载链接和操作指南](https://github.com/starcoinorg/guide-to-move-package-manager)
 
 3. 测试
 
    Move支持多种测试方案
 
    * Unit Test：[指南](https://github.com/diem/diem/blob/main/language/changes/4-unit-testing.md)
-   * Functional Test：语法跟UT差不多，主要区别是FT会预先初始化链
-     * [使用指南](https://starcoin.org/zh/developer/functional_test/functional_test/)
-     * [参考例子](https://github.com/starcoinorg/starcoin/tree/master/vm/functional-tests/tests/testsuite)
+   * Speck Test：语法跟UT差不多，主要区别是 ST 会预先初始化链
+     * [使用指南](https://github.com/starcoinorg/guide-to-move-package-manager/)
+     * [参考例子](https://github.com/starcoinorg/starcoin-framework/tree/main/spectests)
 
 4. 编译&部署
 
@@ -202,7 +202,7 @@ Move语法简单，安全特性开箱即用，能够做到轻松上手。对于�
 
    * 控制台：[操作指南](https://starcoin.org/en/developer/tutorials/deploy_move_contract/)
    * starmask-test-dapp：Contract blob hex功能，[操作入口](https://starmask-test-dapp.starcoin.org/)
-   * Move-cli：[publish操作指南](https://github.com/starcoinorg/starcoin/blob/master/vm/move-cli/README.zh.md)
+   * Move-Package-Manager：[move package manager 指南](https://github.com/starcoinorg/guide-to-move-package-manager)
 
    这里需要注意的是，选择合适的网络进行部署。
    
@@ -227,8 +227,8 @@ Starcoin在 Stdlib 中定义了多种常用协议，如下图所示（更多协�
    * [协议介绍](https://starcoin.org/zh/developer/protocols/starcoin_nft/)
    * [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)
    * 源代码
-     * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
-     * https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
+     * https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move
+     * https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move
 
 3. Stdlib[使用指南](https://starcoin.org/zh/developer/stdlib/stdlib/)
 

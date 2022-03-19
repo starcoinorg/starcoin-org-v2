@@ -120,7 +120,7 @@ TokenCode is the only way to distinguish between different Tokens.  Same value o
 
 The above function covers the whole Token life cycle: registration, minting, destruction, recharge, and withdrawal.
 
-Starcoin's Token protocol takes advantage of Move, and has designed a secure Token type and TokenInfo type. By passing generic parameters, it is guaranteed that Token can be arbitrarily combined and the protocol can be expanded. Click to view [the complete code](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Token.move). 
+Starcoin's Token protocol takes advantage of Move, and has designed a secure Token type and TokenInfo type. By passing generic parameters, it is guaranteed that Token can be arbitrarily combined and the protocol can be expanded. Click to view [the complete code](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/Token.move). 
 
 
 

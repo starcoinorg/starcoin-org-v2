@@ -121,4 +121,4 @@ RewardConfig存储在GENESIS_ADDRESS下（Genesis Account是Starcoin的创世账
 
 ## 总结
 
-Config是一个通用模块，任何账户可以用来在自己的地址下存储和管理配置。为了避免大数组问题，Config没有使用数组来实现，安全可靠。Starcoin的一些全局配置，正是使用Config合约保存在Genesis Account账户下。感兴趣的可以查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Config.move)。
+Config是一个通用模块，任何账户可以用来在自己的地址下存储和管理配置。为了避免大数组问题，Config没有使用数组来实现，安全可靠。Starcoin的一些全局配置，正是使用Config合约保存在Genesis Account账户下。感兴趣的可以查看[完整代码](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/Config.move)。
