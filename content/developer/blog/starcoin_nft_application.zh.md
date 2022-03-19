@@ -65,7 +65,7 @@ NFT的价值正在很多领域凸显出来，常见的比如游戏、社交、�
 * init函数调用了Starcoin标准NFT协议中的NFT::register_v2函数注册L1Card和L2Card这两种类型的NFT
 * mint_l1函数和mint_l2函数都调用了Starcoin标准NFT协议中的NFT::mint_with_cap_v2函数mint真正的NFT
 
-Starcoin标准NFT协议设计非常简洁高效，开箱即用。例子中，NFT的卡牌游戏，只调用了协议的NFT::register_v2和NFT::mint_with_cap_v2两个函数，非常轻松地把NFT和游戏结合起来了。整个合约不到100行代码，在保障NFT安全的基础上，实现了NFT的灵活组合。感兴趣的可以查看[完整代码](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/nft_card.move)。
+Starcoin标准NFT协议设计非常简洁高效，开箱即用。例子中，NFT的卡牌游戏，只调用了协议的NFT::register_v2和NFT::mint_with_cap_v2两个函数，非常轻松地把NFT和游戏结合起来了。整个合约不到100行代码，在保障NFT安全的基础上，实现了NFT的灵活组合。感兴趣的可以查看[完整代码](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/nft_card.move)。
 
 Starcoin标准NFT协议通过Move的泛型，拥有了灵活的可堆叠性，也支持批量操作，可以非常轻松地应用在游戏场景。
 
@@ -103,7 +103,7 @@ NFT作为虚拟身份的标识，在社交等领域也有非常广泛的应用�
 * quit函数调用IdentifierNFT::revoke收回会员NFT凭证，并通过NFT::burn_with_cap销毁NFT
 * do_membership_action调用IdentifierNFT::is_owns判断用户的会员身份
 
-以上是使用NFT作为会员标识的例子，里面既使用了Starcoin的标准NFT协议，也运用了IdentifierNFT模块。虽然只有大概100行代码，从初始化NFT开始，到铸造、使用以及销毁NFT，覆盖了整个NFT的生命周期。合约逻辑简单清晰，更重要的是保障了NFT和Token的安全，感兴趣的可以查看[完整合约代码](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/identifier_nft.move)。
+以上是使用NFT作为会员标识的例子，里面既使用了Starcoin的标准NFT协议，也运用了IdentifierNFT模块。虽然只有大概100行代码，从初始化NFT开始，到铸造、使用以及销毁NFT，覆盖了整个NFT的生命周期。合约逻辑简单清晰，更重要的是保障了NFT和Token的安全，感兴趣的可以查看[完整合约代码](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/identifier_nft.move)。
 
 NFT作为虚拟身份的场景还有很多，Starcoin未来会推出更多的应用。
 
@@ -134,7 +134,7 @@ NFT在电商场景也被广泛应用，例如盲盒、潮玩等等。我们从�
 * init函数是初始化函数，调用NFT::register_v2注册BoxMiner的NFT类型
 * mint函数用于用户购买NFT，调用NFT::mint_with_cap_v2铸造NFT
 
-整个合约大概50行，既实现了完整的业务逻辑，又保障了NFT的安全可靠，感兴趣的可以查看[完整合约代码](https://github.com/starcoinorg/starcoin/blob/master/vm/transactional-tests/tests/testsuite/nft/nft_boxminer.move)。
+整个合约大概50行，既实现了完整的业务逻辑，又保障了NFT的安全可靠，感兴趣的可以查看[完整合约代码](https://github.com/starcoinorg/starcoin-framework/blob/main/spectests/nft/nft_boxminer.move)。
 
 电商场景对资产安全的要求更严格。Move正是为金融场景打造的高安全性的智能合约语言。Starcoin标准NFT协议正是通过Move实现，这种得天独厚的安全性，让Starcoin标准NFT协议特别适合电商场景。
 

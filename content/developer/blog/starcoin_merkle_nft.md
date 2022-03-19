@@ -78,7 +78,7 @@ The logic of MerkleNFTDistributor is concise. It implements NFT registration and
 - The register function calls the register of the NFT protocol to register the metadata of the NFT;
 - The function mint_with_cap is the NFT required by mint users and the function also calls the NFT protocol. It is important to note that the user needs to pass MerkleTree-related parameters such as merkle_proof, and the verify of the MerkleProof module will be called for verification, and only the verification is passed,an mint is succeed;
 
-The MerkleProof module and MerkleNFTDistributor module are the core implementations of MerkleNFT. The whole logic is very clear and concise. The design uses MerkleTree ingeniously to reduce the logic complexity. It is an interesting application scenario of the NFT protocol. Those who interested can view [the complete source code](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/MerkleNFT.move).
+The MerkleProof module and MerkleNFTDistributor module are the core implementations of MerkleNFT. The whole logic is very clear and concise. The design uses MerkleTree ingeniously to reduce the logic complexity. It is an interesting application scenario of the NFT protocol. Those who interested can view [the complete source code](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move).
 
 
 

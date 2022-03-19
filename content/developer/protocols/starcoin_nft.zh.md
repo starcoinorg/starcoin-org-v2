@@ -87,8 +87,8 @@ Starcoin提供标准NFT协议，保障NFT的安全性，同时，也极大程度
 
 标准NFT协议
 
-* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move
+* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move
 
-* https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/MerkleNFT.move
+* https://github.com/starcoinorg/starcoin-framework/tree/main/sources/MerkleNFT.move
 
 [SIP22](https://github.com/starcoinorg/sips/blob/master/sip-22/index.zh.md)

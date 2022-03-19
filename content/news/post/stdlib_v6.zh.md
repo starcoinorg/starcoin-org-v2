@@ -24,7 +24,7 @@ archives="2021"
 
 ## 二、创世用户可以领取GenesisNFT
 
-* GenesisNFT 的账号列表： https://github.com/starcoinorg/starcoin/blob/master/contrib-contracts/src/genesis-nft-address.jsonGenesisNFT 
+* GenesisNFT 的账号列表： https://github.com/starcoinorg/starcoin/blob/master/contrib-contracts/src/genesis-nft-address.json 
 
 * 领取工具：https://github.com/starcoinorg/starcoin/tree/master/cmd/genesis-nft-miner
 

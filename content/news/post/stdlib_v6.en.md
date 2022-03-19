@@ -24,7 +24,7 @@ archives="2021"
 
 ## Ⅱ. Genesis users can receive GenesisNFT
 
-* List of GenesisNFT accounts： https://github.com/starcoinorg/starcoin/blob/master/contrib-contracts/src/genesis-nft-address.jsonGenesisNFT 
+* List of GenesisNFT accounts： https://github.com/starcoinorg/starcoin/blob/master/contrib-contracts/src/genesis-nft-address.json 
 
 * Collection tools：https://github.com/starcoinorg/starcoin/tree/master/cmd/genesis-nft-miner
 

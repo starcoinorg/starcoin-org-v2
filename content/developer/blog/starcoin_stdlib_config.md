@@ -113,7 +113,7 @@ RewardConfig is stored under GENESIS_ADDRESS (Genesis Account is the genesis acc
 
 ## Summarize 
 
-Config is a global module, any account can be used to store and manage the configuration in its own address. In order to avoid the problem of large arrays, Config does not use arrays to implement it, which is safe and reliable. Some global configurations of Starcoin are saved under the Genesis Account account using the Config contract. Those interested can view [the complete code](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/sources/Config.move). 
+Config is a global module, any account can be used to store and manage the configuration in its own address. In order to avoid the problem of large arrays, Config does not use arrays to implement it, which is safe and reliable. Some global configurations of Starcoin are saved under the Genesis Account account using the Config contract. Those interested can view [the complete code](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/Config.move). 
 
 
 

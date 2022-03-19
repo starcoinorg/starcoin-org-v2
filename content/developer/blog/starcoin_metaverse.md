@@ -113,4 +113,4 @@ NFT implementation and extension protocol SIP22:
 
 NFT implementation code:
 
-[https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move](https://github.com/starcoinorg/starcoin/blob/master/vm/stdlib/modules/NFT.move)
+[https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move](https://github.com/starcoinorg/starcoin-framework/tree/main/sources/NFT.move)
