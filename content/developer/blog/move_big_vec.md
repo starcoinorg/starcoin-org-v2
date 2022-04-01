@@ -13,8 +13,6 @@ Since the birth of smart contracts, there are not many smart contract languages 
 
 Here, we analyze DoS attacks to understand the difference between Solidity and Move storage, and at the same time, discuss reasonable solutions for large arrays.
 
-
-
 ## Principles of DoS Attacks Against Large Arrays
 
 DoS attacks are denial of service attacks. In the field of blockchain, there are various types of DoS attacks, such as DoS attacks by miners and DoS through revert. This article mainly analyzes the DoS attacks caused by arrays.
@@ -30,14 +28,10 @@ The principle of the DoS attack caused by the array is shown in the figure:
 The above is the DoS attack principle of smart contracts. Here are three key points:
 
 - Centrally store data in arrays, resulting in large arrays
-
 - Iterate over a large array
-
 - Gas limit for a single transaction
 
-  Among them, the gas limit is fixed, so contract developers need to pay attention to the two situations of large arrays and traversal.
-
-
+Among them, the gas limit is fixed, so contract developers need to pay attention to the two situations of large arrays and traversal.
 
 ## Real DoS Attack Events
 
@@ -54,15 +48,11 @@ The DistributeTokens contract in the figure below is also an example of a contra
 
 ![sol_dos_for](https://tva1.sinaimg.cn/large/008i3skNly1gy79ggin6nj31060jggng.jpg)
 
-
-
-## Decentralized Storage in Move 
+## Decentralized Storage in Move
 
 Large arrays are essentially a problem of centralized data storage. Solidity data is centrally stored in a defined contract, and Move data can cross contracts and accounts, so Move data can be stored in a decentralized way. For the problem of centralized storage, Move can easily reduce such security risks and store data in each user's own account. There are many benefits of decentralized storage. In addition to avoiding large arrays of DoS attacks, even if there is a security flaw in the contract, it can also prevent all users from suffering losses together.
 
 ![starcoin_account_example](https://tva1.sinaimg.cn/large/008i3skNly1gy7a7y8zmaj30n60c9gmc.jpg)
-
-
 
 ## Avoid Bulk Operations
 
@@ -75,8 +65,6 @@ In the Move system, the data can be stored dispersedly as much as possible. If t
 ![move_dos](https://tva1.sinaimg.cn/large/e6c9d24ely1gzm1wg9larj20sa0g0754.jpg)
 
 The distribute function of the DistributeTokens contract above is a typical bulk operation. In this case, a very reasonable optimization solution is to let each user initiate a transaction and take the initiative to take out the locked Token, thereby avoiding the bulk operation of traversing the array.
-
-
 
 ## On-chain and Off-chain Combination
 
@@ -94,8 +82,6 @@ With data that is consistent on the chain, the off-chain data is segmented and p
 In the Move contract, there are some ways to avoid the security risks of big data, such as avoiding the use of arrays through generics.
 
 ![move_generic](https://tva1.sinaimg.cn/large/008i3skNly1gy7c367bmhj316a0gq40a.jpg)
-
-
 
 ## Safer Move
 
