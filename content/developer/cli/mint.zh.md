@@ -14,14 +14,16 @@ weight: 4
 OPTIONS:
 - -a, --server <server> , 指定要连接到的 starcoin node 的 rpc 地址，默认值为 127.0.0.1:9870
 - -n, --thread-num <thread-num>，线程数，默认为 1。
+- -u, --user <user> , 指定连接的用户名
 
 ## 连接到节点进行挖矿
 当本地启动了 starcoin node 时，我们可以运行如下命令，启动4个线程连接到本地节点进行挖矿。
 
 
 ```shell
-starcoin_miner -n 4
+starcoin_miner -n 4 --user <your username>
 ```
+
 启动后可以看到 console 中有如下信息:
 
 

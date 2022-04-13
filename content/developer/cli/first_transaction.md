@@ -21,8 +21,7 @@ Let's say you've run up a starcoin dev node locally.
 ### Create an account
 
 After connecting to the node, let's first create two accounts. Here we assume that both accounts have been created successfully, 
-Alice is the default account with the address 0x988acf6d210701242af03cbb13780745 and Bob's address is 0x1179ec968815ded9c59775274446ad4c , 
-receipt_identifier is stc1pz9u7e95gzh0dn3vhw5n5g34dfsxum2pt .
+Alice is the default account with the address 0xfa635e304e0c1accf59e6ed211998158 and Bob's address is 0x76a12ea4a733de0fae0cf329083d1952  .
 
 ### Use Faucet to top up your account
 
@@ -40,25 +39,26 @@ The output of the command is the transaction data  issued by the FAUCET account 
 Wait a few seconds and then check your account information again.
 
 ```bash
-starcoin% account show 0x988acf6d210701242af03cbb13780745
-+--------------------+------------------------------------------------------------------------------------------+
-| account.address    | 0x988acf6d210701242af03cbb13780745                                                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| account.is_default | true                                                                                     |
-+--------------------+------------------------------------------------------------------------------------------+
-| account.public_key | 0xd574c33580942a124b377c0fa64c0d1c021c405893ac99b1cf77a44dc530e4b2                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| auth_key           | 0x6d9ca71670371e406e6e7821c4560f31988acf6d210701242af03cbb13780745                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| receipt_identifier | stc1pnz9v7mfpquqjg2hs8ja3x7q8g5fsudrg |
-+--------------------+------------------------------------------------------------------------------------------+
-| sequence_number    | 0                                                                                        |
-+--------------------+------------------------------------------------------------------------------------------+
-| balances.STC       | 100000000000                                                                             |
-+--------------------+------------------------------------------------------------------------------------------+
+starcoin%  account show 0xfa635e304e0c1accf59e6ed211998158
+{
+  "ok": {
+    "account": {
+      "address": "0xfa635e304e0c1accf59e6ed211998158",
+      "is_default": true,
+      "is_readonly": false,
+      "public_key": "0xcf6af68573e8cc232e99aeb11ba2786c8e3f94d90108b1239c36154cd1a75788",
+      "receipt_identifier": "stc1plf34uvzwpsdveav7dmfprxvptqrzyhqp"
+    },
+    "auth_key": "0x5007518ade0231dd0ebb785ba3cc3ecffa635e304e0c1accf59e6ed211998158",
+    "balances": {
+      "0x00000000000000000000000000000001::STC::STC": 100000000000
+    },
+    "sequence_number": 0
+  }
+}
 ```
 
-Now, `balances` and `sequence_number` is filled.
+Now, `balances`  is filled.
 
 
 
@@ -75,11 +75,11 @@ where `-p my-pass` is the password that was needed when creating the account, if
 Once the account is unlocked, execute the following command.
 
 ```bash
-starcoin% account transfer -s 0x988acf6d210701242af03cbb13780745 -r stc1pz9u7e95gzh0dn3vhw5n5g34dfsxum2pt -v 10000 -b
+starcoin% account execute-function --function 0x1::TransferScripts::peer_to_peer_v2 -t 0x1::STC::STC --arg 0x76a12ea4a733de0fae0cf329083d1952 --arg 10000u128 -s 0xfa635e304e0c1accf59e6ed211998158
 ```
 
-- `-s 0x988acf6d210701242af03cbb13780745`: is Alice's account address.
-- `-r stc1pz9u7e95gzh0dn3vhw5n5g34dfsxum2pt`: is Bob's receipt_identifier.
+- `-s 0xfa635e304e0c1accf59e6ed211998158`: is Alice's account address.
+- `-r 0x76a12ea4a733de0fae0cf329083d1952`: is Bob's account address.
 
 > If, Bob's account does not yet exist on the chain, the transfer transaction will automatically create Bob's account on the chain.
 
@@ -90,22 +90,23 @@ Then check Bob's account information again:.
 
 
 ``` bash
-starcoin% account show 0x1179ec968815ded9c59775274446ad4c
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.address            | 0x1179ec968815ded9c59775274446ad4c                                                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.is_default         | false                                                                                    |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.public_key         | 0xfacd584290ee7baea7fe8e22d13332633babca46e77c0ca941b6b5c6266523cb                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.receipt_identifier | stc1pz9u7e95gzh0dn3vhw5n5g34dfsxum2pt |
-+----------------------------+------------------------------------------------------------------------------------------+
-| auth_key                   | 0xce10e8b810895d64f3d3fe1cd2307cf61179ec968815ded9c59775274446ad4c                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| sequence_number            | 0                                                                                        |
-+----------------------------+------------------------------------------------------------------------------------------+
-| balances.STC               | 10000                                                                                    |
-+----------------------------+------------------------------------------------------------------------------------------+
+starcoin% account show 0x76a12ea4a733de0fae0cf329083d1952
+{
+  "ok": {
+    "account": {
+      "address": "0x76a12ea4a733de0fae0cf329083d1952",
+      "is_default": false,
+      "is_readonly": false,
+      "public_key": "0xabd226b1b90b0e969d1db3f937d600006f4c5db342ef3f8bc49a555e9c2fea2b",
+      "receipt_identifier": "stc1pw6sjaf98x00qltsv7v5ss0ge2gnl9jpv"
+    },
+    "auth_key": "0x891410477b6abc7c95bb8eff9cdcf9af76a12ea4a733de0fae0cf329083d1952",
+    "balances": {
+      "0x00000000000000000000000000000001::STC::STC": 10000
+    },
+    "sequence_number": 0
+  }
+}
 ```
 
 Bob has the money now!

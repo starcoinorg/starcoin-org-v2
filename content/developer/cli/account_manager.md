@@ -14,31 +14,35 @@ When the node starts, a default account is automatically created with an empty p
 
 ```bash
 starcoin% account create -p my-pass
-+------------+--------------------------------------------------------------------+
-| address | 0x8d885d806c14654832aa371c3c980153 |
-+------------+--------------------------------------------------------------------+
-| is_default | false |
-+------------+--------------------------------------------------------------------+
-| public_key | 0xf0a2cee9d7c85a40f3f217782b449fab9ba73fa11ab210f11d12305fdf57b908 |
-+------------+--------------------------------------------------------------------+
-
+{
+  "ok": {
+    "address": "0x8771ab46ae92feef64749b9feaeede9b",
+    "is_default": false,
+    "is_readonly": false,
+    "public_key": "0x50b42d796fd9bceafc5d146aedc1083b36d8ac3bafcebb5a9532a02d9b0f6dbb",
+    "receipt_identifier": "stc1psac6k34wjtlw7er5nw074mk7nvv4gv6j"
+  }
+}
 ```
 
 2. Show account 
 
 ```bash
-starcoin% account create -p my-pass
-+--------------------+------------------------------------------------------------------------------------------+
-| address            | 0x812a1a9c8f03a008f96ae412baa69be8                                                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| is_default         | false                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------+
-| is_readonly        | false                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------+
-| public_key         | 0x36012395c6ddf99cc4e6d60f35ac24b59c3a930d5e2611ac39d8bdfac2bfecf4                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| receipt_identifier | stc1psy4p48y0qwsq37t2usft4f5maq7nrgfm |
-+--------------------+------------------------------------------------------------------------------------------+
+starcoin% account show 0x8771ab46ae92feef64749b9feaeede9b
+{
+  "ok": {
+    "account": {
+      "address": "0x8771ab46ae92feef64749b9feaeede9b",
+      "is_default": false,
+      "is_readonly": false,
+      "public_key": "0x50b42d796fd9bceafc5d146aedc1083b36d8ac3bafcebb5a9532a02d9b0f6dbb",
+      "receipt_identifier": "stc1psac6k34wjtlw7er5nw074mk7nvv4gv6j"
+    },
+    "auth_key": "0x047647886667905740b3e671854954b18771ab46ae92feef64749b9feaeede9b",
+    "balances": {},
+    "sequence_number": null
+  }
+}
 ```
 
 - address is the address of the account.
@@ -62,9 +66,9 @@ To view the default account address.
 ```bash
 starcoin% account default
 ```
-Set 0x812a1a9c8f03a008f96ae412baa69be8 to the default address.
+Set 0x8771ab46ae92feef64749b9feaeede9b to the default address.
 ```bash
-starcoin% account default 0x812a1a9c8f03a008f96ae412baa69be8
+starcoin% account default 0x8771ab46ae92feef64749b9feaeede9b
 ```
 
 5. Export and import accounts
@@ -73,17 +77,17 @@ In order to avoid losing your assets due to disk corruption and other reasons, i
 
 Execute the following command: 
 ```bash
-starcoin% account export 0x812a1a9c8f03a008f96ae412baa69be8 -p my-pass
+starcoin% account export 0x8771ab46ae92feef64749b9feaeede9b -p my-pass
 ```
-to export the private key of 0x8d885d806c14654832aa371c3c980153.
+to export the private key of 0x8771ab46ae92feef64749b9feaeede9b.
 
 Execute the following command:
 
 ```bash
-starcoin% account import -i <private-key> -p my-pass 0x812a1a9c8f03a008f96ae412baa69be8
+starcoin% account import -i <private-key> -p my-pass 0x8771ab46ae92feef64749b9feaeede9b
 ```
 
-This will import the 0x812a1a9c8f03a008f96ae412baa69be8 account. This command can also be used to import the account to a different node and used to do node migration.
+This will import the 0x8771ab46ae92feef64749b9feaeede9b account. This command can also be used to import the account to a different node and used to do node migration.
 
 6. Import readonly accounts
 
@@ -100,7 +104,7 @@ Then set the account as the default account.
 7. Remove account
 
 ```bash
-starcoin% account remove 0x812a1a9c8f03a008f96ae412baa69be8 -p my-pass
+starcoin% account remove 0x8771ab46ae92feef64749b9feaeede9b -p my-pass
 ```
 
 If it is a read-only account, you do not need to pass the -p parameter. Deleting an account only deletes the account from the node wallet and does not affect the account on the chain.

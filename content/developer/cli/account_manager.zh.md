@@ -13,40 +13,35 @@ Starcoin 节点内置了一个去中心化的钱包，用户可以通过账号�
 
 ```bash
 starcoin% account create -p my-pass
-+--------------------+------------------------------------------------------------------------------------------+
-| address            | 0x812a1a9c8f03a008f96ae412baa69be8                                                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| is_default         | false                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------+
-| is_readonly        | false                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------+
-| public_key         | 0x36012395c6ddf99cc4e6d60f35ac24b59c3a930d5e2611ac39d8bdfac2bfecf4                       |
-+--------------------+------------------------------------------------------------------------------------------+
-| receipt_identifier | stc1psy4p48y0qwsq37t2usft4f5maq7nrgfm |
-+--------------------+------------------------------------------------------------------------------------------+
-
+{
+  "ok": {
+    "address": "0x8771ab46ae92feef64749b9feaeede9b",
+    "is_default": false,
+    "is_readonly": false,
+    "public_key": "0x50b42d796fd9bceafc5d146aedc1083b36d8ac3bafcebb5a9532a02d9b0f6dbb",
+    "receipt_identifier": "stc1psac6k34wjtlw7er5nw074mk7nvv4gv6j"
+  }
+}
 ```
 
 2. 查看账号
 
 ```bash
-starcoin% account show 0x812a1a9c8f03a008f96ae412baa69be8
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.address            | 0x812a1a9c8f03a008f96ae412baa69be8                                                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.is_default         | false                                                                                    |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.is_readonly        | false                                                                                    |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.public_key         | 0x36012395c6ddf99cc4e6d60f35ac24b59c3a930d5e2611ac39d8bdfac2bfecf4                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| account.receipt_identifier | stc1psy4p48y0qwsq37t2usft4f5maq7nrgfm |
-+----------------------------+------------------------------------------------------------------------------------------+
-| auth_key                   | 0x7b9eb1fcbeb82e47c3e8958f4c5a2a97812a1a9c8f03a008f96ae412baa69be8                       |
-+----------------------------+------------------------------------------------------------------------------------------+
-| sequence_number            |                                                                                          |
-+----------------------------+------------------------------------------------------------------------------------------+
-
+starcoin% account show 0x8771ab46ae92feef64749b9feaeede9b
+{
+  "ok": {
+    "account": {
+      "address": "0x8771ab46ae92feef64749b9feaeede9b",
+      "is_default": false,
+      "is_readonly": false,
+      "public_key": "0x50b42d796fd9bceafc5d146aedc1083b36d8ac3bafcebb5a9532a02d9b0f6dbb",
+      "receipt_identifier": "stc1psac6k34wjtlw7er5nw074mk7nvv4gv6j"
+    },
+    "auth_key": "0x047647886667905740b3e671854954b18771ab46ae92feef64749b9feaeede9b",
+    "balances": {},
+    "sequence_number": null
+  }
+}
 ```
 
 - address 是账户地址
@@ -72,9 +67,9 @@ starcoin% account list
 ```bash
 starcoin% account default
 ```
-将 0x812a1a9c8f03a008f96ae412baa69be8 设置位默认地址。
+将 0x8771ab46ae92feef64749b9feaeede9b 设置位默认地址。
 ```bash
-starcoin% account default 0x812a1a9c8f03a008f96ae412baa69be8
+starcoin% account default 0x8771ab46ae92feef64749b9feaeede9b
 ```
 
 5. 导出导入账号
@@ -83,17 +78,17 @@ starcoin% account default 0x812a1a9c8f03a008f96ae412baa69be8
 
 执行以下命令: 
 ```bash
-starcoin% account export 0x812a1a9c8f03a008f96ae412baa69be8 -p my-pass
+starcoin% account export 0x8771ab46ae92feef64749b9feaeede9b -p my-pass
 ```
-即可导出 0x812a1a9c8f03a008f96ae412baa69be8 的私钥。
+即可导出 0x8771ab46ae92feef64749b9feaeede9b 的私钥。
 
 执行以下命令:
 
 ```bash
-starcoin% account import -i <private-key> -p my-pass 0x812a1a9c8f03a008f96ae412baa69be8
+starcoin% account import -i <private-key> -p my-pass 0x8771ab46ae92feef64749b9feaeede9b
 ```
 
-即可导入 0x812a1a9c8f03a008f96ae412baa69be8 账号。这个命令也可以用于将账号导入到不同的节点上，用来做节点迁移。
+即可导入 0x8771ab46ae92feef64749b9feaeede9b 账号。这个命令也可以用于将账号导入到不同的节点上，用来做节点迁移。
 
 6. 导入只读账号
 
@@ -108,7 +103,7 @@ starcoin% account import-readonly -i <public-key>
 7. 删除账号
 
 ```bash
-starcoin% account remove 0x812a1a9c8f03a008f96ae412baa69be8 -p my-pass
+starcoin% account remove 0x8771ab46ae92feef64749b9feaeede9b -p my-pass
 ```
 
 如果是只读账号，无需传递 -p 参数。删除账号只是将账号从节点钱包中删除，并不影响该账号在链上的状态。
