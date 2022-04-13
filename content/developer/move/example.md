@@ -23,25 +23,19 @@ Move examples
 
 
 
-~~~move
+```move
 
 struct AnyWordEvent has drop, store {
 
 words: vector,
 
 }
-
-~ ~ ~
-
-
-
+```
 
 
 2. Define a Holder
 
-
-
-​~~~move
+```move
 
 struct EventHolder has key {
 
@@ -49,7 +43,7 @@ any_word_events: Event::EventHandle,
 
 }
 
-~ ~ ~
+```
 
 
 
@@ -57,7 +51,7 @@ any_word_events: Event::EventHandle,
 
 
 
-​~~~move
+```move
 
 let hello_world = x"68656c6c6f20776f726c64"; //hello world
 
@@ -65,7 +59,7 @@ let holder = borrow_global_mut(addr);
 
 Event::emit_event(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
 
-~ ~ ~
+```
 
 
 
@@ -75,69 +69,62 @@ The complete code
 
 
 
-​~~~move
+```move
 
 module Hello {
 
-use 0x1::Signer;
+    use StarcoinFramework::Signer;
 
-use 0x1::Event;
+    use StarcoinFramework::Event;
 
 
 
-struct AnyWordEvent has drop, store {
+    struct AnyWordEvent has drop, store {
 
-words: vector,
+        words: vector,
+
+    }
+
+
+
+    struct EventHolder has key {
+
+        any_word_events: Event::EventHandle,
+
+    }
+
+
+
+    public(script) fun hello(account: signer) acquires EventHolder {
+
+        let _account = &account;
+
+        let addr = Signer::address_of(_account);
+
+        if (! exists(copy addr)){
+
+            move_to(_account, EventHolder {
+
+            any_word_events: Event::new_event_handle(_account),
+
+            });
+
+        };
+
+        let hello_world = x"68656c6c6f20776f726c64"; //hello world
+
+        let holder = borrow_global_mut(addr);
+
+        Event::emit_event(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
+
+    }
 
 }
 
-
-
-struct EventHolder has key {
-
-any_word_events: Event::EventHandle,
-
-}
-
-
-
-public(script) fun hello(account: signer) acquires EventHolder {
-
-let _account = &account;
-
-let addr = Signer::address_of(_account);
-
-if (! exists(copy addr)){
-
-move_to(_account, EventHolder {
-
-any_word_events: Event::new_event_handle(_account),
-
-});
-
-};
-
-let hello_world = x"68656c6c6f20776f726c64"; //hello world
-
-let holder = borrow_global_mut(addr);
-
-Event::emit_event(&mut holder.any_word_events, AnyWordEvent { words:hello_world });
-
-}
-
-}
-
-~ ~ ~
-
-
-
-
-
+```
 
 
 ## Stdlib Introduction to the whole
-
-
 
 Stdlib is a very important feature of Starcoin. It contains some basic modules, common modules, blocks and consensus related modules.
 
@@ -185,15 +172,7 @@ Stdlib is a very important feature of Starcoin. It contains some basic modules, 
 
 Here are some simple examples of Stdlib operations that are commonly used.
 
-
-
-
-
-
-
 ## Account basic operation
-
-
 
 1. Create account
 
@@ -203,25 +182,19 @@ let auth_key = x"91e941f5bc09a285705c092dd654b94a7a8e385f898968d4ecfba49609a1346
 
 let account_address = Account::create_account(auth_key);
 
-` ` `
+```
 
 
 
 2. Get authentication key with address
 
-
-
-​~~~move
+```move
 
 let auth_key = Account::authentication_key(account_address);
 
-~ ~ ~
-
-
+```
 
 3. Get address from authentication key
-
-
 
 ```move
 
@@ -229,8 +202,7 @@ let auth_key = x"91e941f5bc09a285705c092dd654b94a7a8e385f898968d4ecfba49609a1346
 
 let expected_address = Authenticator::derived_address(auth_key);
 
-` ` `
-
+```
 
 
 6. Get balance
@@ -240,26 +212,21 @@ let expected_address = Authenticator::derived_address(auth_key);
 ```move
 
 let balance = Account::balance(account_address);
-
-` ` `
+```
 
 
 
 7. Get sequence number
 
-
-
 ```move
 
 let sequence_number = Account::sequence_number(account_address);
 
-` ` `
+```
 
 
 
 8. Deposit
-
-
 
 ```move
 
@@ -267,25 +234,17 @@ let coin = Token::mint(&account, 100);
 
 Account::deposit(account_address, coin);
 
-` ` `
-
-
+```
 
 9. Determine whether a descriptive Capability is proxied
-
-
 
 ```move
 
 let is_delegated = Account::delegated_withdraw_capability(account_address);
 
-` ` `
-
-
+```
 
 10. Gets the address of the corresponding descriptive Capability
-
-
 
 ```move
 
@@ -293,17 +252,10 @@ let with_cap = Account::extract_withdraw_capability(&account);
 
 let account_address = Account::withdraw_capability_address(&with_cap);
 
-` ` `
-
-
-
-
-
+```
 
 
 Capability allows you to operate your account
-
-
 
 In Starcoin, any modification of the account, such as transfer, updating key and so on, requires the permission to operate the account. A Capability can be understood as an abstraction of a "permission" in a Move, and a different type of operation corresponds to a different type of Capability, such as a mintCapability, a descriptive Capability, and so on. To do something with a Capability, there are usually three steps:
 
@@ -319,11 +271,7 @@ In Starcoin, any modification of the account, such as transfer, updating key and
 
 Here are some examples of using Capability to manipulate accounts (and, by the same token, update permissions for other modules) :
 
-
-
 1. Change authentication key
-
-
 
 ```move
 
@@ -333,13 +281,8 @@ Account::rotate_authentication_key_with_capability(&rot_cap, x"123abc"); //2. ch
 
 Account::restore_key_rotation_capability(rot_cap); //3. restore capability
 
-` ` `
-
-
-
+```
 2. Pay from capability
-
-
 
 ```move
 
@@ -349,16 +292,11 @@ Account::pay_from_capability(&with_cap, payee, 10000, x""); //2. pay from capabi
 
 Account::restore_withdraw_capability(with_cap); //3. restore capability
 
-` ` `
+```
 
 
 
 These are two typical examples, and a more descriptive account operation is a: withdrawing _with_capability and so on.
-
-
-
-
-
 
 
 ## Multiple ways to transfer contracts
@@ -371,42 +309,28 @@ These are two typical examples, and a more descriptive account operation is a: w
 
 TransferScripts::peer_to_peer_v2(account, payee, amount);
 
-` ` `
-
-
+```
 
 2. peer_to_peer_with_metadata
-
-
 
 ```move
 
 TransferScripts::peer_to_peer_with_metadata_v2(account, payee, amount, metadata);
 
-` ` `
-
-
+```
 
 3. Batch transfer of different amounts
 
-
-
-​~~~move
+```move
 
 TransferScripts::batch_peer_to_peer_v2(account, payeees, amounts);
 
-~ ~ ~
-
-
-~ ~ ~
-
+```
 ## Sign multiple accounts
 
 
 
 1. Create one multi-signed account for each 3 accounts
-
-
 
 ```move
 
@@ -417,7 +341,6 @@ let pubkey2 = x"4b2a60883383be0ba24ed79aa5a6c9379728099a7b0c57edcec193a14ea5fce2
 let pubkey3 = x"323285d3d4b0f19482730c5f481d9f745c2927d73c231bad47859d9b2f7376f1";
 
 
-
 let keys = Vector::empty>();
 
 Vector::push_back(&mut keys, pubkey1);
@@ -425,8 +348,6 @@ Vector::push_back(&mut keys, pubkey1);
 Vector::push_back(&mut keys, pubkey2);
 
 Vector::push_back(&mut keys, pubkey3);
-
-
 
 let t = Authenticator::create_multi_ed25519(copy keys, 1);
 
@@ -436,262 +357,132 @@ t = Authenticator::create_multi_ed25519(copy keys, 3);
 
 let auth_key = Authenticator::multi_ed25519_authentication_key(&t);
 
-` ` `
-
-
-
+```
 2. Get the address of the oversigned account
-
-
 
 ```move
 
 let account_address = Authenticator::derived_address(auth_key);
 
-` ` `
-
-
-
-
-
-
-
-Example # # Token
-
-
+```
+Example # # Token  
 
 1. Publish the Token process
 
- align=left />
+`Struct myToken has copy, drop, store {} `
 
-Struct myToken has copy, drop, store {} '
+`register Token: Token::register_token< myToken >(account,3); `
 
+`Accept Token: Account::accept_token< myToken >(& Account); `
 
+`Let tokens = Token::mint< myToken >(&account, total); `
 
-
-
-
-
-'register Token: Token::register_token< myToken >(account,3); `
-
-
-
-
-
-
-
-'3. Accept Token: Account::accept_token< myToken >(& Account); `
-
-
-
-
-
-
-
-Let tokens = Token::mint< myToken >(&account, total); `
-
-
-
-
-
-
-
-Deposit_to_self < myToken >(& Account, tokens); `
-
-
-
-
-
+`Deposit_to_self < myToken >(& Account, tokens); `
 
 
 The complete code
-
-
 
 ```move
 
 module MyToken {
 
-use 0x1::Token;
+    use StarcoinFramework::Token;
+    use StarcoinFramework::Account;
 
-use 0x1::Account;
+    struct MyToken has copy, drop, store { }
 
+    public(script) fun init(account: signer) {
 
+        let _account = &account;
+        Token::register_token(_account, 3);
+        Account::do_accept_token(_account);
 
-struct MyToken has copy, drop, store { }
+    }
 
+    public(script) fun mint(account: signer, amount: u128) {
 
+        let _account = &account;
 
-public(script) fun init(account: signer) {
+        let token = Token::mint(_account, amount);
 
-let _account = &account;
+        Account::deposit_to_self(_account, token)
 
-Token::register_token(_account, 3);
-
-Account::do_accept_token(_account);
-
-}
-
-
-
-public(script) fun mint(account: signer, amount: u128) {
-
-let _account = &account;
-
-let token = Token::mint(_account, amount);
-
-Account::deposit_to_self(_account, token)
+    }
 
 }
 
-}
-
-` ` `
-
-
-
-
-
+```
 
 
 2. Turn the Token
-
- align=left />
-
-
-
 '1. Accept Token: Account::accept_token< myToken >(& Account); `
-
-
-
-
-
-
-
-
-
-
 
 '2. Forward Token: Account::pay_from< myToken >(& Account, payee, amount); `
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Contract hosting
 
-
-
 1. The coder account deploys a contract and hosts the contract to the DAO
-
-
-
-​~~~move
+```move
 
 module MyToken {
 
-use 0x1::Token;
+    use StarcoinFramework::Token;
+    use StarcoinFramework::Account;
+    use StarcoinFramework::Dao;
 
-use 0x1::Account;
+    struct MyToken has copy, drop, store { }
 
-use 0x1::Dao;
+        public(script) fun init(account: signer) {
 
+            let _account = &account;    
+            Token::register_token(_account, 3);
+            Account::do_accept_token(_account);
+            Dao::plugin(_account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
 
+        }
 
-struct MyToken has copy, drop, store { }
+        public(script) fun mint(account: signer, amount: u128) {
 
+            let _account = &account;  
+            let token = Token::mint(_account, amount);
+            Account::deposit_to_self(_account, token)
 
-
-public(script) fun init(account: signer) {
-
-let _account = &account;    
-
-Token::register_token(_account, 3);
-
-Account::do_accept_token(_account);
-
-Dao::plugin(_account, 60 * 1000, 60 * 60 * 1000, 4, 60 * 60 * 1000);
-
-}
-
-
-
-public(script) fun mint(account: signer, amount: u128) {
-
-let _account = &account;  
-
-let token = Token::mint(_account, amount);
-
-Account::deposit_to_self(_account, token)
+        }
 
 }
 
-}
-
-~ ~ ~
-
-
+```
 
 2. Modify the DAO configuration of the MyToken module
 
-
-
-​~~~move
+```move
 
 script {
 
-use 0x1::Dao;
+    use StarcoinFramework::Dao;
+    use {{coder}}::MyToken::MyToken;
+    use StarcoinFramework::Config;
 
-use {{coder}}::MyToken::MyToken;
+    fun set_dao_config(signer: signer) {
 
-use 0x1::Config;
+        let cap = Config::extract_modify_config_capability>(
 
+            &signer
 
-
-fun set_dao_config(signer: signer) {
-
-let cap = Config::extract_modify_config_capability>(
-
-&signer
-
-);
-
-
-
-Dao::set_voting_delay(&mut cap, 30 * 1000);
-
-Dao::set_voting_period(&mut cap, 30 * 30 * 1000);
-
-Dao::set_voting_quorum_rate(&mut cap, 50);
-
-Dao::set_min_action_delay(&mut cap, 30 * 30 * 1000);
-
-
-
-Config::restore_modify_config_capability(cap);
+        );
+        Dao::set_voting_delay(&mut cap, 30 * 1000);
+        Dao::set_voting_period(&mut cap, 30 * 30 * 1000);
+        Dao::set_voting_quorum_rate(&mut cap, 50);
+        Dao::set_min_action_delay(&mut cap, 30 * 30 * 1000);
+        Config::restore_modify_config_capability(cap);
+    }
 
 }
 
-}
-
-~ ~ ~
-
-
+```
 
 3. Upgrade your contract
 
-
-
 ! [DAO](https://tva1.sinaimg.cn/large/008i3skNgy1gqxxyln2yxj30p10g5myz.jpg)
 
-~~~
+```

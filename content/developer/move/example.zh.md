@@ -14,7 +14,6 @@ Move 示例
 
 <!--more-->
 
-
 ## HelloWorld
 
 1. 定义一个Event
@@ -47,8 +46,8 @@ Event::emit_event<AnyWordEvent>(&mut holder.any_word_events, AnyWordEvent { word
 
 ~~~move
 module Hello {
-    use 0x1::Signer;
-    use 0x1::Event;
+    use StarcoinFramework::Signer;
+    use StarcoinFramework::Event;
 
     struct AnyWordEvent has drop, store {
         words: vector<u8>,
@@ -78,33 +77,23 @@ module Hello {
 ## Token例子
 
 1. 发布Token流程
-    <img src="./move_samples/TokenSample.png" alt="TokenSample" style="zoom:95%;" align=left />
+
 `1. 定义Token：struct MyToken has copy, drop, store { }`
-
-
 
 `2. 注册Token：Token::register_token<MyToken>(account,3);`
 
-
-
 `3. 接收Token：Account::accept_token<MyToken>(&account);`
-
-
 
 `4. 挖Token：let tokens = Token::mint<MyToken>(&account, total);`
 
-
-
 `5. 保存Token：Account::deposit_to_self<MyToken>(&account, tokens);`
-
-
 
 完整代码
 
 ```move
 module MyToken {
-     use 0x1::Token;
-     use 0x1::Account;
+     use StarcoinFramework::Token;
+     use StarcoinFramework::Account;
 
      struct MyToken has copy, drop, store { }
 
@@ -122,24 +111,11 @@ module MyToken {
 }
 ```
 
+2. 发送Token
 
-
-2. 转Token
-<img src="./move_samples/TokenTransfer.png" alt="TokenSample" style="zoom:100%;" align=left />
 
 `1. 接收Token：Account::accept_token<MyToken>(&account);`
-
-
-
-
-
 `2. 转发Token：Account::pay_from<MyToken>(&account, payee, amount);`
-
-
-
-
-
-
 
 ## 合约托管
 
@@ -147,9 +123,9 @@ module MyToken {
 
 ~~~move
 module MyToken {
-     use 0x1::Token;
-     use 0x1::Account;
-     use 0x1::Dao;
+     use StarcoinFramework::Token;
+     use StarcoinFramework::Account;
+     use StarcoinFramework::Dao;
 
      struct MyToken has copy, drop, store { }
 
@@ -172,9 +148,9 @@ module MyToken {
 
 ~~~move
 script {
-    use 0x1::Dao;
+    use StarcoinFramework::Dao;
     use {{coder}}::MyToken::MyToken;
-    use 0x1::Config;
+    use StarcoinFramework::Config;
 
     fun set_dao_config(signer: signer) {
         let cap = Config::extract_modify_config_capability<Dao::DaoConfig<MyToken>>(
