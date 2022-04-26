@@ -64,7 +64,7 @@ OPTIONS:
 
 #### use `import_snapshot.sh` offline import snapshot
 `starcoin_db_exporter`and`import_snapshot.sh` under same path
-`import_net_block.sh $1 $2`
+`import_snapshot.sh $1 $2 $3`
 $1 is net node like main, barnard
 $2 is import_snapshot.sh download snapshot which dir
 $3 is storage dir like ~/.starcoin/main, ~/.starcoin/barnard
