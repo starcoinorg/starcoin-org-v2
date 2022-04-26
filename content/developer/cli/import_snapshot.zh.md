@@ -4,7 +4,7 @@ weight: 4
 ---
 `starcoin_db_exporter`命令行工具提供了离线导出导入
 main,barnard,halley, proxima网络的快照功能，这样可以快速的搭建区块链网络
-离线导入快照也可以使用import_net_block.sh脚本
+离线导入快照也可以使用import_snapshot.sh脚本
 
 <!--more-->
 
@@ -66,7 +66,7 @@ OPTIONS:
 ```
 #### 使用`import_snapshot.sh`离线导入
 `starcoin_db_exporter`和`import_snapshot.sh`在同一路径下
-`import_net_block.sh $1 $2 `
+`import_snapshot.sh $1 $2 $3`
 $1是网络名称可以是main, barnard
 $2是指定import_snapshot.sh下载快照路径
 $3是数据存储的地方,可以使用~/.starcoin/main, ~/.starcoin/barnard
