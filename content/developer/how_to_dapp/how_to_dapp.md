@@ -133,7 +133,7 @@ Currently, Starcoin is the first one public blockchain that can run Move smart c
 You can test your Move smart contracts with different test types.
 * Unit test:  [Guides](https://github.com/diem/diem/blob/main/language/changes/4-unit-testing.md)
 * Functional Test: To run a functional test, make sure to initialize Starcoin first. 
-* [Guides](https://starcoin.org/zh/developer/functional_test/functional_test/) 
+* [Guides](https://starcoin.org/zh/developer/spectest_test/spectest_test/) 
   * [Examples](https://github.com/starcoinorg/starcoin/tree/master/vm/functional-tests/tests/testsuite)
 4. Compile and Deploy 
 There are multiple ways to compile and deploy Move smart contracts on Starcoin blockchain. Make sure that you have chosen appropriate networks!
