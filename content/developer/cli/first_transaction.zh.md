@@ -16,7 +16,7 @@ weight: 3
 
 ## 提交交易的几个步骤
 
-- 启动 starcoin 控制台，并连接到 starcoin 节点，详细步骤请查阅[使用 strcoin 控制台](./console)。
+- 启动 starcoin 控制台，并连接到 starcoin 节点，详细步骤请查阅[使用 starcoin 控制台](./console)。
 - 创建两个账户，Alice,Bob, 详细步骤请查阅[账号管理](./account_manager)。
 - 给 Alice 账户挖钱。
 - 提交转账交易：Alice 给 Bob 打钱。
