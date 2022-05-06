@@ -33,7 +33,7 @@ Alice is the default account with the address 0xfa635e304e0c1accf59e6ed211998158
 starcoin% dev get-coin -v 100STC
 ```
 
-`dev get-coin` will mint some coins the default account, and if the account does not exist on the chain, it will creates the account first and then transfers a specified (with `-v`) number of coins to the account.
+`dev get-coin` will mint some coins the default account, and if the account does not exist on the chain, it will create the account first and then transfers a specified (with `-v`) number of coins to the account.
 The output of the command is the transaction data  issued by the FAUCET account (address `0000000000000000000000000A550C18`).
 
 Wait a few seconds and then check your account information again.

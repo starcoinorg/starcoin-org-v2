@@ -483,6 +483,4 @@ script {
 
 3. Upgrade your contract
 
-! [DAO](https://tva1.sinaimg.cn/large/008i3skNgy1gqxxyln2yxj30p10g5myz.jpg)
-
-```
+![DAO](https://tva1.sinaimg.cn/large/008i3skNgy1gqxxyln2yxj30p10g5myz.jpg)

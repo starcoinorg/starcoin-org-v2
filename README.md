@@ -13,11 +13,15 @@ git submodule update --init
 
 
 ### Run server
-> `--minify` will change scale in html header meta value from 1.0 to 1:
-> <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+> `--minify` will change `initial-scale` value in html header meta tag from 1.0 to 1:
+> 
+>`<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />`
+>
 > to
-> <meta content="width=device-width;initial-scale=1;maximum-scale=1;user-scalable=0" name="viewport" />
-> which will cause resonsive layout bug in phone.
+> 
+> `<meta content="width=device-width;initial-scale=1;maximum-scale=1;user-scalable=0" name="viewport" />`
+> 
+> which will cause responsive layout bug in phone.
 
 ```
 hugo server --port 8004
@@ -34,7 +38,7 @@ Note: if the site does not update with changes, try to open the Chrome/Safari co
 ./build.sh
 ```
 
-2. serve pubic folder as static site
+2. serve public folder as static site
 ```
 serve ./public -l 8004
 ```
