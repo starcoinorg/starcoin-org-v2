@@ -102,7 +102,7 @@ features = ["pagination","archives","tags"]
 
 [[deployment.targets]]
 name = "starcoin.org"
-URL = "s3://starcoin.org?region=ap-northeast-1"
+#URL = "s3://starcoin.org?region=ap-northeast-1"
 
 [[deployment.matchers]]
 # Cache static assets for 20 years.
