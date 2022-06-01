@@ -873,7 +873,7 @@ let starcoinProvider = new providers.Web3Provider(window.starcoin, 'any')
 ```bash
 $ yarn add --dev ethers bignumber.js
 ```
-`ehter`提供的工具包中的`hexlify`能够帮我们来处理 Hex字符串。`hexlify`方法能将任何数字、‎‎BigNumber‎‎、十六进制字符串或 ‎‎Arrayish‎‎ 转换为十六进制字符串。
+`ethers`提供的工具包中的`hexlify`能够帮我们来处理 Hex字符串。`hexlify`方法能将任何数字、‎‎BigNumber‎‎、十六进制字符串或 ‎‎Arrayish‎‎ 转换为十六进制字符串。
 
 `bignumber.js`则可以帮我们处理Javascript 的精度计算问题。
 
